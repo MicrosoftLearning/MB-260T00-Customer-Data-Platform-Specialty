@@ -1,4 +1,13 @@
-# About the Hands-on Lab
+---
+lab:
+    title: 'Lab 2A: Ingestion, unification, relationships and measures'
+    module: 'Module 2: Ingest data into Audience insights'
+---
+
+# Lab 2A: Ingestion, unification, relationships and measures
+# Module 2: Ingest data into Audience insights
+
+## About the Hands-on Lab
 
 Unlike traditional approaches for realising a 360degree view of the customer with a large amount of coding involved, Dynamics 365 Customer Insights (CI) is a finished SaaS solution which allows you to adopt an agile project management approach and deliver value in a matter of weeks. 
 
@@ -9,7 +18,7 @@ We will introduce the business pain points, goals and
 high-priority use cases that Contoso has identified around their customer data initiative, and then realise a working prototype solution today. 
 
  
-# Lab Scenario: Contoso Coffeee
+## Lab Scenario: Contoso Coffeee
  
 
 ![Picture 230](Static/Lab_4A_image2.jpeg)Contoso Coffee produce high-quality coffee and coffee machines, which they retail through channels including new Contoso Retail Stores in premium locations, premium food resellers and the Contoso Coffee Web 
