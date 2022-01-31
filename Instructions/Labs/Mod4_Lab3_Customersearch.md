@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 4.3: Search for customers'
-    module: 'Module 4: Work with Audience insights'
+    module: 'Module 4: Work with Dynamics 365 Audience insights'
 ---
 
 # Lab 4.3: Search for customers
-# Module 4: Work with Audience insights
+# Module 4: Work with Dynamics 365 Audience insights
 
 In this lab we will setup Search and Filter criteria to enable Customer Insights users to search for unified customer profiles so that you can quickly pull information on a specific customer or group of customers. 
 
