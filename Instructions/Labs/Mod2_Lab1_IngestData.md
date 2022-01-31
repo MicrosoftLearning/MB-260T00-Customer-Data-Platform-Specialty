@@ -115,7 +115,8 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 1. Sign-into Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
 2. In the Environment selector in the top right-hand corner, select the **Retail Demo environment.**
 3. On the Home Page, note how the key Insights are highlighted: 
-	- KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score
+
+- KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score
 
 - Audience Enrichment pulled in from Microsoft proprietary data (including Microsoft Bing). Enrich Customer Profiles and Audience segments to unlock affinities for brands and interest categories that may be like your customers, by matching demographic data. 
 
@@ -156,44 +157,23 @@ Although Customer Insights has connectors to 35+ data sources and applications (
 
 ## Data Source Model 
 
-
- ![Picture 815](Static/Lab_4A_image8.jpeg) 
-
-Note: Some of this data will be ingested in later labs 
-
-  
+Note: Some of this data will be ingested in later labs.
 
 ## Task 1 -  Ingest Customer Data from eCommerce Platform 
 
- 
-
 1. Sign-in to Customer Insights (http://home.ci.ai.dynamics.com) and select your Environment from the drop-down in the top right-hand corner. 
 
-	![Picture 865](Static/Lab_4A_image9.jpeg) 
+2. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-2. Within Customer Insights, expand Data on the left menu and click Data Sources 
+3. Click **Add Data Source**, then choose from the available methods of ingesting data. Currently, CI provides import data via various data connectors, connect to your own data lake, connect to Common Data Service. For this lab, choose **Microsoft PowerQuery** and name the source **eCommerce**, then click the **Next** button.
 
- 
+4. You will be presented with a view of Power Query data sources that Customer Insights is able to ingest. Take note of the connector types available. Select the **Text/CSV Connector.**
 
-3. Click Add Data Source, then choose from the available methods of ingesting data. Currently, CI provides import data via various data connectors, connect to your own data lake, connect to Common Data Service. For this lab, choose Import data and name the source eCommerce, then click Next button 
+5. Enter the URL for eCommerce Contacts data set, https://aka.ms/CI-ILT/Contacts, and click **Next.** (It may take a few moments for the data to upload.)
 
-	![Picture 2](Static/Lab_4A_picture2.png)
+6. You should now see the data from the source tabulated. Click **Transform data** to configure the datatypes and formats for the data you ingest. 
 
-4. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Take note of the connector types available, including Common Data Service for Apps. Select the Text/CSV Connector. 
-
-	![Picture 912](Static/Lab_4A_image10.jpeg) 
-
-5. Enter the URL for eCommerce Contacts data set, https://aka.ms/CI-ILT/Contacts, and click Next. 
-
-	![Picture 914](Static/Lab_4A_image11.jpeg) 
-
-6. You should now see the data from the source tabulated. Click Transform data to configure the datatypes and formats for the data you ingest. 
-
-	![Picture 916](Static/Lab_4A_image12.jpeg) 
-
-7. You will notice that the column heading has appeared in the first row of the data. To correct this, click Transform and Use first row as headers. 
-
-	![Picture 1007](Static/Lab_4A_image13.jpeg) 
+7. You will notice that the column heading has appeared in the first row of the data. To correct this, click **Transform** and **Use first row as headers.**
 
 8. Because we have ingested data from a Text/CSV source, all columns have been defaulted to a 'Text' Data Type. To successfully ingest and model the data, we can set the datatype for non-text columns. 
 
@@ -205,118 +185,55 @@ To change the datatype, click the ABC icon within the column heading. Update the
 | CreatedOn| Date |
 | Income| Currency |
 
+9. In the 'Name' field on the right-hand pane, name your data source **Contacts** if it is not already. Hit Next. Click Save. 
 
-![Picture 1013](Static/Lab_4A_image14.jpeg)
-
-
-9. In the 'Name' field on the right-hand pane, rename your data source from Query to Contacts and hit Next. Click Save. 
-
-  
-	![Picture 3](Static/Lab_4A_picture3.png)
-
-Congratulations! - You have now successfully created your first data source with a data set! 
-
+Congratulations. You have now successfully created your first data source with a data set! 
  
- 
-
-Note: Column names can only contain letters, numbers, and underscores. They cannot contain a space and must begin with a letter. If you have data where column name(s) have a space or do not begin with a letter you will want to fix that either within Power Query or before the data is brought into Customer Insights. 
-
- 
-
-As we talked about in the session, a data source can contain more than one data set to help group data sets that have a relationship together. In this case because we have two data sets from the eCommerce site, we will group them into the same data source. 
-
- 
-
-While you are still in the Power Query screen for the eCommerce : Contacts data set let's click the Get Data button in the ribbon bar to add another data set to this same eCommerce data source. 
-
- 
-![Picture 4](Static/Lab_4A_picture4.png)
- 
+**Note:** Column names can only contain letters, numbers, and underscores. They cannot contain a space and must begin with a letter. If you have data where column name(s) have a space or do not begin with a letter you will want to fix that either within Power Query or before the data is brought into Customer Insights. 
 
 We'll continue importing the next data set in the next task. 
 
- 
-
-  
-
-# Task 2 - Ingest Online Purchase Data 
-
- 
+## Task 2 - Ingest Online Purchase Data 
 
 In this next task, we will ingest Online Purchase data, representing purchases made via the Contoso Coffee website. If you have just completed the previous task, skip to step 4. 
 
-1. Within Customer Insights, expand Data on the left menu and click Data Sources 
-
- 
+1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
 2. You should see your eCommerce data source. Select it and click either the three vertical dots and choose Edit or click directly on the pen icon. 
 
-	![Picture 1125](Static/Lab_4A_image15.jpeg) 
+3. You should be presented with the view of the eCommerce Contacts data that you ingested in Task 1. Select **Get data.**
 
-3. You should be presented with the view of the eCommerce Contacts data that you ingested in Task 1. In the action menu, click Get Data. 
+4. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Select the Text/CSV Connector. 
 
-	![Picture 5](Static/Lab_4A_picture5.png) 
-
-4. You will be presented with a view of data source connectors that Customer Insights is able to ingest, select the Text/CSV Connector. 
-
+5. Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases. Click Next and then Create. 
  
+6. As you did in Task 1, click on **Use first row as headers** or you can click on Transform tab and click **Use first row as headers.**
 
-5. Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases, and click Next and then Create. 
-
- 
-6. As you did in Task 1, click on Use first row as headers or you can click on Transform tab and click Use first row as headers. 
-
-	![Picture 6](Static/Lab_4A_picture6.png) 
-
-	Once completed, update the datatypes for the following columns
+7. Once completed, update the datatypes for the following columns:
 
 	| Column Heading| New Data Type |
 	| - | - |
-	| PurchasedOnh| Date |
+	| PurchasedOn | Date |
 	| TotalPrice| Currency |
-    ![Picture 7](Static/Lab_4A_picture7.png) 
-7. Name your query Purchases and click Save. 
-
-	![Picture 8](Static/Lab_4A_picture8.png) 
  
-
-  
+7. Name your query **Purchases** and click Save. 
 
 ## Task 3 - Ingest Customer Data from Loyalty Scheme 
 
- 
+1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-1. Within Customer Insights, expand Data on the left menu and click Data Sources 
-
- 
-
-2. Click Add Data Source, then choose from the available methods of ingesting data. Currently, CI provides import data via various data connectors, connecting to your own data lake, or connecting to the Common Data Service. For this lab, choose Import data and click Next and name the source Loyalty, then click Next. 
-
-	![Picture 9](Static/Lab_4A_picture9.png) 
-  
+2. Click **Add Data Source** and choose **Microsoft Power Query** as the import method. Name the source Loyalty, then click Next. 
 
 3. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Take note of the connector types available, including Common Data Service. Select the Text/CSV Connector. 
 
-	![Picture 1313](Static/Lab_4A_image16.jpeg) 
-
-4. Enter the URL for the Loyalty Customer data, https://aka.ms/CI-ILT/LoyaltySchemeCustomers and click Next and click Transform data. 
-
-	![Picture 1315](Static/Lab_4A_image17.jpeg) 
+4. Enter the URL for the Loyalty Customer data, https://aka.ms/CI-ILT/LoyaltySchemeCustomers. Click Next and then click Transform data. 
 
 5. You should now see the data from the source tabulated. Here you can configure the datatypes and formats for the data you ingest. 
 
- 
+6. You will notice that the column heading has appeared in the first row of the data. To correct this, click Transform and then Use First Row as Headers or click it directly from the Home tab. 
 
-You will notice that the column heading has appeared in the first row of the data. To correct this, click Transform and then Use First Row as Headers or click it directly from the Home tab. 
 
-![Picture 1317](Static/Lab_4A_image18.jpeg) 
-
- 
-
-6. Because we have ingested data from a Text/CSV source, all columns have been defaulted to a ‘Text’ Data Type. To successfully ingest and model the data, we can set the datatype for non-text columns. 
-
- 
-To change the datatype, click the ABC icon within the column heading. Update the datatype for the columns listed below. 
+6. Update the datatype for the columns listed below. 
 
 | Column Heading| New Data Type |
 | - | - |
@@ -324,28 +241,15 @@ To change the datatype, click the ABC icon within the column heading. Update the
 | RewardPoints| Whole Number |
 | CreatedOn| Date |
 
+7. In the 'Name' field on the right-hand pane, rename your data source to **Customers** and click **Next.**
 
-![Picture 1403](Static/Lab_4A_image19.jpeg)
-
- 
-
-7. In the 'Name' field on the right-hand pane, rename your data source from Query to Customers and click Save. 
-
-![Picture 10](Static/Lab_4A_picture10.png)
-  
-
- 
+8. Click **Save.**
 
 # Task 4 - Ingest Customer Data from Point of Sale Purchases  
 
- 
+1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-1. Within Customer Insights, expand Data on the left menu and click Data Sources 
-
-
-Click Add Data Source, choose Import data and name the source PoS, then click Next 
-
-![Picture 11](Static/Lab_4A_picture11.png)
+2. Click Add Data Source, choose Import data and name the source PoS, then click Next.
 
 2. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Take note of the connector types available, including Common Data Service. Select the Text/CSV Connector. 
 
