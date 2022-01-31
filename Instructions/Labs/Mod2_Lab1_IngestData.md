@@ -7,71 +7,42 @@ lab:
 # Lab 2.1: Ingest data
 # Module 2: Ingest data into Audience insights
 
-# About the Hands-on Lab
+## About the Hands-on Lab
 
-Unlike traditional approaches for realising a 360degree view of the customer with a large amount of coding involved, Dynamics 365 Customer Insights (CI) is a finished SaaS solution which allows you to adopt an agile project management approach and deliver value in a matter of weeks. 
+Unlike traditional approaches for realising a 360 degree view of the customer with a large amount of coding involved, Dynamics 365 Customer Insights (CI) is a finished SaaS solution which allows you to adopt an agile project management approach and deliver value in a matter of weeks. 
 
 By attending this Hands-on Lab, you will learn stepby-step how to set up, configure and use Dynamics 365 Customer Insights. To bring this to life, we are looking at a typical customer analytics project for our example company, Contoso Coffee. 
 
-We will introduce the business pain points, goals and 
-
-high-priority use cases that Contoso has identified around their customer data initiative, and then realise a working prototype solution today. 
+We will introduce the business pain points, goals and high-priority use cases that Contoso has identified around their customer data initiative, and then realise a working prototype solution today. 
 
  
-# Lab Scenario: Contoso Coffeee
+## Lab Scenario: Contoso Coffeee
  
 
-![Picture 230](Static/Lab_4A_image2.jpeg)Contoso Coffee produce high-quality coffee and coffee machines, which they retail through channels including new Contoso Retail Stores in premium locations, premium food resellers and the Contoso Coffee Web 
+Contoso Coffee produce high-quality coffee and coffee machines, which they retail through channels including new Contoso Retail Stores in premium locations, premium food resellers and the Contoso Coffee Web Site. 
 
-Site. 
-
-Contoso plan to further expand their offerings with 
-
-Contoso Cafes and a new Connected Coffee Machine which can trigger refill orders and alert Contoso service about any issues. 
+Contoso plan to further expand their offerings with Contoso Cafes and a new Connected Coffee Machine which can trigger refill orders and alert Contoso service about any issues. 
 
 This new offering will help them to build direct relationship with their customers and learn more about how customers consume their products 
 
- 
-
- 
-
- 
-
 ## Business Objective 
 
-Contoso wish to own and build a meaningful, direct relationship with all consumers to deliver an exceptional, personalised customer experience through relevant communications, personalised recommendations, and services. 
-
-Increase customer attraction and retention by making customers feel valued through experiences that customers love. 
-
+Contoso wishes to own and build a meaningful, direct relationship with all consumers to deliver an exceptional, personalised customer experience through relevant communications, personalised recommendations, and services. 
  
 
 ## Challenges 
 
-Transactional Relationship 
+- **Transactional Relationship:** Their existing business model means that they lack a direct relationship with their customers. 
 
-Their existing business model means that they lack a direct relationship with their customers. 
-
-Data Silos 
-
-They are unable to deliver personalised customer experiences. 
-
-  
+- **Data Silos:** They are unable to deliver personalised customer experiences. 
 
 ## Existing Data Landscape 
 
-Fractured Customer Data 
+- **Fractured Customer Data:** With multiple systems, Contoso has multiple records for the same person. This causes a disjointed experience to the customer who expects to be treated as one person regardless of the channel they are transacting upon. 
 
-![Picture 288](Static/Lab_4A_image3.jpeg)With multiple systems, Contoso has multiple records for the same person. This causes a disjointed experience to the customer who expects to be treated as one person regardless of the channel they are transacting upon. 
+- **Multiple Platforms:** The architecture at Contoso has evolved through acquisition and legacy systems meaning that data can reside in not only different systems, but different platforms across multiple clouds and on premise. 
 
-Multiple Platforms 
-
-The architecture at Contoso has evolved through acquisition and legacy systems meaning that data can reside in not only different systems, but different platforms across multiple clouds and on premise. 
-
-Non-Customer Data 
-
-Contoso are drawing correlations between noncustomer data and the impact it has on customer experiences, including data from third parties such as weather data. 
-
- 
+- **Non-Customer Data:** Contoso are drawing correlations between noncustomer data and the impact it has on customer experiences, including data from third parties such as weather data. 
 
 ## Contoso Coffee Customer Insights Project 
 
@@ -86,8 +57,6 @@ Contoso management is tasking IT and Line of Business teams with the following:
 - Deliver a Contoso Coffee Greeter App (through PowerApps), to enable in store retail staff to deliver personalised service and recommendations. 
 
 - Automate various business processes like email alert when customers churn rate surges using Power Automate. 
-
- 
 
 ## Contoso Coffee Customer Insights Project 
 
@@ -108,78 +77,34 @@ You have been selected as the project manager for the implementation of Dynamics
 	- Dynamics 365 CRM (Will be done in the Dynamics module labs) 
 
 	- Contoso Hotel data (Optional and will be done in the Advanced module lab) 
-
  
-
 3. Configure and realise a unified customer profile from ingested data 
-
- 
 
 4. Configure business and customers measures in Customer Insights to identify customers with higher than average spend in store and online. 
 
- 
-
 5. Build sample customer segments for Marketers to deliver personalised and targeted marketing communications 
-
- 
 
 6. Configure Customer Insights contact cards and embed into Dynamics 365 to empower Contoso Customer Service Advisors 
 
- 
-
 7. Create Power BI dashboard for Store Managers 
-
- 
 
 8. Create Greeter App with PowerApps for Contoso Coffee retail staff, empowering them to deliver personalised service 
 
- 
-
 9. Use Microsoft Power Automate to capture Customer check ins at Contoso retail stores and deliver personalised recommendations to Contoso Retail staff 
 
- 
-
 10. Demo Customer Insights prototype to group of pilot users and gather feedback 
-
- 
-
- 
 
 # Module Introduction
 
 ## Lab pre-requisites: 
 
-Before you can start this exercise, you must have completed Lab 3 to setup your environment. 
+Before you can start this exercise, you must have completed Module 1, Lab 1 to set up your environment.
 
- 
-
-## Data Ingestion & Unification 
+## Data Ingestion & Data Unification.
 
 As Project Manager for Contoso Retail, you will create a unified customer profile by ingesting key sources of customers data and following the Map, Match and Merge process. 
 
-## Creating Relationships 
-
-You will create different kinds of relationships to help join the different datasets together which help support other areas of Customer Insights which use these relationships to traverse the data sets. 
-
-## Measure Calculation 
-
-You will calculate previously unobtainable key Business and Customer KPIs including 
-
-Lifetime Spend, Club Points Balance, Average in Store and Average Online Purchase values. 
-
-## Objectives 
-
-- Ingest siloed data sources 
-
-- Follow Map, Match and Merge to create a Unified Profile 
-
-- Create the required Relationships between data sets 
-
-- Create the Measures (KPIs) we want to track 
-
- 
-
- 
+In this lab, we will **ingest data.** In the next lab, we will **unify the data.**
 
 # Approximate Time to Complete -  90mins 
 
@@ -187,13 +112,8 @@ Lifetime Spend, Club Points Balance, Average in Store and Average Online Purchas
 
 In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights Hub. 
 
-1. Sign-into Customer Insights at https://home.ci.ai.dynamics.com 
-
- 
-
+1. Sign-into Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
 2. In the Environment selector in the top right-hand corner, select the Demo Environment 
-
-	![Picture 1](Static/Lab_4A_picture1.png)
 
 3. On the Home Page, note how the key Insights are highlighted: 
 
