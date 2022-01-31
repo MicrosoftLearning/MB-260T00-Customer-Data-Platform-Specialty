@@ -249,29 +249,15 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 
 1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-2. Click Add Data Source, choose Import data and name the source PoS, then click Next.
+2. Click Add Data Source, choose **Microsoft Power Query** and name the source PoS, then click **Next.**
 
-2. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Take note of the connector types available, including Common Data Service. Select the Text/CSV Connector. 
+2. Select the Text/CSV Connector. 
 
-![Picture 1455](Static/Lab_4A_image20.jpeg) 
+3. Enter the URL for the Point of Sale Purchases, https://aka.ms/CI-ILT/POSPurchases. Click **Next** and then click **Transform data.**
 
-3. Enter the URL for the Point of Sale Purchases, https://aka.ms/CI-ILT/POSPurchases, and click Next and click Transform data 
+4. Change the first row to the header row by clicking **Use First Row as Headers** from Home or click **Transform** and then **Use First Row as Headers.**
 
-	![Picture 12](Static/Lab_4A_picture12.png)
-
-4. You should now see the data from the source tabulated. Here you can configure the datatypes and formats for the data you ingest. 
-
- 
-
-	You will notice that the column heading has appeared in the first row of the data. To correct this, click Use First Row as Headers from Home or click Transform and then Use First Row as Headers. 
-
-	![Picture 1553](Static/Lab_4A_image21.jpeg) 
-
-5. Because we have ingested data from a Text/CSV source, all columns have been defaulted to a ‘Text’ Data Type. To successfully ingest and model the data, we can set the datatype for non-text columns. 
-
- 
-
-To change the datatype, click the ABC icon within the column heading. Update the datatype for the columns listed below. 
+5. Update the datatype for the columns listed below. 
 
 | Column Heading| New Data Type |
 | - | - |
@@ -279,62 +265,27 @@ To change the datatype, click the ABC icon within the column heading. Update the
 | TotalPrice| Currency |
 | RewardPointsAdded| WholeNumber |
 
-![Picture 13](Static/Lab_4A_picture13.png)
- 
-
-
-6. In the Name field on the right-hand pane, rename your data source from Query to Purchases and click Save. 
-
-	![Picture 14](Static/Lab_4A_picture14.png)
-
- 
-
+6. In the Name field on the right-hand pane, rename your data source to **Purchases**. Click **Next** and then click **Save.** 
 
 # Task 5 - Ingest Customer Data from Website Reviews 
 
- 
+1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-1. Within Customer Insights, expand Data on the left menu and click Data Sources 
+2. Click Add Data Source. Choose **Microsoft Power Query** and name the source **Website**, then click Next. 
 
- 
+3. Select the Text/CSV Connector. 
 
-2. Click Add Data Source, choose Import data and name the source Website, then click Next. 
+5. Enter the URL for the Website Reviews, https://aka.ms/CI-ILT/WebReviews. Click **Next** and then click **Transform data.**
 
-	![Picture 15](Static/Lab_4A_picture15.png)
- 
 
-3. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Take note of the connector types available, including Common Data Service. Select the Text/CSV Connector. 
+5. Click **Use First Row as Headers** from Home or click **Transform** and then **Use First Row as Headers.**
 
-	![Picture 1641](Static/Lab_4A_image22.jpeg) 
-
- 
-
-4. Enter the URL for the Website Reviews, https://aka.ms/CI-ILT/WebReviews, click Next and then click Transform data. 
-
-	![Picture 16](Static/Lab_4A_picture16.png)
- 
-
-5. You should now see the data from the source tabulated. Here you can configure the datatypes and formats for the data you ingest. 
-
- 
-
-You will notice that the column heading has appeared in the first row of the data. To correct this, click Use First Row as Headers from Home or click Transform and then Use First Row as Headers. 
-
-![Picture 1730](Static/Lab_4A_image23.jpeg) 
-
-6. Because we have ingested data from a Text/CSV source, all columns have been defaulted to a ‘Text’ Data Type. To successfully ingest and model the data, we can set the datatype for non-text columns. 
-
-To change the datatype, click the ABC icon within the column heading. Update the datatype for the columns listed below. 
+6. Update the datatype for the columns listed below. 
 
 | Column Heading| New Data Type |
 | - | - |
 | ReviewRating| Whole Number |
 | ReviewDate| Date |
 
-![Picture 17](Static/Lab_4A_picture17.png)
+7. In the Name field on the right-hand pane, rename your data source to **Reviews**. Click **Next** and then click **Save.**
 
-
-
-7. In the Name field on the right-hand pane, rename your data source from Query to Reviews and click Save. 
-
-	![Picture 18](Static/Lab_4A_picture18.png)
