@@ -1,4 +1,11 @@
-# Module Introduction
+---
+lab:
+    title: 'Lab 4.2: Create segments'
+    module: 'Module 4: Work with Audience insights'
+---
+
+# Lab 4.2: Create segments
+# Module 4: Work with Audience insights
 
 ## Segmentation 
 
