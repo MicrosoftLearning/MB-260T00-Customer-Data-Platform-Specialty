@@ -1,4 +1,11 @@
-# Exercise 3 - Creating Relationships and Measures
+---
+lab:
+    title: 'Lab 4.1: Relationships'
+    module: 'Module 4: Work with Dynamics 365 Audience insights'
+---
+
+# Lab 4.1: Relationships
+# Module 4: Work with Dynamics 365 Audience insights
 
 Overview of Relationships & Measures 
 
