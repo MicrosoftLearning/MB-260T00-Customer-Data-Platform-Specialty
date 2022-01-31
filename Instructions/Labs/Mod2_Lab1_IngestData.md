@@ -98,7 +98,7 @@ You have been selected as the project manager for the implementation of Dynamics
 
 ## Lab pre-requisites: 
 
-Before you can start this exercise, you must have completed Module 1, Lab 1 to set up your environment.
+Before you can start this exercise, you must have completed **Lab 1.1** to set up your environment.
 
 ## Data Ingestion & Data Unification.
 
@@ -113,69 +113,25 @@ In this lab, we will **ingest data.** In the next lab, we will **unify the data.
 In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights Hub. 
 
 1. Sign-into Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
-2. In the Environment selector in the top right-hand corner, select the Demo Environment 
-
+2. In the Environment selector in the top right-hand corner, select the **Retail Demo environment.**
 3. On the Home Page, note how the key Insights are highlighted: 
-
- 
-
-	- KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score. 
-
-		![Picture 544](Static/Lab_4A_image4.jpeg) 
+	- KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score
 
 - Audience Enrichment pulled in from Microsoft proprietary data (including Microsoft Bing). Enrich Customer Profiles and Audience segments to unlock affinities for brands and interest categories that may be like your customers, by matching demographic data. 
 
-	![Picture 606](Static/Lab_4A_image5.jpeg) 
-
 - Segments - customers grouped into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can target promotional campaigns, sales activities, and customer support actions to achieve your business goals. 
-
-	![Picture 608](Static/Lab_4A_image6.jpeg) 
-
-- Check this out: links to Customer Insights documentation and help on core topics such as data ingestion, Map, Match and Merge and Segmentation 
-
-	![Picture 610](Static/Lab_4A_image7.jpeg) 
 
 4. Explore the left-hand menu options to familiarise yourself with the navigation. 
 
- 
+- **Home**: Home Page 
+- **Customers**: View cards for unified Customer Profiles 
+- **Segments**: Define Segments: Cohorts of Customers based on similar demographic, transactional or behavioural attributes. Use these for targeted marketing, utilising previously siloed data. 
+- **Measures**: Define key Business and Customer KPIs, such as Customer Lifetime Value, Average Purchase Value and Frequency, CSAT and identify high-value customers. 
+- **Intelligence**: Here you can leverage the existing Out of the Box (OOB) models or add custom Azure machine learning models to make predictions with your unified customer data.
+- **Data**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
+- **Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data from the Microsoft Graph. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers. 
+- **Admin**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
 
-**Home**: Home Page 
-
- 
-
-**Customers**: View cards for unified Customer Profiles 
-
- 
-
-**Segments**: Define Segments: Cohorts of Customers based on similar demographic, transactional or behavioural attributes. Use these for targeted marketing, utilising previously siloed data. 
-
- 
-
-**Measures**: Define key Business and Customer KPIs. 
-
-Such as Customer Lifetime Value, Average Purchase Value and Frequency, CSAT and identify high-value customers. 
-
- 
-
-**Intelligence**: Here you can leverage the existing Out of the Box (OOB) models or add custom Azure machine learning models to make predictions with your unified customer data 
-
- 
-
-**Data**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
-
- 
-
-**Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data from the Microsoft Graph. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers. 
-
- 
-
-**Admin**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
-
- 
-
- 
-
- 
 # Exercise 1 - Data Ingestion
 
 In this lab you will become familiar with ingesting data from multiple sources. As Project Manager for Contoso Retail, you have already identified that key sources of data include eCommerce Customers, Online Purchases, in-store Point of Sales Purchases, data from Contoso Retail Loyalty Card scheme, Subscription data, Contoso Hotel data and Contacts from your Dynamics 365 CRM. 
