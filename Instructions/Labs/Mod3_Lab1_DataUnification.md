@@ -1,4 +1,11 @@
-# Exercise 2 - Data Unification
+---
+lab:
+    title: 'Lab 3.1: Unify the data'
+    module: 'Module 3: Create a unified customer profile in Dynamics 365 Audience insights'
+---
+
+# Lab 3.1: Unify the data
+# Module 3: Create a unified customer profile in Dynamics 365 Audience insights
 
 Having ingested the raw data from your data sources into entities you will now begin the Map, Match, Merge process to create a single Unified Customer Profile by merging data from each customer profile source. 
 
