@@ -1,8 +1,11 @@
-## Exercise 2 - Customer Search
+---
+lab:
+    title: 'Lab 4.3: Search for customers'
+    module: 'Module 4: Work with Audience insights'
+---
 
-In Lab 4A we completed the **Map -> Match -> Merge** process to result in a unified customer profile. 
-
- 
+# Lab 4.3: Search for customers
+# Module 4: Work with Audience insights
 
 In this lab we will setup Search and Filter criteria to enable Customer Insights users to search for unified customer profiles so that you can quickly pull information on a specific customer or group of customers. 
 
