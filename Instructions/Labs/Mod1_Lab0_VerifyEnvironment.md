@@ -56,7 +56,9 @@ Now that we have setup our Admin user, Power Apps license and Dynamics 365 Marke
 
 6. Select **Individual consumers (B-to-C)** on the **Choose your business** page.
 
-7. Your trial will launch and you'll arrive on the Audience insights homepage. Click on the **Start trial** button in the header.
+7. Your trial will launch and you'll arrive on the Audience insights homepage. In the Industry dropdown, select **Retail.** This will load retail demo data into the demo environment.
+
+9. Click on the **Start trial** button in the header.
 
 8. Next you will create the environment. We suggest you name it **Your Name** CI ILT Lab. Once you enter the name and select the region you can click **Review and finish** and then **Create.**
 
