@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 6.1: Extend with the Power Platform'
+    title: 'Lab 6.2: Extend with the Power Platform'
     module: 'Module 6: Manage external connections with Dynamics 365 Customer Data Platform'
 ---
 
