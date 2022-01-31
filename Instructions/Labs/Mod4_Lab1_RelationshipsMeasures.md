@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Lab 4.1: Define measures'
+    title: 'Lab 4.1: Define relationships & measures'
     module: 'Module 4: Work with Dynamics 365 Audience insights'
 ---
 
-# Lab 4.1: Define measures
+# Lab 4.1: Define relationships & measures
 # Module 4: Work with Dynamics 365 Audience insights
 
 Overview of Relationships & Measures 
