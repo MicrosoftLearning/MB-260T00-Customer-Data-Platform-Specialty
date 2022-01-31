@@ -1,4 +1,12 @@
-# Module Introduction
+---
+lab:
+    title: 'Lab 6.1: Extend with the Power Platform'
+    module: 'Module 6: Manage external connections with Dynamics 365 Customer Data Platform'
+---
+
+# Lab 6.1: Extend with the Power Platform
+# Module 6: Manage external connections with Dynamics 365 Customer Data Platform
+
 Having successfully ingested Contoso Coffee's data sources and created a Unified Customer Profile and calculated key measures, you are now able to leverage the insight you have generated to empower different personas within Contoso Cofee over different platforms. 
 
 ## Power BI Extensibility 
