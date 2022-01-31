@@ -1,3 +1,12 @@
+---
+lab:
+    title: 'Lab 2.1: Ingest data'
+    module: 'Module 2: Ingest data into Audience insights'
+---
+
+# Lab 2.1: Ingest data
+# Module 2: Ingest data into Audience insights
+
 # About the Hands-on Lab
 
 Unlike traditional approaches for realising a 360degree view of the customer with a large amount of coding involved, Dynamics 365 Customer Insights (CI) is a finished SaaS solution which allows you to adopt an agile project management approach and deliver value in a matter of weeks. 
