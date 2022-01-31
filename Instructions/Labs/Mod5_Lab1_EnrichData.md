@@ -1,4 +1,11 @@
-### Exercise 4 - Enriching the Data
+---
+lab:
+    title: 'Lab 5.1: Enrich data'
+    module: 'Module 5: Enrich data and predictions with Audience insights'
+---
+
+# Lab 5.1: Enrich data
+# Module 5: Enrich data and predictions with Audience insights
 
 When it comes to enriching your data, you will need to decide on the Brands and Categories that apply to your business. You will be able to find many of the relevant brands and categories in the list from the Microsoft Graph to choose from. In our case we will look for specific coffee companies for our brands, and beverage related categories to enrich our data with. 
 
