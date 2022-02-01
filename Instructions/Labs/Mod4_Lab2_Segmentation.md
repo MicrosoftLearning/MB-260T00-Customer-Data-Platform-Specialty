@@ -12,63 +12,8 @@ lab:
 You will create marketing segments to promote Contoso Coffee's new Cold Brew Coffee offering as well as to identify customers with a higher-than-average online spend whom Contoso wish to target with their new subscription and connected coffee machine services. 
 
 These segments will allow Contoso Coffee Marketing to deliver personalised, targeted marketing journeys for upcoming product launch. 
-
- 
-
-## Customer Search and Cards 
-
-You will use the Customers section of Customer Insights to review the unified customer profiles. After defining the fields to be indexed you will search for customers and will review the information shown about each unified customer profile. 
-
- 
-
-## Activities 
-
-Activities provide a way for you to track very specific"tasks" that people are performing. 
-
- 
-
-## Data Enrichment 
-
-Enrich your customer profiles with brands and interest affinities with the help of Microsoft Graph or any third-party application. 
-
- 
-
-## Objectives 
-
-- Generate Segments for use by Marketing 
-
-- Setup search and indexing for customers 
-
-- Configure Activities within Customer Insights 
-
-- Setup Data Enrichment 
-
- 
-
-## Prerequisites 
-
-To complete the Customer Insights lab, you will need the following 
-
-- Dynamics 365 Marketing Instance or Trial 
-
-- Access to Power Apps or a Power Apps Trial 
-
-- Access to Power Automate or a Power Automate Trial 
-
-- Access to Power BI or a Power BI Trial 
-
-- Microsoft Azure Trial 
-
-- Customer Insights Trial 
-
-If you do not have access to the above, you can follow Lab 3 to get setup. 
-
- 
-
-## Approximate Time to Complete - 90 mins 
-
-    
-## Exercise 1 - Segmentation
+  
+## Segmentation
 
 Segments enable you to group your customers into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can achieve more targeted actions such as promotional campaigns, sales activities, or customer support actions to achieve desired business goals. You can define complex filters around the Customer Profile entity and its graph of related entities. Each segment, after processing, outputs a set of customer entity records that you can export and take actions upon. 
 
@@ -78,202 +23,96 @@ Using Customer Insights, Segments can be exported to Dynamics 365 Marketing or s
 
 Customer Insights also provides insights over the created segments. Using Segment insights, you can find what differentiates two segments or what they have in common. Segment overlap shows which customers are common among the segments. Segment differentiators helps you find what differentiates a segment from the rest of your customers or the other segments. With both of these insights you can compare the segments against attributes and measures. 
 
-In this lab you will segment your unified customer profiles, to uncover cohorts of customers with similar attributes. There are two ways to create segments. First you can create them manually using the New -> Blank Segment button on the top left of the screen after clicking on Segments in the left-hand menu. However, there is a new way using one of the Create from options on that page. We will do it all the ways. At the end, we will review each segment and apply insights over them to discover additional information. 
+In this lab you will segment your unified customer profiles, to uncover cohorts of customers with similar attributes. There are two ways to create segments. First you can create them manually using the New > Blank Segment button on the top left of the screen after clicking on Segments in the left-hand menu. However, there is a new way using one of the Create from options on that page. We will do it all the ways. At the end, we will review each segment and apply insights over them to discover additional information. 
 
- 
-
-  
 
 ### Task 1 - Segment using Profiles: Customers from California 
 
- 
+Let's create a segment called Customers from California quickly using the profiles. 
 
-1. Let's create a segment called Customers from California quickly using the profiles. 
+2. Click on **Segments** in the left menu.
 
- 
+3. Click the **+ New** dropdown and select **Create From > Profiles.**
 
-2. Click on Segments in the left menu 
+4. Select the **Field > State** and **Value > California.** 
 
- 
+5. Click **Review.** 
 
-3. Click the New dropdown and select Create From -> Profiles 
-![Picture 1](Static/Lab_4B_Picture1.png)
- 
+6. Name your segment "Customers from California" and set the output entity name to "CustomersFromCalifornia".
 
-4. Select the Field -> State and Value -> California 
-
- 
-
-5. Click Review 
-
- 
-
-6. Name your segment Customers From California and set the output entity name to 
-
-CustomersFromCalifornia 
-
- ![Picture 376](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image1.jpeg) 
-
-7. Click Save 
+7. Click **Save.** 
 
 ### Task 2 - Segment using Measures: High Value Online Customers 
 
- 
-
 Contoso Coffee Marketing wants to run a new promotion to convert customers to subscription model. Marketing have identified that they wish to target brew-at-home customers with a higher than average online purchase value to do so. We will create this segment using the Quick Create. 
 
-1. Click on Segments in the left menu 
+1. Click on **Segments** in the left menu.
 
- 
+2. Click the **+ New** dropdown and select **Create From > Measures.**
 
-2. Click the New dropdown and select Create From -> Measures 
+3. Select the **Average Web Purchase ($)** attribute. 
 
-	![Picture 2](Static/Lab_4B_Picture2.png)
- 
+4. Set the operator to **greater than.**
 
-3. Select the Average Web Purchase ($) attribute 
+6. Set the value to **138**. The graph should populate with Average Web Purchase ($) by percentile. 
 
- 
+6. Click **Review.** 
 
-4. Set the operator to Greater Than 
+7. Name your segment "High Value Online Customers" and set the output entity name to "HighValueOnlineCustomers".
 
- 
-
-5. Set the value to 138. You should have a new quick segment screen like this: 
-
-	![Picture 3](Static/Lab_4B_Picture3.png)
- 
-
-6. Click Review 
-
- 
-
-7. Name your segment High Value Online Customers and set the output entity name to HighValueOnlineCustomers 
-
-     ![Picture 483](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image2.jpeg) 
-
-8. Click Save 
-
- 
-
- 
-
-  
+8. Click **Save.** 
 
 ### Task 3 - Segment from scratch: Summer Promo 
 
- 
-
 Contoso Coffee Marketing want to run a new Summer Promotion targeting millennials with a higher than average in-store purchase with their newly launched Cold Brew Coffee. We will create this segment manually. 
 
-1. Click on Segments in the left menu and Click on + New and select Blank segment. 
+1. Click on **Segments** in the left menu. Click on **+ New** and select **Build your own.**
 
+2. Next to "Untitled segment," select **Edit name** and change the name to "Summer Promotion." Change the output entity name to "SummerPromo" and click **Done.**
 
+3. Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing "Average Store Purchase." Select **Average Store Purchase ($)** from the dropdown.
 
-2. Set Type to Dynamic, Name to Summer Promotion, Output entity name to 
+4. Set the condition to **is greater than or equal to 113.** (Note: 113 is the average in-store purchase we calculated earlier.)
 
-SummerPromo and click Next 
+5. Click **+ Add condition**. An **and** condition will be added.
 
+6. In the "Attribute name" box, start typing "dateOfBirth" and select **dateOfBirth** from the dropdown menu.
 
+7. Fill out the rest of the condition as **is on or after 1/1/1981.**
 
-3. Select Customer_Measure : Customer Insights in the Group 1: Define filter 
+7. Add another condition with an **and** qualifier.
 
+8. Set this condition as **DateOfBirth is on or before 12/31/1996.**
 
-
-4. Set the fields to Average Store Purchase ($), greater than or equal to and 113 
-
-   ![Picture 597](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image3.jpeg) 
-
-   Note: 113 is the average In-store purchase we calculated earlier. 
-
-
-
-5. Click + AND then add Customer : CustomerInsights, DateOfBirth, greater than or equal to 1/1/1981 
-
-
-
-6. Click + AND then set to DateOfBirth less than or equal to 12/31/1996 
-
-
-
-7. Click + And then select All Records 
-
-   ![Picture 599](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image4.jpeg) 
-
-8. Click Save and then click Activate 
-
- 
-
- 
+7. Click **Run.**
 
 ### Task 4 - Review Segments 
 
- 
+1. Wait for all your segments to successfully run, then navigate to the Customer Insights Home Page. You should see your segments displayed.
 
-1. Wait for all your segments to successfully run then Navigate to the Customer Insights Home Page. You should see your segments displayed. Note: Your numbers may be slightly different if the underlying data has changed since the creation of this document. 
+2. Click on one of your segments. You should be presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This display increases and decreases in the number of segment members as data changes over time and the segment is rerun. 
 
-	![Picture 4](Static/Lab_4B_Picture4.png)
- 
+3. Now that you have created your segments, you are ready to start acting upon your data. You can select the segment and click Download on the top for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the PowerPlatform, Dynamics 365 Marketing or external applications. 
 
- 
-
-2. Click on one of your segments. You should see that you’re presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This will display increases and decreases in the number of segment members as data changes over time and the segment is rerun. 
-
-	![Picture 5](Static/Lab_4B_Picture5.png) 
-
- 
-
-3. Now that you have created your segments you are ready to start acting upon your data. You can select the segment and click Download on the top for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the PowerPlatform, Dynamics 365 Marketing or external applications. 
-
- 
-
-To do this you would go under Admin -> Export Destinations in the left side menu. Here you can setup and Export destination for Dynamics 365 for Sales, Dynamics 365 for Marketing, Azure Blob Storage and several business applications or tools allowing you to use the segments to execute a Marketing Campaign. We will work through this in a different module. 
-
- 
-
-    
-
+To do this you would go under Admin > Export Destinations in the left side menu. Here you can setup and Export destination for Dynamics 365 for Sales, Dynamics 365 for Marketing, Azure Blob Storage and several business applications or tools allowing you to use the segments to execute a Marketing Campaign. We will work through this in a different module. 
 
 ### Task 5 - Apply Segment Insights 
 
- 
-
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
 
-1. Click on Segments in the left menu, click on Insights tab and click on New on the top. 
+1. Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the top. 
 
- 
+2. You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators.**
 
-2. You will now see two options as below: 
+4. Choose **High Value Online Customers** as primary segment. Hit **Next**, choose **Customers from California** as another segment, and then hit **Next.** 
 
-	![Picture 6](Static/Lab_4B_Picture6.png) 
- 
+5. Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. Deselect all other customer fields and measure fields.
 
-3. Let's create using Differentiators first to see what distinguishes both of these segments. Click on Differentiators. 
+6. Click **Next** and name your insight "High Value Online vs Customers from California" with an Output entity name of HighValueOnlinevsCustomersfromCalifornia. Click **Save.** 
 
- 
-
-4. Choose High Value Online Customers as primary segment and hit Next and choose Customers from California as another segment and hit Next. 
-
- 
-
-5. Now choose Reward points under Attributes and LifetimeSpend under Measures to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. 
-
- 
-
-6. Click Next and name your insight High Value Online vs Customers from California with an Output entity name of HighValueOnlinevsCustomersfromCalifornia and click Save. 
-
- 
-
-  
-
-7. After the run is successful, you can click on the created insight to see a screen like below. Click on the Attributes or Measures tabs to see how the segments differ from each other with respect to them. Observe the Difference score which signifies the degree of difference. The higher the score the more different they are. You may need to refresh the browser window to see the results. 
-
-	![Picture 7](Static/Lab_4B_Picture7.png) 
+7. After the run is successful, you can click on the created insight. Click on the Attributes or Measures tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score the more different they are. You may need to refresh the browser window to see the results. 
 
 8. Click on each measure and attribute to see deeper insights like below 
-
-    ![Picture 8](Static/Lab_4B_Picture8.png) 
 
 9. We have successfully created segment insights using Differentiators. Now let’s create using Overlap 
 
