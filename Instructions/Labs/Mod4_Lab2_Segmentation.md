@@ -112,69 +112,45 @@ Let's try to find out common customers that belong to both Customers from Califo
 
 7. After the run is successful, you can click on the created insight. Click on the Attributes or Measures tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score the more different they are. You may need to refresh the browser window to see the results. 
 
-8. Click on each measure and attribute to see deeper insights like below 
+8. Click on each measure and attribute to see deeper insights.
 
-9. We have successfully created segment insights using Differentiators. Now let’s create using Overlap 
+9. We have successfully created segment insights using **Differentiators**. Now let’s create an isnight using **Overlap.**
 
-10. Make sure you are still in Insights tab and click on New on the top left and now choose Overlap. 
+10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap.**
 
-11. Select both High Value Online Customers and Customers from California segments to find out their shared customers. 
+11. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
 
-12. Click Next. 
+12. Click **Next.**
 
-13. Here as an optional step, you can also choose attributes to compare the segments just as we did with the Differentiators. You can simply hit Next without choosing anything. 
+13. Here, as an optional step, you can also choose attributes to compare the segments just as we did with the Differentiators. You can simply hit Next without choosing anything. 
 
-14. Name your insight as High Value Online Overlapped with California Customers and set the Output entity name as HighValueOnlineOverlappedwithCaliforniaCustomers then click Save. 
+14. Name your insight "High Value Online Overlapped with California Customers" and set the Output entity name as "HighValueOnlineOverlappedwithCaliforniaCustomers." Then click **Save.**
 
-15. After the run is successful, you can click on the created insight to see the screen like below detailing the total and percentage of shared customers between the two segments. 
+15. After the run is successful, you can click on the created insight to see the screen detailing the total and percentage of shared customers between the two segments. 
 
-     ![Picture 928](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image5.jpeg) 
-
-  
 
 ### Task 6 - Segment Expansion 
-
- 
-
 Segment Expansion can be used to find similar customers to your segment customer base using Artificial Intelligence. 
 
-Earlier we created a segment called Summer Promotion which has millennial customers with higher than average instore purchase. Now, let us expand that segment and find customers that are similar to them for us to market our newly launched Cold Brew Coffee. 
+Earlier we created a segment called **Summer Promotion**, which contains millennial customers with higher than average in-store purchase. Now, let us expand that segment and find customers that are similar to them for us to market our newly launched Cold Brew Coffee. 
 
-1. Click on Segments on the left menu and choose the Summer Promotion segment. It becomes our source segment. 
+1. Click on **Segments** in the left menu and choose the **Summer Promotion** segment. This will become our source segment. 
 
-2. Click on the three dots and choose Find similar customers. 
+2. Click on the three vertical dots and choose **Find similar customers.**
 
-	![Picture 9](Static/Lab_4B_Picture9.png) 
+3. Name your segment "SummerPromoExpansion." 
 
-3. Name your segment Summer Promotion Expansion 
+4. Click on **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Then click **Apply.**  
 
-4. Click on Add fields in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average instore purchase and location. So, we will choose PostCode and AverageStorePurchase and click Apply. 
+5. Next you must choose who to consider: either all customers except from source segment, or customers from a different segment. If different segment is selected, then we must choose which segment it is. For now, select All customers except source segment. 
 
-	![Picture 10](Static/Lab_4B_Picture10.png) 
+6. Now the maximum number of customers to include must be selected. By default, 20% of the customers is selected which can be altered. Let's stick with 20%. 
 
-5. Next you must choose who to consider, either all customers except from source segment or customers from a different segment. If different segment is selected, then we must choose which segment it is. For now, select All customers except source segment. 
+7. If you like to include members from source segment as well then check the note at the bottom. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
 
-6. Now the maximum number of customers to include must be selected. By default, 20% of the customers is selected which can be altered. Let us stick with 20%. 
+8. Hit **Run.** 
 
-7. If you like to include members from source segment as well then check the note at the bottom else leave it unchecked. 
-
-8. Hit Run. 
-
-	![Picture 11](Static/Lab_4B_Picture11.png) 
- 
-
- 
-
-9. After the run, you can see a new segment being created and click on it to find the similarity scores which range from 0.55 to 1(0.85-1 -> Very similar, 0.7-0.85 -> Similar, 0.55-0.7 -> Somewhat similar) and check the similar customer records. 
-
-	![Picture 12](Static/Lab_4B_Picture12.png) 
-	![Picture 13](Static/Lab_4B_Picture13.png)
-
- 
-
- 
-
-    
+9. After the run, you can see a new segment being created. Click on the segment to find the similarity scores, which range from 0.55 to 1(0.85-1 -> Very similar, 0.7-0.85 -> Similar, 0.55-0.7 -> Somewhat similar). You can also explore the similar customer records.
 
 ## Optional - Suggested Segments 
 
