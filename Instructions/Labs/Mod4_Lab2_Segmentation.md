@@ -153,105 +153,51 @@ Earlier we created a segment called **Summer Promotion**, which contains millenn
 9. After the run, you can see a new segment being created. Click on the segment to find the similarity scores, which range from 0.55 to 1(0.85-1 -> Very similar, 0.7-0.85 -> Similar, 0.55-0.7 -> Somewhat similar). You can also explore the similar customer records.
 
 ## Optional - Suggested Segments 
-
- 
-
-Use Suggested Segments to discover interesting segments based on a customer attribute or measure of interest 
+Use Suggested Segments to discover interesting segments based on a customer attribute or measure of interest.
 
 ### Discover interesting segments based on a numeric customer attribute or measure of interest  
 
- 
+1. Under the Segments section, click on the **Suggestions (preview)** tab. 
 
-1. Under the Segments section, click on the Suggestions (preview) tab. 
+2. Click on **Get Suggestions** to begin the configuration experience. 
 
-	![Picture 14](Static/Lab_4B_Picture14.png) 
- 
+3. We will choose **Improve a measure/metric.** 
 
-2. Click on Get Suggestions to begin the configuration experience. 
+4. Next, you need to select the target attribute (i.e., a customer attribute or measure of interest), for which you want to discover segment suggestions. We will select the previously created measure **LifetimeSpend** as the target attribute. 
 
- 
+5. Next, you will select the attributes that might influence the target attribute (LifetimeSpend) so that the AI model can find interesting patterns between the influencing attributes and the target attribute and suggest segments based on those patterns. We will select **Email Subscriber, Income, Loyalty Tier, Occupation and State** as the influencing attributes. 
+  **Note:** In case you do not know which attributes to select, it is advised to select many attributes so that the model can analyze, and surface segment suggestions based on the underlying patterns it uncovers. However, if you want to see how certain attributes influence "LifetimeSpend", you can choose only those as well.
 
-3. We will choose Improve a measure/metric 
+6. Click on **Run.** The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
 
- 
-
-4. Next, you need to select the target attribute i.e., a customer attribute or measure of interest, for which you want to discover segment suggestions. We will select the previously created measure LifetimeSpend as the target attribute. 
-
- 
-
-5. Next, you will select the attributes that might influence the target attribute (LifetimeSpend) so that the AI model can find interesting patterns between the influencing attributes and the target attribute and suggest segments based on those patterns. We will select Email Subscriber, Income, Loyalty Tier, Occupation and State as the influencing attributes. 
-
- 
-
-   Note: In case you do not know which attributes to select, it is advised to select many attributes so that the model can analyze, and surface segment suggestions based on the underlying patterns it uncovers. However, if you want to see how certain attributes influence "LifetimeSpend", you can choose only those as well. 
-
- 
-
-6. Click on Run. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
-
- 
-
-7. Once the model has finished running and if it is able to uncover patterns between the influencing attributes and the target attribute, segment suggestions will be displayed under the Suggestions (preview) tab. 
-
- 
-
-	![Picture 1219](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image6.jpeg) 
+7. Once the model has finished running and if it is able to uncover patterns between the influencing attributes and the target attribute, segment suggestions will be displayed under the **Suggestions (preview)** tab. 
 
     Since we've chosen a numeric attribute as the target attribute, segment suggestions include those where the average value of the chosen target attribute (LifetimeSpend) is significantly higher or lower that the average LifetimeSpend value across all customers. We will also explore a scenario where a categorical attribute (Eg - Customer Satisfaction: low/medium/high) is chosen as the target attribute in the next task. 
 
- 
-
    Each segment suggestion card denotes how the average LifetimeSpend in that segment compares to the overall average. The number of customers in the suggestion as well as the rules learned (i.e. common traits of customers in the segment) are also highlighted. 
-
-   ![Picture 1221](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image7.jpeg) 
-
+   
    E.g. - in the above suggestion, LifetimeSpend is 20% above average i.e. the customers in this segment have historically spent much more as compared to others. There are 585 members in this segment and they have Income > 97k and a high Loyalty Tier. 
 
  
 
 8. You can click on any suggestion to see more details in the side panel. We will click on the See suggestion link for the suggestion that says LifetimeSpend is 15% below average. In the side panel, you will see the following: 
 
-	![Picture 1298](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image8.jpeg) 
+- Comparison of average LifetimeSpend of customers in this segment compared to all the customers 
 
-	- Comparison of average LifetimeSpend of customers in this segment compared to all the customers 
+- Number of customers in the segment and its proportion as compared to the entire customer base 
 
-	- Number of customers in the segment and its proportion as compared to the entire customer base 
+- The attribute values i.e., the rules that the model learned based on the selected influencing attributes. 
 
-	- The attribute values i.e., the rules that the model learned based on the selected influencing attributes. 
+In this case, customers in this segment have an average LifetimeSpend of 741.89 as compared to average LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
 
- 
+ In a similar fashion, you can see details of other segment suggestions that you are interested in. 
 
-	In this case, customers in this segment have an average 
-
-	LifetimeSpend of 741.89 as compared to average 
-
-	LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
-
- 
-
-	In a similar fashion, you can see details of other segment suggestions that you are interested in. 
-
- 
-
-9. You can then save the segment by clicking on Save as segment in the side panel. Name the segment and Output entity name as follows and click on Save. 
-
-	![Picture 15](Static/Lab_4B_Picture15.png) 
-
- 
-
- 
-
+9. You can then save the segment by clicking on **Save as segment** in the side panel. Name the segment and Output entity name as follows and click on **Save.**
   
 
 10. The saved segment can then be viewed under the All segments tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by clicking on Edit in the All segments tab. 
 
-	![Picture 1371](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image9.jpeg) 
-
- 
-
 11. We have successfully found segment suggestions based on a measure of interest (LifetimeSpend). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment. 
-
- 
 
 ### Discover interesting segments based on a categorical customer attribute or measure of interest 
 
@@ -289,31 +235,18 @@ Use Suggested Segments to discover interesting segments based on a customer attr
 
 	Note: While only a few tiles are shown initially, you can click the See More link to see more suggestions that were found. 
 
-	![Picture 16](Static/Lab_4B_Picture16.png) 
-
 7. You can click on any suggestion to see segment details in the side panel. We will click on the suggestion that says 83% of customers in this suggestion have CustomerSatisfaction = low. In the side panel, you will see the following: 
 
- 
-	![Picture 1510](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image13.jpeg)
+- Comparison of percentage of customers in this segment that have CustomerSatisfaction = Low as compared to percentage of all customers that have CustomerSatisfaction = Low 
 
-	- Comparison of percentage of customers in this segment that have CustomerSatisfaction = Low as compared to percentage of all customers that have CustomerSatisfaction = Low 
+- Number of customers in the segment and its proportion as compared to the entire customer base 
 
-	- Number of customers in the segment and its proportion as compared to the entire customer base 
+- The attribute values i.e. the rules that the model learned based on the selected influencing attributes. 
 
-	- The attribute values i.e. the rules that the model learned based on the selected influencing attributes. 
+In this case, 83% of customers in this segment have CustomerSatisfaction = low as compared to 26% among all customers. There are 488 members in this segment which is 10% of the entire customer base. These customers are live in California, do not belong to the high loyalty tier, are not Teachers and do not live in Florida. This helps provide insight that 94% of customers having the above-mentioned traits have a low customer satisfaction. This information can then be used to target customers in this segment with personalized messaging and/or customer service to help improve their customer satisfaction and in turn address corresponding business goals. 
 
- 
-
-	In this case, 83% of customers in this segment have CustomerSatisfaction = low as compared to 26% among all customers. There are 488 members in this segment which is 10% of the entire customer base. These customers are live in California, do not belong to the high loyalty tier, are not Teachers and do not live in Florida. This helps provide insight that 94% of customers having the above-mentioned traits have a low customer satisfaction. This information can then be used to target customers in this segment with personalized messaging and/or customer service to help improve their customer satisfaction and in turn address corresponding business goals. 
-
- 
-
-	In a similar fashion, you can see details of other segment suggestions that you are interested in. 
-
- 
+In a similar fashion, you can see details of other segment suggestions that you are interested in. 
 
 8. You can then save the segment by clicking on Save as segment in the side panel. The segment can then be viewed under the All segments tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by clicking on Edit in the All segments tab. 
-
- 
 
 9. We have successfully found segment suggestions based on a categorical attribute of interest (CustomerSatisfaction). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment.   
