@@ -15,47 +15,21 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 - Create a quick segment using Intelligence.
 
-## Prerequisites
-
-To complete the Customer Insights in a Day course you will need the following
-
-- **Dynamics 365 Marketing** Instance or Trial
-
-- Access to **Power Apps** or a Power Apps Trial
-
-- Access to **Power Automate** or a Power Automate Trial
-
-- Access to **Power BI** or a Power BI Trial
-
-- **Customer Insights** Trial
-
-If you do not have access to the above, you can follow Lab 3 to get setup.
-
-## Approximate Time - 45 mins
-
-
-
 # Exercise 1 - Transaction Churn Model
 
 ## Task 1 - Run the OOB Transactional Churn Model
 
 1. Go to **Intelligence** > **Predictions**
 
-2. Click **Create** and click **Use model** on the **Customer Churn model** card
+2. Click **Create** and click **Use model** on the **Customer Churn model** card.
 
-	![Picture 264](Static/Lab_4C_Intelligence_image1.jpeg)
+3. Select the **Transaction** option and click **Get started**.
 
-3. Select the **Transactional** option and click **Get started**
+4. Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceTransactionChurnPrediction** then click **Next**.
 
-4. Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceTransactionChurnPrediction** then click **Next**
+5. Define the two conditions for the churn model as both **60 days** then click **Next**.
 
-5. Define the two conditions for the churn model as both **60 days** then click **Next**
-
-	![Picture 266](Static/Lab_4C_Intelligence_image2.jpeg)
-
-6. Under Purchase logs, click **Add data** and select the **Purchases : eCommerce** entity from the **Purchase history entity** list and map the fields as below, then click **Next**
-
-	![Picture 381](Static/Lab_4C_Intelligence_image3.jpeg)
+6. Under Customer transaction history, click **+ Add data** and select the **Purchases : eCommerce** entity from the **Purchase history entity** list and map the fields as below, then click **Next**
 
 	- Transaction ID: **PurchaseId**
 
@@ -65,21 +39,17 @@ If you do not have access to the above, you can follow Lab 3 to get setup.
 
 	- Unique product ID: **ProductId**
 
-7. Click **Next**
+7. Click **Next**.
 
-8. The relationship should be setup for you, and you can just click **Save**. If it is not the **Corresponding label** for the **Entity** is **ContactId**. The **Customer Entity** is **Contacts : eCommerce**
+8. The relationship should be set up for you, and you can just click **Save**. If it is not the **Corresponding label** for the **Entity** is **ContactId**. The **Customer Entity** is **Contacts : eCommerce**
 
-9. Click **Next** to move to the **Additional Data** screen, then click **Next** again as we need no setup here
+9. Click **Next** to move to the **Additional Data** screen, then click **Next** again as we need no setup here.
 
 10. On the **Data update schedule** screen select the **Monthly** update setting and click **Next**
 
 11. On the review step click **Save and run** when it completes click **Done**
 
-12. Monitor the run status, and once the run has succeeded, click on the created prediction to see the results. You can find the list of customers and their churn score under **Data** > **Entities** > **ChurnModel**
-
-	![Picture 379](Static/Lab_4C_Intelligence_image4.jpeg)
-
-	![Picture 379](Static/Lab_4C_Intelligence_image4-2.jpeg)
+12. Monitor the run status, and once the run has succeeded, click on the created prediction to see the results. You can find the list of customers and their churn score under **Data** > **Entities** > **ChurnModel**.
 
 ### Training Model Performance
 
@@ -102,8 +72,6 @@ There are many factors that are taken into account when creating your prediction
 ## Task 2 - Create a Segment of High Churn-Risk Customers
 
 1. Go to **Segments**. Select **New** and choose **Create from** > **Intelligence**
-
-	![Picture 524](Static/Lab_4C_Intelligence_image5.jpeg)
 
 2. Select the **OOBeCommerceTransactionChurnPrediction** entity:
 
