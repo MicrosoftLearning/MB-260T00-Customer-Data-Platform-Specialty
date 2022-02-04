@@ -25,26 +25,6 @@ To do this you will configure the Customer Insights Customer Card Add-In to embe
 
 - Exporting segments and orchestrating customer journey with exported segments in Dynamics 365 Marketing
 
-## Prerequisites
-
-To complete the Customer Insights in a Day course you will need the following:
-
-- **Dynamics 365 Marketing Instance** or Trial
-
-- Access to **Power Apps** or a Power Apps Trial
-
-- Access to **Power Automate** or a Power Automate Trial
-
-- Access to **Power BI** or a Power BI Trial
-
-- **Microsoft Azure** Trial
-
-- **Customer Insights** Trial
-
-If you do not have access to the above, you can follow Lab 3 to get setup.
-
-## Approximate Time:  60 mins
-
 # Exercise 1 - Ingest the Dynamics Contacts
 
 The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID from Dynamics to identify which profile data to display. In this task you will consume Customer data from Dynamics 365 into Dynamics 365 Customer Insights and Map, Match and Merge it with the existing data-set from Lab 1.
@@ -101,10 +81,10 @@ Because this is not a Power Query connector, we do not get the option to transfo
 
 ### Map
 
-1. Click **Unify** and then **Map**.
+1. Click **Data > Unify** and then **Map**.
 
-2. Under **Entities** click **Edit fields**.
-3. 
+2. Under **Entities**, click **Edit fields**.
+
 4. Epxand the **Contact (D365)** entry. We only want specific fields pulled through, so let's only check the following fields (search is your friend here as the Dynamics entity has a LOT of fields):
 
 	- address1_city
@@ -143,11 +123,9 @@ Because this is not a Power Query connector, we do not get the option to transfo
 
 1. Click the **Match** tab.
 
-2. Click **Edit** in the top right of the **Match Order** table.
+3. Click **Add Entity** in the Matched records detail table. Select **Contact : D365** and check **Include All Records** and then click **Done**.
 
-3. Click **Add Entity** and select **Contacts : D365** and check **Include All Records** and then click **Done**.
-
-4. You will see that this new addition requires a new rule. Click **Create New Rule** and set it up as follows:
+4. You will see that this new addition requires a new rule. Click **+ Add rule** and set it up as follows:
 
 	- Entity: **Contacts : eCommerce**
 
@@ -183,7 +161,7 @@ We have already ingested data from Dynamics 365 into Customer Insights. The cust
 
 ## Task 1 - Install the Customer Insights Customer Card Add-in
 
-The first step is to install the Customer Insights Customer Card Add-In, that will enable you to embed Unified Profile and Insight from Customer Insight, directly within an existing Dynamics 365 experience for Contoso Coffee Customer Service Advisors.
+The first step is to install the Customer Insights Customer Card Add-In. This add-in will enable you to embed Unified Profiles and Insights from Customer Insights directly within an existing Dynamics 365 experience for Contoso Coffee Customer Service Advisors.
 
 1. Navigate to https://make.powerapps.com and select your Dynamics 365 for Customer Service instance from the **Environment** drop down.
 
@@ -191,13 +169,13 @@ The first step is to install the Customer Insights Customer Card Add-In, that wi
 
 3. Click **Open AppSource** from the top of the page.
 
-4. On the AppSource window that opens, search **Customer Insights**. You should see **Customer Insights Customer Card Add-in** in the results, click on it. Then click **Get it now**.
+4. On the AppSource window that opens, search **Customer Insights**. You should see **Customer Insights Customer Card Add-in** in the results, click on it. Then click **Get it now**. (You may be prompted to sign in using your M365 credential.)
 
-5. Complete your details on the **One more thing...** page. Including **Name**, **email**, and **Phone Number**. Then provide your consent and click **Continue**.
+5. Complete your details on the **One more thing...** page. Provide your consent and then click **Get it now.**
 
-6. You will be taken back to the Power Apps console where you will configure the add-in. First, select your environment from the dropdown. Then check the two boxes and click the **Install** button.
+7. You will be taken back to the Power Apps console where you will configure the add-in. First, select your environment from the dropdown. Then check the two boxes and click the **Install** button.
 
-7. This will begin the installation process. You can check the status of the install on the page that opens. (You may need to refresh it for updates). If you see **Update available** in the status column click that text, then check the box and click the **Update** button.
+7. This will begin the installation process. You can check the status of the install on the page that opens. (You may need to refresh it for updates.) If you see **Update available** in the status column click that text, then check the box and click the **Update** button.
 
 8. Once installation is complete, you can close this browser tab and return to the **solutions** area on https://make.powerapps.com, where you should see the **Dynamics 365 Customer Insights Customer Card Add-In** installed.
 
