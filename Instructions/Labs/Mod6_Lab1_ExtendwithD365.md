@@ -163,7 +163,7 @@ We have already ingested data from Dynamics 365 into Customer Insights. The cust
 
 The first step is to install the Customer Insights Customer Card Add-In. This add-in will enable you to embed Unified Profiles and Insights from Customer Insights directly within an existing Dynamics 365 experience for Contoso Coffee Customer Service Advisors.
 
-1. Navigate to https://make.powerapps.com and select your Dynamics 365 for Customer Service instance from the **Environment** drop down.
+1. Navigate to https://make.powerapps.com and select your Dynamics 365 Marketing instance from the **Environment** drop down.
 
 2. Once selected, click **Solutions** on the left-hand menu.
 
@@ -185,11 +185,11 @@ The first step is to install the Customer Insights Customer Card Add-In. This ad
 
 11. Click **Login with your org credentials** and sign-in with your account used for **Customer Insights**. Note: If you don't see the login dialog you may need to "allow Pop-ups" in your browser.
 
-12. Once connected, select your Customer Insights Instance in the drop down.
+12. Once connected, select your Customer Insights instance in the drop down.
 
-13. From the drop-down for **contact id** select the attribute from your customer profile that represents the Dynamics 365 Contact Id. (**System.Customer.D365.Contacts.contactid**).
+13. From the drop-down for **contact id**, select the attribute from your customer profile that represents the Dynamics 365 Contact Id: **System.Customer.D365.Contacts.contactid**.
 
-	**Note**: There is now a field for **Dynamics 365 account id field** which we are not using, you may leave this as "please select". This will be used in the future for B2B scenarios.
+**Note**: There is now a field for **Dynamics 365 account id field** which we are not using. You may leave this as "please select". This will be used in the future for B2B scenarios.
 
 14. Click **Save Configuration**
 
@@ -197,39 +197,35 @@ The first step is to install the Customer Insights Customer Card Add-In. This ad
 
 For users to configure the Customer Insights content embedded within the Dynamics 365 form, you will need to assign them the appropriate Security Role.
 
-Next you will need to assign the **Customer Insights Customizer** role: Assign this role to the users who will customize the content to be shown on the card for the whole organization.
-
-1. Open the **Marketing app** in Dynamics 365 instance. Click the Cog ![Picture 1081](Static/Lab_5_Extend_the_Solution_with_Dynamics_365_image9.jpeg) in the top righthand corner then **Advanced Settings**. This should open Dynamics 365 classic Web App in a new tab.
+1. Open the **Marketing app** in your Dynamics 365 instance. Click the cog in the top righthand corner then **Advanced Settings**. This should open Dynamics 365 classic Web App in a new tab.
 
 2. Click the arrow next to settings and choose **Security**.
 
 3. Click **Users**.
 
-4. Select your user account (and any others that you wish to be able to view or edit Customer Insights Cards). Click **Manage Roles**.
+4. Select your user account (unless you've made changes, it will be **MOD Administrator**). Click **Manage Roles**.
 
-5. Add the **Customer Insights Card Customiser** role as shown below. And click **OK**.
+5. Add the **Customer Insights Card Customiser** role and click **OK**.
 
 ## Task 3 - Add the Customer Insights Customer Card Controls to the Contact Form
 
 We will now configure a Dynamics 365 Contact form, used by Contoso Coffee CSA's to display the embedded Cards and from Customer Insights.
 
-1. Navigate to https://make.powerapps.com/ and select your Dynamics 365 for Customer Service instance from the Environment drop down.
+1. Navigate to https://make.powerapps.com/ and select your Dynamics 365 Marketing instance from the Environment drop down.
 
 2. Click **Apps** on the left menu. You will be shown a list of apps installed into your Dynamics/CDS instance.
 
-For the next steps we suggest you edit the **Marketing** app, but you can alternatively use the **Sales Hub** or a custom **Model Driven App** if you do not have this available. It will be important to know which you edit as that is where you'll need to look for the new form later.
-
-3. Click the **More Commands '...'** button for the **Marketing** app and click **Edit**.
+3. Select the **Marketing** app and click **Edit.**
 
 4. You should now see the PowerApps App Designer has opened. Scroll down and expand the **Forms** menu for the **Contact** entity.
 
 5. Ensure that the default Contact form (**Contact** or **Contact for Interactice Experience**) is selected on the right and click the edit button (pencil) to edit the form. The button will appear when you hover over the form in the components list.
 
-6. You should now be presented with the new PowerApps Form editor, on the top right select **Save As** from the dropdown.
+6. You should now be presented with the new PowerApps Form editor. On the top right select **Save As** from the dropdown.
 
 7. Save a copy of this form, setting the name to **Contact with Customer Insights**. Then click **Save**.
 
-8. Add three new sections by clicking **Components** menu option on the left, and dragging three **1-One Column Section** components on to the form. Name them - **CUSTOMER INSIGHTS TIMELINE**, **KPI** and **DEMOGRAPHICS** in the right hand properties pane.
+8. Add three new sections by clicking the **Components** menu option on the left, and dragging three **1-One Column Section** components on to the form. Name them - **CUSTOMER INSIGHTS TIMELINE**, **KPI** and **CUSTOMER DETAILS** in the right hand properties pane.
 
 9. Add a field to each new section, any field will do, in this example we've added the **Address 1: City** field to all three sections. Uncheck the 'Show only unused fields' to see the used ones. Once you've added them be sure to check the **Hide Label** setting.
 
@@ -241,21 +237,21 @@ For the next steps we suggest you edit the **Marketing** app, but you can altern
 
 13. Set the control to appear on **Web**, **Phone** and **Tablet** and check the **Hide Default Control** checkbox.
 
-14. Repeat steps **11** and **12** for the fields added into the **KPI** and **DEMOGRAPHICS** section, adding the **Customer Insights Measure Control** to KPI section and the **Customer Insights Demographic Control** to the Demographics section.
+14. Repeat steps **11** and **12** for the fields added into the **KPI** and **DEMOGRAPHICS** section, adding the **Customer Insights Measures Control** to KPI section and the **Customer Insights Customer Details** to the Customer Details section.
 
-15. Move the **KPI** section to the top of **Related** section and **DEMOGRAPHICS** under **KPI** section. Now remove **Related** and pre existing **Timeline** sections.
+15. Move the **KPI** section to the top of **Related** section and **DEMOGRAPHICS** under the **KPI** section. Now remove **Related** and pre existing **Timeline** sections.
 
 16. Click **Save and Close**.
 
-17. Back on the **App Designer**, select to add your new **Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up.
+17. Back on the model-driven **App Designer**, select to add your new **Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up.
 
 18. Click **Save** in the top right hand corner and then **Publish**.
 
 ## Task 4 - Confirm the Changes in the Model Driven App 
 
-1. Now open your **Dynamics 365 Marketing** instance.
+1. Now open your **Dynamics 365 Marketing** instance. 
 
-2. Navigate to the **Contacts** via the left hand menu. Open the Contact record for **Abbie Moss** and select your new **Customer Insights** form using the form selector.
+2. Navigate to the **Contacts** via the left hand menu. Open the Contact record for **Abbie Moss** and select your new **Contact with Customer Insights** form using the form selector.
 
 3. You should now see that the three Customer Insights you embedded in the form render. KPI and Demographics control's can be configured. You may need to edit the cards to select the correct fields to show.
 
