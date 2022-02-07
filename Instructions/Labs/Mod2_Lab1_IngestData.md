@@ -138,21 +138,6 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 In this lab you will become familiar with ingesting data from multiple sources. As Project Manager for Contoso Retail, you have already identified that key sources of data include eCommerce Customers, Online Purchases, in-store Point of Sales Purchases, data from Contoso Retail Loyalty Card scheme, Subscription data, Contoso Hotel data and Contacts from your Dynamics 365 CRM. 
 
 Although Customer Insights has connectors to 35+ data sources and applications (including Dynamics 365 & the Common Data Service for Apps), for this lab you will be using the 'Text/CSV' connector. 
-
-## Data Sources 
-
-
-| Entity| Description| Connection |
-| - | - | - |
-| eCommerceContacts| Extract of Customers who have made an online purchase| https://aka.ms/CI-ILT/Contacts |
-| LoyaltyScheme| Extract of Customers who've signed-up for the Contoso Retail Loyalty Card Scheme| https://aka.ms/CI-ILT/LoyaltySchemeCustomers |
-| OnlinePurchases| Extract of purchases made via the Contoso Retail Website| https://aka.ms/CI-ILT/OnlinePurchases |
-| POSPurchases| Extract of in-store purchase detail| https://aka.ms/CI-ILT/POSPurchases |
-| WebsiteReviews| Online Website Reviews from online users| https://aka.ms/CI-ILT/WebReviews |
-
-
- 
-
   
 
 ## Data Source Model 
