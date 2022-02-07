@@ -52,7 +52,7 @@ Contoso management is tasking IT and Line of Business teams with the following:
 
 - Realise a unified Contoso Customer profile. 
 
-- Provide a 360-degree view of the customer for service agents (embedded into D365 for Service) as well as store managers (through Power BI).. 
+- Provide a 360-degree view of the customer for service agents (embedded into D365 for Service) as well as store managers (through Power BI).
 
 - Deliver a Contoso Coffee Greeter App (through PowerApps), to enable in store retail staff to deliver personalised service and recommendations. 
 
@@ -80,7 +80,7 @@ You have been selected as the project manager for the implementation of Dynamics
  
 3. Configure and realise a unified customer profile from ingested data 
 
-4. Configure business and customers measures in Customer Insights to identify customers with higher than average spend in store and online. 
+4. Configure business and customers measures in Customer Insights to identify customers with higher than average spend in store and online
 
 5. Build sample customer segments for Marketers to deliver personalised and targeted marketing communications 
 
@@ -106,7 +106,7 @@ As Project Manager for Contoso Retail, you will create a unified customer profil
 
 In this lab, we will **ingest data.** In the next lab, we will **unify the data.**
 
-# Approximate Time to Complete -  90mins 
+# Approximate Time to Complete -  45 minutes
 
 # Familiarize yourself with Customer Insights
 
