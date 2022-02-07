@@ -33,7 +33,7 @@ This appendix contains step-by-step instructions to provision and configure a Cu
 
 Now that we have users with licenses in our Office 365 tenant, we can create our demo Dynamics environments. 
 
-1. Navigate to [https://trials.dynamics.com/Dynamics365/marketing](https://trials.dynamics.com/Dynamics365/marketing)[](https://trials.dynamics.com/Dynamics365/marketing). 
+1. Navigate to [https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/). 
 
 2. Select the **Marketing** box and click **Try for free.** Enter your M365 admin email. You will then be prompted to enter your country and phone number.
 
