@@ -50,7 +50,7 @@ Now that we have setup our Admin user, Power Apps license and Dynamics 365 Marke
 
 3. Click **Get started.**
 
-4. If prompted to enter your country again, select the appropriate country and continue.
+4. If prompted to enter your country again, select **United States** and click continue.
 
 5. Select **Audience insights** on the **Choose your focus** page.
 
