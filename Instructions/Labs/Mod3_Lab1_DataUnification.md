@@ -57,7 +57,7 @@ For the next stage, we must select the order in which to merge the profiles. You
 
 In this step, you will create a simple rule used to match records together. Rules can consist of single (e.g. based on ID) or multiple conditions (e.g. Full Name, Postcode, Date of Birth). 
 
-For further details on Match Rules, please see Customer Insights documentation. 
+For further details on Match Rules, please see [Customer Insights documentation](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/match-entities#define-rules-for-match-pairs). 
 
 1. Click **Add rule** or click the + button to the right of the "Needs rule" indicator. 
 
