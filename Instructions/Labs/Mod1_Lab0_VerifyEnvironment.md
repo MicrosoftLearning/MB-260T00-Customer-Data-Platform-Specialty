@@ -17,7 +17,7 @@ This appendix contains step-by-step instructions to provision and configure a Cu
 
 1. Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to [https://powerapps.microsoft.com](https://powerapps.microsoft.com/)[.](https://powerapps.microsoft.com/) On this page you will see a **Try free button** on the top right. Click that button and enter the email for the admin account you were provided. 
 
-2. Click **Sign in** and enter your password provided. If prompted, enter a phone number.
+2. Click **Sign in** and enter your password provided. If prompted, enter a phone number. (It is easiest to keep the location set to United States, and enter a random set of numbers for phone number.)
 
 3. Click **Get started**. You will be taken to the Power Apps homepage. Press **Skip** if prompted with a tutorial.
 
