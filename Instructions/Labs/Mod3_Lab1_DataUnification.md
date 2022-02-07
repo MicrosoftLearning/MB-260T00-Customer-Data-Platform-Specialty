@@ -95,7 +95,7 @@ In Task 3, we used High Precision in the match-rule against Full Name. In this t
 - Low fits cases where the opposite is true, such as a marketing campaign. 
 - The Medium level serves as a middle-ground option. 
 
-1. Expand your rule and click the **Pencil** button to edit the Match rule.
+1. Ensure you are in the **Match** tab. Expand your rule and click the **Pencil** button to edit the Match rule.
 
 2. Move the Precision slider for your FullName match from High to Low. Then click **Done.**
 
