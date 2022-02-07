@@ -127,7 +127,7 @@ Customer Insights will attempt to identify attributes to be merged using their m
 
 2. Click the **FirstName** merged attribute. You should see that the FirstName attribute in eCommerce : Contacts is ranked number 1. This denotes that where you have a matching customer profile in LoyaltyScheme and eCommerce, the FirstName taken from eCommerce : Contacts will be the primary. 
 
-3. Click the **Rename** button (it resembles a text box) on the row for the FirstName merged attribute. Note that you’re able to change the display name. The Display Name is the name that will be used in the Merged Profile.   
+3. Click the **Rename** button (it resembles a text box) on the row for the FirstName merged attribute. Note that you’re able to change the Output Field Name. The Output Field Name is the name that will be used in the Merged Profile.   
 
 4. Click Cancel. 
 
