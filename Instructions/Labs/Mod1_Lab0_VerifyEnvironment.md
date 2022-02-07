@@ -40,7 +40,7 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 3. After clicking **Continue,** it may take a moment for the trial to build. When the **Launch trial** button appears, click to enter the Dynamics 365 Marketing application.
 
 
-## Step 5: Customer Insights Trial 
+## Step 4: Customer Insights Trial 
 
 Now that we have setup our Admin user, Power Apps license and Dynamics 365 Marketing trial, we are ready to request our trial of Customer Insights. 
 
