@@ -44,7 +44,7 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 
 Now that we have setup our Admin user, Power Apps license and Dynamics 365 Marketing trial, we are ready to request our trial of Customer Insights. 
 
-1. Open a new tab and navigate to [https://aka.ms/tryci](https://aka.ms/tryci)[.](https://aka.ms/tryci).
+1. Open a new tab and navigate to [https://aka.ms/tryci](https://aka.ms/tryci)(https://aka.ms/tryci).
 
 2. Click **Continue** to stay signed in using your M365 admin account. Fill out the necessary information and click **Continue.**
 
