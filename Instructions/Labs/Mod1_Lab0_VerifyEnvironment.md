@@ -62,4 +62,4 @@ Now that we have setup our Admin user, Power Apps license and Dynamics 365 Marke
 
 8. Next you will create the environment. We suggest you name it **Your Name** CI ILT Lab. Once you enter the name and select the region you can click **Review and finish** and then **Create.**
 
-10. Once it completes you will be at the landing retail demo page for Customer Insights. Switch to your environment by clicking on top right at **Environment** and you are good to start on the labs. 
+10. Once it completes you will be at the landing retail demo page for Customer Insights. Using the environment selector, make sure you are in the environment you created. You are now ready to start on the labs! 
