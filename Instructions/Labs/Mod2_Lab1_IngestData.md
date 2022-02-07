@@ -199,7 +199,7 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 
 1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-2. You should see your eCommerce data source. Select it and click either the three vertical dots and choose Edit or click directly on the pen icon. 
+2. You should see your eCommerce data source. Select it and click either the three vertical dots and choose Edit or click directly on the pen icon. (If your data is still refreshing, you will need to wait for it to finish the refresh before editing.)
 
 3. You should be presented with the view of the eCommerce Contacts data that you ingested in Task 1. Select **Get data.**
 
