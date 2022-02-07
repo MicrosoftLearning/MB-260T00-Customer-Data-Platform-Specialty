@@ -133,7 +133,7 @@ Customer Insights will attempt to identify attributes to be merged using their m
 
 5. Note that the Primary Keys from the original sources cannot be merged. For example, we have a ContactId as the primary key from eCommerce : Contacts and we also have ContactId within Loyalty : Customers. In fact, we are merging these records not on ContactId, but on FullName & Email. 
 
-6. On the ContactId for the Loyalty : Customers Entity, click the **Rename** button and rename the Display Name to **ContactIdLOYALTY** to differentiate the item from the other IDs ingested and help avoid any confusion later. 
+6. On the ContactId for the Loyalty : Customers Entity, click the **Rename** button and rename the Output Field Name to **ContactIdLOYALTY** to differentiate the item from the other IDs ingested and help avoid any confusion later. 
 
 
 7. Click **Save** and **Run > Run Merge and downstream processes** to start the Merge Process. 
