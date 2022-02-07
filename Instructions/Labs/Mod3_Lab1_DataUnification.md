@@ -105,7 +105,7 @@ In Task 3, we used High Precision in the match-rule against Full Name. In this t
 
 5. Close the preview and click the **Pencil** icon to edit the match rule. Click the Preview button below the FullName rule. 
 
-6. Here you can preview the number of Unmatched and Matched for your full name criteria. This screenshot shows that there were 52 Unmatched and 4950 Matched. (Note: Your number may be slightly different if the underlying data sources have changed since the docs were created or the matching algorithm has changed.)
+6. Here you can preview the number of Unmatched and Matched for your full name criteria. 
 
 7. Click Preview Data under Unmatched or Matched to preview the matches. Notice how High Confidence uses exact spelling but can match even if the name format (First Name, Last Name / Last Name, First Name) is different. With Low confidence, notice how matches are made even when names are not spelled identically. 
 
