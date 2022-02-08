@@ -1,19 +1,11 @@
 ---
 lab:
-    title: 'Lab 4.1: Define relationships & measures'
+    title: 'Lab 4.2: Define measures'
     module: 'Module 4: Work with Dynamics 365 Audience insights'
 ---
 
-# Lab 4.1: Define relationships & measures
+# Lab 4.2: Define measures
 # Module 4: Work with Dynamics 365 Audience insights
-
-Before creating a measure, we need to understand the purchases made by a customer both online and instore. To do this we need to define the relationship between Purchases (made online and in store) and the Unified Customer Profile. 
-
-Relationships help you connect entities and generate a graph of your data. Relationships are used when entities share a common identifier (foreign key) that can be referenced from one entity to another. Connected entities enable you to define segments and measures based on multiple data sources. 
-
-For example, **Customer** has a **One to Many** relationship with **PoS Purchases**. (One loyalty scheme customer may make multiple purchases). 
-
-## Measures 
 
 Measures enable you to define all the key performance indicators (KPIs) that best reflect your specific business performance and health. Measures can either be customer-related measures, such as Lifetime Value, or business-health measures, such as Monthly Active Users. 
 
@@ -40,45 +32,7 @@ Contoso Coffee are looking to uncover six simple Measures based on the data inge
 - Average Web Purchase ($) 
 
 
-## Task 1 - Define the Relationship Between Unified Profiles and Web Purchases 
-
-First, we need to define the relationship for CustomerPurchasesEcom. 
-
-1. In the left menu under **Data,** click **Relationships.**
-
-3. Click **+ New Relationship.**
-
-3. Name the relationship **CustomerPurchasesEcom.**
-
-4. In **Description,** write "Online Purchases to Unified Customer Profile."
-
-5. Set Source details entity to **Purchases: eCommerce** and Cardinality to **Many.** 
-
-7. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
-
-7. Set equivalent fields to **ContactId** for both the Source and Target fields. 
-
-9. Click **Save.** 
-
-## Task 2 - Define the Relationship between Unified Profiles and Store Purchases 
-
-Next, we will define the relationship for CustomerPurchasesPOS.
-
-1. From the left menu, click **Data** and then **Relationships.**
-
-2. Click **+ New Relationship.** Name the relationship **CustomerPurchasesPOS.**
-
-3. In **Description,** write "Point of Sale Purchases to Unified Customers."
-
-4. Set Source details entity to **Purchases : PoS** and Cardinality to **Many.**
-
-5. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
-
-6. Set equivalent fields to **LoyaltyId** for both Source field and Target field.
-
-8. Click **Save.**
-
-## Task 3 - Define Two Business Measures 
+## Task 1 - Define Two Business Measures 
 
 Business Measures helps you track your business performance and health. The business has asked you to calculate the Average Store Purchase and Average Web Purchase values for the Contoso Coffee business. 
 
@@ -146,7 +100,7 @@ In this next task, we will create a measure to define the **Average value of all
 
 14. Select the **Run button** to complete your measure. 
 
-## Task 4 - Define Customer Measures  
+## Task 2 - Define Customer Measures  
 We will need two customer measures that can be used to calculate a customer attribute. We will create one measure to determine the customers total spend on Online Purchases and one measure to determine their total spend on In-Store purchases. Once we create these, we can then create a customer attribute to add those two together. 
 
 ### Total In-Store Spend (Customer Measure)  
@@ -202,7 +156,7 @@ Next, we will create a measure to define **Total of all purchases made online.**
 11. Select the **Run** button to complete your measure. 
 
 
-## Task 5 - Define Customer Attributes 
+## Task 3 - Define Customer Attributes 
 Customer Attributes are a single field per customer that reflects a score, value, or state for each customer. Examples are Lifetime Value and Total Sales. 
 
 In this task you will create measures to calculate the Lifetime Spend ($), Total Club Points, Average Web Purchase Value ($) and Average Store Purchase Value ($) of each customer. By calculating value for the business and customers, Contoso Coffee can identify customers with a higher than average spend on each channel. 
@@ -287,7 +241,7 @@ Next, we will define **Average value of all web purchases made for each customer
 
 7. Select the **Run** button to complete your measure. 
 
-# Task 6 - Review the Measures 
+# Task 4 - Review the Measures 
 
 1. Make sure all your measures have successfully refreshed, then navigate to the Customer Insights Home Page. You should notice that your Business Measures are visible on the home page. 
 
