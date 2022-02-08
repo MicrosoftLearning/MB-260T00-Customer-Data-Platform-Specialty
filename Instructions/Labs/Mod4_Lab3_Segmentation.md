@@ -92,8 +92,6 @@ Contoso Coffee Marketing want to run a new Summer Promotion targeting millennial
 
 3. Now that you have created your segments, you are ready to start acting upon your data. You can select the segment and click Download on the top for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications. 
 
-To do this you would go under Admin > Export Destinations in the left side menu. Here you can setup and Export destination for Dynamics 365 for Sales, Dynamics 365 for Marketing, Azure Blob Storage and several business applications or tools allowing you to use the segments to execute a Marketing Campaign. We will work through this in a different module. 
-
 ### Task 5 - Apply Segment Insights 
 
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
