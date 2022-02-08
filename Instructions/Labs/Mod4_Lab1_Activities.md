@@ -132,7 +132,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 6. Click **Next.** 
 
-7. On the Unify your customer activity data screen set the following values:
+7. On the Unify your customer activity data screen, set the following values:
 
 	- Event activity: ActivityTypeDisplay
 	- Timestamp: ReviewDate
