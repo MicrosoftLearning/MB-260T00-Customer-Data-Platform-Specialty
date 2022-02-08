@@ -159,9 +159,9 @@ Use Suggested Segments to discover interesting segments based on a customer attr
 
 2. Click on **Get Suggestions** to begin the configuration experience. 
 
-3. We will choose **Improve a measure/metric.** 
+3. We will choose **Improve a measure/metric** and click **Start.**
 
-4. Next, you need to select the target attribute (i.e., a customer attribute or measure of interest), for which you want to discover segment suggestions. We will select the previously created measure **LifetimeSpend** as the target attribute. 
+4. Next, you need to select the target attribute (i.e., a customer attribute or measure of interest), for which you want to discover segment suggestions. We will select the previously created measure **LifetimeSpend** as the target attribute. Click **Next.**
 
 5. Next, you will select the attributes that might influence the target attribute (LifetimeSpend) so that the AI model can find interesting patterns between the influencing attributes and the target attribute and suggest segments based on those patterns. We will select **Email Subscriber, Income, Loyalty Tier, Occupation and State** as the influencing attributes. 
   **Note:** In case you do not know which attributes to select, it is advised to select many attributes so that the model can analyze, and surface segment suggestions based on the underlying patterns it uncovers. However, if you want to see how certain attributes influence "LifetimeSpend", you can choose only those as well.
