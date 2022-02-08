@@ -50,7 +50,7 @@ In this first task, we will create a measure to define the **average value of al
 
 5. Under **Set up your measure calculations**, select **Dimensions (1). **
 
-6. Delete Customer: CustomerInsights.CustomerId and select Apply. (By deleting the customer dimension, these changes the measure from a customer measure to a business measure).
+6. Delete Customer: CustomerInsights.CustomerId and select **Apply.** (By deleting the customer dimension, this changes the measure from a customer measure to a business measure.)
 
 7. Next to Calculation 1, click **Edit name.**
 
