@@ -199,39 +199,19 @@ In this case, customers in this segment have an average LifetimeSpend of 741.89 
 
 ### Discover interesting segments based on a categorical customer attribute or measure of interest 
 
- 
-
 1. Under the Suggestions tab, click on Find new suggestions in the top menu to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
-
- 
 
 2. We again will choose Improve a measure/metric 
 
- 
-
 3. Select CustomerSatisfaction as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Then click Next. 
-
-	![Picture 1373](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image10.jpeg) 
 
 4. Next, select Email Subscriber, Income, Loyalty Tier, Occupation, RewardsPoints and State as the influencing attributes. 
 
-	![Picture 1424](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image11.jpeg) 
-
 5. Click on Run. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
 
- 
+6. Once the model has finished running, segment suggestions will be displayed under the Suggestions (preview) tab. Since the target attribute is categorical, the AI model tries to find patterns/common traits of customers belonging to a particular category of the target attribute and surfaces segment suggestions. Since Customer Satisfaction has 3 different categories - low, medium and high - the AI model will try to find segments of customers that possess the same traits and a significant portion of them belong to a particular category (i.e. either low, medium or high). 
 
-6. Once the model has finished running, segment suggestions will be displayed under the Suggestions (preview) tab. 
-
-	![Picture 1426](Static/Lab_4B_Segments,_Customer_Cards,_Activities,_Enrichment_image12.jpeg) 
-
- 
-
-	Since the target attribute is categorical, the AI model tries to find patterns/common traits of customers belonging to a particular category of the target attribute and surfaces segment suggestions. Since Customer Satisfaction has 3 different categories - low, medium and high - the AI model will try to find segments of customers that possess the same traits and a significant portion of them belong to a particular category (i.e. either low, medium or high). 
-
- 
-
-	Note: While only a few tiles are shown initially, you can click the See More link to see more suggestions that were found. 
+**Note:** While only a few tiles are shown initially, you can click the See More link to see more suggestions that were found. 
 
 7. You can click on any suggestion to see segment details in the side panel. We will click on the suggestion that says 83% of customers in this suggestion have CustomerSatisfaction = low. In the side panel, you will see the following: 
 
