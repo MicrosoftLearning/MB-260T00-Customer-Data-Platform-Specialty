@@ -80,7 +80,7 @@ In this next task, we will create a measure to define the **Average value of all
 
 4. Set the name to "Average Web Purchase Value ($)" and select **Done.** 
 
-5. Under **Set up your measure calculations**, select **Dimensions (1).** 
+5. Under **Set up your measure calculations**, select Dimensions (1).
 
 6. Delete **Customer: CustomerInsights.CustomerId** and select **Apply.** (By deleting the customer dimension, this changes the measure from a customer measure to a business measure.)
 
@@ -119,7 +119,7 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 6. Select **Add attribute**, expand **Purchases : POS**, select **TotalPrice**, and click **Add.** 
 
-7. Under "Set up your measure calculations", select **Dimensions (1).** 
+7. Under "Set up your measure calculations", select Dimensions (1).
 
 8. Select **Edit Dimensions.** 
 
@@ -145,7 +145,7 @@ Next, we will create a measure to define **Total of all purchases made online.**
 
 6. Select Add attribute, expand Purchases: eCommerce, select **TotalPrice** and click **Add.** 
 
-7. Under Set up your measure calculations, select **Dimensions (1).** 
+7. Under Set up your measure calculations, select Dimensions (1). 
 
 8. Select **Edit dimensions.** 
 
