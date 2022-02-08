@@ -77,4 +77,3 @@ There are many factors that are taken into account when creating your prediction
 
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
 
-# Exercise 2 - 
