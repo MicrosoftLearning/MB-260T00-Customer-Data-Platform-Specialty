@@ -81,7 +81,7 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 6. Click **Next.**
 
-7. On the Add data set screen, choose Customer from the Profiles section in the dropdown, then click **Next. **
+7. On the Add data set screen, choose Customer from the Profiles section in the dropdown, then click **Next.**
 
 8. On the Data Mapping screen, fill out the following:
 
