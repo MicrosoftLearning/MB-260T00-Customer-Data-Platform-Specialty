@@ -11,7 +11,7 @@ You will create marketing segments to promote Contoso Coffee's new Cold Brew Cof
 
 These segments will allow Contoso Coffee Marketing to deliver personalised, targeted marketing journeys for upcoming product launch. 
   
-## Segmentation
+## Exercise 1 - Create segments
 
 Segments enable you to group your customers into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can achieve more targeted actions such as promotional campaigns, sales activities, or customer support actions to achieve desired business goals. You can define complex filters around the Customer Profile entity and its graph of related entities. Each segment, after processing, outputs a set of customer entity records that you can export and take actions upon. 
 
@@ -148,10 +148,10 @@ Earlier we created a segment called **Summer Promotion**, which contains millenn
 
 9. After the run, you can see a new segment being created. Click on the segment to find the similarity scores, which range from 0.55 to 1(0.85-1 -> Very similar, 0.7-0.85 -> Similar, 0.55-0.7 -> Somewhat similar). You can also explore the similar customer records.
 
-## Optional - Suggested Segments 
+## Exercise 2 - Get suggested Segments 
 Use Suggested Segments to discover interesting segments based on a customer attribute or measure of interest.
 
-### Discover interesting segments based on a numeric customer attribute or measure of interest  
+### Task 1 - Discover segments based on a numeric customer attribute or measure of interest  
 
 1. Under the Segments section, click on the **Suggestions (preview)** tab. 
 
@@ -174,8 +174,6 @@ Use Suggested Segments to discover interesting segments based on a customer attr
    
    E.g. - in the above suggestion, LifetimeSpend is 20% above average i.e. the customers in this segment have historically spent much more as compared to others. There are 585 members in this segment and they have Income > 97k and a high Loyalty Tier. 
 
- 
-
 8. You can click on any suggestion to see more details in the side panel. We will click on the See suggestion link for the suggestion that says LifetimeSpend is 15% below average. In the side panel, you will see the following: 
 
 - Comparison of average LifetimeSpend of customers in this segment compared to all the customers 
@@ -190,12 +188,11 @@ In this case, customers in this segment have an average LifetimeSpend of 741.89 
 
 9. You can then save the segment by clicking on **Save as segment** in the side panel. Name the segment and Output entity name as follows and click on **Save.**
   
-
 10. The saved segment can then be viewed under the All segments tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by clicking on Edit in the All segments tab. 
 
 11. We have successfully found segment suggestions based on a measure of interest (LifetimeSpend). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment. 
 
-### Discover interesting segments based on a categorical customer attribute or measure of interest 
+### Task 2 - Discover segments based on a categorical customer attribute or measure of interest 
 
 1. Under the Suggestions tab, click on Find new suggestions in the top menu to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
 
