@@ -82,7 +82,7 @@ Likelihood of churn shows Groups of customers based on their predicted risk of c
 
 There are many factors that are taken into account when creating your prediction. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to create segments that could help influence churn risk for customers.
 
-## Task 2 - Create a Segment of High Churn-Risk Customers
+## Task 3 - Create a Segment of High Churn-Risk Customers
 
 1. Return to **Intelligence > Predictions**. Select the vertical ellipses from your churn model and click **View.** Explore the Training model performance, likelihood to churn chart, and most influential factors.
 
@@ -102,3 +102,4 @@ There are many factors that are taken into account when creating your prediction
 
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
 
+# Exercise 2 - 
