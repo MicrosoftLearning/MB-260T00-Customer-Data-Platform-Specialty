@@ -36,7 +36,7 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 8. Click **Next.**
 
-9. On the Add customer data screen, choose **Customer** from the Profiles section in the dropdown, then click **Next. **
+9. On the Add customer data screen, choose **Customer** from the Profiles section in the dropdown, then click **Next.**
 
 10. On the Data Mapping screen, we will choose the fields to map our data with the data from the graph. We can map both demographic as well as location information. At a minimum you must map a country/region. We will map more attributes to get a more refined result. 
 
