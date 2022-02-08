@@ -7,8 +7,6 @@ lab:
 # Lab 4.3: Create segments
 # Module 4: Work with Dynamics 365 Audience insights
 
-## Segmentation 
-
 You will create marketing segments to promote Contoso Coffee's new Cold Brew Coffee offering as well as to identify customers with a higher-than-average online spend whom Contoso wish to target with their new subscription and connected coffee machine services. 
 
 These segments will allow Contoso Coffee Marketing to deliver personalised, targeted marketing journeys for upcoming product launch. 
