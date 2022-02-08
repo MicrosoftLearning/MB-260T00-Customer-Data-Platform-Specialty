@@ -41,7 +41,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 7. On the **Unify your customer activity data** screen, set the following values:
 
-	- Envent activity: **ActvityTypeDisplay**
+	- Event activity: **ActivityTypeDisplay**
 	- Timestamp: **PurchasedOn**
 	- Additional detail: **Subject**
 	- Icon: Select the **shopping bag.**
@@ -55,7 +55,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 11. Fill out the data for activity type field mapping as follows:
 
-	- Order online ID: PurchaseId
+	- Order line ID: PurchaseId
 	- Order date: PurchasedOn
 	- Product ID: ProductId
 	- Amount: TotalPrice
@@ -100,7 +100,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 8. Click **Next.**
 
-9. One the Set activity type screen, set the type to **Create New** and then enter **PoSPurchase** for the Activity Type Name. 
+9. On the Set activity type screen, set the type to **Create New** and then enter **PoSPurchase** for the Activity Type Name. 
 
 10. Click **Next**, review your entries, then click **Save activity.** 
 
@@ -134,7 +134,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 7. On the Unify your customer activity data screen set the following values:
 
-	- Event activity: AcitivtyTypeDisplay
+	- Event activity: ActivityTypeDisplay
 	- Timestamp: ReviewDate
 	- Additional detail: ReviewText
 	- Icon: Select the **internet (circular globe)** icon.
@@ -180,7 +180,7 @@ First, we need to define the relationship for CustomerPurchasesEcom.
 
 7. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
 
-7. Set equivalent fields to **ContactId** for both the Source and Target fields. 
+7. Set equivalent fields to **ContactId (eCommerce_Contacts)** for both the Source and Target fields. 
 
 9. Click **Save.** 
 
@@ -190,7 +190,7 @@ Next, we will define the relationship for CustomerPurchasesPOS.
 
 1. From the left menu, click **Data** and then **Relationships.**
 
-2. Click **+ New Relationship.** Name the relationship **CustomerPurchasesPOS.**
+2. Click **+ New relationship.** Name the relationship **CustomerPurchasesPOS.**
 
 3. In **Description,** write "Point of Sale Purchases to Unified Customers."
 
