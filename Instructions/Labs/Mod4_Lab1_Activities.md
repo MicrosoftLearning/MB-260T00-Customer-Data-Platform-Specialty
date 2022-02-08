@@ -170,7 +170,7 @@ First, we need to define the relationship for CustomerPurchasesEcom.
 
 1. In the left menu under **Data,** click **Relationships.**
 
-3. Click **+ New Relationship.**
+3. Click **+ New relationship.**
 
 3. Name the relationship **CustomerPurchasesEcom.**
 
