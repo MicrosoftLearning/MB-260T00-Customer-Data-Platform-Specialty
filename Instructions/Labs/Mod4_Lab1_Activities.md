@@ -38,6 +38,7 @@ Interactions are any customer touch points - these could include purchases, cust
 6. Click **Next.** 
 
 7. On the **Unify your customer activity data** screen, set the following values:
+
 	- Envent activity: **ActvityTypeDisplay**
 	- Timestamp: **PurchasedOn**
 	- Additional detail: **Subject**
@@ -46,22 +47,18 @@ Interactions are any customer touch points - these could include purchases, cust
 
 8. Click **Next.** 
 
-9. On the Set activity type screen, set the type to **SalesOrderLine* and then enter **OnlinePurchase** for the Activity Type Name. 
+9. On the Set activity type screen, set the type to **SalesOrderLine** and then enter **OnlinePurchase** for the Activity Type Name. 
 
 4. Set "Provide semantic mapping for your activity's attributes?" to **Yes.**
 
 5. Fill out the data for activity type field mapping as follows:
 
-- Order online ID: PurchaseId
-
-- Order date: PurchasedOn
-
-- Product ID: ProductId
-
-- Amount: TotalPrice
+	- Order online ID: PurchaseId
+	- Order date: PurchasedOn
+	- Product ID: ProductId
+	- Amount: TotalPrice
 
 10. Click **Next**, review your entries, then click **Save activity.**
-
 
 ### Task 2 - Add an activity for PoSPurchases 
 
