@@ -174,7 +174,7 @@ First, we need to define the relationship for CustomerPurchasesEcom.
 
 3. Name the relationship **CustomerPurchasesEcom.**
 
-4. In **Description,** write "Online Purchases to Unified Customer Profile."
+4. In Description, write "Online Purchases to Unified Customer Profile."
 
 5. Set Source details entity to **Purchases: eCommerce** and Cardinality to **Many.** 
 
