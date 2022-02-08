@@ -47,18 +47,20 @@ Interactions are any customer touch points - these could include purchases, cust
 
 8. Click **Next.** 
 
-9. On the Set activity type screen, set the type to **SalesOrderLine** and then enter **OnlinePurchase** for the Activity Type Name. 
+9. On the Set activity type screen, set the type to **SalesOrderLine**.
 
-4. Set "Provide semantic mapping for your activity's attributes?" to **Yes.**
+10. Set "Provide semantic mapping for your activity's attributes?" to **Yes.**
 
-5. Fill out the data for activity type field mapping as follows:
+11. Fill out the data for activity type field mapping as follows:
 
 	- Order online ID: PurchaseId
 	- Order date: PurchasedOn
 	- Product ID: ProductId
 	- Amount: TotalPrice
 
-10. Click **Next**, review your entries, then click **Save activity.**
+12. Click **Next**, review your entries, then click **Save activity.**
+
+13. Click **Done.**
 
 ### Task 2 - Add an activity for PoSPurchases 
 
@@ -100,7 +102,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 10. Click **Next**, review your entries, then click **Save activity.** 
 
-  
+11. Click **Done.**
 
 ### Task 3 - Add an activity for Website Reviews 
 
@@ -141,6 +143,8 @@ Interactions are any customer touch points - these could include purchases, cust
 9. One the Set activity type screen, set the type to **Create new** and then enter **WebsiteReview** for the Activity Type Name. 
 
 10. Click **Next**, review your entries, and then click **Save activity.**
+
+11. Click **Done.**
 
 ### Task 4 - Confirm the Activities 
 
