@@ -92,7 +92,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 7. On the Unify your customer activity data screen set the following values:
 
-	- Event activity: AcitivtyTypeDisplay
+	- Event activity: ActivityTypeDisplay
 	- Timestamp: PurchasedOn
 	- Additional detail: Subject
 	- Icon: Select the **shopping bag.**
