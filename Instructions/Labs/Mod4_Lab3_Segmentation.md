@@ -112,7 +112,7 @@ Let's try to find out common customers that belong to both Customers from Califo
 
 8. Click on each measure and attribute to see deeper insights.
 
-9. We have successfully created segment insights using **Differentiators**. Now let’s create an isnight using **Overlap.**
+9. We have successfully created segment insights using **Differentiators**. Now let’s create an insight using **Overlap.**
 
 10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap.**
 
