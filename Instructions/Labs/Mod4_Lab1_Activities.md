@@ -25,7 +25,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 	- Primary Key: PurchaseId 
 
-3. Click Next. On the Realtionships screen, click **+ Add relationship.** 
+3. Click Next. On the Relationships screen, click **+ Add relationship.** 
 
 4. In the Add relationship path pop-up, set the following values: 
 
