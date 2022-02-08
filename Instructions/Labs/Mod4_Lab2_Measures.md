@@ -13,7 +13,7 @@ Customer Insights provides an intuitive experience to build different types of m
 
 Measures are calculated on a series of interactions that a company has with a customer, gathered from multiple data sources. Interactions are any customer touch points - these could include purchases, customer service cases, emails, phone calls, branch visits. In other scenarios interactions could also be data gathered from connected devices, withdrawals, or deposits in banking, entry/exist of a premises or area, etc. 
 
-Contoso Coffee are looking to uncover six simple Measures based on the data ingested, that will help them to identify high-value customers and their preferred purchase method (Online or Instore) 
+Contoso Coffee are looking to uncover six simple Measures based on the data ingested, that will help them to identify high-value customers and their preferred purchase method (Online or Instore).
 
 ### Business Measures: 
 
@@ -129,6 +129,8 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 11. Select the **Run** button to complete your measure. 
 
+12. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer.**
+
 ## Total Online Spend (Customer Measure)  
 
 Next, we will create a measure to define **Total of all purchases made online.**
@@ -155,6 +157,7 @@ Next, we will create a measure to define **Total of all purchases made online.**
 
 11. Select the **Run** button to complete your measure. 
 
+12. If you encounter an error and need to choose your relationship path, select **eCommerce_Purchases > Customer.**
 
 ## Task 3 - Define Customer Attributes 
 Customer Attributes are a single field per customer that reflects a score, value, or state for each customer. Examples are Lifetime Value and Total Sales. 
@@ -178,6 +181,8 @@ First, we will define **Total Loyalty Points earned by each customer.**
 6. Select **Add attribute**, expand Purchases : POS, select **RewardPointsAdded** and click **Add.** 
 
 7. Select the **Run** button to complete your measure. 
+
+8. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer.**
 
 ## Lifetime Spend (Customer Attribute)  
 
