@@ -154,3 +154,47 @@ Click **Run** on the top to run the configured activities. Once they have comple
 2. Click on her name to expand her customer card. 
 
 4. You should now see activities listed for Abbie on the timeline. Try using the Filter to view only specific activities. 
+
+## Exercise 2 - Define relationships 
+
+Relationships help you connect entities and generate a graph of your data. Relationships are used when entities share a common identifier (foreign key) that can be referenced from one entity to another. Connected entities enable you to define segments and measures based on multiple data sources. 
+
+For example, **Customer** has a **One to Many** relationship with **PoS Purchases**. (One loyalty scheme customer may make multiple purchases). 
+
+## Task 1 - Define the Relationship Between Unified Profiles and Web Purchases 
+
+First, we need to define the relationship for CustomerPurchasesEcom. 
+
+1. In the left menu under **Data,** click **Relationships.**
+
+3. Click **+ New Relationship.**
+
+3. Name the relationship **CustomerPurchasesEcom.**
+
+4. In **Description,** write "Online Purchases to Unified Customer Profile."
+
+5. Set Source details entity to **Purchases: eCommerce** and Cardinality to **Many.** 
+
+7. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
+
+7. Set equivalent fields to **ContactId** for both the Source and Target fields. 
+
+9. Click **Save.** 
+
+## Task 2 - Define the Relationship between Unified Profiles and Store Purchases 
+
+Next, we will define the relationship for CustomerPurchasesPOS.
+
+1. From the left menu, click **Data** and then **Relationships.**
+
+2. Click **+ New Relationship.** Name the relationship **CustomerPurchasesPOS.**
+
+3. In **Description,** write "Point of Sale Purchases to Unified Customers."
+
+4. Set Source details entity to **Purchases : PoS** and Cardinality to **Many.**
+
+5. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
+
+6. Set equivalent fields to **LoyaltyId** for both Source field and Target field.
+
+8. Click **Save.**
