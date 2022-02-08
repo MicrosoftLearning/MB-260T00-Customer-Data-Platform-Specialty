@@ -150,11 +150,11 @@ Interactions are any customer touch points - these could include purchases, cust
 
 ### Task 4 - Confirm the Activities 
 
-Click **Run** on the top to run the configured activities. Once they have completed, click on **Customers** in the left-hand menu. 
+1. Click **Run** on the top to run the configured activities. Once they have completed, click on **Customers** in the left-hand menu. 
 
-1. Search for **Abbie Moss.** 
+2. Search for **Abbie Moss.** 
 
-2. Click on her name to expand her customer card. 
+3. Click on her name to expand her customer card. 
 
 4. You should now see activities listed for Abbie on the timeline. Try using the Filter to view only specific activities. 
 
