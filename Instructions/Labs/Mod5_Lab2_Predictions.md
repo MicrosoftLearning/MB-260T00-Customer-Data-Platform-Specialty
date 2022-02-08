@@ -17,32 +17,7 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 # Exercise 1 - Transaction Churn Model
 
-## Task 1 - Classify OnlinePurchase activity as SalesOrderLine Activity Type
-First, we need to edit our previously created OnlinePurchase activity to make it an activity of type SalesOrderLine for use in the transaction churn model.
-
-1. Go to **Data > Activities**. Select the edit icon next to OnlinePurchase to edit.
-
-2. Next to the **Activity type** header, click **Edit.**
-
-3. For Activity type, select **SalesOrderLine** from the dropdown.
-
-4. Set "Provide semantic mapping for your activity's attributes?" to **Yes.**
-
-5. Fill out the data for activity type field mapping as follows:
-
-- Order online ID: PurchaseId
-
-- Order date: PurchasedOn
-
-- Product ID: ProductId
-
-- Amount: TotalPrice
-
-6. Click **Review and save** and then select **Save activity.**
-
-7. Your OnlinePurchase activity should now have an Activity type of SalesOrderLine.
-
-## Task 2 - Run the OOB Transactional Churn Model
+## Task 1 - Run the OOB Transactional Churn Model
 
 1. Go to **Intelligence** > **Predictions**
 
@@ -82,7 +57,7 @@ Likelihood of churn shows Groups of customers based on their predicted risk of c
 
 There are many factors that are taken into account when creating your prediction. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to create segments that could help influence churn risk for customers.
 
-## Task 3 - Create a Segment of High Churn-Risk Customers
+## Task 2 - Create a Segment of High Churn-Risk Customers
 
 1. Return to **Intelligence > Predictions**. Select the vertical ellipses from your churn model and click **View.** Explore the Training model performance, likelihood to churn chart, and most influential factors.
 
