@@ -15,7 +15,7 @@ Finally, running the Merge process will create a single set of unique Customers 
 
 Your objective is to find out how many unique customer profiles Contoso Retail has across various data sources. 
 
- 
+## Exercise 1 - Unify the data
 
 ## Task 1 - Map contacts to common data types 
 
@@ -139,3 +139,33 @@ Customer Insights will attempt to identify attributes to be merged using their m
 7. Click **Save** and **Run > Run Merge and downstream processes** to start the Merge Process. 
 
 Congratulations! You have successfully Ingested, Mapped, Matched and Merged data from multiple sources within Customer Insights to create a Unified Customer Profile that can be used to gain insights into your whole customer base! 
+
+## Exercise 2 - Search for customers 
+In this exercise, we will set up Search and Filter criteria to enable Customer Insights users to search for unified customer profiles so that you can quickly pull information on a specific customer or group of customers. 
+
+### Task 1 - Configure the Search Columns and Filter Index 
+
+1. Click **Customers** in the left menu bar.
+
+2. Click **Search & filter index.** 
+
+3. Some customer search specific fields are already added by default and you can add more by clicking **Add** on the right-hand side. Click **Add** now.
+ 
+5. Make sure **CustomerId, FirstName, LastName, FullName, DateOfBirth, Email, PostCode, Headshot, ContactId (eCommerce_Contacts),** and **LoyaltyId** are selected. Deselect any other fields that are checked. Click **Add.**
+
+5. Click **Save** and then click **Run.**
+
+### Task 2 - Search for a Customer Record 
+
+1. Click **Customers** in the left menu bar. You should be presented with a set of customer cards, representing the Unified Profiles. You can expand cards to see more about the customer or sort the cards with various fields by clicking on **Expand cards** and **Sort options** on the top. 
+
+2. You can use the search bar to search for text attributes relating to unified customer profiles. (E.g. Searching '24502' will search against all text attributes and return matches and partial matches.)
+
+Use the search bar to answer the following questions. 
+
+- What is Brian Gobble's Date of Birth? (Search with value 'Brian Gobble') 
+
+- Which customer has Loyalty Card ID LOYID_5707? (Search with value 'LOYID_5707') 
+
+- Which customer has a postcode of 24502? (Search '24502') 
+
