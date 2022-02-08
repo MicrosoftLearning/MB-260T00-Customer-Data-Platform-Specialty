@@ -21,7 +21,13 @@ Contoso Coffee are looking to uncover six simple Measures based on the data inge
 
 - Average Web Purchase Value ($) 
 
-### Customer Attributes: 
+### Customer Measures:
+
+- Total Online Spend
+
+- Total In-Store Spend
+
+### Customer attributes: 
 
 - Lifetime Spend ($) 
 
