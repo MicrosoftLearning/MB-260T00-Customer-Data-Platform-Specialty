@@ -7,6 +7,8 @@ lab:
 # Lab 4.1: Work with activities
 # Module 4: Work with Dynamics 365 Audience insights
 
+
+## Exercise 1 - Create activities 
 The Activities capability helps consolidate customer activities from various data sources. This creates a customer timeline view of all customer interactions against your unified customer profile. Business analysts can configure activities to be displayed on a customer dashboard with a timeline view, which can be embedded in business applications. 
 
 Interactions are any customer touch points - these could include purchases, customer service cases, emails, phone calls, branch visits, web, social activity. In other scenarios interactions could also be data gathered from connected devices, withdrawals or deposits in banking, entry/exist of a premises or area, etc. 
