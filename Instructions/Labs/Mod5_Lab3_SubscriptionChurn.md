@@ -153,7 +153,7 @@ When the data source is finished loading we need to go through the Unify process
 
 18. On the Set activity type screen, select **Usage** for activity type. Click **Next.**
 
-19. Review your selections and click **Save activity.**
+19. Review your selections and click **Save activity.** Then click **Done.**
 
 ## Task 2 - Build the Subscription Churn Model 
 
