@@ -136,29 +136,29 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
 	You should now see that the Customer Gallery is populated with the names, email and loyalty scheme IDs of Contoso Coffee customers, using our Unified Profiles from Customer Insights. 
 
-5. Next, we will setup the Customer Search screen to show some key info from the customers profile when the greeter selects them in the gallery. 
+5. Next, we will setup the Customer Search screen to show some key info from the customer's profile when the greeter selects them in the gallery. 
 
-	**Note**: The **Text** property of any control can be selected by first selecting the respective control and picking the **Text** property from the drop down on the top. We will do these changes throughout the lab. 
-
-
-	Within the Tree View select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label to **gallery_Customers.Selected.EMail**. 
-
-
-
-6. Within the Tree View select **lbl_FullName** and set the **Text** Property of the label to **gallery_Customers.Selected.FullName**. 
-
-7. Within the Tree View select **lbl_CustomerAddress** and set the **Text** property of the label to:
-
-	**Concatenate**(**gallery_Customers.Selected.StreetAddress, "** 
-	**", gallery_Customers.Selected.City,"**
-	**", gallery_Customers.Selected.State, "**
-	**", gallery_Customers.Selected.PostCode, "** 
-	**", gallery_Customers.Selected.Country)** 
-
+6. Within the Tree View, select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app: 
  
-8. Finally, within the Tree View select the **img_CustomerProfile** image and set the Image property to **gallery_Customers.Selected.Headshot**.
+`gallery_Customers.Selected.EMail`
+
+6. Within the Tree View select **lbl_FullName** and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app:
+
+`gallery_Customers.Selected.FullName`
+
+7. Within the Tree View select **lbl_CustomerAddress**  and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app:
+
+`Concatenate(gallery_Customers.Selected.StreetAddress, " 
+", gallery_Customers.Selected.City," 
+", gallery_Customers.Selected.State, " 
+", gallery_Customers.Selected.PostCode, " 
+", gallery_Customers.Selected.Country)`
  
-	Congratulations, you have now configured the Customer Search screen within the Greeter App. In the next Task, we will configure different aspects of the Customer Profile Screen. 
+8. Finally, within the Tree View select the **img_CustomerProfile** image and set the **Image** Property of the label by clicking the **Image** box and then copy/pasting the following into the formula bar at the top of the app:
+
+`gallery_Customers.Selected.Headshot`
+ 
+Congratulations, you have now configured the Customer Search screen within the Greeter App. In the next Task, we will configure different aspects of the Customer Profile Screen. 
 
 
 ## Task 4 - Configure the Customer Profile Screen 
@@ -167,36 +167,35 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 
 1. With the Power App in Edit mode, select the **CustomerProfile_Screen** from the Tree View on the left menu. 
 
- 
-
 2. First, you'll add customer information from the Unified Profile as per the Customer Search Screen. 
 
-- Within the Tree View select **lbl_emailAddress** and set the **Text** Property of the label to **gallery_Customers.Selected.EMail** 
+- Within the Tree View select **lbl_emailAddress**. Set the **Text** property (the same way we did in Task 3) to:
+
+`gallery_Customers.Selected.EMail`
 
 
-- Within the Tree View select **lbl_CustomerFullname** and set the **Text** Property of the label to **gallery_Customers.Selected.FullName** 
+- Select **lbl_CustomerFullname** and set the **Text** Property of the label to:
 
+`gallery_Customers.Selected.FullName`
 
-- Within the Tree View select **lbl_LoyaltyID** and set the **Text** property of the label to **gallery_Customers.Selected. Loyalty_Customers_LoyaltyId** 
+- Within the Tree View select **lbl_LoyaltyID** and set the **Text** property of the label to:
 
- 
-
-- Within the Tree View select **lbl_Cust_Address** and set the **Text** property of the label to 
-
-	**Concatenate(gallery_Customers.Selected.StreetAddress, "** 
-
-	**", gallery_Customers.Selected.City,"** 
-
-	**", gallery_Customers.Selected.State, "**
-
-	**", gallery_Customers.Selected.PostCode, "** 
-
-	**", gallery_Customers.Selected.Country)** 
+`gallery_Customers.Selected. Loyalty_Customers_LoyaltyId`
 
  
-3. Finally, within the Tree View select the **img_CustomerProfileImage image** and set the Image property to **gallery_Customers.Selected.Headshot**.
+
+- Within the Tree View select **lbl_Cust_Address** and set the **Text** property of the label to:
+ 
+`Concatenate(gallery_Customers.Selected.StreetAddress, " 
+", gallery_Customers.Selected.City," 
+", gallery_Customers.Selected.State, " 
+", gallery_Customers.Selected.PostCode, " 
+", gallery_Customers.Selected.Country)`
 
  
+3. Finally, within the Tree View select the **img_CustomerProfileImage** and set the Image property to:
+
+`gallery_Customers.Selected.Headshot`
 
 # Task 5 - Embed Unified Activities 
 
