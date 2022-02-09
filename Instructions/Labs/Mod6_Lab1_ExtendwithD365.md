@@ -347,9 +347,9 @@ We are now ready to consume the segments which Customer Insights has exported to
 
 7. Click **Save** in the top menu.
 
-8. Next, we need to configure the email. Click on the +sign between the Start and End indicator and click the **Send and email** option.
+8. Next, we need to configure the email. Click on the **+ sign** between the Start and End indicator and click the **Send an email** option.
 
-10. In the **Send an email** pop-out type in **High** and select the **High Value Monthly Newsletter** email we created previously.
+10. In the **Send an email** pop-out, type in **High** and select the **High Value Monthly Newsletter** email we created previously.
 
 10. The final step before we can publish our journey is to set the timeframe. Click on the **General** tab and set the **End date and time** to be just over 1 year from today.
 
