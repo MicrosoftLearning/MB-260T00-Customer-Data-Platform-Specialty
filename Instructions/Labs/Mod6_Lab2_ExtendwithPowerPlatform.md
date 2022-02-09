@@ -188,37 +188,33 @@ This simple report highlights:
 # Exercise 2 - Power Automate
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
-1. In a new Browser tab, navigate to https://flow.microsoft.com 
+1. Navigate to <make.powerapps.com> and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
 
-2. Select the right environment on top right from the drop down. 
+3. From the left hand menu, click **Flows.** (If prompted, click **Get started.**)
 
-3. From the left hand menu, click **Create**. 
-
-4. Click **Instant cloud flow** 
+4. Click **+ New flow** and then select **Instant cloud flow** from the dropdown.
 
 5. Click **Skip**. 
 
-6. Name your flow on the top by double clicking on **Untitled** as **ChurnCustomersSurgeAlert** 
+6. Name your flow on the top by double clicking on **Untitled** as **ChurnCustomersSurgeAlert**. 
 
-7. With in the PowerAutomate search bar, search for Dynamics 365 Customer Insights and select it. With in triggers, select the **Triggers a flow when segment threshold is crossed**. 
+7. Within the "Search connectors and triggers" search bar, search for Dynamics 365 Customer Insights. In the triggers box, find **Triggers a flow when a segment threshold is crossed (preview)** and select it.
 
-8. If prompted start trial for Power Automate. 
+9. You may be signed into your Customer Insights instance automatically, or you may need to sign in manually. After you've been authenticated, select your instance from the drop down. 
 
-9. Sign in if prompted. Select your instance from the drop down. 
+	- Segment : **HighRiskTransactionChurn** 
 
-- Segment : **HighRiskTransactionChurn** 
-
-- Threshold: **1200** 
+	- Threshold: **1200** 
 
 **Note**: Be sure to set the threshold to a number slightly larger than the current number of members in your segment so the trigger is hit later when we change the segment setting. 
 
-10. Click **New step**. In the Choose an action step, search for **Send an email (V2)**, select it and sign in with your outlook account and accept the consent if prompted. 
+10. Click **+ New step**. In the "Search connectors and actions" search bar, search for **Send an email (V2)**, select it. You may be signed into Outlook automatically, or you may need to sign in manually using your M365 credential.
 
 11. Enter the following: 
 
 	- **To**: Email address 
 
-	- **Subject**: Churn Customers Surge Alert !!! 
+	- **Subject**: Churn Customers Surge Alert!
 
 	- **Body**: Customers in segment HighRiskForChurn has crossed the threshold. Review the customer list. 
 
@@ -230,18 +226,13 @@ You should receive an email once the segment is refreshed.
 
 # Exercise 3 - Power App
 
-To create the Contoso Coffee Greeter App from this lab, you will import a templated app and connect the App to Customer Insights and Flow. 
-
+To create the Contoso Coffee Greeter App from this lab, you will import a template app and connect the App to Customer Insights and Flow. 
 
 ## Task 1 - Import the Greeter App Template 
 
-1. Sign-In to https://make.powerapps.com and select the environment in which you are working (This should be the same environment that you used to create your Flows in the previous Lab). 
-
-
+1. Sign-In to https://make.powerapps.com and select your Customer Insights environment if it is not already selected.
 
 2. Click **Apps** in the left-hand menu, and then click **Import Canvas App** from the top menu bar. 
-
-
 
 3. Click the **Upload** button and select the **CustomerInsightsGreeterApp.zip** included with the module content, then **Upload**. 
 
