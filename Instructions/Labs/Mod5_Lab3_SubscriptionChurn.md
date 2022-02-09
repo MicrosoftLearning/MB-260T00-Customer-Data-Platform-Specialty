@@ -130,7 +130,7 @@ When the data source is finished loading we need to go through the Unify process
 
 10. Leave the remaining field mappings blank and click **Next.**
 
-11. Review your selections and click **Save activity.**
+11. Review your selections and click **Save activity.** Then click **Done.**
 
 12. Next, we will create the UserLogs activity. Back on the main Activities page, click **+ Add Activity.**
 
