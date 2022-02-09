@@ -169,9 +169,9 @@ When the data source is finished loading we need to go through the Unify process
 
 6. Under Subscription history, hit **Add data** and select **Subscription** for the entity. Under Activities, select **SubscriberHistory : SubscriptionData** and click **Next.**
 
-7. Review the mapped attributes that we mapped in Task 1 and click **Save**.
+7. Review the mapped attributes that we mapped earlier and click **Save**.
 
-8. Within Customer activities, click on **Add data** and choose **Usage** for the entity. Under Activities, select **UserLogs : SubscriptionData.**
+8. Within Customer activities, click on **Add data** and choose **Usage** for the entity. Under Activities, select **UserLogs : SubscriptionData.** Then click **Next.**
 
 9. Map the following attributes:
 
