@@ -238,34 +238,27 @@ To create the Contoso Coffee Greeter App from this lab, you will import a templa
 
 4. On the next page, select **Import**. If **Import** is grayed out and **Import Setup** says Update, then click **Update** under **Import Setup** and change to **Create as new**. 
 
+5. Once the package has completed its import, click **Apps** in the left menu. You should see your imported app listed. 
 
 
-5. Once the package has completed its import, click **Apps** in the left menu, you should see your imported app listed. 
-
-
-6. Click the '...' icon next to its Name and select **Edit** to load the app in Edit Mode. 
+6. Click the '...' icon next to its name and select **Edit** to load the app in Edit Mode. (If you are prompted with a Welcome pop-up, click **Get started** and/or **Skip.**)
 
 
 ## Task 2 - Connect to Data Source(s) 
 
-In this task, we will use the Customer Insights Connector, to connect the Greeter Power App to your Customer Insights Instance. 
+In this task, we will use the Customer Insights Connector to connect the Greeter Power App to your Customer Insights Instance. 
 
-1. In the top menu bar, click **View** then select **Data Sources**.
+1. In the top menu bar, click **View** then select **Data Sources**. 
 
-3. In the **Data** menu that opens on the right, click **Add data source**.
+3. In the **Data** menu that opens on the right, click **+ Add data source**.
 
 5. Click **New Connection** and search for the **Dynamics 365 Customer Insights** connector.
  
-7. Select the connector and then click **Connect**. If prompted, sign-in with your credentials.
+7. Select the connector and then click **Connect**. (You may get a pop-up here - click **Got it** to skip.) If prompted, sign in with your credentials.
 
+5. Select **Customer** and **UnifiedActivity**. Type **Customer_Measure** into the Enter custom table name box and check the corresponding box. Then click **Connect**.
 
-5. Select **Customer, UnifiedActivity** and type **Customer_Measure** into the Enter custom table name box. Then click **Connect**.
-
-  
-
-6. You should see these three tables listed as data connections within your Greeter App. 
-	
-	Congratulations! You have established a connection to Customer Insights within your Power App. 
+6. You should see three new tables listed as data soures. Congratulations! You have established a connection to Customer Insights within your Power App. 
 
 ## Task 3 - Configure the Customer Search Screen 
 
@@ -275,16 +268,15 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
 2. From within the Tree View, select **gallery_Customers**. 
 
-
-3. Select **Items** from within the Property drop down and set the value to: 
+3. In the right-hand screen, switch to the **Advanced** tab. Select **Items** from within the Property drop down and set the value to: 
 
 	**SortByColumns(Search(Customer, TextSearchBox1.Text, "FullName"), "Loyalty_Customers_LoyaltyId")** 
 
 	This is connecting to the **Customer** data entity we created the previous Task. The data for this gallery is being pulled from the Unified Customer Profile. There is a formula attached to Items property to filter using the search bar text. 
 
-4. You are going to update the Customer gallery to show customers Full Name, email address and Contoso Club ID. 
+4. You are going to update the Customer gallery to show a customer's Full Name, email address and Contoso Club ID. 
 
-	With the gallery_Customers gallery selected, set the properties shown by clicking **Fields>Edit** under **Properties** as shown below. 
+	With the gallery_Customers gallery still selected, sreturn to the **Properties** tab. Select **Fields > Edit** .
 
 
 	| Property| Value |
