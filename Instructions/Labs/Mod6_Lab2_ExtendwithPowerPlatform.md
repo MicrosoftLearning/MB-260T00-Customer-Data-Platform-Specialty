@@ -141,7 +141,7 @@ Contoso Coffee wants to look for seasonality within their sales figures for both
 	- In filters pane, check **Select all** then uncheck the blank values line for Title. 
 
 3. With the pie chart selected, click the **Format** button and set the following properties: 
-	![Picture 739](Static/Lab_6_Extend_the_Solution_with_Power_Platform_image7.jpeg)
+	
 	- Legend: **On** 
 	- Legend: **Color = White** 
 	- Title: **Font Color = White** 
@@ -164,7 +164,7 @@ Contoso Coffee wants to look for seasonality within their sales figures for both
 	- Values: **ActivityTypeDisplay**
 	    which will turn into **Count of ActivityTypeDisplay** when added 
 
-3. With the Line Chart selected, click the **Format** button ![Picture 840](Static/Lab_6_Extend_the_Solution_with_Power_Platform_image8.jpeg) and set the following properties: 
+3. With the Line Chart selected, click the **Format** button and set the following properties: 
 	- Legend: **Color = White** 
 	- X axis: **Color = White** 
 	- Y axis: **Color = White** 
