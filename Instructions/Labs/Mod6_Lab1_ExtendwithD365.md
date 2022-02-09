@@ -165,7 +165,7 @@ The first step is to install the Customer Insights Customer Card Add-In. This ad
 
 2. Once selected, click **Solutions** on the left-hand menu.
 
-3. Click **Open AppSource** from the top of the page.
+3. Click **Open AppSource** from the top of the page. Remove the Power Platform filter from the search. 
 
 4. On the AppSource window that opens, search **Customer Insights**. You should see **Customer Insights Customer Card Add-in** in the results, click on it. Then click **Get it now**. (You may be prompted to sign in using your M365 credential.)
 
