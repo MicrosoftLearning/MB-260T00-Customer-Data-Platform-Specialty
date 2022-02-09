@@ -121,7 +121,7 @@ Because this is not a Power Query connector, we do not get the option to transfo
 
 1. Click the **Match** tab.
 
-3. Click **Add Entity** in the Matched records detail table. Select **Contact : D365** and check **Include All Records** and then click **Done**.
+3. Click **Add Entity** in the Matched records detail table. Select **Contact : D365**, check **Include all**, and then click **Done**.
 
 4. You will see that this new addition requires a new rule. Click **+ Add rule** and set it up as follows:
 
