@@ -46,7 +46,7 @@ lab:
 	| Is_auto_renew | True/False |
 	| RecurringFrequencyInMonths | Whole Number |
 
-12. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **SubscriberHistory**
+12. In the 'Name' field on the right-hand pane, rename your data source to **SubscriberHistory**.
 
 13. Click **Get Data**, then choose **Text/CSV**.
 
