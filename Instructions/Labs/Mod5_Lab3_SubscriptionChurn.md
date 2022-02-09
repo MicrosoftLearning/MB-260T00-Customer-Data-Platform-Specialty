@@ -81,7 +81,7 @@ When the data source is finished loading we need to go through the Unify process
 
 5. Click the **Edit** button on the **Matched records details** heading.
 
-6. Click **+ Add entity** and add the **Subscribers : SubscriptionData** entity. Check **Include all**, then click **Done**
+6. Click **+ Add** and add the **Subscribers : SubscriptionData** entity. Check **Include all**, then click **Done**
 
 7. Create a new rule by clicking **+Add rule** underneath the SubscriptionData rule. Select **Contacts : eCommerce** for entity and **ContactId** for both fields.
 
