@@ -97,7 +97,7 @@ When the data source is finished loading we need to go through the Unify process
 
 2. Click **+ Add Activity.**
 
-3. On the Set up your activity data screen, name the activity **Subscription History**. Select **SubscriberHistory : SubscriptionData** for Activity entity and select **Subscription ID** as the Primary key.
+3. On the Set up your activity data screen, name the activity **SubscriptionHistory**. Select **SubscriberHistory : SubscriptionData** for Activity entity and select **Subscription ID** as the Primary key.
 
 4. On the Set up your relationships screen, select **Add relationship.** Configure your relationship as the following:
 
