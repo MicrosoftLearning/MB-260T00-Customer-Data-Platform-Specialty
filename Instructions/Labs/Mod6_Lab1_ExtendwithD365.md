@@ -249,13 +249,13 @@ We will now configure a Dynamics 365 Contact form, used by Contoso Coffee CSA's 
 
 2. Navigate to the **Contacts** via the left hand menu. Open the Contact record for **Abbie Moss** and select your new **Contact with Customer Insights** form using the form selector.
 
-3. You should now see that the three Customer Insights you embedded in the form render. KPI and Demographics control's can be configured. You may need to edit the cards to select the correct fields to show.
+3. You should now see that the three Customer Insights you embedded in the form render. KPI and Customer Details controls can be configured. You may need to edit the cards to select the correct fields to show.
 
 - **Timeline:** No configuration required. This should display a unified set of ingested activities from Customer Insights.
 
-- **Demographic:** The demographic control should display some key information from the Unfiied Customer Profile. Click the **Edit** button to customize the information that appears. Turn on the **Segments**. Add any additional fields that you believe may be helpful to a Customer Service Advisor.
+- **Customer Detail:** The customer detail control should display some key information from the Unfiied Customer Profile. 
 
-- **KPIs:** Click **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility. (**Total Club Points, Lifetime Spend(&#036;)** and **Average Store Purchase(&#036;)** )
+- **KPIs:** Click **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility (**Total Club Points, Lifetime Spend,** and **Average Store Purchase** ).
 
 Congratulations! You have successfully completed the objectives of this module, providing Contoso Coffee Customer Service Advisors with visibility of all customer touchpoints & KPIs.
 
