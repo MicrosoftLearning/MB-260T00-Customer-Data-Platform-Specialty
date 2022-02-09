@@ -210,14 +210,8 @@ In this task we will embed a unified timeline of activities ingested into Custom
 
 3. Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property.
 
-	| **Property**| **Input** |   
-	| - | - |
-	| **Title2**| **ThisItem.Title** |   
-	| **Subtitle2**| Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), 
-DateTimeFormat.ShortDate) 
-|
-	| |
-
+- **Title2**: `ThisItem.Title`   
+- **Subtitle2**: `Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), DateTimeFormat.ShortDate)` 
 
 ## Task 6 - Embed KPIs to Profile Page 
 
@@ -229,14 +223,11 @@ Contoso Club Loyalty Points
  
 2. Set the Items value using the property selector to the below value: 
 
- 
-	**Filter(Customer_Measure, CustomerId = gallery_Customers.Selected.CustomerId)** 
+	`Filter(Customer_Measure, CustomerId = gallery_Customers.Selected.CustomerId)`
 
- 
 3. Expand the **gallery_ClubPoints** and select **lbl_Points** inside the gallery. Select the **Text** property from the drop down. Set the formula as follows to display the contacts corresponding TotalClubPoints: 
  
-
-	**ThisItem.TotalClubPoints** 
+	`ThisItem.TotalClubPoints` 
 
 ### Contoso Lifetime Value / Spend 
 
@@ -244,14 +235,12 @@ Contoso Club Loyalty Points
 
 2. Set the **Items** value using the property selector to: 
 
+	`Filter(Customer_Measure, CustomerId = gallery_Customers.Selected.CustomerId)`
 
-	**Filter(Customer_Measure, CustomerId = gallery_Customers.Selected.CustomerId)**
-
- 
 3. Expand the **gallery_CLTV gallery** and select **lbl_CLTV** inside the gallery. Select the **Text** property from the drop down and set the formula as follows to display the contacts corresponding LifetimeSpend: 
 
 
-	**ThisItem.LifetimeSpend** 
+	`ThisItem.LifetimeSpend`
 
 From the File menu, click Save and Publish.  
 
@@ -259,12 +248,9 @@ From the File menu, click Save and Publish.
 
 Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. In this task, you will explore the Greeter App experience 
 
-1. In a browser tab, navigate to https://make.powerapps.com. If required, sign-in. 
-
+1. In a browser tab, navigate to https://make.powerapps.com. If required, sign in.
  
 2. Click **Apps** in the left-hand menu, and then run your **Contoso Coffee Greeter App** by selecting it and clicking **Play** on the top. 
-
- 
 
 3. Imagine you are a member of Contoso Coffee Retail staff and you greet them within the store.
 
