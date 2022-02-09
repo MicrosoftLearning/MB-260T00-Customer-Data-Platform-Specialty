@@ -241,7 +241,7 @@ We will now configure a Dynamics 365 Contact form, used by Contoso Coffee CSA's 
 
 16. Click **Save and Close**.
 
-17. Back on the model-driven **App Designer**, select to add your new **Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up.
+17. Back on the model-driven **App Designer**, select the **Contact with Customer Insights** form to add your new **Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up.
 
 18. Click **Save** in the top right hand corner and then **Publish**.
 
