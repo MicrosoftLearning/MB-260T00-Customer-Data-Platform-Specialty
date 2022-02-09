@@ -181,7 +181,7 @@ The first step is to install the Customer Insights Customer Card Add-In. This ad
 
 10. Double click the **CustomerInsightsCustomerCard** solution. You should see the **Configuration** Page. If not, click **Configuration** from the left menu.
 
-11. Click **Login with your org credentials** and sign-in with your account used for **Customer Insights**. Note: If you don't see the login dialog you may need to "allow Pop-ups" in your browser.
+11. Click **Login with your org credentials** and sign-in with your account used for **Customer Insights**. (**Note:** If you don't see the login dialog, you may need to "allow pop-ups" in your browser.)
 
 12. Once connected, select your Customer Insights instance in the drop down.
 
