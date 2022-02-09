@@ -185,9 +185,7 @@ The first step is to install the Customer Insights Customer Card Add-In. This ad
 
 12. Once connected, select your Customer Insights instance in the drop down.
 
-13. From the drop-down for **contact id**, select the attribute from your customer profile that represents the Dynamics 365 Contact Id: **System.Customer.D365.Contacts.contactid**.
-
-**Note**: There is now a field for **Dynamics 365 account id field** which we are not using. You may leave this as "please select". This will be used in the future for B2B scenarios.
+13. From the drop-down for **contact id**, select the attribute from your customer profile that represents the Dynamics 365 Contact Id: **System.Customer.D365.Contacts.contactid**. (**Note**: There is now a field for **Dynamics 365 account id field** which we are not using. You may leave this as "please select". This will be used in the future for B2B scenarios.)
 
 14. Click **Save Configuration**
 
