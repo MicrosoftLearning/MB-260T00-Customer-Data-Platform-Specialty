@@ -309,15 +309,15 @@ We are now ready to consume the segments which Customer Insights has exported to
 
 3. Click on **Segments** in the left-hand menu, in the **Customers** section.
 
-4. Click on the **HighValueOnlineCustomers** segment to open it. You will notice that it lists the contacts who are members of this segment.
+4. Click on the **HighValueOnlineCustomers** segment to open it. 
 
 5. To use the Segment in a marketing journey you must first mark it as 'Live'. Click the **Go Live** button in the top menu bar to accomplish this. Once the status for the segment change to **Live** you can continue.
 
 ### Create the Newsletter Email
 
-1. Click on **Marketing emails** in the left-hand menu
+1. Click on **Marketing emails** in the left-hand menu.
 
-2. Click **New** in the top menu bar
+2. Click **New** in the top menu bar.
 
 3. In the template selection pop-up click on **Filter**, then in the **Purpose** filter it to **Newsletter** and then select any of the newsletter options and click on **Select**.
 
