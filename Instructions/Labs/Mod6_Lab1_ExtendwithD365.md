@@ -319,7 +319,7 @@ We are now ready to consume the segments which Customer Insights has exported to
 
 2. Click **New** in the top menu bar.
 
-3. In the template selection pop-up click on **Filter**, then in the **Purpose** filter it to **Newsletter** and then select any of the newsletter options and click on **Select**.
+3. In the template selection pop-up select **1-column newsletter.**
 
 4. You are welcome to customize anything in the newsletter you'd like, but for this lab we really don't need to customize anything.
 
