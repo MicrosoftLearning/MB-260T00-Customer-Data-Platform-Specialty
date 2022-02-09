@@ -67,9 +67,7 @@ Now we will ingest the Dynamics 365 contacts as an additional data source within
 
 3. Choose **Microsoft Dataverse** and name the Data Source **D365**. Click **Next**.
 
-4. On the **Enter Microsoft Dataverse** screen, we will need to put in the URL to our Dynamics Dataverse instance. To get this, go back to your Dynamics Marketing site in a new tab (or if you have it open switch back to it). Copy the beginning of the URL. You will have something like this: https://ORGNAME.crm.dynamics.com.
-
-Enter that URL into the **Server address** box and click **Sign In**. Sign In with the credentials that you use to access Dynamics 365. 
+4. On the **Enter Microsoft Dataverse** screen, we will need to put in the URL to our Dynamics Dataverse instance. To get this, go back to your Dynamics Marketing site in a new tab (or if you have it open switch back to it). Copy the beginning of the URL. You will have something like this: https://ORGNAME.crm.dynamics.com. Enter that URL into the **Server address** box and click **Sign In**. Sign In with the credentials that you use to access Dynamics 365. 
 
 5. Click **Next**.
 
