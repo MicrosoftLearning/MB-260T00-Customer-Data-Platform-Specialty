@@ -4,7 +4,7 @@ lab:
     module: 'Module 5: Enrich data and predictions with Audience insights'
 ---
 
-# Lab 5.1: Predictions
+# Lab 5.2: Predictions
 # Module 5: Enrich data and predictions with Audience insights
 
 Customer Insights offers out of the box models to predict key insights of your business. Currently, Customer Insights provides Subscription Churn model that can predict whether your customers are at risk of not using your company's subscription products or services. Many more OOB models to follow.
