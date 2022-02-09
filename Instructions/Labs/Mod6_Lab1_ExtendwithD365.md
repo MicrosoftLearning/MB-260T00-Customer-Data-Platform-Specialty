@@ -233,9 +233,9 @@ We will now configure a Dynamics 365 Contact form, used by Contoso Coffee CSA's 
 
 13. Set the control to appear on **Web**, **Phone** and **Tablet** and check the **Hide Default Control** checkbox.
 
-14. Repeat steps **11** and **12** for the fields added into the **KPI** and **DEMOGRAPHICS** section, adding the **Customer Insights Measures Control** to KPI section and the **Customer Insights Customer Details** to the Customer Details section.
+14. Repeat steps **11** and **12** for the fields added into the **KPI** and **CUSTOMER DETAILS** section, adding the **Customer Insights Measures Control** to KPI section and the **Customer Insights Customer Details** to the Customer Details section.
 
-15. Move the **KPI** section to the top of **Related** section and **DEMOGRAPHICS** under the **KPI** section. Now remove **Related** and pre existing **Timeline** sections.
+15. Move the **KPI** section to the top of **Related** section and **CUSTOMER DETAILS** under the **KPI** section. Now remove **Related** and pre existing **Timeline** sections.
 
 16. Click **Save and Close**.
 
