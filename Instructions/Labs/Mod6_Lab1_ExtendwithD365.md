@@ -291,13 +291,9 @@ Finally, let's export the segment to Dynamics Marketing. Click the **Run** butto
 
 If you have already configured an export destination and then create new segments there is an easy way to add those new segments to your existing export. In this task we'll go in and add the **High Value Online Customers** segment to the export we just created.
 
-1. Click **Segments** in the left-hand menu
+1. Click **Segments** in the left-hand menu.
 
-2. Click the vertical ellipse next to the **HighValueOnlineCustomer** segment. Then click **Add to** > **My Marketing Instance** (or whatever you named your export destination).
-
-3. Click on **System** > **Export Destinations** > **My Export Destinations** in the left-hand menu.
-
-4. Click **Export all** in the top menu bar.
+2. Click the vertical ellipse next to the **High Value Online Customers** segment. Then click **Manage Exports**. Select your Dynamics 365 Marketing export and select **Add segment** (or click the plus sign). Hit **Run.**
 
 	This concludes the lab. You are now ready to consume the segments in Dynamics 365 Marketing which is incorporated as an additional section which you can do later.
 
