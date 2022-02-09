@@ -72,8 +72,6 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 **UnifiedActivity**
 - UnifiedActivity
 
-
-
 ## Task 2 - Add Visualizations 
 
 In this task, you'll add some simple visualizations to the report. 
@@ -216,19 +214,17 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 10. Click **New step**. In the Choose an action step, search for **Send an email (V2)**, select it and sign in with your outlook account and accept the consent if prompted. 
 
-
-
 11. Enter the following: 
 
-	**To**: Email address 
+	- **To**: Email address 
 
-	**Subject**: Churn Customers Surge Alert !!! 
+	- **Subject**: Churn Customers Surge Alert !!! 
 
-	**Body**: Customers in segment HighRiskForChurn has crossed the threshold. Review the customer list. 
+	- **Body**: Customers in segment HighRiskForChurn has crossed the threshold. Review the customer list. 
 
-12. Click **Save** 
+12. Click **Save**.
 
-13. To test your PowerAutomate, go back to your Customer Insights environment and edit your **High Risk For Churn** segment condition as ChurnScore greater than 0.5 instead of 0.6 which adds some more customers to your segment and triggers this Power Automate. 
+13. To test your Power Automate flow, go back to your Customer Insights environment and edit your **High Risk For Churn** segment condition as ChurnScore greater than 0.5 instead of 0.6 which adds some more customers to your segment and triggers this Power Automate. 
 
 You should receive an email once the segment is refreshed. 
 
@@ -263,13 +259,16 @@ To create the Contoso Coffee Greeter App from this lab, you will import a templa
 
 In this task, we will use the Customer Insights Connector, to connect the Greeter Power App to your Customer Insights Instance. 
 
-1. In the top menu bar, click **View** then select **Data Sources** 
-2. In the **Data** menu that opens on the right, click **Add data source** 
-3. Click **New Connection** and search for the **Dynamics 365 Customer Insights** connector 
-4. Select the connector and then click **Connect**. If prompted, sign-in with your credentials for your Customer Insights 
+1. In the top menu bar, click **View** then select **Data Sources**.
+
+3. In the **Data** menu that opens on the right, click **Add data source**.
+
+5. Click **New Connection** and search for the **Dynamics 365 Customer Insights** connector.
+ 
+7. Select the connector and then click **Connect**. If prompted, sign-in with your credentials.
 
 
-5. Select **Customer, UnifiedActivity** and type **Customer_Measure** into the Enter custom table name box. Then click **Connect** 
+5. Select **Customer, UnifiedActivity** and type **Customer_Measure** into the Enter custom table name box. Then click **Connect**.
 
   
 
@@ -281,15 +280,14 @@ In this task, we will use the Customer Insights Connector, to connect the Greete
 
 In this task you are going to connect Customer Insights data to the Customer Search and Customer Profile screens within the greeter app. This will enable Contoso Coffee Retail staff to find and view customer information when they greet them in store. 
 
-1. Within the Greeter Power App in Edit mode, open the **CustomerSearch_Screen screen** via the Tree View 
+1. Within the Greeter Power App in Edit mode, open the **CustomerSearch_Screen screen** via the Tree View. 
 
 2. From within the Tree View, select **gallery_Customers**. 
 
 
 3. Select **Items** from within the Property drop down and set the value to: 
 
-	**SortByColumns(Search(Customer, TextSearchBox1.Text, "FullName"), 
-	"Loyalty_Customers_LoyaltyId")** 
+	**SortByColumns(Search(Customer, TextSearchBox1.Text, "FullName"), "Loyalty_Customers_LoyaltyId")** 
 
 	This is connecting to the **Customer** data entity we created the previous Task. The data for this gallery is being pulled from the Unified Customer Profile. There is a formula attached to Items property to filter using the search bar text. 
 
@@ -312,13 +310,13 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 	**Note**: The **Text** property of any control can be selected by first selecting the respective control and picking the **Text** property from the drop down on the top. We will do these changes throughout the lab. 
 
 
-	Within the Tree View select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label to **gallery_Customers.Selected.EMail** 
+	Within the Tree View select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label to **gallery_Customers.Selected.EMail**. 
 
 
 
-6. Within the Tree View select **lbl_FullName** and set the **Text** Property of the label to **gallery_Customers.Selected.FullName** 
+6. Within the Tree View select **lbl_FullName** and set the **Text** Property of the label to **gallery_Customers.Selected.FullName**. 
 
-7. Within the Tree View select **lbl_CustomerAddress** and set the **Text** property of the label to 
+7. Within the Tree View select **lbl_CustomerAddress** and set the **Text** property of the label to:
 
 	**Concatenate**(**gallery_Customers.Selected.StreetAddress, "** 
 	**", gallery_Customers.Selected.City,"**
@@ -365,7 +363,7 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 	**", gallery_Customers.Selected.Country)** 
 
  
-3. Finally, within the Tree View select the **img_CustomerProfileImage image** and set the Image property to **gallery_Customers.Selected.Headshot** 
+3. Finally, within the Tree View select the **img_CustomerProfileImage image** and set the Image property to **gallery_Customers.Selected.Headshot**.
 
  
 
@@ -374,17 +372,17 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 In this task we will embed a unified timeline of activities ingested into Customer Insights within the Customer Profile Screen. This will give Contoso Coffee retail staff visibility of any recent interactions. 
 
  
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery gallery_UnfiedTimeLine** 
+1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery gallery_UnfiedTimeLine**. 
 
 
-2. With the gallery selected, select the **Items** property from the property drop-down and enter the following within the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile 
+2. With the gallery selected, select the **Items** property from the property drop-down and enter the following within the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile.
 
  
 	**FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)** 
 
  
 
-3. Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property using the Property dropdown 
+3. Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property using the Property dropdown. 
 
 	| **Title2**| **ThisItem.Title** |   
 	| - | - |
@@ -399,7 +397,7 @@ In this task you will embed key customer KPIs that we calculated as 'Customer Me
 
 Contoso Club Loyalty Points 
 
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the gallery **gallery_ClubPoints** 
+1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the gallery **gallery_ClubPoints**. 
  
 2. Set the Items value using the property selector to the below value: 
 
@@ -414,7 +412,7 @@ Contoso Club Loyalty Points
 
 ### Contoso Lifetime Value / Spend 
 
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen** screen via the Tree View and select the gallery **gallery_CLTV** 
+1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen** screen via the Tree View and select the gallery **gallery_CLTV**. 
 
 2. Set the **Items** value using the property selector to: 
 
@@ -433,274 +431,20 @@ From the File menu, click Save and Publish.
 
 Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. In this task, you will explore the Greeter App experience 
 
-1. In a browser tab, navigate to https://make.powerapps.com. If required sign-in. 
+1. In a browser tab, navigate to https://make.powerapps.com. If required, sign-in. 
 
  
 2. Click **Apps** in the left-hand menu, and then run your **Contoso Coffee Greeter App** by selecting it and clicking **Play** on the top. 
 
  
 
-3. Imagine you are a member of Contoso Coffee Retail staff and you greet them within the store... 
+3. Imagine you are a member of Contoso Coffee Retail staff and you greet them within the store.
 
 - Look up Abbie Moss' record (LOYID_1000) 
-
- 
-
 - Open Abbie Moss' record: 
 
 	- **Review Activity History** 
-
-	Note that you can identify Abbie's recent purchase history, and that she has made several in-store purchases of brew-at-home coffee. 
-
-    **Review Abbie's Club Balance and Lifetime Value** 
-
+   	- **Review Abbie's Club Balance and Lifetime Value** 
 	- Combining her purchase history with insight on her 'Current Points' and 'Lifetime Value', you are able to ascertain that Abbie is both a frequent and high-value customer. 
 
 
-# Optional - Connect PowerAutomate, PowerApps and CI
-## Task 1 - Import the 'Customer Check-In' Activity Solution 
-
-The first task is to create a Custom Activity Type within Dynamics 365 that can be used to store details of 'Customer Check Ins' when customers visit Contoso Coffee stores and cafes. 
-
-We will use a pre-created activity solution. 
-
-1. In a browser window, browser to https://make.powerapps.com 
-
-2. In the top right-hand corner, select the Environment in which you have been working. 
-
- 
-	Note: This will be the environment containing your Dynamics 365 Instance where you previously deployed the Dynamics 365 Customer Insights Card Add-In 
-
-3. Select **Solutions** from the left-hand menu 
-
-4. On the Solutions page, choose **Import** at the top of the page 
-
-5. Click **Choose File** and select the **CheckIn Activity Solution**., which can be found with your CI ILT course Materials. 
-
-	**CheckInActivity_<versionnumber>_managed.zip** 
-
-6. Click **Next**, then **Import** 
-
-	Once published, you will have a solution named **CheckIn Activity.** 
-
- 
-## Task 2 - Create the 'Check-In' Flow 
-
-In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
-
-1. In a new Browser tab, navigate to https://flow.microsoft.com 
-
-2. Select the environment you used for Task 1 (Installing the Check-In Solution). 
-
-	To do this, click your name in the top right-hand corner and select the environment from the drop down. 
-
-3. From the left hand menu, select **My Flows**
-
-4. Click **New - Instant cloud flow** 
-
-5. On the Build an Instant Flow page, choose **PowerApps** and name your Flow **Contoso Coffee Check-In** and click **Create.** 
-
-
-6. Click on **New Step**. 
-
-7. In the Choose an action step, search for **Microsoft Dataverse** and choose the action **Add a new row** 
-
-8. For Table Name choose **Contoso Check-Ins**, and for Subject use **Check-In @ Contoso Boutique**
-
-
-9. Set the **Activity Party Attribute Name 1** to **8** for "regarding"
-
-	You can find the type references here: https://docs.microsoft.com/enus/dynamics365/customerengagement/onpremises/developer/activityparty-entity 
-
-10. Set the **Activity Party Attribute Value 1 to /contacts()** 
-
-11. Place your cursor inside the parens you just typed, then in the pop-up on the Dynamic content tab select **Ask in PowerApps** 
-
-
-12. Click Show advanced options and complete the following attributes as below: 
-
-	| Attribute| Value |
-	| - | - |
-	| Actual Start| Click **Expression** and use the expression: utcNow() This will populate the 'Actual Start Date' with the current Date+Time at the point of capture. |
-	| Contoso Club| Select enter custom value, then **Ask in PowerApps** within Dynamic content tab |
-	| Contoso Subscription| **Ask in PowerApps** (you may need to click See more) |
-	| Description| **Ask in PowerApps** (you may need to click See more) |
-	| Personalised Recommendation| Ask in PowerApps (you may need to click See more) |
-	| Start Date| Click **Expression** and use the expression: **utcNow()** This will populate the 'Start Date' with the current Date+Time at the point of capture. |
-
-13. Click Save 
-
-We will connect this flow with a Greeter Power App to enable Contoso Retail staff to capture customer check-ins. 
-
-  
-
-# Task 3 - Creating and testing the 'Recommendations' Flow 
-
-Now we will create a simple Flow that will generate some sample Action Cards for us to consume within the Power App and Dynamics 365, which will represent intelligent insights for personalization such as a product recommendation. 
-
-**Note: At the time of writing Power Apps, Power Automate and Power BI connectors for Customer Insights are in BETA and so have limited connectivity. Going forward, it will be possible to generate Action Cards using Customer Insights Measures, Segments or from an Intelligent Prediction using Machine Learning.** 
-
-In this example, we will simulate the creation of these cards using a simple Flow trigger. 
-
-1. In a new Browser tab, navigate to https://flow.microsoft.com 
-
-2. Select the environment you used for Task 1 (Installing the Check-In Solution). 
-
-	To do this, click your name in the top right-hand corner and select the environment from the drop down. 
-
-3. From the left hand menu, select **My Flows** 
-
-4. Click **New - Instant cloud flow** 
-
-5. On the Build an Instant cloud flow page, choose **Manually Trigger a Flow** and name your Flow **Contoso Coffee Recommendations** then click **Create**. 
-
-6. Click **New step** and search for the Dynamics 365 Sales Insights connector. Then choose the **Create card for Assistant V3 (Preview)** action. 
-
- 
-7. If prompted, sign-in using your tenants admin credentials and grant permissions to the app.  
-
-8. Populate the properties on the step as below (be sure to click Show Advanced) 
-
-	| Property| Value |
-	| - | - |
-	| **Environment**| <Dynamics 365 Instance used through-out this lab> |
-	| **Card Name**| Product Recommendation |
-	| **Card Header**| Product Recommendation: Cold Brew Coffee |
-	| **Card Text**| Personalised Recommendation for Contoso Coffee Cold Brew (Segmentation) for **Abbie Moss**. Be careful if you copy/paste the text and remove any line breaks. |
-	| **Primary Action Type**| Open Url |
-	| **Display Entity**| contacts |
-	| **Display Record ID**| The GUID for Abbie Moss .The easiest way to get the url is to open your Dynamics application and view the contact Abbie Moss. You can copy the Contact ID from the url |
-	| **Primary Action Text**| Make Recommendation |
-	| **Primary Action URL**| https://ciilt.crm.dynamics.com/main.aspx?appid=f2dda973-61e5-ea11-a817-000d3a1ab14b&pagetype=entityrecord&etn=contact&id= .The easiest way to get the url is to open your Dynamics application and view the contact **Abbie Moss**. You can remove the Contact ID from the url |
-
-
-9. **Save** your Flow and then click **Test** to run your Flow. 
-
- 
-# Task 4 - Viewing the Recommendation Card Created by the Flow.
-
- 
-Because we are using Dynamics 365 Customer Service we can not see the results directly in the contact view within Dynamics. To do this we would need a license for Dynamics 365 Sales. What we can do is open the **Sales Activity Social Dashboard** to see the action card we just created. 
-
-1. Open you Dynamics instance by connecting to https://ciilt.crm.dynamics.com/ replacing the tenant with your tenant name, and logging in with your tenant admin account. 
-
-2. Click on the Dynamics application dropdown in the menu.
-
-3. Select **Dynamics 365 - Custom** from the list 
-
-4. This opens the **Sales Activity Social Dashboard** view. In this view you will see the **Relationship Assistant section**, which should now contain a **Product Recommendation** card created by the Power Automate flow we created and tested in the last step. Click on it to see more details. 
-
-We will also see the recommendations on Power Apps where we will surface the recommendations from the underlying CDS entity where they are stored. 
-
- 
-
-## Task 5 - Connect Customer Check-In Flow 
-
-In this task, you will connect the **Customer Check-In Flow** to your greeter app so that Contoso Coffee Retail staff are able to capture the visit of a customer & details of topics/conversations they have had with customer. 
-
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the button **btn_CheckIn** 
-![Pictuer30](static/Lab_6_Picture30.png)
-
-With the button **btn_CheckIn** selected, select the **On Select** property in the **Property** drop-down and set the value to **UpdateContext({showCheckIn:true})**.
-
-2. Expand the **CheckInDialog** group .
-
-3. Select the **btn_CheckInDialog** 
-
-4. Select the **OnSelect** property from the dropdown 
-
-5. Click the **Action** item in the top menu. 
-
-6. On the Action menu, click **Power Automate**. In the Data fly-out that appears, select your **Contoso Coffee CheckIn** Flow that you created in the earlier lab. 
-![Pictuer31](static/Lab_6_Picture31.png)
- 
-7. You should notice that you're prompted to complete the Flow's parameters within the formula bar. When you created the Flow in the Power Automate Lab, we determined that several attribute values would be asked for when the Flow was executed. Here we can pass these values as parameters to fulfill this need. 
-
-- Contoso Club (Boolean), Contoso Subscription (Boolean), Description (Text), Personal Recommendations (Boolean, Regarding (Contacts GUID) 
-
-	Function should read as below: 
-
-	**'ContosoCoffeeCheck-In'.Run( gallery_Customers.Selected.D365_Contacts_contactid, tgl_ContosoClub, tgl_subscription, tgl_recommendations, DetailInput);**
-
-	**UpdateContext({showCheckIn:false});** 
-
-	**Navigate(CustomerProfile_Screen, Fade);** 
-
- 
-
-
-## Task 6 - Surface Personalised Recommendations 
-
-Dynamics 365 includes the ability to create 'Insight Cards'. These cards highlight to users, timely, actionable insights gathered from Dynamics 365, Office 365 and LinkedIn - Three huge stores of business, interaction and relationship data that center around customers. 
-
-It is now possible to define and generate custom Insight Cards using Power Automate based on insights you obtain from other sources. 
-
-With Customer Insights, allowing you to generate insight through **Measures** and **Segments** as well as extend Customer Insights using **Azure Machine Learning** to make **predictions** such as next steps, churn or propensity to take up an offer - These are all insights that you may wish to drive an action with a customer. 
-
-![Picture 2890](Static/Lab_6_Extend_the_Solution_with_Power_Platform_image25.jpeg)
-
-In this task, we will surface the Insight 
-
-Cards generated during Power Automate Module, within the Greeter App, allowing the Contoso Retail staff to have a more focused, personalized interaction with their customer. 
-
-
-### Configure the Recommendations Gallery 
-
-1. Create a connection to **Common Data Service** (Dynamics 365). To do this, click **View** in the top menu bar and then Data Sources. 
-
-2. In the **Data** menu that appear to the right of your canvas, select Add data source 
-
-3. Click **New connection,** then search for the Common Data Service connector. Select the connector and click Connect. 
-
-4. In the **Choose an entity** page, select **Action Cards** then click Connect 
-
-
-### Set the Recommendations Gallery to display Insight Cards associated to the current contact 
-
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen** screen via the Tree View and select the gallery **gallery_Recommendations** 
-
-2. Select the **Items** property from the property drop-down, then set the formula to return only Insight Cards relating to the current Customer Profile as below: 
-
-	**Filter('Action Cards', regardingobjectid = gallery_Customers.Selected.D365_Contacts_contactid && 'CardType ENUM' <> 32)** 
-
-3. In the tree view, expand the **gallery_Recommendations** and select **Title1.** Set its Text value to Th**isItem.Title.** 
-
- 
-
-4. In the tree view, expand the **gallery_Recommendations** and select **Subtitle1.** Set its Text value to **ThisItem.'Card Description'.** 
-
-5. **Save** and **Publish** your App. 
-
-	You should now see that the 'Recommendations Gallery' contains some example Recommendations using the Insight Cards you generated in previous module, using Power Automate. 
-	![Pictuer32](static/Lab_6_Picture32.png)
- 
-
-## Task 7 - Test & Explore the Greeter App Experience  
-
-Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. In this task, you will explore the Greeter App experience 
-
-1. In a browser tab, navigate to https://powerapps.microsoft.com. If required sign-in. Click Apps in the left-hand menu, and then run your Contoso Coffee Greeter App 
-![Pictuer33](static/Lab_6_Picture33.png)
-  
-
-2. Imagine you are a member of Contoso Coffee Retail staff and you greet customers within the store... 
-
-3. Look up Abbie Moss' record (LOYID_1000) 
-
-4. Open Abbie Moss' record: 
-
-	- Review Activity History 
-
-	- Note that you can identify Abbie's recent purchase history, and that she has made several in-store purchases of brew-at-home coffee. 
-
-	- Review Abbie's Club Balance and Lifetime Value 
-
-	- Combining her purchase history with insight on her 'Current Points' and 'Lifetime Value', you are able to ascertain that Abbie is both a frequent and high-value customer.   
-
-	- Review recommendations made for Abbie 
-
-	- Looking at her personalized recommendations, you see that there is a recommendation for Abbie to take-up the 'Cold Brew Coffee' offer. This is Contoso Coffee's new Cold Brew coffee, which you can recommend to Abbie. 
-
-5. Finally, you click the 'Customer Check-In' button 
-
-6. This allows you to capture Abbie's visit to the store as well as details of the recommendations you discussed with Abbie and captures this detail against her record in Dynamics 365 as an activity. 
