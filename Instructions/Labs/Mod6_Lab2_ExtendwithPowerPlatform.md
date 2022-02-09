@@ -200,24 +200,22 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 # Task 5 - Embed Unified Activities 
 
 In this task we will embed a unified timeline of activities ingested into Customer Insights within the Customer Profile Screen. This will give Contoso Coffee retail staff visibility of any recent interactions. 
-
  
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery gallery_UnfiedTimeLine**. 
+1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery_UnfiedTimeLine**. 
 
 
-2. With the gallery selected, select the **Items** property from the property drop-down and enter the following within the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile.
-
+2. With the gallery selected, click the **Advanced** tab in the right pane and select the **Items** property. Enter the following within the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile.
  
-	**FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)** 
+`FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)`
 
- 
+3. Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property.
 
-3. Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property using the Property dropdown. 
-
-	| **Title2**| **ThisItem.Title** |   
+	| **Property**| **Input** |   
 	| - | - |
 	| **Title2**| **ThisItem.Title** |   
-	| **Subtitle2**| **Text(DateTimeValue(ThisItem.ActivityTime, "DateTimeFormat.ShortDate)** Use your own locale.| en| -US"), |
+	| **Subtitle2**| Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), 
+DateTimeFormat.ShortDate) 
+|
 	| |
 
 
