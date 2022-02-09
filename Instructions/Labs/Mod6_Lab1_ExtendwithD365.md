@@ -287,7 +287,7 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 6. You can now choose which Segments you want to export. We will add one Segment here and in the next Task we'll see how to add new segments to an existing export. Click the **Summer Promo** segment and click **Save**.
 
-Finally, let's export the segment to Dynamics Marketing. Click the **Export** button by clicking the three dots beside the destination to individually export to your destinations or you can click on **Export all** in the top menu to initiate export to all the destinations that are configured.
+Finally, let's export the segment to Dynamics Marketing. Click the **Run** button by clicking the three dots beside the destination to individually export to your destinations or you can click on **Run all** in the top menu to initiate export to all the destinations that are configured.
 
 ## Task 2 - Adding a Segment to an Existing Export Destination
 
