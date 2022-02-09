@@ -49,16 +49,15 @@ Interactions are any customer touch points - these could include purchases, cust
 
 8. Click **Next.** 
 
-9. On the Set activity type screen, set the type to **SalesOrderLine**.
+9. On the Set activity type screen, set the type to **SalesOrder**.
 
 10. Set "Provide semantic mapping for your activity's attributes?" to **Yes.**
 
 11. Fill out the data for activity type field mapping as follows:
 
-	- Order line ID: PurchaseId
+	- Sales order ID: PurchaseID
 	- Order date: PurchasedOn
-	- Product ID: ProductId
-	- Amount: TotalPrice
+	- Sales amount: TotalPrice
 
 12. Click **Next**, review your entries, then click **Save activity.**
 
