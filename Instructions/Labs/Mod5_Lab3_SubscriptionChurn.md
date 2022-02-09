@@ -123,6 +123,10 @@ When the data source is finished loading we need to go through the Unify process
 	- Subscription ID: SubscriptionID
 	- Subscription start date: SubscriptionStartDate
 	- Subscription end date: SubscriptionEndDate
+	- Subscription type: SubscriptionType
+	- Subscription amount: None
+	- Is recurring?: IsRecurring
+	- Recurring frequency in months: RecurringFrequencyInMonths
 
 10. Leave the remaining field mappings blank and click **Next.**
 
