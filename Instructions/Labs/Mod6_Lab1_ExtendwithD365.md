@@ -277,33 +277,15 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 1. Navigate to https://home.ci.ai.dynamics.com.
 
-2. Log in with your administrator account.
+2. Log in with your administrator account if needed.
 
-3. Click on **Admin** > **Export Destinations** in the left-hand menu. You can find various destinations that are available in Customer Insights. Click **Set up** on **Dynamics 365 Marketing**.
+3. Click on **Data > Exports** in the left-hand menu. Click **+ Add export** and select **Dynamics 365 Marketing**.
 
-4. You will be presented with a dialog to configure your export destination to **Dynamics365 Marketing**. Enter the display name and your Marketing instance address and sign in with your account
+4. You will be presented with a dialog to configure your export destination to **Dynamics 365 Marketing**. Enter the display name and your Marketing instance address and sign in with your account. Check the **I agree** box and click **Save.**
 
-	Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the customer Insights customer and the Dynamics Contact. In our case this is the field I've chosen, yours should be similar). 
-
-	It is also important to note that you will either need to authenticate with the Global Tenant Admin account, or they will need to be present to consent to the access of the system using the service admin account you log in with.
-
-5. Click **Next**.
+	Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the customer Insights customer and the Dynamics Contact. Select **Customer ID.**
 
 6. You can now choose which Segments you want to export. We will add one Segment here and in the next Task we'll see how to add new segments to an existing export. Click the **Summer Promo** segment and click **Save**.
-
-**NOTE:** If you get an error when saving, follow these steps and then try to create the export again.
-
-1. Go to portal.azure.com - you need to login as tenant admin
-
-2. Search for **Enterprise Applications**
-
-3. Click on **All Applications** in the left menu
-
-4. Search for **Customer Insights Dynamics 365 For Sales Export**
-
-5. Click on **Permissions** on the left menu
-
-6. Click on the **Grant admin consent for Microsoft**
 
 Finally, let's export the segment to Dynamics Marketing. Click the **Export** button by clicking the three dots beside the destination to individually export to your destinations or you can click on **Export all** in the top menu to initiate export to all the destinations that are configured.
 
