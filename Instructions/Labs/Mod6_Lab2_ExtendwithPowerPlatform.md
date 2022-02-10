@@ -76,9 +76,9 @@ To create the Contoso Coffee Greeter App from this lab, you will import a templa
 
 ## Task 1 - Import the Greeter App Template 
 
-1. Sign-In to https://make.powerapps.com and select your Customer Insights environment if it is not already selected.
+1. Sign in to https://make.powerapps.com and select your Customer Insights environment if it is not already selected.
 
-2. Click **Apps** in the left-hand menu, and then click **Import Canvas App** from the top menu bar. 
+2. Click **Apps** in the left-hand menu, and then click **Import canvas app** from the top menu bar. 
 
 3. Click the **Upload** button and select the **CustomerInsightsGreeterApp.zip** included with the module content, then **Upload**. 
 
