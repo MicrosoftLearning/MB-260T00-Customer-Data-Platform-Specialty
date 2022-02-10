@@ -58,7 +58,7 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 11. Enter the following: 
 
-	- **To**: Email address 
+	- **To**: Email address (you can use a personal email address or your M365 credential email address) 
 
 	- **Subject**: Churn Customers Surge Alert!
 
