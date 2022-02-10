@@ -117,17 +117,13 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
 	`SortByColumns(Search(Customer, TextSearchBox1.Text, "FullName"), "Loyalty_Customers_LoyaltyId")`
 
-	This is connecting to the **Customer** data entity we created the previous Task. The data for this gallery is being pulled from the Unified Customer Profile. There is a formula attached to Items property to filter using the search bar text. 
+4.This is connecting to the **Customer** data entity we created the previous Task. The data for this gallery is being pulled from the Unified Customer Profile. There is a formula attached to Items property to filter using the search bar text. 
 
 4. You are going to update the Customer gallery to show a customer's Full Name, email address and Contoso Club ID. With the gallery_Customers gallery still selected, return to the **Properties** tab. Select **Fields > Edit** .
 
-
-	| Property| Value |
-	| - | - |
-	| **Layout**| **Title, Subtitle and body** |
-	| **Field**(click Edit)| lbl_CustomerName - **FullName** |
-	| **Field**(click Edit)| lbl_CustomerNo - **Loyalty_Customers_LoyaltyId** |
-	| **Field**(click Edit)| lbl_email - **EMail** |
+	- lbl_CustomerName: `FullName`
+	- lbl_CustomerNo: `Loyalty_Customers_LoyaltyId`
+	- lbl_email - `EMail`
 
 5. You should now see that the Customer Gallery is populated with the names, email and loyalty scheme IDs of Contoso Coffee customers, using our Unified Profiles from Customer Insights. 
 
@@ -135,23 +131,19 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
 6. Within the Tree View, select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app: 
  
-`gallery_Customers.Selected.EMail`
+	`gallery_Customers.Selected.EMail`
 
 6. Within the Tree View select **lbl_FullName** and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app:
 
-`gallery_Customers.Selected.FullName`
+	`gallery_Customers.Selected.FullName`
 
 7. Within the Tree View select **lbl_CustomerAddress**  and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app:
 
-`Concatenate(gallery_Customers.Selected.StreetAddress, " 
-", gallery_Customers.Selected.City," 
-", gallery_Customers.Selected.State, " 
-", gallery_Customers.Selected.PostCode, " 
-", gallery_Customers.Selected.Country)`
+	`Concatenate(gallery_Customers.Selected.StreetAddress, " ", gallery_Customers.Selected.City," ", gallery_Customers.Selected.State, " ", gallery_Customers.Selected.PostCode, " ", gallery_Customers.Selected.Country)`
  
 8. Finally, within the Tree View select the **img_CustomerProfile** image and set the **Image** Property of the label by clicking the **Image** box and then copy/pasting the following into the formula bar at the top of the app:
 
-`gallery_Customers.Selected.Headshot`
+	`gallery_Customers.Selected.Headshot`
  
 Congratulations, you have now configured the Customer Search screen within the Greeter App. In the next Task, we will configure different aspects of the Customer Profile Screen. 
 
@@ -166,31 +158,27 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 
 - Within the Tree View select **lbl_emailAddress**. Set the **Text** property (the same way we did in Task 3) to:
 
-`gallery_Customers.Selected.EMail`
+	`gallery_Customers.Selected.EMail`
 
 
 - Select **lbl_CustomerFullname** and set the **Text** Property of the label to:
 
-`gallery_Customers.Selected.FullName`
+	`gallery_Customers.Selected.FullName`
 
 - Within the Tree View select **lbl_LoyaltyID** and set the **Text** property of the label to:
 
-`gallery_Customers.Selected. Loyalty_Customers_LoyaltyId`
+	`gallery_Customers.Selected. Loyalty_Customers_LoyaltyId`
 
  
 
 - Within the Tree View select **lbl_Cust_Address** and set the **Text** property of the label to:
  
-`Concatenate(gallery_Customers.Selected.StreetAddress, " 
-", gallery_Customers.Selected.City," 
-", gallery_Customers.Selected.State, " 
-", gallery_Customers.Selected.PostCode, " 
-", gallery_Customers.Selected.Country)`
+	`Concatenate(gallery_Customers.Selected.StreetAddress, " ", gallery_Customers.Selected.City," ", gallery_Customers.Selected.State, " ", gallery_Customers.Selected.PostCode, " ", gallery_Customers.Selected.Country)`
 
  
 3. Finally, within the Tree View select the **img_CustomerProfileImage** and set the Image property to:
 
-`gallery_Customers.Selected.Headshot`
+	`gallery_Customers.Selected.Headshot`
 
 # Task 5 - Embed Unified Activities 
 
@@ -200,12 +188,12 @@ In this task we will embed a unified timeline of activities ingested into Custom
 
 2. With the gallery selected, click the **Advanced** tab in the right pane and select the **Items** property. Enter the following within the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile.
  
-`FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)`
+	`FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)`
 
 3. Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property.
 
-- **Title2**: `ThisItem.Title`   
-- **Subtitle2**: `Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), DateTimeFormat.ShortDate)` 
+	- **Title2**: `ThisItem.Title`   
+	- **Subtitle2**: `Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), DateTimeFormat.ShortDate)` 
 
 ## Task 6 - Embed KPIs to Profile Page 
 
