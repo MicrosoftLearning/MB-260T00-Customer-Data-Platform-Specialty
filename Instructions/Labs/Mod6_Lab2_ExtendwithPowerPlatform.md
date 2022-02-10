@@ -86,7 +86,6 @@ To create the Contoso Coffee Greeter App from this lab, you will import a templa
 
 5. Once the package has completed its import, click **Apps** in the left menu. You should see your imported app listed. 
 
-
 6. Click the '...' icon next to its name and select **Edit** to load the app in Edit Mode. (If you are prompted with a Welcome pop-up, click **Get started** and/or **Skip.**)
 
 
@@ -116,13 +115,11 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
 3. In the right-hand screen, switch to the **Advanced** tab. Select **Items** from within the Property drop down and set the value to: 
 
-	**SortByColumns(Search(Customer, TextSearchBox1.Text, "FullName"), "Loyalty_Customers_LoyaltyId")** 
+	`SortByColumns(Search(Customer, TextSearchBox1.Text, "FullName"), "Loyalty_Customers_LoyaltyId")`
 
 	This is connecting to the **Customer** data entity we created the previous Task. The data for this gallery is being pulled from the Unified Customer Profile. There is a formula attached to Items property to filter using the search bar text. 
 
-4. You are going to update the Customer gallery to show a customer's Full Name, email address and Contoso Club ID. 
-
-	With the gallery_Customers gallery still selected, sreturn to the **Properties** tab. Select **Fields > Edit** .
+4. You are going to update the Customer gallery to show a customer's Full Name, email address and Contoso Club ID. With the gallery_Customers gallery still selected, return to the **Properties** tab. Select **Fields > Edit** .
 
 
 	| Property| Value |
@@ -132,7 +129,7 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 	| **Field**(click Edit)| lbl_CustomerNo - **Loyalty_Customers_LoyaltyId** |
 	| **Field**(click Edit)| lbl_email - **EMail** |
 
-	You should now see that the Customer Gallery is populated with the names, email and loyalty scheme IDs of Contoso Coffee customers, using our Unified Profiles from Customer Insights. 
+5. You should now see that the Customer Gallery is populated with the names, email and loyalty scheme IDs of Contoso Coffee customers, using our Unified Profiles from Customer Insights. 
 
 5. Next, we will setup the Customer Search screen to show some key info from the customer's profile when the greeter selects them in the gallery. 
 
