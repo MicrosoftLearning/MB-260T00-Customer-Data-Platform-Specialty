@@ -66,7 +66,7 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 12. Click **Save**.
 
-13. To test your Power Automate flow, go back to your Customer Insights environment and edit your **High Risk For Churn** segment condition as ChurnScore greater than 0.5 instead of 0.6 which adds some more customers to your segment and triggers this Power Automate. 
+13. To test your Power Automate flow, go back to your Customer Insights environment and edit your **High Risk Transaction Churn** segment condition as ChurnScore greater than 0.5 instead of 0.6 which adds some more customers to your segment and triggers this Power Automate. 
 
 You should receive an email once the segment is refreshed. 
 
