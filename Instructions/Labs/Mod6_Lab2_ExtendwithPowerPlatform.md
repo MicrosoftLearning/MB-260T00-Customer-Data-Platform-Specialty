@@ -196,8 +196,7 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 
 In this task we will embed a unified timeline of activities ingested into Customer Insights within the Customer Profile Screen. This will give Contoso Coffee retail staff visibility of any recent interactions. 
  
-1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery_UnfiedTimeLine**. 
-
+1. Within the Greeter Power App in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery_UnifiedTimeLine**. 
 
 2. With the gallery selected, click the **Advanced** tab in the right pane and select the **Items** property. Enter the following within the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile.
  
