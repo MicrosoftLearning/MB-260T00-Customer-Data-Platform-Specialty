@@ -7,12 +7,12 @@ lab:
 # Lab 6.2: Extend with the Power Platform
 # Module 6: Manage external connections with Dynamics 365 Customer Data Platform
 
-Having successfully ingested Contoso Coffee's data sources and created a Unified Customer Profile and calculated key measures, you are now able to leverage the insight you have generated to empower different personas within Contoso Cofee over different platforms. 
+Having successfully ingested Contoso Coffee's data sources and created a Unified Customer Profile and calculated key measures, you are now able to leverage the insight you have generated to empower different personas within Contoso Coffee over different platforms. 
 
 ## Power Automate Extensibility 
-Contoso want to capture in-store interactions with their customers. You are charged with enabling Contoso Retail staff to capture 'Customer Check-In' activities and deliver personalized recommendations to customers. 
+Contoso wants to capture in-store interactions with their customers. You are charged with enabling Contoso Retail staff to capture 'Customer Check-In' activities and deliver personalized recommendations to customers. 
 
-In this Module you will create a custom 'Check In' activity within Dynamics 365 to store details of customer store visits. You will enable Contoso Retail staff to capture these check ins using a planned 'Greeter App' and Power Automate, including details of the subjects discussed with the customer. 
+In this module, you will create a custom 'Check In' activity within Dynamics 365 to store details of customer store visits. You will enable Contoso Retail staff to capture these check ins using a planned 'Greeter App' and Power Automate, including details of the subjects discussed with the customer. 
 
 In this Module you will create the custom 'Check In' activity and configure a Flow to capture a customer check in, to be triggered from a planned 'Greeter App'. 
 
@@ -36,7 +36,7 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 # Exercise 1 - Power Automate
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
-1. Navigate to <make.powerapps.com> and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
+1. Navigate to [make.powerapps.com](make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
 
 3. From the left hand menu, click **Flows.** (If prompted, click **Get started.**)
 
@@ -48,13 +48,11 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 7. Within the "Search connectors and triggers" search bar, search for Dynamics 365 Customer Insights. In the triggers box, find **Triggers a flow when a segment threshold is crossed (preview)** and select it.
 
-9. You may be signed into your Customer Insights instance automatically, or you may need to sign in manually. After you've been authenticated, select your instance from the drop down. 
+9. You may be signed into your Customer Insights instance automatically, or you may need to sign in manually. After you've been authenticated, select your instance from the drop down. **Note**: Be sure to set the threshold to a number slightly larger than the current number of members in your segment so the trigger is hit later when we change the segment setting. 
 
 	- Segment : **HighRiskTransactionChurn** 
 
 	- Threshold: **1200** 
-
-**Note**: Be sure to set the threshold to a number slightly larger than the current number of members in your segment so the trigger is hit later when we change the segment setting. 
 
 10. Click **+ New step**. In the "Search connectors and actions" search bar, search for **Send an email (V2)**, select it. You may be signed into Outlook automatically, or you may need to sign in manually using your M365 credential.
 
@@ -106,7 +104,7 @@ In this task, we will use the Customer Insights Connector to connect the Greeter
 
 5. Select **Customer** and **UnifiedActivity**. Type **Customer_Measure** into the Enter custom table name box and check the corresponding box. Then click **Connect**.
 
-6. You should see three new tables listed as data soures. Congratulations! You have established a connection to Customer Insights within your Power App. 
+6. You should see three new tables listed as data sources. Congratulations! You have established a connection to Customer Insights within your Power App. 
 
 ## Task 3 - Configure the Customer Search Screen 
 
