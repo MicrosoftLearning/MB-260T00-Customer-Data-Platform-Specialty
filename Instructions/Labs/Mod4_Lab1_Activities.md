@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 4.1: Work with activities'
-    module: 'Module 4: Work with Dynamics 365 Audience insights'
+    module: 'Module 4: Work with Dynamics 365 Customer Insights'
 ---
 
 # Lab 4.1: Work with activities
-# Module 4: Work with Dynamics 365 Audience insights
+# Module 4: Work with Dynamics 365 Customer Insights
 
 
 ## Exercise 1 - Create activities 
