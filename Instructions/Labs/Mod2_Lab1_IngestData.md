@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 2.1: Ingest data'
-    module: 'Module 2: Ingest data into Audience insights'
+    module: 'Module 2: Ingest data into Dynamics 365 Customer Insights'
 ---
 
 # Lab 2.1: Ingest data
-# Module 2: Ingest data into Audience insights
+# Module 2: Ingest data into Dynamics 365 Customer Insights
 
 ## About the Hands-on Lab
 
