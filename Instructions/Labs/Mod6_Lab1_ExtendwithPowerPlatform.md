@@ -9,6 +9,11 @@ lab:
 
 Having successfully ingested Contoso Coffee's data sources and created a Unified Customer Profile and calculated key measures, you are now able to leverage the insight you have generated to empower different personas within Contoso Coffee over different platforms. 
 
+## Power BI Extensibility 
+The Customer Insights Power BI Connector enables you to use the unified data that you have unlocked through the data configuration process within Microsoft Power BI to further analyze and uncover insight. 
+
+From customer details such as roles and locations, to communication details such as email addresses and phone numbers, to unique key performance indicators (KPIs) you might have defined using the Measures page (such as Customer Lifetime Spend or Engagement Score), many insights can be uncovered. 
+
 ## Power Automate Extensibility 
 Contoso wants to capture in-store interactions with their customers. You are charged with enabling Contoso Retail staff to capture 'Customer Check-In' activities and deliver personalized recommendations to customers. 
 
@@ -32,8 +37,149 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 
 - Connect app with Customer Insights Unified Profile 
 
+# Exercise 1 - Power BI
+
+## Task 1: Configure Power BI Desktop
+
+1. If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app. If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+
+2. Open Power BI Desktop.
+2. If you signed in into Power BI Desktop previously, select **File | Sign out** 
+3. Sign in if prompted or select **File | Sign in** to sign in.  
+5. Select **Sign up for Power BI** and follow the prompts to complete the sign up.
+6. Open the PowerBI template .pbix file from the lab assets in Power BI Desktop. Make sure you are logged in with the admin account for your tenant. 
+
+2. Click **Get Data** and click more and search for the **Dynamics 365 Customer Insights (Beta)** connector.
+		
+3. Select the connector and click **Connect**. 
+
+4. If presented with a notice, relating to connecting to Third Party Service, click **Continue**. 
+
+5. Connect to your Customer Insights instance using your credentials. Once connected, you will be presented with the **Navigator page**. Here you will see all the Entities, Measures and Unified Activity data objects that you are able to consume within Power BI. 
+	![Picture4](Static/Lab_6_Picture4.png) 
+6. Expand and select the following tables and then click **Load** 
+
+**Measures**: 
+- AverageStorePurchaseValue 
+-  AverageWebPurchaseValue 
+- Customer_Measure 
+
+**Entities**: 
+
+- Customer 
+- eCommerce_Purchases 
+- PoS_posPurchases UnifiedActivity: 
+**UnifiedActivity**
+- UnifiedActivity
+
+## Task 2 - Add visualizations
+
+In this task, you'll add some simple visualizations to the report. 
+
+### Average Store and Web Purchase Values 
+
+1. Add a **Card Control** from the **Visualizations** panel to the left side of the report. 
+
+2. With the card control selected, drag the **AverageWebPurchaseValue** sum from **AverageWebPurchaseValue** to the **Fields** list. 
  
-# Exercise 1 - Power Automate
+3. With the card control selected, click the **Format** button properties: 
+	- Data Label: **Color = White** 
+	- Category: **Off** 
+	- Title: **On** 
+	- Title: **Title Text = 'Average Online Purchases ($)'** 
+	- Title: **Font Color = White** 
+	- Title: **Text Size = 14 pt** 
+ 
+4. Select the Data Card, displaying **Average Web Purchase ($)** that you've just created and copy and paste to add another data card onto the Canvas. 
+	- Update the title to **Average Store Purchases ($)** 
+	- Change the fields to **AverageStorePurchaseValue** 
+ 
+
+### Store + Web Purchases by Month 
+
+Contoso Coffee wants to look for seasonality within their sales figures for both online and instore sales. 
+
+1. Make sure you don't have either of the Cards you've added selected, then add a **Stacked Area Chart** from the **Visualizations** panel next to the 'Average Online Purchases ($)' card. 
+ 
+
+2. With the new chart selected, add the following under Fields: 
+	- **Axis** add **PurchasedOn** from **eCommerce_Purchases** 
+	   -  **Note**: remove all but month once you add it.
+	- **Values** add **TotalPrice** from **eCommerce_Purchases** 
+
+3. With the graph selected, click the **Format** button and set the following properties: 
+	- X axis: **Color = White**
+    - Y axis: **Color = White** 
+	- Title: **Title Text = Online Purchases** 
+	- Title: **Font Color = White** 
+	- Title: **Text Size = 14 pt** 
+
+4. Select the Stacked Area Chart visualization, Copy & Paste another copy. Edit the Data and formatting as follows: 
+	- **Axis** add **PurchasedOn (Month)** from **PoS_posPurchases**
+	- **Values** add **TotalPrice** from **PoS_posPurchases** 
+
+5. Update the title of your new chart to **Store Purchases**.
+
+ 
+
+### Activity Types by Volume 
+
+1. Make sure you don't have either of the Cards or charts you've added selected and add a Pie Chart **from** the **Visualizations** panel to the left side of the report. 
+
+2. With the Pie Chart selected, drag the following values from the **UnifiedActivity** object. 
+
+	- Details:**Title**
+
+	- Values: **ActivityTypeDisplay** 
+	    - which will turn into **Count of ActivityTypeDisplay** when added 
+
+	- In filters pane, check **Select all** then uncheck the blank values line for Title. 
+
+3. With the pie chart selected, click the **Format** button and set the following properties: 
+
+	- Legend: **On** 
+	- Legend: **Color = White** 
+	- Title: **Font Color = White** 
+	- Title: **Text Size = 14 pt** 
+	- Detail Labels: **Color = White** 
+	- Background: **On** 
+	- Background: **Black** 
+	- Background: **Transparency: 80%** 
+
+### Activity Types by Month 
+
+1. Add a Line Chart **from** the **Visualizations** panel on to the report. 
+
+2. With the Line Chart selected, drag the following values from the **UnifiedActivity** object to the **Fields** 
+
+	- Axis: **StartTime** 
+      - Note: remove all but month once you add it 
+	- Legend: **ActivityTypeDisplay** 
+	- Values: **ActivityTypeDisplay**
+	    which will turn into **Count of ActivityTypeDisplay** when added 
+
+3. With the Line Chart selected, click the **Format** button and set the following properties: 
+	- Legend: **Color = White** 
+	- X axis: **Color = White** 
+	- Y axis: **Color = White** 
+	- Title: **Color = White** 
+	- Background: **On** 
+	- Background: **Black** 
+	- Background: **Transparency: 80%** 
+ 
+
+## Task 3 - Review Dashboard 
+
+Review your Power BI dashboard. This is a simple example, but insights could become much more complex with a more detailed report.
+
+This simple report highlights: 
+
+- Average Online Purchase value is higher than In Store 
+- There is a higher volume of In Store Purchases vs Online 
+- There may be some seasonal trends as sales drop around March and increase again from September. 
+ 
+ 
+# Exercise 2 - Power Automate
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
 1. Navigate to [make.powerapps.com](make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
