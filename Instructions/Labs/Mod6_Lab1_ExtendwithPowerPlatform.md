@@ -45,17 +45,17 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 
 2. Open Power BI Desktop.
 2. If you signed in into Power BI Desktop previously, select **File | Sign out** 
-3. Sign in if prompted or select **File | Sign in** to sign in.  
+3. Sign in if prompted or select **File | Sign in** to sign in using your M365 credential. 
 5. Select **Sign up for Power BI** and follow the prompts to complete the sign up.
-6. Open the PowerBI template .pbix file from the lab assets in Power BI Desktop. Make sure you are logged in with the admin account for your tenant. 
+6. Open the PowerBI template .pbix file from the lab assets in Power BI Desktop. Make sure you are logged in with the admin account for your tenant (it should say MOD Administrator in the right-hand corner).
 
-2. Click **Get Data** and click more and search for the **Dynamics 365 Customer Insights (Beta)** connector.
+2. Click **Get Data** from the toolbar and click **More...** in the dropdown. Search for the **Dynamics 365 Customer Insights (Beta)** connector.
 		
 3. Select the connector and click **Connect**. 
 
-4. If presented with a notice, relating to connecting to Third Party Service, click **Continue**. 
+4. If presented with a notice relating to connecting to Third Party Service, click **Continue**. 
 
-5. Connect to your Customer Insights instance using your credentials. Once connected, you will be presented with the **Navigator page**. Here you will see all the Entities, Measures and Unified Activity data objects that you are able to consume within Power BI. 
+5. Connect to your Customer Insights instance using your credentials and click **Connect** again. Once connected, you will be presented with the **Navigator page**. Here you will see all the Entities, Measures and Unified Activity data objects that you are able to consume within Power BI. 
 
 6. Expand and select the following tables and then click **Load**.
 
@@ -83,7 +83,7 @@ In this task, you'll add some simple visualizations to the report.
 
 2. With the card control selected, drag the **AverageWebPurchaseValue** sum from **AverageWebPurchaseValue** to the **Fields** list. 
  
-3. With the card control selected, click the **Format** button properties: 
+3. With the card control selected, click the **Format your visual** button from Visualizations pane on the right. Edit the following properties: 
 	- Data Label: **Color = White** 
 	- Category: **Off** 
 	- Title: **On** 
@@ -91,7 +91,7 @@ In this task, you'll add some simple visualizations to the report.
 	- Title: **Font Color = White** 
 	- Title: **Text Size = 14 pt** 
  
-4. Select the Data Card, displaying **Average Web Purchase ($)** that you've just created and copy and paste to add another data card onto the Canvas. 
+4. Select the Data Card displaying **Average Web Purchase ($)** that you've just created and copy and paste to add another data card onto the Canvas. 
 	- Update the title to **Average Store Purchases ($)** 
 	- Change the fields to **AverageStorePurchaseValue** 
  
@@ -121,7 +121,6 @@ Contoso Coffee wants to look for seasonality within their sales figures for both
 
 5. Update the title of your new chart to **Store Purchases**.
 
- 
 
 ### Activity Types by Volume 
 
