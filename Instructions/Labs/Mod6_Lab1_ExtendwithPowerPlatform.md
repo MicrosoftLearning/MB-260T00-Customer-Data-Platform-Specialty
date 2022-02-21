@@ -56,8 +56,8 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 4. If presented with a notice, relating to connecting to Third Party Service, click **Continue**. 
 
 5. Connect to your Customer Insights instance using your credentials. Once connected, you will be presented with the **Navigator page**. Here you will see all the Entities, Measures and Unified Activity data objects that you are able to consume within Power BI. 
-	![Picture4](Static/Lab_6_Picture4.png) 
-6. Expand and select the following tables and then click **Load** 
+
+6. Expand and select the following tables and then click **Load**.
 
 **Measures**: 
 - AverageStorePurchaseValue 
@@ -68,8 +68,9 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 
 - Customer 
 - eCommerce_Purchases 
-- PoS_posPurchases UnifiedActivity: 
-**UnifiedActivity**
+- PoS_posPurchases 
+
+**UnifiedActivity**:
 - UnifiedActivity
 
 ## Task 2 - Add visualizations
