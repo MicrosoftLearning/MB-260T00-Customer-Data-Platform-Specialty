@@ -17,7 +17,9 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 ### Task 1 - Adding Brand Affinity 
 
-1. Navigate to **Data > Enrichment.** 
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+
+3. Navigate to **Data > Enrichment.** 
 
 2. Click the **Enrich my data** button on the **Brands** tile. On the Overview page, click **Next.**
 
