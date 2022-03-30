@@ -19,7 +19,9 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 ## Task 1 - Run the OOB Transactional Churn Model
 
-1. Go to **Intelligence** > **Predictions**
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+
+3. Go to **Intelligence** > **Predictions**
 
 2. Click **Create** and click **Use model** on the **Customer Churn model** card.
 
