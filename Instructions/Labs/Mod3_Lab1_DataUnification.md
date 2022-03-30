@@ -19,9 +19,9 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 ## Task 1 - Map contacts to common data types 
 
- 
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
 
-1. Map contacts from eCommerce and Loyalty data to common data types. In the left menu, click **Unify.** You should see the **Map** tab highlighted. Click **Select entities.** 
+3.   Map contacts from eCommerce and Loyalty data to common data types. In the left menu, click **Unify.** You should see the **Map** tab highlighted. Click **Select entities.** 
 
 2. Select the entities that represent the customer profile - Contacts (eCommerce) and Customers (Loyalty). Then click **Apply.**
 
