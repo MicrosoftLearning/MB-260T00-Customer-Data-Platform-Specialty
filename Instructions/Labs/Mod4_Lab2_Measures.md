@@ -46,7 +46,9 @@ Business Measures helps you track your business performance and health. The busi
 
 In this first task, we will create a measure to define the **average value of all in store purchases** made at Contoso Coffee.
 
-1. Click **Measures** on the left-hand menu. 
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+
+3. Click **Measures** on the left-hand menu. 
 
 2. Click the **+ New** button in the top left-hand corner, then select **Build your own.**
 
