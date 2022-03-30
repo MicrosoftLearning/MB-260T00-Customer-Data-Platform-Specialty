@@ -119,9 +119,9 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 3. Next to the **Untitled measure** text, select **Edit name.**
 
-4. Set the name to **Total In-Store Spend** and then select **Done.**
+4. Set the name to **Total In Store Spend** and then select **Done.**
 
-5. Under the Total In-Store Spend calculation, click **Select Function** and choose **Sum.** 
+5. Under the Total In Store Spend calculation, click **Select Function** and choose **Sum.** 
 
 6. Select **Add attribute**, expand **Purchases : POS**, select **TotalPrice**, and click **Add.** 
 
