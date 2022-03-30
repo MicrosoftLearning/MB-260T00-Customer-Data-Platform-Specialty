@@ -8,9 +8,12 @@ lab:
 # Module 5: Enrich data and predictions with Audience insights
 
 ## Exercise 1 - Ingest and unify the subsription data 
+
 ## Task 1 - Ingest the Subscription Data
 
-1. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**.
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+
+3. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**.
 
 2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next.**
 
