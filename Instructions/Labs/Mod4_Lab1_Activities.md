@@ -15,7 +15,9 @@ Interactions are any customer touch points - these could include purchases, cust
 
 ### Task 1 - Add an activity for eCommerce Purchases  
 
-1. Within Customer Insights, Expand **Data > Activities** on the left menu and click **Add Activity.** 
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+
+3. Within Customer Insights, Expand **Data > Activities** on the left menu and click **Add Activity.** 
 
 2. On the Activity data screen set the following values: 
 
