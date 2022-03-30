@@ -28,7 +28,9 @@ In this lab you will segment your unified customer profiles, to uncover cohorts 
 
 Let's create a segment called Customers from California quickly using the profiles. 
 
-2. Click on **Segments** in the left menu.
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+
+3. Click on **Segments** in the left menu.
 
 3. Click the **+ New** dropdown and select **Create From > Profiles.**
 
