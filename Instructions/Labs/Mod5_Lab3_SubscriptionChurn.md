@@ -8,12 +8,9 @@ lab:
 # Module 5: Enrich data and predictions with Audience insights
 
 ## Exercise 1 - Ingest and unify the subsription data 
-
 ## Task 1 - Ingest the Subscription Data
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
-
-3. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**.
+1. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**.
 
 2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next.**
 
@@ -27,7 +24,7 @@ lab:
 
 6. In the 'Name' field on the right-hand pane, rename your data source to **Subscribers**.
 
-7. In the top left corner, click **Get Data** to add a new data set for this data source. Choose **Text/CSV**.
+7. In the top left corner, click **Home** and click **Get Data** to add a new data set for this data source. Choose **Text/CSV**.
 
 8. Enter the URL for the Subscriber History data set, **https://aka.ms/CI-ILT/SubHistory**, and click **Next**.
 
@@ -51,7 +48,7 @@ lab:
 
 12. In the 'Name' field on the right-hand pane, rename your data source to **SubscriberHistory**.
 
-13. Click **Get Data**, then choose **Text/CSV**.
+13. Click **Home** and click **Get Data**, then choose **Text/CSV**.
 
 14. Enter the URL for the Userlog data set, **https://aka.ms/CI-ILT/Userlogs**, and click **Next**.
 
