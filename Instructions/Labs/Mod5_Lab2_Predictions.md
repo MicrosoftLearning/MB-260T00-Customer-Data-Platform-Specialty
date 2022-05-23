@@ -65,7 +65,7 @@ There are many factors that are taken into account when creating your prediction
 
 3. Go to **Segments**. Select **New** and choose **Create from** > **Intelligence**
 
-2. Select the **OOBeCommerceTransactionChurnPrediction** entity:
+2. Select the **OOBeCommerceTransactionChurnPrediction** entity and select **Review**:
 
 	- Field: **ChurnScore**
 
