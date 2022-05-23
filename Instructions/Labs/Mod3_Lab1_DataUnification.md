@@ -67,7 +67,6 @@ For further details on Match Rules, please see [Customer Insights documentation]
 	- For entity Customers : Loyalty select **FullName**.
 	- Leave the **Normalize** blank. 
 	- Set Precision Level to **Basic** and Precision value to **High**.
-**Note:** Use the Slider to set the Precision value.
 
 3. Enter the name **FullName, Email** for the new rule. 
 
