@@ -137,7 +137,7 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 11. Select the **Run** button to complete your measure. 
 
-12. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer.**
+12. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer** and select the **Run** button to complete.
 
 ## Total Online Spend (Customer Measure)  
 
