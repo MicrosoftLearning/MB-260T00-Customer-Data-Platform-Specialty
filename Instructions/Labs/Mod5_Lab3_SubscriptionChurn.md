@@ -212,11 +212,11 @@ There are many factors that are taken into account when creating your prediction
 
 Observe that the Workflow, upon setup, created an Entity. You can see this within Data -> Entities from the left-hand menu. You will see a new Intelligence section with the entity in it.
 
-Open the Segments section from the left-hand menu. We will manually create a new dynamic segment.
+1. Open the **Segments** section from the left-hand menu. We will manually create a new dynamic segment.
 
-1. Click **New > Create from** in the top menu. Choose the **Intelligence** option.
+2. Click **New > Create from Intelligence** option.
 
-2. Set up your quick segment with these settings:
+3. Set up your quick segment with these settings:
 
 	- Entity: **OOBSubscriptionChurnModel**
 
@@ -226,9 +226,9 @@ Open the Segments section from the left-hand menu. We will manually create a new
 
 	- Value: **0.6**
 
-3. Click **Review**.
+4. Click **Review**.
 
-4. Name the segment **High Risk For Subscription Churn** and output entity name **HighRiskForSubscriptionChurn**. Click **Save**.
+5. Name the segment **High Risk For Subscription Churn** and output entity name **HighRiskForSubscriptionChurn**. Click **Save**.
 
 Now you have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
 
