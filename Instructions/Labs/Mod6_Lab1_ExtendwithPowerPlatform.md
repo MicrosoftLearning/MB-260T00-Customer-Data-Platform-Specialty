@@ -184,7 +184,7 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 1. Navigate to [https://make.powerapps.com](https://make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
 
-3. From the left hand menu, click **Flows.** (If prompted, click **Get started.**)
+3. From the left hand menu, click **Flows.** (If prompted confirm the **Country** and  click **Get started.**)
 
 4. Click **+ New flow** and then select **Instant cloud flow** from the dropdown.
 
