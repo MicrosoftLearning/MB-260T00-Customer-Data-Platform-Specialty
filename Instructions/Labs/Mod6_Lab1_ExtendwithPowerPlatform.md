@@ -182,7 +182,7 @@ This simple report highlights:
 # Exercise 2 - Power Automate
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
-1. Navigate to [make.powerapps.com](make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
+1. Navigate to [https://make.powerapps.com](https://make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
 
 3. From the left hand menu, click **Flows.** (If prompted, click **Get started.**)
 
