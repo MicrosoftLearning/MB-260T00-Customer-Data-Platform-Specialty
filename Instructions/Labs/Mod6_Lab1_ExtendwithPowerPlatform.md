@@ -376,7 +376,7 @@ From the File menu, click Save and Publish.
 
 Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. In this task, you will explore the Greeter App experience 
 
-1. In a browser tab, navigate to https://make.powerapps.com. If required, sign in.
+1. In a browser tab, navigate to https://make.powerapps.com. If required, sign in and make sure select your environment. By default the environment would be pointing to Contoso.
  
 2. Click **Apps** in the left-hand menu, and then run your **Contoso Coffee Greeter App** by selecting it and clicking **Play** on the top. 
 
