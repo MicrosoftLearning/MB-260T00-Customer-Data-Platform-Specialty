@@ -68,6 +68,8 @@ For further details on Match Rules, please see [Customer Insights documentation]
 	- Leave the **Normalize** blank. 
 	- Set Precision Level to **Basic** and Precision value to **High**.
 
+**Note:** Move the slider to the middle to set the Precision value to **High**
+
 3. Enter the name **FullName, Email** for the new rule. 
 
 4. Add a second condition for email address by clicking **+ Add** and selecting **Add Condition.**
