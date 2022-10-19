@@ -23,6 +23,8 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 3.   Map contacts from eCommerce and Loyalty data to common data types. In the left menu, click **Unify.** You should see the **Map** tab highlighted. Click **Select entities and fields.** 
 
+**Note:** The first time that you access the mapping phase, no data will be available, so you'll need to select the **Get Started** under the **Source fields** section.
+
 2. Select the entities that represent the customer profile - Contacts (eCommerce) and Customers (Loyalty). Then click **Apply.**
 
 2. You will now be presented with the mappings of your source entity against standard model types. You can review the types in the table. 
