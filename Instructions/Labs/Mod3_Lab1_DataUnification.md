@@ -153,9 +153,9 @@ In this exercise, we will set up Search and Filter criteria to enable Customer I
 
 3. Some customer search specific fields are already added by default and you can add more by clicking **Add** on the right-hand side. Click **Add** now.
  
-5. Make sure **CustomerId, FirstName, LastName, FullName, DateOfBirth, Email, PostCode, Headshot, ContactId (eCommerce_Contacts),** and **LoyaltyId** are selected. Deselect any other fields that are checked. Click **Add.**
+5. Make sure **CustomerId, FirstName, LastName, FullName, DateOfBirth, EMail, PostCode, Headshot, ContactId (eCommerce_Contacts),** and **LoyaltyId** are selected. Deselect any other fields that are checked. Click **Apply**.
 
-5. Click **Save** and then click **Run.**
+5. Click **Save** and then click **Run**.
 
 ### Task 2 - Search for a Customer Record 
 
