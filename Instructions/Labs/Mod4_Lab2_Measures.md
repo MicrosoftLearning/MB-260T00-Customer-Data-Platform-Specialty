@@ -42,6 +42,7 @@ Contoso Coffee are looking to uncover six simple Measures based on the data inge
 
 Business Measures helps you track your business performance and health. The business has asked you to calculate the Average Store Purchase and Average Web Purchase values for the Contoso Coffee business. 
 
+
 ### Average Store Purchase Value (Business Measure) 
 
 In this first task, we will create a measure to define the **average value of all in store purchases** made at Contoso Coffee.
@@ -52,7 +53,7 @@ In this first task, we will create a measure to define the **average value of al
 
 2. Click the **+ New** button in the top left-hand corner, then select **Build your own.**
 
-3. Next to the "Untitled measure" text, select **Edit name.** 
+3. Next to the "Untitled measure" text, select **Edit details.** 
  
 4. Set the name to "Average Store Purchase Value ($)" and select Done. 
 
@@ -75,6 +76,7 @@ In this first task, we will create a measure to define the **average value of al
 14. Select **Add.** 
 
 14. Select the **Run** button to complete your measure. 
+
 
 ### Average Web Purchase Value (Business Measure) 
 
@@ -108,6 +110,7 @@ In this next task, we will create a measure to define the **Average value of all
 
 14. Select the **Run button** to complete your measure. 
 
+
 ## Task 2 - Define Customer Measures  
 We will need two customer measures that can be used to calculate a customer attribute. We will create one measure to determine the customers total spend on Online Purchases and one measure to determine their total spend on In-Store purchases. Once we create these, we can then create a customer attribute to add those two together. 
 
@@ -119,7 +122,7 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 2. Click the **+ New** button in the top left-hand corner, then select **Build your own.**
 
-3. Next to the **Untitled measure** text, select **Edit name.**
+3. Next to the **Untitled measure** text, select **Edit details.**
 
 4. Set the name to **Total In Store Spend** and then select **Done.**
 
@@ -139,6 +142,7 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 12. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer** and select the **Run** button to complete.
 
+
 ## Total Online Spend (Customer Measure)  
 
 Next, we will create a measure to define **Total of all purchases made online.**
@@ -147,7 +151,7 @@ Next, we will create a measure to define **Total of all purchases made online.**
 
 2. Click the **+ New** button in the top left-hand corner, then **Build your own.**
 
-3. Next to the "Untitled measure" text, select **Edit name.** 
+3. Next to the "Untitled measure" text, select **Edit details.** 
 
 4. Set the name to "Total Online Spend", select **Done.**
 
@@ -167,10 +171,12 @@ Next, we will create a measure to define **Total of all purchases made online.**
 
 12. If you encounter an error and need to choose your relationship path, select **eCommerce_Purchases > Customer.**
 
+
 ## Task 3 - Define Customer Attributes 
 Customer Attributes are a single field per customer that reflects a score, value, or state for each customer. Examples are Lifetime Value and Total Sales. 
 
 In this task you will create measures to calculate the Lifetime Spend ($), Total Club Points, Average Web Purchase Value ($) and Average Store Purchase Value ($) of each customer. By calculating value for the business and customers, Contoso Coffee can identify customers with a higher than average spend on each channel. 
+
 
 ### Total Club Points (Customer Attribute) 
 
@@ -180,7 +186,7 @@ First, we will define **Total Loyalty Points earned by each customer.**
 
 2. Click the **+ New** button in the top left-hand corner, then select **Build your own.** 
 
-3. Next to the Untitled measure text, select **Edit name.**
+3. Next to the Untitled measure text, select **Edit details.**
 
 4. Set the name to "Total Club Points" and then select **Done.** 
 
@@ -192,6 +198,7 @@ First, we will define **Total Loyalty Points earned by each customer.**
 
 8. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer.**
 
+
 ## Lifetime Spend (Customer Attribute)  
 
 Next, we will define **Total value of all purchases made for each customer.** 
@@ -200,7 +207,7 @@ Next, we will define **Total value of all purchases made for each customer.**
 
 2. Click the **+ New** button in the top left-hand corner, then **Build your own.** 
 
-3. Next to the Untitled measure text, select **Edit name.**
+3. Next to the Untitled measure text, select **Edit details.**
 
 4. Set the name to "Lifetime Spend ($)" and then select **Done.**
 
@@ -218,6 +225,7 @@ Next, we will define **Total value of all purchases made for each customer.**
 
 11. Select the **Run** button to complete your measure. 
 
+
 ## Average Store Purchase (Customer Attribute) 
 
 Next, we will define the **average value of all store purchases made for each customer.** 
@@ -226,7 +234,7 @@ Next, we will define the **average value of all store purchases made for each cu
 
 2. Click the **+ New** button in the top left-hand corner, then **Build your own.** 
 
-3. Next to the **Untitled measure** text, select **Edit name.** 
+3. Next to the **Untitled measure** text, select **Edit details.** 
 
 4. Set the name to "Average Store Purchase ($)" and then select **Done.**
 
@@ -236,6 +244,7 @@ Next, we will define the **average value of all store purchases made for each cu
 
 7. Select the **Run** button to complete your measure. 
 
+
 ## Average Web Purchase (Customer Attribute) 
 
 Next, we will define **Average value of all web purchases made for each customer.**
@@ -244,7 +253,7 @@ Next, we will define **Average value of all web purchases made for each customer
 
 2. Click the **+ New** button in the top left-hand corner and select **Build your own.**
 
-3. Next to the Untitled measure text, select **Edit name.** 
+3. Next to the Untitled measure text, select **Edit details.** 
 
 4. Set the name to "Average Web Purchase ($)" and then select **Done.**
 
@@ -253,6 +262,7 @@ Next, we will define **Average value of all web purchases made for each customer
 6. Select **Add attribute**, expand Purchases : eCommerce, select **Total Price** and click **Add**. 
 
 7. Select the **Run** button to complete your measure. 
+
 
 # Task 4 - Review the Measures 
 
