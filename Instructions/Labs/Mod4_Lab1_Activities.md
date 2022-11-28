@@ -96,16 +96,16 @@ Interactions are any customer touch points - these could include purchases, cust
 	- Event activity: ActivityTypeDisplay
 	- Timestamp: PurchasedOn
 	- Additional detail: Subject
-	- Icon: Select the **shopping bag.**
+	- Icon: Select the **shopping bag**.
 	- Show in timeline view?: Yes
 
 8. Click **Next.**
 
-9. On the Set activity type screen, set the type to **Create New** and then enter **PoSPurchase** for the Activity Type Name. 
+9. On the Set activity type screen, set the type to **Create new** and then enter **PoSPurchase** for the Activity Type Name. 
 
-10. Click **Next**, review your entries, then click **Save activity.** 
+10. Click **Next**, review your entries, then click **Save activity**. 
 
-11. Click **Done.**
+11. Click **Done**. 
 
 ### Task 3 - Add an activity for Website Reviews 
 
