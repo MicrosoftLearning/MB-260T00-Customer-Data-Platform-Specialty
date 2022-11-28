@@ -21,7 +21,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 2. On the Activity data screen set the following values: 
 
-	- Activity name: OnlinePurchase 
+	- Activity name: `OnlinePurchase`
 
 	- Entity: Purchases : eCommerce 
 
@@ -71,7 +71,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 2. On the Activity data screen set the following values: 
 
-	- Activity name: PoSPurchase 
+	- Activity name: `PoSPurchase`
 
 	- Entity: Purchases : PoS 
 
