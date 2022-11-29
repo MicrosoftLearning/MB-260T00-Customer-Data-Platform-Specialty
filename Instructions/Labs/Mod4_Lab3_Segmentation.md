@@ -28,39 +28,40 @@ In this lab you will segment your unified customer profiles, to uncover cohorts 
 
 Let's create a segment called Customers from California quickly using the profiles. 
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
 
-3. Click on **Segments** in the left menu.
+3. Click on **Segments** in the left menu. 
 
-3. Click the **+ New** dropdown and select **Create From > Profiles.**
+3. Click the **+ New** dropdown and select **Create from Profiles**. 
 
-4. Select the **Field > State** and **Value > California.** 
+4. Select the **Field > State** and **Value > California**. 
 
-5. Click **Review.** 
+5. Click **Review**. 
 
-6. Name your segment "Customers from California" and set the output entity name to "CustomersFromCalifornia".
+6. Name your segment "Customers from California" and verify the output entity name has been automatically populated with **CustomersFromCalifornia**. 
 
-7. Click **Save.** 
+7. Click **Save**. 
 
 ### Task 2 - Segment using Measures: High Value Online Customers 
 
 Contoso Coffee Marketing wants to run a new promotion to convert customers to subscription model. Marketing have identified that they wish to target brew-at-home customers with a higher than average online purchase value to do so. We will create this segment using the Quick Create. 
 
-1. Click on **Segments** in the left menu.
+1. Click on **Segments** in the left menu. 
 
-2. Click the **+ New** dropdown and select **Create From > Measures.**
+2. Click the **+ New** dropdown and select **Create from Measures**. 
 
 3. Select the **Average Web Purchase ($)** attribute. 
 
-4. Set the operator to **greater than.**
+4. Set the operator to **greater than**. 
 
 6. Set the value to **138**. The graph should populate with Average Web Purchase ($) by percentile. 
 
-6. Click **Review.** 
+6. Click **Review**. 
 
-7. Name your segment "High Value Online Customers" and set the output entity name to "HighValueOnlineCustomers".
+7. Name your segment "High Value Online Customers" and verify the output entity name has been automatically populated with **HighValueOnlineCustomers**.
 
-8. Click **Save.** 
+8. Click **Save**. 
+
 
 ### Task 3 - Segment from scratch: Summer Promo 
 
@@ -84,11 +85,11 @@ Contoso Coffee Marketing want to run a new Summer Promotion targeting millennial
 
 8. Set this condition as **DateOfBirth is on or before 12/31/1996.**
 
-7. Click **Run.**
+7. Click **Run**.
 
 ### Task 4 - Review Segments 
 
-1. Wait for all your segments to successfully run, then navigate to the Customer Insights Home Page. You should see your segments displayed.
+1. Wait for all your segments to successfully run, then navigate to the Customer Insights Home Page. You should see your segments displayed. 
 
 2. Click on one of your segments. You should be presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This display increases and decreases in the number of segment members as data changes over time and the segment is rerun. 
 
@@ -100,29 +101,29 @@ Let's try to find out common customers that belong to both Customers from Califo
 
 1. Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the top. 
 
-2. You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators.**
+2. You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators**. 
 
-4. Choose **High Value Online Customers** as primary segment. Hit **Next**, choose **Customers from California** as another segment, and then hit **Next.** 
+4. Choose **High Value Online Customers** as primary segment. Hit **Next**, choose **Customers from California** as another segment, and then hit **Next**. 
 
-5. Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. Deselect all other customer fields and measure fields.
+5. Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. Deselect all other customer fields and measure fields. 
 
-6. Click **Next** and name your insight "High Value Online vs Customers from California" with an Output entity name of HighValueOnlinevsCustomersfromCalifornia. Click **Save.** 
+6. Click **Next** and name your insight "High Value Online vs Customers from California" with an Output entity name of HighValueOnlinevsCustomersfromCalifornia. Click **Save**. 
 
 7. After the run is successful, you can click on the created insight. Click on the Attributes or Measures tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score the more different they are. You may need to refresh the browser window to see the results. 
 
-8. Click on each measure and attribute to see deeper insights.
+8. Click on each measure and attribute to see deeper insights. 
 
-9. We have successfully created segment insights using **Differentiators**. Now let’s create an insight using **Overlap.**
+9. We have successfully created segment insights using **Differentiators**. Now let’s create an insight using **Overlap**. 
 
-10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap.**
+10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap**. 
 
 11. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
 
-12. Click **Next.**
+12. Click **Next**. 
 
 13. Here, as an optional step, you can also choose attributes to compare the segments just as we did with the Differentiators. You can simply hit Next without choosing anything. 
 
-14. Name your insight "High Value Online Overlapped with California Customers" and set the Output entity name as "HighValueOnlineOverlappedwithCaliforniaCustomers." Then click **Save.**
+14. Name your insight "High Value Online Overlapped with California Customers" and set the Output entity name as "HighValueOnlineOverlappedwithCaliforniaCustomers." Then click **Save**. 
 
 15. After the run is successful, you can click on the created insight to see the screen detailing the total and percentage of shared customers between the two segments. 
 
