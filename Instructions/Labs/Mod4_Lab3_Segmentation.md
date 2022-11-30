@@ -69,21 +69,21 @@ Contoso Coffee Marketing want to run a new Summer Promotion targeting millennial
 
 1. Click on **Segments** in the left menu. Click on **+ New** and select **Build your own.**
 
-2. Next to "Untitled segment," select **Edit name** and change the name to "Summer Promotion." Change the output entity name to "SummerPromo" and click **Done.**
+2. Next to "Untitled segment," select **Edit details** and change the name to "Summer Promotion" and verify the output entity name has been automatically populated with "SummerPromo" and click **Done**. 
 
-3. Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing "Average Store Purchase." Select **Average Store Purchase ($)** from the dropdown.
+3. Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing "Average Store Purchase." Select **Average Store Purchase ($)** from the dropdown. 
 
-4. Set the condition to **is greater than or equal to 113.** (Note: 113 is the average in-store purchase we calculated earlier.)
+4. Set the condition to **is greater than or equal to 113.** (Note: 113 is the average in-store purchase we calculated earlier.) 
 
-5. Click **+ Add condition**. An **and** condition will be added.
+5. Click **+ Add condition**. An **and** condition will be added. 
 
-6. In the "Attribute name" box, start typing "dateOfBirth" and select **dateOfBirth** from the dropdown menu.
+6. In the "Attribute name" box, start typing "dateOfBirth" and select **dateOfBirth** from the dropdown menu. 
 
-7. Fill out the rest of the condition as **is on or after 1/1/1981.**
+7. Fill out the rest of the condition as **is on or after 1/1/1981**. 
 
-7. Add another condition with an **and** qualifier.
+7. Add another condition with an **and** qualifier. 
 
-8. Set this condition as **DateOfBirth is on or before 12/31/1996.**
+8. Set this condition as **DateOfBirth is on or before 12/31/1996**. 
 
 7. Click **Run**.
 
@@ -91,15 +91,15 @@ Contoso Coffee Marketing want to run a new Summer Promotion targeting millennial
 
 1. Wait for all your segments to successfully run, then navigate to the Customer Insights Home Page. You should see your segments displayed. 
 
-2. Click on one of your segments. You should be presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This display increases and decreases in the number of segment members as data changes over time and the segment is rerun. 
+2. Click on one of your segments. You should be presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This display increases and decreases in the number of segment members as data changes over time and the segment is re-run. 
 
-3. Now that you have created your segments, you are ready to start acting upon your data. You can select the segment and click Download on the top for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications. 
+3. Now that you have created your segments, you are ready to start acting upon your data. You can select the segment and click Download on the Command Bar for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications. 
 
 ### Task 5 - Apply Segment Insights 
 
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
 
-1. Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the top. 
+1. Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the command bar. 
 
 2. You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators**. 
 
@@ -197,19 +197,19 @@ In this case, customers in this segment have an average LifetimeSpend of 741.89 
 
 ### Task 2 - Discover segments based on a categorical customer attribute or measure of interest 
 
-1. Under the Suggestions tab, click on Find new suggestions in the top menu to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
+1. Under the Suggestions tab, click **+ Find new suggestions** on the top command bar to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
 
-2. We again will choose Improve a measure/metric 
+2. We again will choose **Improve a measure/metric**.
 
-3. Select CustomerSatisfaction as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Then click Next. 
+3. Select **CustomerSatisfaction** as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Then click **Next**. 
 
-4. Next, select Email Subscriber, Income, Loyalty Tier, Occupation, RewardsPoints and State as the influencing attributes. 
+4. Next, select **Email Subscriber**, **Income**, **Loyalty Tier**, **Occupation**, **RewardsPoints** and **State** as the influencing attributes. 
 
-5. Click on Run. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
+5. Click **Run**. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
 
 6. Once the model has finished running, segment suggestions will be displayed under the Suggestions (preview) tab. Since the target attribute is categorical, the AI model tries to find patterns/common traits of customers belonging to a particular category of the target attribute and surfaces segment suggestions. Since Customer Satisfaction has 3 different categories - low, medium and high - the AI model will try to find segments of customers that possess the same traits and a significant portion of them belong to a particular category (i.e. either low, medium or high). 
 
-**Note:** While only a few tiles are shown initially, you can click the See More link to see more suggestions that were found. 
+    **Note:** While only a few tiles are shown initially, you can click the **See more ->** link to see more suggestions that were found. 
 
 7. You can click on any suggestion to see segment details in the side panel. We will click on the suggestion that says 83% of customers in this suggestion have CustomerSatisfaction = low. In the side panel, you will see the following: 
 
