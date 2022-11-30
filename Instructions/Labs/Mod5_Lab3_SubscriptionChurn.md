@@ -10,9 +10,9 @@ lab:
 ## Exercise 1 - Ingest and unify the subsription data 
 ## Task 1 - Ingest the Subscription Data
 
-1.If you haven't already, sign into Customer Insights at **https://home.ci.ai.dynamics.com/**. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**.
+1. If you haven't already, sign into Customer Insights at **https://home.ci.ai.dynamics.com/**. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**. 
 
-2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next.**
+2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next**.
 
 2. Select the **Text/CSV** Connector.
 
@@ -46,15 +46,15 @@ lab:
 	| Is_auto_renew | True/False |
 	| RecurringFrequencyInMonths | Whole Number |
 
-12. In the 'Name' field on the right-hand pane, rename your data source to **SubscriberHistory**.
+12. In the 'Name' field on the right-hand pane, rename your data source to **SubscriberHistory**. 
 
-13. Click **Home** and click **Get Data**, then choose **Text/CSV**.
+13. Click **Home** and click **Get Data**, then choose **Text/CSV**. 
 
-14. Enter the URL for the Userlog data set, **https://aka.ms/CI-ILT/Userlogs**, and click **Next**.
+14. Enter the URL for the Userlog data set, **https://aka.ms/CI-ILT/Userlogs**, and click **Next**. 
 
-15. You should now see the data from the source tabulated. Click **Create** to configure the data types and formats for the data you ingest.
+15. You should now see the data from the source tabulated. Click **Create** to configure the data types and formats for the data you ingest. 
 
-16. You will notice that the column heading has appeared in the first row of the data. To correct this, click **Transform** and **Use first row as headers**
+16. You will notice that the column heading has appeared in the first row of the data. To correct this, click **Transform** and **Use first row as headers**. 
 
 17. Update the datatype for the columns listed below.
 
