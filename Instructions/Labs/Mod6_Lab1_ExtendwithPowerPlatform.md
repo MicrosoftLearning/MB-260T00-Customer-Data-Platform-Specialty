@@ -111,8 +111,8 @@ Contoso Coffee wants to look for seasonality within their sales figures for both
  
 
 2. With the new chart selected, add the following under Fields: 
-	- **Axis** add **PurchasedOn** from **eCommerce_Purchases** 
-	   -  **Note**: remove all but month once you add it.
+	- **X-Axis** add **PurchasedOn** from **eCommerce_Purchases** 
+	   -  **Note**: remove all but Month once you add it.
 	- **Values** add **TotalPrice** from **eCommerce_Purchases** 
 
 3. With the graph selected, click the **Format** button and set the following properties: 
@@ -131,14 +131,14 @@ Contoso Coffee wants to look for seasonality within their sales figures for both
 
 ### Activity Types by Volume 
 
-1. Make sure you don't have either of the Cards or charts you've added selected and add a Pie Chart **from** the **Visualizations** panel to the left side of the report. 
+1. Make sure you don't have either of the Cards or Charts you've added selected and add a **Pie Chart** from the **Visualizations** panel. 
 
 2. With the Pie Chart selected, drag the following values from the **UnifiedActivity** object. 
 
-	- Details:**Title**
+	- Details: **Title**. 
 
-	- Values: **ActivityTypeDisplay** 
-	    - which will turn into **Count of ActivityTypeDisplay** when added 
+	- Values: **ActivityTypeDisplay**  
+	    - which will turn into **Count of ActivityTypeDisplay** when added. 
 
 	- In filters pane, check **Select all** then uncheck the blank values line for Title. 
 
@@ -155,15 +155,15 @@ Contoso Coffee wants to look for seasonality within their sales figures for both
 
 ### Activity Types by Month 
 
-1. Add a Line Chart **from** the **Visualizations** panel on to the report. 
+1. Add a **Line Chart** from the **Visualizations** panel on to the report. 
 
-2. With the Line Chart selected, drag the following values from the **UnifiedActivity** object to the **Fields** 
+2. With the Line Chart selected, drag the following values from the **UnifiedActivity** object to the **Fields**: 
 
 	- Axis: **StartTime** 
-      - Note: remove all but month once you add it 
+   	   -  **Note**: remove all but Month once you add it. 
 	- Legend: **ActivityTypeDisplay** 
 	- Values: **ActivityTypeDisplay**
-	    which will turn into **Count of ActivityTypeDisplay** when added 
+	    - which will turn into **Count of ActivityTypeDisplay** when added.
 
 3. With the Line Chart selected, click the **Format** button and set the following properties: 
 	- Legend: **Color = White** 
@@ -181,17 +181,17 @@ Review your Power BI dashboard. This is a simple example, but insights could bec
 
 This simple report highlights: 
 
-- Average Online Purchase value is higher than In Store 
-- There is a higher volume of In Store Purchases vs Online 
+- Average Online Purchase value is higher than in Store. 
+- There is a higher volume of In Store Purchases vs Online. 
 - There may be some seasonal trends as sales drop around March and increase again from September. 
- 
+
  
 # Exercise 2 - Power Automate
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
 1. Navigate to [https://make.powerapps.com](https://make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
 
-3. From the left hand menu, click **Flows.** (If prompted confirm the **Country** and  click **Get started.**)
+3. From the left hand menu, click **Flows.** (If prompted confirm the **Country** and click **Get started**.)
 
 4. Click **+ New flow** and then select **Instant cloud flow** from the dropdown.
 
