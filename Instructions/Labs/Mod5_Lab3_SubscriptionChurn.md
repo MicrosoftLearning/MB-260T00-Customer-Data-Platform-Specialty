@@ -10,9 +10,9 @@ lab:
 ## Exercise 1 - Ingest and unify the subsription data 
 ## Task 1 - Ingest the Subscription Data
 
-1.If you haven't already, sign into Customer Insights at **https://home.ci.ai.dynamics.com/**. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**.
+1. If you haven't already, sign into Customer Insights at **https://home.ci.ai.dynamics.com/**. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**. 
 
-2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next.**
+2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next**.
 
 2. Select the **Text/CSV** Connector.
 
@@ -46,15 +46,15 @@ lab:
 	| Is_auto_renew | True/False |
 	| RecurringFrequencyInMonths | Whole Number |
 
-12. In the 'Name' field on the right-hand pane, rename your data source to **SubscriberHistory**.
+12. In the 'Name' field on the right-hand pane, rename your data source to **SubscriberHistory**. 
 
-13. Click **Home** and click **Get Data**, then choose **Text/CSV**.
+13. Click **Home** and click **Get Data**, then choose **Text/CSV**. 
 
-14. Enter the URL for the Userlog data set, **https://aka.ms/CI-ILT/Userlogs**, and click **Next**.
+14. Enter the URL for the Userlog data set, **https://aka.ms/CI-ILT/Userlogs**, and click **Next**. 
 
-15. You should now see the data from the source tabulated. Click **Create** to configure the data types and formats for the data you ingest.
+15. You should now see the data from the source tabulated. Click **Create** to configure the data types and formats for the data you ingest. 
 
-16. You will notice that the column heading has appeared in the first row of the data. To correct this, click **Transform** and **Use first row as headers**
+16. You will notice that the column heading has appeared in the first row of the data. To correct this, click **Transform** and **Use first row as headers**. 
 
 17. Update the datatype for the columns listed below.
 
@@ -63,7 +63,7 @@ lab:
 	| TransactionDate | DateTime |
 	| TransactionValue | Whole Number |
 
-18. In the 'Name' field on the right-hand pane, rename your data source **UserLogs** if needed. Click **Next.**
+18. In the 'Name' field on the right-hand pane, rename your data source **UserLogs** if needed. Click **Next**. 
 
 19. Leave the refresh schedule set to **Refresh manually** and click **Save**.
 
@@ -93,26 +93,26 @@ When the data source is finished loading we need to go through the Unify process
 
 ## Task 1 - Create subscription activities for use in the Subscription Churn Model
 
-1. In the left menu, navigate to **Data > Activities.**
+1. In the left menu, navigate to **Data > Activities**. 
 
-2. Click **+ Add Activity.**
+2. Click **+ Add Activity**. 
 
-3. On the Set up your activity data screen, name the activity **SubscriptionHistory**. Select **SubscriberHistory : SubscriptionData** for Activity entity and select **Subscription ID** as the Primary key.
+3. On the Set up your activity data screen, name the activity **SubscriptionHistory**. Select **SubscriberHistory : SubscriptionData** for Activity entity and select **SubscriptionID** as the Primary key.
 
-4. On the Set up your relationships screen, select **Add relationship.** Configure your relationship as the following:
+4. On the Set up your relationships screen, select **+ Add relationship.** Configure your relationship as the following:
 
 	- Foreign key from SusbcriberHistory : SubscriptionData: **CustomerID**
 	- To entity name: **Subscribers : Subscription Data**
 	- Relationship name: **SubHistory**
 
-5. Click **Apply** and then click **Next.**
+5. Click **Apply** and then click **Next**.
 
 6. On the Unify your customer activity data screen, configure the following:
 
 	- Event activity: CustomerID
 	- Timestamp: TransactionDate
 
-7. You can leave the remaining fields blank. Click **Next.**
+7. You can leave the remaining fields blank. Click **Next**.
 
 8. On the Set activity type screen, select **Subscription** for Activity type and select the **Yes** radio button for "Provide semantic mapping...?"
 
@@ -128,13 +128,13 @@ When the data source is finished loading we need to go through the Unify process
 	- Is recurring?: IsRecurring
 	- Recurring frequency in months: RecurringFrequencyInMonths
 
-10. Leave the remaining field mappings blank and click **Next.**
+10. Leave the remaining field mappings blank and click **Next**. 
 
-11. Review your selections and click **Save activity.** Then click **Done.**
+11. Review your selections and click **Save activity**. Then click **Done**.
 
-12. Next, we will create the UserLogs activity. Back on the main Activities page, click **+ Add Activity.**
+12. Next, we will create the UserLogs activity. Back on the main Activities page, click **+ Add Activity**.
 
-13. On the Set up your activity data screen, type **UserLogs** for Activity name and select **UserLogs : SubscriptionData** as the Activity entity. Select **CustomerID** as the Primary key and click **Next.**
+13. On the Set up your activity data screen, type **UserLogs** for Activity name and select **UserLogs : SubscriptionData** as the Activity entity. Select **CustomerID** as the Primary key and click **Next**.
 
 14. On the Set up your relationships screen, click **+ Add relationship**. Configure your relationship as the following:
 
@@ -142,18 +142,18 @@ When the data source is finished loading we need to go through the Unify process
 	- To entity name: **Subscribers : SubscriptionData**
 	- Relationship name: **Logs**
 
-15. Click **Apply** and then click **Next.**
+15. Click **Apply** and then click **Next**.
 
 16. On the Unify your customer activity data screen, configure the following:
 
 	- Event activity: TransactionName
 	- Timestamp: Transactiondate
 
-17. You can leave the remaining fields blank. Click **Next.**
+17. You can leave the remaining fields blank. Click **Next**.
 
-18. On the Set activity type screen, select **Usage** for activity type. Click **Next.**
+18. On the Set activity type screen, select **Usage** for activity type. Click **Next**.
 
-19. Review your selections and click **Save activity.** Then click **Done.**
+19. Review your selections and click **Save activity.** Then click **Done**.
 
 ## Task 2 - Build the Subscription Churn Model 
 
@@ -163,15 +163,15 @@ When the data source is finished loading we need to go through the Unify process
 
 3. Select **Subscription** and click **Get started**.
 
-4. Enter the Model name: **OOB Subscription Churn Model** and Output entity name **OOBSubscriptionChurnModel** and click **Next**.
+4. Enter the Model name: **OOB Subscription Churn Model** and verify that Output entity name is set to **OOBSubscriptionChurnModel** and click **Next**.
 
 5. Set the **Days since subscription ended** to **15 days** and click **Next**.
 
-6. Under Subscription history, hit **Add data** and select **Subscription** for the entity. Under Activities, select **SubscriberHistory : SubscriptionData** and click **Next.**
+6. Under Subscription history, hit **Add data** and select **Subscription** for the entity. Under Activities, select **SubscriberHistory : SubscriptionData** and click **Next**. 
 
 7. Review the mapped attributes that we mapped earlier and click **Save**.
 
-8. Within Customer activities, click on **Add data** and choose **Usage** for the entity. Under Activities, select **UserLogs : SubscriptionData.** Then click **Next.**
+8. Within Customer activities, click on **Add data** and choose **Usage** for the entity. Under Activities, select **UserLogs : SubscriptionData.** Then click **Next**. 
 
 9. Map the following attributes:
 
@@ -187,7 +187,7 @@ When the data source is finished loading we need to go through the Unify process
 
 The model will initiate Activity entity to run for the first time and adds SubscriptionHistory and Userlogs to customer timeline. After that, the model run begins. This can take a long time as we have ingested a large amount of data inside the logs and subscription history.
 
-You can check the run status in the **System** page. Once the run has succeeded, you can go back to Intelligence and click on the created prediction 'Churn Model' to see the results and you can find the list of customers and their churn score in **Entities** > **ChurnModel**.
+You can check the status of queued and refreshing tasks on the **Admin** > **System** page. Once the task status is Successful, you can go back to Intelligence and click on the created prediction 'Churn Model' to see the results and you can find the list of customers and their churn score in **Data** > **Entities** > **ChurnModel**.
 
 
 ### Training Model Performance

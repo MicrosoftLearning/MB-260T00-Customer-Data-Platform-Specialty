@@ -21,25 +21,23 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
 
-3.   Map contacts from eCommerce and Loyalty data to common data types. In the left menu, click **Unify.** You should see the **Map** tab highlighted. Click **Select entities and fields.** 
+2. In the left menu under Data, click **Unify.** Click **Get started**. Under Source fields, on the right-hand side, click **Select entities and fields.** 
 
-**Note:** The first time that you access the mapping phase, no data will be available, so you'll need to select the **Get Started** under the **Source fields** section.
+3. Select the entities that represent the customer profile - Contacts (eCommerce) and Customers (Loyalty). Then click **Apply.**
 
-2. Select the entities that represent the customer profile - Contacts (eCommerce) and Customers (Loyalty). Then click **Apply.**
+4. You will now be presented with the mappings of your source entity against standard model types. You can review the types in the table. 
 
-2. You will now be presented with the mappings of your source entity against standard model types. You can review the types in the table. 
+5. You must choose a 'Primary Key' for each entity you have ingested. The primary key must be a unique reference. For eCommerce Contacts, select **ContactId** as the Primary Key. 
 
-3. You must choose a 'Primary Key' for each entity you have ingested. The primary key must be a unique reference. For eCommerce Contacts, select **ContactId** as the Primary Key. 
+6. Our eCommerce Contacts data contains a column named Email Subscriber which will be mapped to an incorrect type, Identity.Service.Email, because of the name. Open the dropdown for this field and select the empty option (nothing/blank). If we do not do this then the system default to merging this field with the Email fields which we do not want. You will also need to do this for Income which may get mapped to Identity.Service.Phone.
 
-3. Our eCommerce Contacts data contains a column named Email Subscriber which will be mapped to an incorrect type, Identity.Service.Email, because of the name. Open the dropdown for this field and select the empty option (nothing/blank). If we do not do this then the system default to merging this field with the Email fields which we do not want. You will also need to do this for Income which may get mapped to Identity.Service.Phone.
+7. Select Loyalty Customers under Entities and set **LoyaltyId** as the Primary Key.
 
-4. Select Loyalty Customers under Entities and set **LoyaltyID** as the Primary Key.
+8. Our Loyalty data contains a column named RewardPoints which will be mapped to an incorrect type, Measurement.Duration because of the name/type. Open the dropdown for this field and select the empty option (nothing/blank). 
 
-5. Our Loyalty data contains a column named RewardPoints which will be mapped to an incorrect type, Measurement.Duration because of the name/type. Open the dropdown for this field and select the empty option (nothing/blank). 
+9. Click **Save source fields** in the top left-hand corner. 
 
-6. Click Save in the top left-hand corner. 
-
-7. Click the **Match** tab to enter the Match area.
+10. Click **Next** and **Next** again, to skip past the duplicate checking and enter the Matching conditions area.
 
 ## Task 2 - Specify Match Order 
 
@@ -57,7 +55,7 @@ For the next stage, we must select the order in which to merge the profiles. You
 
 ## Task 3 - Create a Match Rule 
 
-In this step, you will create a simple rule used to match records together. Rules can consist of single (e.g. based on ID) or multiple conditions (e.g. Full Name, Postcode, Date of Birth). 
+In this task, you will create a simple rule used to match records together. Rules can consist of single (e.g. based on ID) or multiple conditions (e.g. Full Name, Postcode, Date of Birth). 
 
 For further details on Match Rules, please see [Customer Insights documentation](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/match-entities#define-rules-for-match-pairs). 
 
@@ -70,7 +68,7 @@ For further details on Match Rules, please see [Customer Insights documentation]
 	- Leave the **Normalize** blank. 
 	- Set Precision Level to **Basic** and Precision value to **High**.
 
-**Note:** Move the slider to the middle to set the Precision value to **High**
+   **Note:** Move the slider to the middle to set the Precision value to **High**
 
 3. Enter the name **FullName, Email** for the new rule. 
 
@@ -155,9 +153,9 @@ In this exercise, we will set up Search and Filter criteria to enable Customer I
 
 3. Some customer search specific fields are already added by default and you can add more by clicking **Add** on the right-hand side. Click **Add** now.
  
-5. Make sure **CustomerId, FirstName, LastName, FullName, DateOfBirth, Email, PostCode, Headshot, ContactId (eCommerce_Contacts),** and **LoyaltyId** are selected. Deselect any other fields that are checked. Click **Add.**
+5. Make sure **CustomerId, FirstName, LastName, FullName, DateOfBirth, EMail, PostCode, Headshot, ContactId (eCommerce_Contacts),** and **LoyaltyId** are selected. Deselect any other fields that are checked. Click **Apply**.
 
-5. Click **Save** and then click **Run.**
+5. Click **Save** and then click **Run**.
 
 ### Task 2 - Search for a Customer Record 
 

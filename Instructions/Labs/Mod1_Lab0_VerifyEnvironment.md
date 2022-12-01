@@ -52,14 +52,18 @@ Now that we have setup our Admin user, Power Apps license and Dynamics 365 Marke
 
 4. If prompted to enter your country again, select **United States** and click continue.
 
-5. Select **Audience insights** on the **Choose your focus** page.
+5. Select **Individual consumers (B-to-C)** on the **Choose your business** page.
 
-6. Select **Individual consumers (B-to-C)** on the **Choose your business** page.
+6. Your trial will launch and you'll arrive on the Audience insights homepage. In the Industry dropdown, select **Retail.** This will load retail demo data into the demo environment.
 
-7. Your trial will launch and you'll arrive on the Audience insights homepage. In the Industry dropdown, select **Retail.** This will load retail demo data into the demo environment.
+7. Click on the **Sign up for trial** button in the header.
 
-9. Click on the **Start trial** button in the header.
+8. Click on the **Start trial** button in the header.
 
-8. Next you will create the environment. We suggest you name it **Your Name** CI ILT Lab. Once you enter the name and select the region you can click **Review and finish** and then **Create.**
+9. Next you will create the environment. We suggest you name it **Your Name** CI ILT Lab. Once you enter the name and select the region, click **Next**.
 
-10. Once it completes you will be at the landing retail demo page for Customer Insights. Using the environment selector, make sure you are in the environment you created. You are now ready to start on the labs! 
+10. Click **Next** again and for Microsoft Dataverse environment, select **Marketing Trial**.
+
+11. Click **Next** and finally click **Create**.
+
+12. Once it completes you will be at the landing retail demo page for Customer Insights. Using the environment selector, make sure you are in the environment you created. You are now ready to start on the labs! 

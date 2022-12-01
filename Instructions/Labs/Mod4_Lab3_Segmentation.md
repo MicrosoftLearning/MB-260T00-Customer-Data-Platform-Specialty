@@ -28,39 +28,40 @@ In this lab you will segment your unified customer profiles, to uncover cohorts 
 
 Let's create a segment called Customers from California quickly using the profiles. 
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
 
-3. Click on **Segments** in the left menu.
+3. Click on **Segments** in the left menu. 
 
-3. Click the **+ New** dropdown and select **Create From > Profiles.**
+3. Click the **+ New** dropdown and select **Create from Profiles**. 
 
-4. Select the **Field > State** and **Value > California.** 
+4. Select the **Field > State** and **Value > California**. 
 
-5. Click **Review.** 
+5. Click **Review**. 
 
-6. Name your segment "Customers from California" and set the output entity name to "CustomersFromCalifornia".
+6. Name your segment "Customers from California" and verify the output entity name has been automatically populated with **CustomersFromCalifornia**. 
 
-7. Click **Save.** 
+7. Click **Save**. 
 
 ### Task 2 - Segment using Measures: High Value Online Customers 
 
 Contoso Coffee Marketing wants to run a new promotion to convert customers to subscription model. Marketing have identified that they wish to target brew-at-home customers with a higher than average online purchase value to do so. We will create this segment using the Quick Create. 
 
-1. Click on **Segments** in the left menu.
+1. Click on **Segments** in the left menu. 
 
-2. Click the **+ New** dropdown and select **Create From > Measures.**
+2. Click the **+ New** dropdown and select **Create from Measures**. 
 
 3. Select the **Average Web Purchase ($)** attribute. 
 
-4. Set the operator to **greater than.**
+4. Set the operator to **greater than**. 
 
 6. Set the value to **138**. The graph should populate with Average Web Purchase ($) by percentile. 
 
-6. Click **Review.** 
+6. Click **Review**. 
 
-7. Name your segment "High Value Online Customers" and set the output entity name to "HighValueOnlineCustomers".
+7. Name your segment "High Value Online Customers" and verify the output entity name has been automatically populated with **HighValueOnlineCustomers**.
 
-8. Click **Save.** 
+8. Click **Save**. 
+
 
 ### Task 3 - Segment from scratch: Summer Promo 
 
@@ -68,61 +69,61 @@ Contoso Coffee Marketing want to run a new Summer Promotion targeting millennial
 
 1. Click on **Segments** in the left menu. Click on **+ New** and select **Build your own.**
 
-2. Next to "Untitled segment," select **Edit name** and change the name to "Summer Promotion." Change the output entity name to "SummerPromo" and click **Done.**
+2. Next to "Untitled segment," select **Edit details** and change the name to "Summer Promotion" and verify the output entity name has been automatically populated with "SummerPromo" and click **Done**. 
 
-3. Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing "Average Store Purchase." Select **Average Store Purchase ($)** from the dropdown.
+3. Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing "Average Store Purchase." Select **Average Store Purchase ($)** from the dropdown. 
 
-4. Set the condition to **is greater than or equal to 113.** (Note: 113 is the average in-store purchase we calculated earlier.)
+4. Set the condition to **is greater than or equal to 113.** (Note: 113 is the average in-store purchase we calculated earlier.) 
 
-5. Click **+ Add condition**. An **and** condition will be added.
+5. Click **+ Add condition**. An **and** condition will be added. 
 
-6. In the "Attribute name" box, start typing "dateOfBirth" and select **dateOfBirth** from the dropdown menu.
+6. In the "Attribute name" box, start typing "dateOfBirth" and select **dateOfBirth** from the dropdown menu. 
 
-7. Fill out the rest of the condition as **is on or after 1/1/1981.**
+7. Fill out the rest of the condition as **is on or after 1/1/1981**. 
 
-7. Add another condition with an **and** qualifier.
+7. Add another condition with an **and** qualifier. 
 
-8. Set this condition as **DateOfBirth is on or before 12/31/1996.**
+8. Set this condition as **DateOfBirth is on or before 12/31/1996**. 
 
-7. Click **Run.**
+7. Click **Run**.
 
 ### Task 4 - Review Segments 
 
-1. Wait for all your segments to successfully run, then navigate to the Customer Insights Home Page. You should see your segments displayed.
+1. Wait for all your segments to successfully run, then navigate to the Customer Insights Home Page. You should see your segments displayed. 
 
-2. Click on one of your segments. You should be presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This display increases and decreases in the number of segment members as data changes over time and the segment is rerun. 
+2. Click on one of your segments. You should be presented with a preview of the customers included within your segment, as well a timeline highlighting the segment size. This display increases and decreases in the number of segment members as data changes over time and the segment is re-run. 
 
-3. Now that you have created your segments, you are ready to start acting upon your data. You can select the segment and click Download on the top for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications. 
+3. Now that you have created your segments, you are ready to start acting upon your data. You can select the segment and click Download on the Command Bar for use in 3rd party software, or you can setup an Export Destination. Segments created within Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications. 
 
 ### Task 5 - Apply Segment Insights 
 
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
 
-1. Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the top. 
+1. Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the command bar. 
 
-2. You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators.**
+2. You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators**. 
 
-4. Choose **High Value Online Customers** as primary segment. Hit **Next**, choose **Customers from California** as another segment, and then hit **Next.** 
+4. Choose **High Value Online Customers** as primary segment. Hit **Next**, choose **Customers from California** as another segment, and then hit **Next**. 
 
-5. Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. Deselect all other customer fields and measure fields.
+5. Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. Deselect all other customer fields and measure fields. 
 
-6. Click **Next** and name your insight "High Value Online vs Customers from California" with an Output entity name of HighValueOnlinevsCustomersfromCalifornia. Click **Save.** 
+6. Click **Next** and name your insight "High Value Online vs Customers from California" with an Output entity name of HighValueOnlinevsCustomersfromCalifornia. Click **Save**. 
 
 7. After the run is successful, you can click on the created insight. Click on the Attributes or Measures tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score the more different they are. You may need to refresh the browser window to see the results. 
 
-8. Click on each measure and attribute to see deeper insights.
+8. Click on each measure and attribute to see deeper insights. 
 
-9. We have successfully created segment insights using **Differentiators**. Now let’s create an insight using **Overlap.**
+9. We have successfully created segment insights using **Differentiators**. Now let’s create an insight using **Overlap**. 
 
-10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap.**
+10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap**. 
 
 11. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
 
-12. Click **Next.**
+12. Click **Next**. 
 
 13. Here, as an optional step, you can also choose attributes to compare the segments just as we did with the Differentiators. You can simply hit Next without choosing anything. 
 
-14. Name your insight "High Value Online Overlapped with California Customers" and set the Output entity name as "HighValueOnlineOverlappedwithCaliforniaCustomers." Then click **Save.**
+14. Name your insight "High Value Online Overlapped with California Customers" and set the Output entity name as "HighValueOnlineOverlappedwithCaliforniaCustomers." Then click **Save**. 
 
 15. After the run is successful, you can click on the created insight to see the screen detailing the total and percentage of shared customers between the two segments. 
 
@@ -196,19 +197,19 @@ In this case, customers in this segment have an average LifetimeSpend of 741.89 
 
 ### Task 2 - Discover segments based on a categorical customer attribute or measure of interest 
 
-1. Under the Suggestions tab, click on Find new suggestions in the top menu to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
+1. Under the Suggestions tab, click **+ Find new suggestions** on the top command bar to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
 
-2. We again will choose Improve a measure/metric 
+2. We again will choose **Improve a measure/metric**.
 
-3. Select CustomerSatisfaction as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Then click Next. 
+3. Select **CustomerSatisfaction** as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Then click **Next**. 
 
-4. Next, select Email Subscriber, Income, Loyalty Tier, Occupation, RewardsPoints and State as the influencing attributes. 
+4. Next, select **Email Subscriber**, **Income**, **Loyalty Tier**, **Occupation**, **RewardsPoints** and **State** as the influencing attributes. 
 
-5. Click on Run. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
+5. Click **Run**. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
 
 6. Once the model has finished running, segment suggestions will be displayed under the Suggestions (preview) tab. Since the target attribute is categorical, the AI model tries to find patterns/common traits of customers belonging to a particular category of the target attribute and surfaces segment suggestions. Since Customer Satisfaction has 3 different categories - low, medium and high - the AI model will try to find segments of customers that possess the same traits and a significant portion of them belong to a particular category (i.e. either low, medium or high). 
 
-**Note:** While only a few tiles are shown initially, you can click the See More link to see more suggestions that were found. 
+    **Note:** While only a few tiles are shown initially, you can click the **See more ->** link to see more suggestions that were found. 
 
 7. You can click on any suggestion to see segment details in the side panel. We will click on the suggestion that says 83% of customers in this suggestion have CustomerSatisfaction = low. In the side panel, you will see the following: 
 

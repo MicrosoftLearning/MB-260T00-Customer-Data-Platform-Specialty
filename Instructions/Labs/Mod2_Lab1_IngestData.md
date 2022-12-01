@@ -11,23 +11,23 @@ lab:
 
 Unlike traditional approaches for realising a 360 degree view of the customer with a large amount of coding involved, Dynamics 365 Customer Insights (CI) is a finished SaaS solution which allows you to adopt an agile project management approach and deliver value in a matter of weeks. 
 
-By attending this Hands-on Lab, you will learn stepby-step how to set up, configure and use Dynamics 365 Customer Insights. To bring this to life, we are looking at a typical customer analytics project for our example company, Contoso Coffee. 
+By attending this Hands-on Lab, you will learn step-by-step how to set up, configure and use Dynamics 365 Customer Insights. To bring this to life, we are looking at a typical customer analytics project for our example company, Contoso Coffee. 
 
 We will introduce the business pain points, goals and high-priority use cases that Contoso has identified around their customer data initiative, and then realise a working prototype solution today. 
 
  
 ## Lab Scenario: Contoso Coffeee
  
-
 Contoso Coffee produce high-quality coffee and coffee machines, which they retail through channels including new Contoso Retail Stores in premium locations, premium food resellers and the Contoso Coffee Web Site. 
 
-Contoso plan to further expand their offerings with Contoso Cafes and a new Connected Coffee Machine which can trigger refill orders and alert Contoso service about any issues. 
+Contoso plan to further expand their offerings with Contoso Cafes and a new Connected Coffee Machine which can trigger refill orders and alert Contoso Service about any issues. 
 
-This new offering will help them to build direct relationship with their customers and learn more about how customers consume their products 
+This new offering will help them to build direct relationships with their customers and learn more about how customers consume their products. 
+ 
 
 ## Business Objective 
 
-Contoso wishes to own and build a meaningful, direct relationship with all consumers to deliver an exceptional, personalised customer experience through relevant communications, personalised recommendations, and services. 
+Contoso wishes to own and build a meaningful, direct relationship with all consumers to deliver an exceptional, personalised customer experience through relevant communications, personalised recommendations and services.
  
 
 ## Challenges 
@@ -36,13 +36,15 @@ Contoso wishes to own and build a meaningful, direct relationship with all consu
 
 - **Data Silos:** They are unable to deliver personalised customer experiences. 
 
+
 ## Existing Data Landscape 
 
 - **Fractured Customer Data:** With multiple systems, Contoso has multiple records for the same person. This causes a disjointed experience to the customer who expects to be treated as one person regardless of the channel they are transacting upon. 
 
 - **Multiple Platforms:** The architecture at Contoso has evolved through acquisition and legacy systems meaning that data can reside in not only different systems, but different platforms across multiple clouds and on premise. 
 
-- **Non-Customer Data:** Contoso are drawing correlations between noncustomer data and the impact it has on customer experiences, including data from third parties such as weather data. 
+- **Non-Customer Data:** Contoso are drawing correlations between non-customer data and the impact it has on customer experiences, including data from third parties such as weather data. 
+
 
 ## Contoso Coffee Customer Insights Project 
 
@@ -52,11 +54,12 @@ Contoso management is tasking IT and Line of Business teams with the following:
 
 - Realise a unified Contoso Customer profile. 
 
-- Provide a 360-degree view of the customer for service agents (embedded into D365 for Service) as well as store managers (through Power BI).
+- Provide a 360-degree view of the customer for service agents (embedded into Dynamics 365 for Customer Service) as well as store managers (through Power BI).
 
 - Deliver a Contoso Coffee Greeter App (through PowerApps), to enable in store retail staff to deliver personalised service and recommendations. 
 
 - Automate various business processes like email alert when customers churn rate surges using Power Automate. 
+
 
 ## Contoso Coffee Customer Insights Project 
 
@@ -113,7 +116,9 @@ In this lab, we will **ingest data.** In the next lab, we will **unify the data.
 In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights Hub. 
 
 1. Sign-into Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
-2. In the Environment selector in the top right-hand corner, select the **Retail Demo environment.**
+
+2. In the Environment selector in the top right-hand corner, select the **Retail Demo** environment.
+
 3. On the Home Page, note how the key Insights are highlighted: 
 
 - KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score
@@ -137,7 +142,7 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 
 In this lab you will become familiar with ingesting data from multiple sources. As Project Manager for Contoso Retail, you have already identified that key sources of data include eCommerce Customers, Online Purchases, in-store Point of Sales Purchases, data from Contoso Retail Loyalty Card scheme, Subscription data, Contoso Hotel data and Contacts from your Dynamics 365 CRM. 
 
-Although Customer Insights has connectors to 35+ data sources and applications (including Dynamics 365 & the Common Data Service for Apps), for this lab you will be using the 'Text/CSV' connector. 
+Although Customer Insights has connectors to 35+ data sources and applications (including Dynamics 365 & the Microsoft Dataverse), for this lab you will be using the 'Text/CSV' connector. 
   
 
 ## Data Source Model 
@@ -184,15 +189,15 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 
 1. Within Customer Insights, expand Data on the left menu and click Data Sources.
 
-2. You should see your eCommerce data source. Select it and click either the three vertical dots and choose Edit or click directly on the pen icon. (If your data is still refreshing, you will need to wait for it to finish the refresh before editing.)
+2. You should see your eCommerce data source. Click either the three vertical dots and select **Edit** or click directly on the ✏️ icon. (If your data is still refreshing, you will need to wait for it to finish before editing.)
 
 3. You should be presented with the view of the eCommerce Contacts data that you ingested in Task 1. Select **Get data.**
 
 4. You will be presented with a view of data source connectors that Customer Insights is able to ingest. Select the Text/CSV Connector. 
 
-5. Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases. Click Next and then Create. 
+5. Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases. Click **Next** and then **Create**. 
  
-6. As you did in Task 1, click on **Use first row as headers** or you can click on Transform tab and click **Use first row as headers.**
+6. As you did in Task 1, click on **Transform**, then **Use first row as headers** or you can click on Transform tab and click **Use first row as headers.**
 
 7. Once completed, update the datatypes for the following columns:
 
@@ -201,7 +206,7 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 	| PurchasedOn | Date |
 	| TotalPrice| Currency |
  
-7. Name your query **Purchases** and click Save. 
+8. Name your query **Purchases** and click Save. 
 
 ## Task 3 - Ingest Customer Data from Loyalty Scheme 
 
@@ -218,17 +223,17 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 6. You will notice that the column heading has appeared in the first row of the data. To correct this, click Transform and then Use First Row as Headers or click it directly from the Home tab. 
 
 
-6. Update the datatype for the columns listed below. 
+7. Update the datatype for the columns listed below. 
 
-| Column Heading| New Data Type |
-| - | - |
-| DateOfBirth| Date |
-| RewardPoints| Whole Number |
-| CreatedOn| Date |
+	| Column Heading| New Data Type |
+	| - | - |
+	| DateOfBirth| Date |
+	| RewardPoints| Whole Number |
+	| CreatedOn| Date |
 
-7. In the 'Name' field on the right-hand pane, rename your data source to **Customers** and click **Next.**
+8. In the 'Name' field on the right-hand pane, rename your data source to **Customers** and click **Next.**
 
-8. Click **Save.**
+9. Click **Save.**
 
 # Task 4 - Ingest Customer Data from Point of Sale Purchases  
 
@@ -244,11 +249,11 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 
 5. Update the datatype for the columns listed below. 
 
-| Column Heading| New Data Type |
-| - | - |
-| PurchasedOn| Date |
-| TotalPrice| Currency |
-| RewardPointsAdded| WholeNumber |
+	| Column Heading| New Data Type |
+	| - | - |
+	| PurchasedOn| Date |
+	| TotalPrice| Currency |
+	| RewardPointsAdded| WholeNumber |
 
 6. In the Name field on the right-hand pane, rename your data source to **Purchases**. Click **Next** and then click **Save.** 
 
@@ -260,17 +265,16 @@ In this next task, we will ingest Online Purchase data, representing purchases m
 
 3. Select the Text/CSV Connector. 
 
-5. Enter the URL for the Website Reviews, https://aka.ms/CI-ILT/WebReviews. Click **Next** and then click **Transform data.**
+4. Enter the URL for the Website Reviews, https://aka.ms/CI-ILT/WebReviews. Click **Next** and then click **Transform data.**
 
-
-5. Click **Use First Row as Headers** from Home or click **Transform** and then **Use First Row as Headers.**
+5. As before, click **Use First Row as Headers** from Home or click **Transform** and then **Use First Row as Headers.**
 
 6. Update the datatype for the columns listed below. 
 
-| Column Heading| New Data Type |
-| - | - |
-| ReviewRating| Whole Number |
-| ReviewDate| Date |
+	| Column Heading| New Data Type |
+	| - | - |
+	| ReviewRating| Whole Number |
+	| ReviewDate| Date |
 
 7. In the Name field on the right-hand pane, rename your data source to **Reviews**. Click **Next** and then click **Save.**
 
