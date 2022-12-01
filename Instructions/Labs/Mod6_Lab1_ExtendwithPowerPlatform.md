@@ -10,11 +10,13 @@ lab:
 Having successfully ingested Contoso Coffee's data sources and created a Unified Customer Profile and calculated key measures, you are now able to leverage the insight you have generated to empower different personas within Contoso Coffee over different platforms. 
 
 ## Power BI Extensibility 
+
 The Customer Insights Power BI Connector enables you to use the unified data that you have unlocked through the data configuration process within Microsoft Power BI to further analyze and uncover insight. 
 
 From customer details such as roles and locations, to communication details such as email addresses and phone numbers, to unique key performance indicators (KPIs) you might have defined using the Measures page (such as Customer Lifetime Spend or Engagement Score), many insights can be uncovered. 
 
 ## Power Automate Extensibility 
+
 Contoso wants to capture in-store interactions with their customers. You are charged with enabling Contoso Retail staff to capture 'Customer Check-In' activities and deliver personalized recommendations to customers. 
 
 In this module, you will create a custom 'Check In' activity within Dynamics 365 to store details of customer store visits. You will enable Contoso Retail staff to capture these check ins using a planned 'Greeter App' and Power Automate, including details of the subjects discussed with the customer. 
@@ -23,7 +25,7 @@ In this Module you will create the custom 'Check In' activity and configure a Fl
 
 In this module you will also create a Flow to generate personalized recommendations that can be surfaced within Dynamics 365 or the Greeter App using Insight Cards. 
 
-## Power App Extensibility 
+## Power Apps Extensibility 
 
 Contoso want to deliver personalized service and recommendations to customers who visit their retail stores and coffee shop's and capture details of customers visiting their stores. To do this, they have decided to empower their Contoso Coffee Retail staff with a greeter app, empowering staff to have a more informed conversation with customers and deliver personalized service and recommendations. 
 
@@ -39,30 +41,27 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 
 # Exercise 1 - Power BI
 
-## Task 1: Configure Power BI Desktop
+## Task 1: Configure Power BI Desktop 
 
-3. If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app. If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+1. If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app. If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller). 
 
-2. Open Power BI Desktop.
-2. If you signed in into Power BI Desktop previously, select **File | Sign out** 
-3. Sign in if prompted or select **File | Sign in** to sign in using your M365 credential. 
-5. Select **Sign up for Power BI** and follow the prompts to complete the sign up.
-6. Open the PowerBI template .pbix file from the lab assets in Power BI Desktop. Make sure you are logged in with the admin account for your tenant (it should say MOD Administrator in the right-hand corner).
+2. Open Power BI Desktop. 
 
-2. Click **Get Data** from the toolbar and click **More...** in the dropdown. Search for the **Dynamics 365 Customer Insights (Beta)** connector.
+3. If you signed into Power BI Desktop previously, select **File | Sign out**. 
+
+4. Click **Get started**. Sign in if prompted or select **File | Sign in** to sign in using your M365 credential. 
+
+5. Open the PowerBI template .pbix file from the lab assets in Power BI Desktop. Make sure you are logged in with the admin account for your tenant (it should say MOD Administrator in the right-hand corner). 
+
+6. Click **Get Data** from the toolbar and click **More...** in the dropdown. Search for the **Dynamics 365 Customer Insights (Beta)** connector.
 		
-3. Select the connector and click **Connect**. 
+7. Select the connector and click **Connect**. 
 
-4. If presented with a notice relating to connecting to Third Party Service, click **Continue**. 
+8. If presented with a notice relating to connecting to Third Party Service, click **Continue**. 
 
-5. Connect to your Customer Insights instance using your credentials and click **Connect** again. Once connected, you will be presented with the **Navigator page**. Here you will see all the Entities, Measures and Unified Activity data objects that you are able to consume within Power BI. 
+9. Connect to your Customer Insights instance using your credentials and click **Connect** again. Once connected, you will be presented with the **Navigator page**. Here you will see all the Entities, Measures and Unified Activity data objects that you are able to consume within Power BI. 
 
-6. Expand and select the following tables and then click **Load**.
-
-**Measures**: 
-- AverageStorePurchaseValue 
--  AverageWebPurchaseValue 
-- Customer_Measure 
+10. Expand and select the following tables:  
 
 **Entities**: 
 
@@ -70,8 +69,16 @@ As Project Manager for Contoso Coffee, you will create a Greeter App using Power
 - eCommerce_Purchases 
 - PoS_posPurchases 
 
+**Measures**: 
+- AverageStorePurchaseValue 
+-  AverageWebPurchaseValue 
+- Customer_Measure 
+
 **UnifiedActivity**:
 - UnifiedActivity
+
+11. Click **Load**. 
+
 
 ## Task 2 - Add visualizations
 
