@@ -189,7 +189,7 @@ This simple report highlights:
 # Exercise 2 - Power Automate
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
-1. Navigate to [https://make.powerapps.com](https://make.powerapps.com) and sign in if prompted. Select your Customer Insights environment on top right from the drop down. 
+1. Navigate to [https://make.powerapps.com](https://make.powerapps.com) and sign in if prompted. Select your **Your Name** CI ILT Lab environment on top right from the drop down. 
 
 3. From the left hand menu, click **Flows.** (If prompted confirm the **Country** and click **Get started**.)
 
@@ -272,7 +272,7 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
 4.This is connecting to the **Customer** data entity we created the previous Task. The data for this gallery is being pulled from the Unified Customer Profile. There is a formula attached to Items property to filter using the search bar text. 
 
-4. You are going to update the Customer gallery to show a customer's Full Name, email address and Contoso Club ID. With the gallery_Customers gallery still selected, return to the **Properties** tab. Select **Fields > Edit** .
+4. You are going to update the Customer gallery to show a customer's Full Name, email address and Contoso Club ID. With the gallery_Customers gallery still selected, return to the **Properties** tab. Select **Fields > Edit**. 
 
 	- lbl_CustomerName: `FullName`
 	- lbl_CustomerNo: `Loyalty_Customers_LoyaltyId`
@@ -322,12 +322,9 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 
 	`gallery_Customers.Selected. Loyalty_Customers_LoyaltyId`
 
- 
-
 - Within the Tree View select **lbl_Cust_Address** and set the **Text** property of the label to:
  
 	`Concatenate(gallery_Customers.Selected.StreetAddress, " ", gallery_Customers.Selected.City," ", gallery_Customers.Selected.State, " ", gallery_Customers.Selected.PostCode, " ", gallery_Customers.Selected.Country)`
-
  
 3. Finally, within the Tree View select the **img_CustomerProfileImage** and set the Image property to:
 
@@ -350,7 +347,7 @@ In this task we will embed a unified timeline of activities ingested into Custom
 
 ## Task 6 - Embed KPIs to Profile Page 
 
-In this task you will embed key customer KPIs that we calculated as 'Customer Measures' in Lab 4A. Namely, Total Club Points (Loyalty Scheme Points) and **Customer Lifetime Spend.** 
+In this task you will embed key customer KPIs that we calculated as 'Customer Measures' in Lab 4A. Namely, Total Club Points (Loyalty Scheme Points) and **Customer Lifetime Spend**. 
 
 Contoso Club Loyalty Points 
 
@@ -374,20 +371,19 @@ Contoso Club Loyalty Points
 
 3. Expand the **gallery_CLTV gallery** and select **lbl_CLTV** inside the gallery. Select the **Text** property from the drop down and set the formula as follows to display the contacts corresponding LifetimeSpend: 
 
-
 	`ThisItem.LifetimeSpend`
 
 From the File menu, click Save and Publish.  
 
 ## Task 7 - Test & Explore the Greeter App Experience 
 
-Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. In this task, you will explore the Greeter App experience 
+Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. In this task, you will explore the Greeter App experience. 
 
-1. In a browser tab, navigate to https://make.powerapps.com. If required, sign in and make sure select your environment. By default the environment would be pointing to Contoso.
+1. In a browser tab, navigate to https://make.powerapps.com/. If required, sign in and make sure to select your environment. By default the environment would be pointing to Contoso.
  
 2. Click **Apps** in the left-hand menu, and then run your **Contoso Coffee Greeter App** by selecting it and clicking **Play** on the top. 
 
-3. Imagine you are a member of Contoso Coffee Retail staff and you greet them within the store.
+3. Imagine you are a member of Contoso Coffee Retail staff and you greet customers within the store.
 
 - Look up Abbie Moss' record (LOYID_1000) 
 - Open Abbie Moss' record: 
@@ -395,5 +391,4 @@ Congratulations! You have now configured a simple greeter app for Contoso Coffee
 	- **Review Activity History** 
    	- **Review Abbie's Club Balance and Lifetime Value** 
 	- Combining her purchase history with insight on her 'Current Points' and 'Lifetime Value', you are able to ascertain that Abbie is both a frequent and high-value customer. 
-
 
