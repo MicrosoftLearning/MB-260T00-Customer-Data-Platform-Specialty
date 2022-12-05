@@ -53,7 +53,7 @@ First, we will setup some sample Contacts within Dynamics 365 for you to ingest 
 
 9. You can monitor the progress of your import using the refresh button on the top right of the grid. Ensure that your import completes successfully.
 
-10. Reopen the **Marketing** app and navigate to **Outbound Marketing >> Customers >> Contacts**.
+10. Reopen the **Marketing** app and navigate to **Outbound Marketing** area section, change area can be found in the bottom left-hand corner. From the left navigation pane select **Contacts** from the **Customers** section.
 
 11. You should now have a record for **Abbie Moss**.
 
