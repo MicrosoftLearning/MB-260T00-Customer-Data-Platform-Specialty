@@ -32,7 +32,7 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 5. Define the two conditions for the churn model as both **60 days** then click **Next**. 
 
-6. Under Customer transaction history, click **+ Add data**. Select **SalesOrder** as the activity type and then select the **Purchases : eCommerce** entity. Click **Next** and then click **Next** again. 
+6. Under Customer transaction history, click **+ Add data**. Select **SalesOrder** as the activity type and then select the **Purchases : eCommerce** entity. Click **Next** and then click **Save**. 
 
 9. Click **Next** to move to the **Additional Data** screen and then click **Next** again. 
 
