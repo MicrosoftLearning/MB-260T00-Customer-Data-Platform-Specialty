@@ -373,7 +373,7 @@ Contoso Club Loyalty Points
 
 	`ThisItem.LifetimeSpend`
 
-From the File menu, click Save and Publish.  
+4. From the File menu, click **Save** and **Publish**.  
 
 ## Task 7 - Test & Explore the Greeter App Experience 
 
