@@ -189,7 +189,7 @@ In this case, customers in this segment have an average LifetimeSpend of 741.89 
 
  In a similar fashion, you can see details of other segment suggestions that you are interested in. 
 
-9. You can then save the segment by clicking on **Save as segment** in the side panel. Name the segment and Output entity name as follows and click on **Save.**
+9. You can then save the segment by clicking on **Save as segment** in the side panel.
   
 10. The saved segment can then be viewed under the All segments tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by clicking on Edit in the All segments tab. 
 
