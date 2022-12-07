@@ -69,7 +69,7 @@ Contoso Coffee Marketing want to run a new Summer Promotion targeting millennial
 
 1. Click on **Segments** in the left menu. Click on **+ New** and select **Build your own.**
 
-2. Next to "Untitled segment," select **Edit details** and change the name to "Summer Promotion" and verify the output entity name has been automatically populated with "SummerPromo" and click **Done**. 
+2. Next to "Untitled segment," select **Edit details** and change the name to "Summer Promotion" and verify the output entity name has been automatically populated with "SummerPromotion" and click **Done**. 
 
 3. Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing "Average Store Purchase." Select **Average Store Purchase ($)** from the dropdown. 
 
