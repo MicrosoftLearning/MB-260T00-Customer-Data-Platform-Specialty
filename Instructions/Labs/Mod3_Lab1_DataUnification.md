@@ -41,11 +41,11 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 ## Task 2 - Specify Match Order 
 
-For the next stage, we must select the order in which to merge the profiles. You will be able to merge attributes to ensure that the unified profiles are complete as well as the priority of which sources to use for those attributes.  
+For the next stage, we must select the order in which to merge the profiles. You will be able to merge attributes to ensure that the unified profiles are complete as well as the priority of which sources to use for those attributes. 
 
-2. You should select the most complete or accurate profile source as the Primary (first) source. Use the arrow buttons to move **Contacts : eCommerce** as the primary (first) Source. Select the check mark to **Include all** records. 
+1. You should select the most complete or accurate profile source as the Primary (first) source. Use the arrow buttons to move **Contacts : eCommerce** as the primary (first) Source (if it isn't already). Select the check mark to **Include all** records. 
 
-4. Confirm that **Customers : Loyalty** is now the second source in the list. Choose to **Include all** records. 
+2. Confirm that **Customers : Loyalty** is now the second source in the list. Choose to **Include all** records. 
 
 ## Task 3 - Create a Match Rule 
 
