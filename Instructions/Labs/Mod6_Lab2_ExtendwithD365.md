@@ -83,7 +83,7 @@ Because this is not a Power Query connector, we do not get the option to transfo
 
 2. Under **Entities**, click **Edit fields**.
 
-4. Epxand the **Contact (D365)** entry. We only want specific fields pulled through, so let's only check the following fields (search is your friend here as the Dynamics entity has a LOT of fields):
+4. Expand the **Contact (D365)** entry. We only want specific fields pulled through, so let's only check the following fields (search is your friend here as the Dynamics entity has a LOT of fields):
 
 	- address1_city
 
