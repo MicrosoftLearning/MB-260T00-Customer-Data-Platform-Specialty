@@ -15,37 +15,38 @@ Finally, running the Merge process will create a single set of unique Customers 
 
 Your objective is to find out how many unique customer profiles Contoso Retail has across various data sources. 
 
+
 ## Exercise 1 - Unify the data
 
 ## Task 1 - Map contacts to common data types 
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
 
-2. In the left menu under Data, click **Unify.** Click **Get started**. Under Source fields, on the right-hand side, click **Select entities and fields.** 
+2.  On the left menu, expand **Data**, select **Unify**. Select **Get started**. Under **Source fields** on the right-hand side, select **+ Select entities and fields**. 
 
-3. Select the entities that represent the customer profile - Contacts (eCommerce) and Customers (Loyalty). Then click **Apply.**
+3.  Select the entities that represent the customer profile - **Contacts (eCommerce)** and **Customers (Loyalty)**. Then select **Apply**.
 
-4. You will now be presented with the mappings of your source entity against standard model types. You can review the types in the table. 
+4.  You will now be presented with the mappings of your source entity against standard model types. You can review the types in the table. 
 
-5. You must choose a 'Primary Key' for each entity you have ingested. The primary key must be a unique reference. For eCommerce Contacts, select **ContactId** as the Primary Key. 
+5.  You must choose a 'Primary Key' for each entity you have ingested. The primary key must be a unique reference. For eCommerce Contacts, select **ContactId** as the primary key. 
 
-6. Our eCommerce Contacts data contains a column named Email Subscriber which will be mapped to an incorrect type, Identity.Service.Email, because of the name. Open the dropdown for this field and select the empty option (nothing/blank). If we do not do this then the system default to merging this field with the Email fields which we do not want. You will also need to do this for Income which may get mapped to Identity.Service.Phone.
+6.  The eCommerce Contacts data contains a column named **Email Subscriber** which will be mapped to an incorrect type, **Identity.Service.Email**, because of the name. Open the dropdown for this field and select the empty option (nothing/blank). If we do not do this then the default system behaviour is to merge this field with the EMail field which we do not want. 
 
-7. Select Loyalty Customers under Entities and set **LoyaltyId** as the Primary Key.
+7.  Select **Loyalty Customers** under Entities and set **LoyaltyId** as the primary key. 
 
-8. Our Loyalty data contains a column named RewardPoints which will be mapped to an incorrect type, Measurement.Duration because of the name/type. Open the dropdown for this field and select the empty option (nothing/blank). 
+8.  Select **Save source fields** in the top left-hand corner. 
 
-9. Click **Save source fields** in the top left-hand corner. 
+9.  Select **Next** and **Next** again, to skip the duplicate checking and move on to the **Matching conditions** step. 
 
-10. Click **Next** and **Next** again, to skip past the duplicate checking and enter the Matching conditions area.
 
 ## Task 2 - Specify Match Order 
 
 For the next stage, we must select the order in which to merge the profiles. You will be able to merge attributes to ensure that the unified profiles are complete as well as the priority of which sources to use for those attributes. 
 
-1. You should select the most complete or accurate profile source as the Primary (first) source. Use the arrow buttons to move **Contacts : eCommerce** as the primary (first) Source (if it isn't already). Select the check mark to **Include all** records. 
+1.  You should select the most complete or accurate profile source as the Primary (first) source. Use the arrow buttons to move **Contacts : eCommerce** as the primary (first) Source (if it isn't already). Select the check mark to **Include all** records. 
 
-2. Confirm that **Customers : Loyalty** is now the second source in the list. Choose to **Include all** records. 
+2.  Confirm that **Customers : Loyalty** is now the second source in the list. Choose to **Include all** records. 
+
 
 ## Task 3 - Create a Match Rule 
 
@@ -53,45 +54,55 @@ In this task, you will create a simple rule used to match records together. Rule
 
 For further details on Match Rules, please see [Customer Insights documentation](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/match-entities#define-rules-for-match-pairs). 
 
-1. Click **Add rule** or click the + button to the right of the "Needs rule" indicator. 
+1.  There is a warning indicator on the Customers : Loyalty line. Select **+ Add rule** or select the + icon oo the right. 
 
-2. Add your first condition using FullName:
+2. Add the first condition using FullName: 
 
-	- For entity Contacts : eCommerce, select **FullName**.
-	- For entity Customers : Loyalty select **FullName**.
+	- For the **Contacts : eCommerce** entity, select the **FullName** field. 
+	
+	- For the **Customers : Loyalty** entity, select the **FullName** field. 
+	
+	- Leave the **Normalize** drop-down blank. 
+	
+	- Set the Precision Level to **Basic**. 
+	
+	- Set the Precision Value to **High** using the slider. 
+
+3. Enter the name `FullName, Email` for the rule. 
+
+4. Add a second condition for email address by selecting **+ Add** and selecting **Add condition**. 
+
+	- For the **Contacts : eCommerce** entity, select the **EMail** field. 
+	
+	- For the **Customers : Loyalty** entity, select the **EMail** field. 
+	
 	- Leave the **Normalize** blank. 
-	- Set Precision Level to **Basic** and Precision value to **High**.
+	
+	- Set the Precision Level to **Basic**. 
+	
+	- Set the Precision Value to **High**.
 
-   **Note:** Move the slider to the middle to set the Precision value to **High**
+5. Select **Done**. 
 
-3. Enter the name **FullName, Email** for the new rule. 
+6. Select **Next**, select **Next** and select **Create customer profiles**.
 
-4. Add a second condition for email address by clicking **+ Add** and selecting **Add Condition.**
-
-	- For entity Contacts : eCommerce, select **EMail.**
-	- For entity Customers : Loyalty, select **EMail.**
-	- Leave the **Normalize** blank. 
-	- Set Precision Level to **Basic** and Precision value to **High.**
-
-5. Click **Done.**
-
-5. In the top left-hand corner, click **Save** and then click **Run.**
-
-Customer Insights is now matching customer data from all your sources of customer information to identify how many unique customer profiles you would have based on your rules.
+Customer Insights is now matching customer data from all your sources of customer information to identify how many unique customer profiles you would have based on your rules. 
 
 Confer with the class: **How many unique customers do you have when combining your datasets?** 
 
+
 ## Task 4 - Precision
 
-In Task 3, we used High Precision in the match-rule against Full Name. In this task, you will adjust the precision level to create a higher number of matches by including matches of a lower confidence (resulting in lower number of unique profiles). 
+In Task 3, we used High Precision in the match-rule against Full Name. In this task, you will adjust the precision level to create a higher number of matches by including matches of a lower confidence (resulting in a lower number of unique profiles). 
 
 **Notes on Precision:** 
-- Exact, on the right-side of the scale, will match records where your condition has an exact match. Select one of the other levels to match records that are not 100% identical. 
-- High fits cases where precision is more important than reach, such as a financial service to a specific customer. 
-- Low fits cases where the opposite is true, such as a marketing campaign. 
-- The Medium level serves as a middle-ground option. 
 
-1. Ensure you are in the **Match** tab. Expand your rule and click the **Pencil** button to edit the Match rule.
+- **Exact** on the right-side of the scale, will match records where your condition has an exact match. Select one of the other levels to match records that are not 100% identical. 
+- **High** fits cases where precision is more important than reach, such as a financial service to a specific customer. 
+- **Low** fits cases where the opposite is true, such as a marketing campaign. 
+- The **Medium** level serves as a middle-ground option. 
+
+1. Ensure you are in the **Match** tab. Expand your rule and click the **Pencil** button to edit the Match rule. 
 
 2. Move the Precision slider for your FullName match from High to Low. Then click **Done.**
 
