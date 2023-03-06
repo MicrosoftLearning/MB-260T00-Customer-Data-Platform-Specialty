@@ -182,11 +182,11 @@ To change the datatype, select the **ABC** icon within the column heading. Updat
 
 9.  In the **Name** field on the **Query settings** pane, name your data source `Contacts` if it is not already. Select Next. Select Save. 
 
-Congratulations. You have now successfully created your first data source with a data set! 
-
     > Note:
     >
     > Column names can only contain letters, numbers, and underscores. They cannot contain a space and must begin with a letter. If you have data where column name(s) have a space or do not begin with a letter you will want to fix that either within Power Query or before the data is brought into Customer Insights. 
+
+Congratulations. You have now successfully created your first data source with a data set! 
 
 We'll continue importing the next data set in the next task. 
 
