@@ -118,11 +118,11 @@ In this lab, we will **ingest data**. In the next lab, we will **unify the data*
 
 In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights Hub. 
 
-1. Sign in to Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
+1.  Sign in to Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
 
-2. In the Environment selector in the top right-hand corner, select the **Retail Demo** environment.
+2.  In the Environment selector in the top right-hand corner, select the **Retail Demo** environment.
 
-3. On the Home Page, note how the key Insights are highlighted: 
+3.  On the Home Page, note how the key Insights are highlighted: 
 
 - KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score
 
@@ -130,7 +130,7 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 
 - Segments - customers grouped into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can target promotional campaigns, sales activities, and customer support actions to achieve your business goals. 
 
-4. Explore the left-hand menu options to familiarise yourself with the navigation. 
+4.  Explore the left-hand menu options to familiarise yourself with the navigation. 
 
 - **Home**: Home Page 
 - **Customers**: View cards for unified Customer Profiles 
