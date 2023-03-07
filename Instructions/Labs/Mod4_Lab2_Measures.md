@@ -45,102 +45,101 @@ Business Measures helps you track your business performance and health. The busi
 
 ### Average Store Purchase Value (Business Measure) 
 
-In this first task, we will create a measure to define the **average value of all in store purchases** made at Contoso Coffee.
+In this first task, we will create a measure to define the **average value of all in store purchases** made at Contoso Coffee. 
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
 
-3. Click **Measures** on the left-hand menu. 
+2.  Select **Measures** from the left navigation menu. 
 
-2. Click the **+ New** button in the top left-hand corner, then select **Build your own.**
+3.  Select **+ New** from the toolbar, then select **Build your own**. 
 
-3. Next to the "Untitled measure" text, select **Edit details.** 
+4.  Next to the "Untitled measure" text, select **Edit details**. 
  
-4. Set the name to "Average Store Purchase Value ($)" and select Done. 
+5.  Set the **Name** to `Average Store Purchase Value ($)` and select **Done**. 
 
-5. Under **Set up your measure calculations**, select **Dimensions (1). **
+6.  Toggle **Measure type** to **Business level**. 
 
-6. Delete Customer: CustomerInsights.CustomerId and select **Apply.** (By deleting the customer dimension, this changes the measure from a customer measure to a business measure.)
+8.  Next to **Calculation 1**, select **Edit name**. 
 
-7. Next to Calculation 1, click **Edit name.**
+9.  Set the **Name** to `Average Store Purchase Value ($)`. 
 
-8. Set the Display name to "Average Store Purchase Value ($)."
+10. Verify the **Output attribute name** is set to "AverageStorePurchaseValue". 
 
-9. Verify the Attribute name is set to "AverageStorePurchaseValue."
+11. Select **Done**. 
 
-10. Select Done. 
+12. Under the **Average Store Purchase Value ($)** calculation, choose **Average** from the **Select function** drop-down. 
 
-11. Under the Average Store Purchase Value ($) calculation, click **Select Function** and choose **Average.**
+13. Select **+ Add attribute**, expand **Purchases : PoS**, and select **TotalPrice**. 
 
-12. Select **Add attribute**, expand **Purchases : PoS**, and select **TotalPrice.**
+14. Select **Add**. 
 
-14. Select **Add.** 
-
-14. Select the **Run** button to complete your measure. 
+15. Select the **Run** button to complete your measure. 
 
 
 ### Average Web Purchase Value (Business Measure) 
 
 In this next task, we will create a measure to define the **Average value of all web purchases** made at Contoso Coffee.
 
-1. Click **Measures** on the left-hand menu. 
+1. Select **Measures** from the left navigation menu. 
 
-2. Click the **+ New** button in the top left-hand corner, then **Build your own.** 
+2. Select **+ New > Build your own** from the toolbar. 
 
-3. Next to the **Untitled measure** text, select **Edit name**.
+3. Next to the **Untitled measure** text, select **Edit name**. 
 
-4. Set the name to "Average Web Purchase Value ($)" and select **Done.** 
+4. Set the name to `Average Web Purchase Value ($)` and select **Done**. 
 
-5. Under **Set up your measure calculations**, select Dimensions (1).
+5. Toggle **Measure type** to **Business level**. 
 
-6. Delete **Customer: CustomerInsights.CustomerId** and select **Apply.** (By deleting the customer dimension, this changes the measure from a customer measure to a business measure.)
+8. Next to **Calculation 1**, select **Edit name**. 
 
-8. Next to Calculation 1, click **Edit name.**
+8. Set the **Name** to `Average Web Purchase Value ($)`.
 
-8. Set the **Display name** to "Average Web Purchase Value ($)".
+9. Verify the **Output attribute name** is set to "AverageWebPurchaseValue". 
 
-9. Verify the **Attribute name** is set to "AverageWebPurchaseValue". 
+10. Select **Done**.
 
-10. Select **Done.**
+11. Under the **Average Web Purchase Value ($)** calculation, choose **Average** from the **Select function** drop-down. 
 
-11. Under the Average Web Purchase Value ($) calculation, click Select **Function** and choose **Average.**
-
-12. Select **Add attribute**, expand Purchases : eCommerce, and select **TotalPrice.**
+12. Select **+ Add attribute**, expand **Purchases : eCommerce**, and select **TotalPrice**. 
  
-13. Select **Add.** 
+13. Select **Add**. 
 
-14. Select the **Run button** to complete your measure. 
+14. Select the **Run** button to complete your measure. 
 
 
 ## Task 2 - Define Customer Measures  
+
 We will need two customer measures that can be used to calculate a customer attribute. We will create one measure to determine the customers total spend on Online Purchases and one measure to determine their total spend on In-Store purchases. Once we create these, we can then create a customer attribute to add those two together. 
 
 ### Total In-Store Spend (Customer Measure)  
 
 In this task, we will create a measure to define **Total of all purchases made in-store.** 
 
-1. If necessary, click **Measures** on the left-hand menu. 
+1.  Sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
 
-2. Click the **+ New** button in the top left-hand corner, then select **Build your own.**
+2.  Select **Measures** from the left navigation menu. 
 
-3. Next to the **Untitled measure** text, select **Edit details.**
+3.  Select **+ New > Build your own** from the toolbar. 
 
-4. Set the name to **Total In Store Spend** and then select **Done.**
+4.  Next to the **Untitled measure** text, select **Edit details**.
 
-5. Under the Total In Store Spend calculation, click **Select Function** and choose **Sum.** 
+5.  Set the **Name** to `Total In Store Spend` and select **Done**. 
 
-6. Select **Add attribute**, expand **Purchases : POS**, select **TotalPrice**, and click **Add.** 
+6.  Under the **Total In Store Spend** calculation, choose **Sum** from the **Select function** drop-down. 
 
-7. Under "Set up your measure calculations", select Dimensions (1).
+7.  Select **+ Add attribute**, expand **Purchases : POS**, select **TotalPrice**, and select **Add**. 
 
-8. Select **Edit Dimensions.** 
+8.  To set up the measure calculation, select **Dimensions (1)**.
 
-9. Expand **Purchases: PoS**, select **LoyaltyID**, and click **Done.**
+9.  Select **Edit Dimensions**. 
 
-10. Click **Apply.** 
+10. Expand **Purchases: PoS**, select **LoyaltyID**, and select **Done**. 
 
-11. Select the **Run** button to complete your measure. 
+11. Select **Apply**. 
 
-12. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer** and select the **Run** button to complete.
+12. Select the **Run** button to complete your measure. 
+
+13. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer** and select the **Run** button to complete.
 
 
 ## Total Online Spend (Customer Measure)  
