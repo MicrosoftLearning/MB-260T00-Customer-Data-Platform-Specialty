@@ -199,42 +199,44 @@ In this case, customers in this segment have an average LifetimeSpend of 741.89 
 
 In a similar fashion, you can see details of other segment suggestions that you might be interested in. 
 
-9.  To save the segment, select **Save as segment** in the **Suggested segment details** panel. 
+9.  To save the segment, select **Save as segment** in the **Suggested segment details** panel. Select **Save**. 
   
 10. The saved segment can then be viewed under the **All segments** tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by selecting **Edit** in the **All segments** tab. 
 
-11. We have successfully found segment suggestions based on a measure of interest (LifetimeSpend). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment. 
+Congratulations! We have successfully found segment suggestions based on a measure of interest (LifetimeSpend). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment. 
 
 
 ### Task 2 - Discover segments based on a categorical customer attribute or measure of interest 
 
-1.  Under the Suggestions tab, click **+ Find new suggestions** on the top command bar to explore segment suggestions based on a different customer attribute or measure. Note that, this will replace the existing set of suggestions. 
+1.  Under the **Segments > Suggestions (preview)** tab, select **+ Find new suggestions** on the top command bar to explore segment suggestions based on a different customer attribute or measure. 
 
-2.  We again will choose **Improve a measure/metric**. 
+    > **Note:** This will replace the existing set of suggestions. 
 
-3.  Select **CustomerSatisfaction** as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Then click **Next**. 
+2.  Choose **Improve a measure/metric**. Select **Start**. 
 
-4.  Next, select **Email Subscriber**, **Income**, **Loyalty Tier**, **Occupation**, **RewardsPoints** and **State** as the influencing attributes. 
+3.  Select **CustomerSatisfaction** as the target attribute of interest. Customer Satisfaction is a categorical attribute with 3 categories (low/medium/high) and we’d like to find segment suggestions based on this attribute. Select **Next**. 
 
-5.  Click **Run**. The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
+4.  Select **Email Subscriber**, **Income**, **Loyalty Tier**, **Occupation**, **RewardsPoints** and **State** as the influencing attributes. 
 
-6.  Once the model has finished running, segment suggestions will be displayed under the Suggestions (preview) tab. Since the target attribute is categorical, the AI model tries to find patterns/common traits of customers belonging to a particular category of the target attribute and surfaces segment suggestions. Since Customer Satisfaction has 3 different categories - low, medium and high - the AI model will try to find segments of customers that possess the same traits and a significant portion of them belong to a particular category (i.e. either low, medium or high). 
+5.  Select **Run**. The AI model will start finding patterns between the selected influencing and target attributes to surface segment suggestions. Please wait for a few minutes for the model to finish the analysis. 
 
-    > **Note:** While only a few tiles are shown initially, you can click the **See more ->** link to see more suggestions that were found. 
+6.  Once the model has finished refreshing attribute based suggestions, segment suggestions will be displayed on the **Suggestions (preview)** tab. Since the target attribute is categorical, the AI model tries to find patterns or common traits of customers belonging to a particular category of the target attribute and surfaces segment suggestions. Since Customer Satisfaction has 3 different categories - low, medium and high - the AI model will try to find segments of customers that possess the same traits and a significant portion of them belong to a particular category (Either low, medium or high). 
 
-7.  You can click on any suggestion to see segment details in the side panel. We will click on the suggestion that says 83% of customers in this suggestion have CustomerSatisfaction = low. In the side panel, you will see the following: 
+    > **Note:** While only a few tiles are shown initially, you can select **See more ->** to reveal further suggestions. 
+
+7.  Select the **83% of customers in this suggestion have CustomerSatisfaction = low** suggested segment. In the **Suggested segment details** panel, you will see the following: 
 
     - Comparison of percentage of customers in this segment that have CustomerSatisfaction = Low as compared to percentage of all customers that have CustomerSatisfaction = Low. 
 
-    - Number of customers in the segment and its proportion as compared to the entire customer base. 
+    - Number of customers in the segment and the proportion as compared to the entire customer base. 
 
-    - The attribute values i.e. the rules that the model learned based on the selected influencing attributes. 
+    - The attribute values, that is the rules that the model learned based on the selected influencing attributes. 
 
-In this case, 83% of customers in this segment have CustomerSatisfaction = low as compared to 26% among all customers. There are 488 members in this segment which is 10% of the entire customer base. These customers are live in California, do not belong to the high loyalty tier, are not Teachers and do not live in Florida. This helps provide insight that 94% of customers having the above-mentioned traits have a low customer satisfaction. This information can then be used to target customers in this segment with personalized messaging and/or customer service to help improve their customer satisfaction and in turn address corresponding business goals. 
+    In this case, 83% of customers in this segment have CustomerSatisfaction = low as compared to 26% among all customers. There are 488 members in this segment which is 10% of the entire customer base. These customers live in **California**, do not belong to the **high** Loyalty Tier, are not **Teachers** and do not live in **Florida**. This helps provide insight that 94% of customers having the above-mentioned traits have a low customer satisfaction. This information can then be used to target customers in this segment with personalized messaging and/or customer service to help improve their customer satisfaction and in turn address corresponding business goals. 
 
-In a similar fashion, you can see details of other segment suggestions that you are interested in. 
+    In a similar fashion, you can review the **Suggested segment details** of other segment suggestions that you may be interested in. 
 
-8.  You can then save the segment by clicking on Save as segment in the side panel. The segment can then be viewed under the All segments tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by clicking on Edit in the All segments tab. 
+8.  To save the segment, select **Save as segment**. The segment can then be viewed under the **All segments** tab and it can be used for downstream processes like any other Dynamic Segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by selecting **Edit** from the **All segments** tab. 
 
-9.  We have successfully found segment suggestions based on a categorical attribute of interest (CustomerSatisfaction). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment. 
+Congratulations! We have successfully found segment suggestions based on a categorical attribute of interest (CustomerSatisfaction). We also saved a segment which can then be utilized for downstream processes like any other Dynamic Segment. 
 
