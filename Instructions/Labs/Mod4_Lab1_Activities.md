@@ -15,149 +15,167 @@ Interactions are any customer touch points - these could include purchases, cust
 
 ### Task 1 - Add an activity for eCommerce Purchases  
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
 
-3. Within Customer Insights, Expand **Data > Activities** on the left menu and click **Add Activity.** 
+2.  In Customer Insights, expand **Data > Activities** on the left navigation menu and select **+ Add activity**. 
 
-2. On the Activity data screen set the following values: 
+3.  Set up your activity data using the following values: 
 
-	- Activity name: `OnlinePurchase`
+	- Activity name: `OnlinePurchase` 
 
-	- Entity: Purchases : eCommerce 
+	- Entity: **Purchases : eCommerce** 
 
-	- Primary Key: PurchaseId 
+	- Primary Key: **PurchaseId** 
 
-3. Click Next. On the Relationships screen, click **+ Add relationship.** 
+4.  Select **Next**. On the Relationships screen, select **+ Add relationship**. 
 
-4. In the Add relationship path pop-up, set the following values: 
+5.  In the **Add relationship path** pane, set the following values: 
 
 	- Foreign key: ContactId 
 
 	- To entity name: Contacts : eCommerce 
 	
-	- Relationship name: eCommPurchasesToContacts 
+	- Relationship name: `eCommPurchasesToContacts` 
 
-5. Click **Apply** to close the pop-up. 
+6.  Select **Apply**. 
 
-6. Click **Next.** 
+7.  Select **Next**. 
 
-7. On the **Unify your customer activity data** screen, set the following values:
+8.  Unify your customer activity data by setting the following values: 
 
 	- Event activity: **ActivityTypeDisplay**
+	
 	- Timestamp: **PurchasedOn**
+	
 	- Additional detail: **Subject**
-	- Icon: Select the **shopping bag.**
-	- Show in timeline view?: Yes
+	
+	- Icon: Select the **shopping bag**.
+	
+	- Show this information in the timeline view on your customer profiles?: Select **Yes**.
 
-8. Click **Next.** 
+9.  Select **Next**. 
 
-9. On the Set activity type screen, set the type to **SalesOrder**.
+10. Set the **Activity type** to **SalesOrder**. 
 
-10. Set "Provide semantic mapping for your activity's attributes?" to **Yes.**
+11. Set "Provide semantic mapping for your activity's attributes?" to **Yes**. 
 
-11. Fill out the data for activity type field mapping as follows:
+12. Map the activity type's related fields as follows: 
 
-	- Sales order ID: PurchaseID
-	- Order date: PurchasedOn
-	- Sales amount: TotalPrice
+	- Sales order ID: **PurchaseID** 
+	
+	- Order date: **PurchasedOn** 
+	
+	- Sales amount: **TotalPrice** 
 
-12. Click **Next**, review your entries, then click **Save activity.**
+13. Select **Next**, review your entries, then select **Save activity**. 
 
-13. Click **Done.**
+14. Select **Done**. 
+
 
 ### Task 2 - Add an activity for PoSPurchases 
 
-1. Click Add Activity 
+1.  Select **+ Add Activity**.
 
-2. On the Activity data screen set the following values: 
+2.  Set up the activity data with the following values: 
 
 	- Activity name: `PoSPurchase`
 
-	- Entity: Purchases : PoS 
+	- Entity: **Purchases : PoS** 
 
-	- Primary Key: PurchaseId 
+	- Primary Key: **PurchaseId** 
 
-3. Click **Next**. On the Realtionships screen, click **+ Add relationship.**
+3.  Seelct **Next**. On the Relationships screen, select **+ Add relationship**.
 
-4. In the Add relationship path pop-up, set the following values: 
+4.  In the **Add relationship path** pane, set the following values: 
 
-	- Foreign key: LoyaltyId 
+	- Foreign key: **LoyaltyId** 
 
 	- To entity name: Customers : Loyalty 
 
-	- Relationshiop name: PoSPurchasesToLoyalty 
+	- Relationshiop name: `PoSPurchasesToLoyalty` 
 
-5. Click **Apply** to close the pop-up. 
+5.  Select **Apply**. 
 
-6. Click **Next.** 
+6.  Select **Next**. 
 
-7. On the Unify your customer activity data screen set the following values:
+7.  Unify the customer activity data by setting the following values: 
 
-	- Event activity: ActivityTypeDisplay
-	- Timestamp: PurchasedOn
-	- Additional detail: Subject
-	- Icon: Select the **shopping bag**.
-	- Show in timeline view?: Yes
+	- Event activity: **ActivityTypeDisplay**
+	
+	- Timestamp: **PurchasedOn**
+	
+	- Additional detail: **Subject**
+	
+	- Icon: Select the **shopping bag** icon. 
+	
+	- Show this information in the timeline view on your customer profiles?: Select **Yes**.
 
-8. Click **Next.**
+8.  Select **Next**. 
 
-9. On the Set activity type screen, set the type to **Create new** and then enter **PoSPurchase** for the Activity Type Name. 
+9.  Set **Activity type** to **Create new** and enter `PoSPurchase` for the **Activity type name**. 
 
-10. Click **Next**, review your entries, then click **Save activity**. 
+10. Select **Next**, review your entries, and select **Save activity**. 
 
-11. Click **Done**. 
+11. Select **Done**. 
+
 
 ### Task 3 - Add an activity for Website Reviews 
 
-1. Click **+ Add Activity.** 
+1.  Select **+ Add Activity**. 
 
-2. On the Activity data screen, set the following values: 
+2.  Set up the activity data with the following values: 
 
-	- Activity name: WebsiteReview 
+	- Activity name: `WebsiteReview` 
 
-	- Entity: Reviews : Website 
+	- Entity: **Reviews : Website** 
 
-	- Primary Key: ReviewId 
+	- Primary Key: **ReviewId** 
 
-3. Click **Next**. On the Realtionships screen, click **+ Add relationship.** 
+3.  Select **Next**. On the Relationships screen, select **+ Add relationship**. 
 
-4. In the Add relationship path pop-up, set the following values: 
+4.  In the **Add relationship path** pane, set the following values: 
 
-	- Foreign key: UserId 
+	- Foreign key: **UserId** 
 
-	- To entity name: Contacts : eCommerce 
+	- To entity name: **Contacts : eCommerce** 
 
-	- Relationship name: WebReviewsToContacts 
+	- Relationship name: `WebReviewsToContacts` 
 
-5. Click **Apply** to close the pop-up .
+5.  Select **Apply**. 
 
-6. Click **Next.** 
+6.  Click **Next**. 
 
-7. On the Unify your customer activity data screen, set the following values:
+7.  Unify the customer activity data by setting the following values: 
 
-	- Event activity: ActivityTypeDisplay
-	- Timestamp: ReviewDate
-	- Additional detail: ReviewText
-	- Icon: Select the **internet (circular globe)** icon.
-	- Show in timeline view?: Yes
+	- Event activity: **ActivityTypeDisplay** 
 	
-8. Click **Next.** 
+	- Timestamp: **ReviewDate** 
+	
+	- Additional detail: **ReviewText** 
+	
+	- Icon: Select the **globe** icon. 
+	
+	- Show this information in the timeline view on your customer profiles?: Select **Yes**. 
+	
+8.  Select **Next**. 
 
-9. One the Set activity type screen, set the type to **Create new** and then enter **WebsiteReview** for the Activity Type Name. 
+9.  Set **Activity type** to **Create new** and enter `WebsiteReview` for the **Activity type name**. 
 
-10. Click **Next**, review your entries, and then click **Save activity.**
+10. Select **Next**, review your entries, and select **Save activity**. 
 
-11. Click **Done.**
+11. Select **Done**. 
+
 
 ### Task 4 - Confirm the Activities 
 
-1. Click **Run** on the top to run the configured activities. Once they have completed, click on **Customers** in the left-hand menu. 
+1.  Select **Run** from the toolbar to run the configured activities. Select **Refreshing** to view the Progess details. Once they have completed successfully, select **Customers** from the left navigation menu. 
 
-2. Search for **Abbie Moss.** 
+2.  Search for `Abbie Moss`. 
 
-3. Click on her name to expand her customer card. 
+3.  Select the record to open the detailed view. 
 
-4. You should now see activities listed for Abbie on the timeline. Try using the Filter to view only specific activities. 
+4.  You should now see activities listed for Abbie on the **Activity timeline**. Select **Filter** to narrow down the **Activity types** further. 
+
 
 ## Exercise 2 - Define relationships 
 
@@ -169,36 +187,38 @@ For example, **Customer** has a **One to Many** relationship with **PoS Purchase
 
 First, we need to define the relationship for CustomerPurchasesEcom. 
 
-1. In the left menu under **Data,** click **Relationships.**
+1.  In Customer Insights, expand **Data** from the left navigation menu and select **Relationships**. 
 
-3. Click **+ New relationship.**
+2.  Select **+ New relationship**.
 
-3. Name the relationship **CustomerPurchasesEcom.**
+3.  Enter `CustomerPurchasesEcom` for **Name**.
 
-4. In Description, write "Online Purchases to Unified Customer Profile."
+4.  For **Description**, enter `Online Purchases to Unified Customer Profile`.
 
-5. Set Source details entity to **Purchases: eCommerce** and Cardinality to **Many.** 
+5.  Set the **Source details > Entity** to **Purchases: eCommerce** and Cardinality to **Many**.  
 
-7. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
+6.  Set the **Target details > Entity** to **Customer : CustomerInsights** and Cardinality to **One**. 
 
-7. Set equivalent fields to **ContactId (eCommerce_Contacts)** for both the Source and Target fields. 
+7.  Set **Equivalent fields** to **ContactId** for both the **Source** and **Target** fields. 
 
-9. Click **Save.** 
+8.  Select **Save**. 
+
 
 ## Task 2 - Define the Relationship between Unified Profiles and Store Purchases 
 
 Next, we will define the relationship for CustomerPurchasesPOS.
 
-1. From the left menu, click **Data** and then **Relationships.**
+1.  From the left navigation menu, expand **Data** and select **Relationships**. 
 
-2. Click **+ New relationship.** Name the relationship **CustomerPurchasesPOS.**
+2.  Select **+ New relationship**. Name the relationship `CustomerPurchasesPOS`.
 
-3. In **Description,** write "Point of Sale Purchases to Unified Customers."
+3.  For **Description,** write "Point of Sale Purchases to Unified Customers."
 
-4. Set Source details entity to **Purchases : PoS** and Cardinality to **Many.**
+4.  Set the **Source details > Entity** to **Purchases : PoS** and Cardinality to **Many**. 
 
-5. Set Target details entity to **Customer : CustomerInsights** and Cardinality to **One.**
+5.  Set the **Target details > Entity** to **Customer : CustomerInsights** and Cardinality to **One**. 
 
-6. Set equivalent fields to **LoyaltyId** for both Source field and Target field.
+6.  Set **Equivalent fields** to **LoyaltyId** for both **Source** field and **Target** field. 
 
-8. Click **Save.**
+7.  Select **Save**. 
+
