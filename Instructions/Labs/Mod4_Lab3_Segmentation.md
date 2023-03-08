@@ -102,101 +102,106 @@ Contoso Coffee Marketing want to run a new Summer Promo targeting millennials wi
 
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
 
-1.  Click on **Segments** in the left menu, then click on **Insights (preview)** tab and click on **+ New** on the command bar. 
+1.  Select **Segments** from the left menu. Select the **Insights (preview)** tab and select **+ New** from the command bar, or select the **+ New insight** button. 
 
-2.  You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Click on **Differentiators**. 
+2.  You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Select **Differentiators**. 
 
-4.  Choose **High Value Online Customers** as primary segment. Hit **Next**, choose **Customers from California** as another segment, and then hit **Next**. 
+4.  Choose **High Value Online Customers** as the primary segment. Select **Next**, choose **Customers from California** as another segment, and then select **Next**. 
 
-5.  Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. Deselect all other customer fields and measure fields. 
+5.  Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. **Clear** all other customer and measure fields. 
 
-6.  Click **Next** and name your insight "High Value Online vs Customers from California" with an Output entity name of HighValueOnlinevsCustomersfromCalifornia. Click **Save**. 
+6.  Select **Next** and name the insight `High Value Online vs Customers from California`, verify the **Output entity name** gets set to **HighValueOnlinevsCustomersfromCalifornia**. Select **Save**. 
 
-7.  After the run is successful, you can click on the created insight. Click on the Attributes or Measures tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score the more different they are. You may need to refresh the browser window to see the results. 
+7.  After the insight finishes refreshing, open the created insight. Select the **Attributes** or **Measures** tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score, the more different they are.
 
-8.  Click on each measure and attribute to see deeper insights. 
+    > **Note:** You may need to refresh the browser window to see the results. 
 
-9.  We have successfully created segment insights using **Differentiators**. Now let’s create an insight using **Overlap**. 
+8.  Select each **measure** and **attribute** to see deeper insights. 
 
-10. Make sure you are still in the **Insights (preview)** tab and click on **+ New** in the top left corner. Choose **Overlap**. 
 
-11. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
+We have successfully created a Segment insight using **Differentiators**. Now let's create an insight using **Overlap**. 
 
-12. Click **Next**. 
+9.  Make sure you're still in the **Segments > Insights (preview)** tab and select **+ New** from the command bar. Choose **Overlap**. 
 
-13. Here, as an optional step, you can also choose attributes to compare the segments just as we did with the Differentiators. You can simply hit Next without choosing anything. 
+10. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
 
-14. Name your insight "High Value Online Overlapped with California Customers" and set the Output entity name as "HighValueOnlineOverlappedwithCaliforniaCustomers." Then click **Save**. 
+11. Select **Next**. 
 
-15. After the run is successful, you can click on the created insight to see the screen detailing the total and percentage of shared customers between the two segments. 
+12. Optional: Choose some attributes to compare the segments, just as we did with the Differentiators. Or, select **Next** without choosing anything. 
+
+13. Name the Segment Overlap "High Value Online Overlapped with California Customers" and verify the **Output entity name** is set to **HighValueOnlineOverlappedwithCaliforniaCustomers**. Select **Save**. 
+
+14. After the insight finishes refreshing, open the created insight to see the venn diagram showing the total and percentage of shared customers between these two segments. 
 
 
 ### Task 6 - Segment Expansion 
+
 Segment Expansion can be used to find similar customers to your segment customer base using Artificial Intelligence. 
 
-Earlier we created a segment called **Summer Promotion**, which contains millennial customers with higher than average in-store purchase. Now, let us expand that segment and find customers that are similar to them for us to market our newly launched Cold Brew Coffee. 
+Earlier we created a segment called **Summer Promotion**, which contains millennial customers with higher than average in-store purchase. Now, let's expand that segment and find customers that are similar to them for us to market our newly launched Cold Brew Coffee. 
 
-1.  Click on **Segments** in the left menu and choose the **Summer Promotion** segment. This will become our source segment. 
+1.  Select **Segments** from the left navigation menu and choose the **Summer Promotion** segment. This will become our source segment. 
 
-2.  Click on the three vertical dots and choose **Find similar customers.**
+2.  Select **Find similar customers** from the command bar. 
 
-3.  Name your segment "SummerPromoExpansion." 
+3.  Name your segment `SummerPromoExpansion`. 
 
-4.  Click on **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Then click **Apply.**  
+4.  Select **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Select **Apply**. 
 
-5.  Next you must choose who to consider: either all customers except from source segment, or customers from a different segment. If different segment is selected, then we must choose which segment it is. For now, select All customers except source segment. 
+5.  Next you must choose who to consider. Either **All customers except source segment**, or **Customers from a different segment**. If a different segment is selected, then you must choose which segment it is. For now, select **All customers except source segment**. 
 
-6.  Now the maximum number of customers to include must be selected. By default, 20% of the customers is selected which can be altered. Let's stick with 20%. 
+6.  Now the maximum number of customers to include must be selected. By default, 20% of all customers is selected which could be altered if required. Let's stick with 20%. 
 
-7.  If you like to include members from source segment as well then check the note at the bottom. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
+7.  If you would like to include members from the source segment as well then check the last option. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
 
-8.  Hit **Run.** 
+8.  Select **Run**. 
 
-9.  After the run, you can see a new segment being created. Click on the segment to find the similarity scores, which range from 0.55 to 1(0.85-1 -> Very similar, 0.7-0.85 -> Similar, 0.55-0.7 -> Somewhat similar). You can also explore the similar customer records.
+9.  After the segment finishes refreshing, open the segment to find the **Similarity Scores** and explore the **Segment members preview**. 
 
 
 ## Exercise 2 - Get suggested Segments 
+
 Use Suggested Segments to discover interesting segments based on a customer attribute or measure of interest.
 
 ### Task 1 - Discover segments based on a numeric customer attribute or measure of interest  
 
-1.  Under the Segments section, click on the **Suggestions (preview)** tab. 
+1.  Select **Segments** from the left navigation menu, and select the **Suggestions (preview)** tab. 
 
-2.  Click on **Get Suggestions** to begin the configuration experience. 
+2.  Select **+ New > Suggested segments** to begin the configuration experience. 
 
-3.  We will choose **Improve a measure/metric** and click **Start.**
+3.  Choose **Improve a measure/metric** and select **Start**. 
 
-4.  Next, you need to select the target attribute (i.e., a customer attribute or measure of interest), for which you want to discover segment suggestions. We will select the previously created measure **LifetimeSpend** as the target attribute. Click **Next.**
+4.  Under **Measure fields**, select **LifetimeSpend** as the target attribute. Select **Next**.
 
-5.  Next, you will select the attributes that might influence the target attribute (LifetimeSpend) so that the AI model can find interesting patterns between the influencing attributes and the target attribute and suggest segments based on those patterns. We will select **Email Subscriber, Income, Loyalty Tier, Occupation and State** as the influencing attributes. 
+5.  Next, you will select the attributes that might influence the target attribute (LifetimeSpend) so the AI model can find interesting patterns between the influencing and target attribute. The model will suggest segments based on those patterns. Select **Email Subscriber**, **Income**, **Loyalty Tier**, **Occupation** and **State** as the influencing attributes. 
 
-    > **Note:** In case you do not know which attributes to select, it is advised to select many attributes so that the model can analyze, and surface segment suggestions based on the underlying patterns it uncovers. However, if you want to see how certain attributes influence "LifetimeSpend", you can choose only those as well.
+    > **Note:** In case you do not know which attributes to select, it is advised to select many attributes so that the model can analyze, and surface segment suggestions based on the underlying patterns it uncovers. However, if you want to see how certain attributes influence **LifetimeSpend**, you can choose only those as well. 
 
-6.  Click on **Run.** The AI model will start finding patterns between the selected influencing attributes and the target attribute to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
+6.  Select **Run**. The AI model will start finding patterns between the selected influencing attributes and target attributes to surface segment suggestions. Please wait for a few minutes for the model to finish its analysis. 
 
 7.  Once the model has finished running and if it is able to uncover patterns between the influencing attributes and the target attribute, segment suggestions will be displayed under the **Suggestions (preview)** tab. 
 
-    Since we've chosen a numeric attribute as the target attribute, segment suggestions include those where the average value of the chosen target attribute (LifetimeSpend) is significantly higher or lower that the average LifetimeSpend value across all customers. We will also explore a scenario where a categorical attribute (Eg - Customer Satisfaction: low/medium/high) is chosen as the target attribute in the next task. 
+    Since we've chosen a numeric attribute as the target attribute, segment suggestions include those where the average value of the chosen target attribute (LifetimeSpend) is significantly higher or lower that the average LifetimeSpend value across all customers. We will also explore a scenario where a categorical attribute (such as, Customer Satisfaction: Low/Medium/High) is chosen as the target attribute in the next task. 
 
-   Each segment suggestion card denotes how the average LifetimeSpend in that segment compares to the overall average. The number of customers in the suggestion as well as the rules learned (i.e. common traits of customers in the segment) are also highlighted. 
-   
-   E.g. - in the above suggestion, LifetimeSpend is 20% above average i.e. the customers in this segment have historically spent much more as compared to others. There are 585 members in this segment and they have Income > 97k and a high Loyalty Tier. 
+    Each segment suggestion card denotes how the average LifetimeSpend in that segment compares to the overall average. The number of customers in the suggestion as well as the rules learned (Common traits of customers in the segment) are also highlighted. 
 
-8.  You can click on any suggestion to see more details in the side panel. We will click on the See suggestion link for the suggestion that says LifetimeSpend is 15% below average. In the side panel, you will see the following: 
+    For example, in the above suggestion, **LifetimeSpend** is 20% above average. That is, the customers in this segment have historically spent much more as compared to others. There are 585 members in this segment and they have Income > 97,000 and a **high** Loyalty Tier. 
 
-    - Comparison of average LifetimeSpend of customers in this segment compared to all the customers 
+8.  You can select any suggestion to see more details in the side panel. We will select the **See suggestion** link for the suggestion that says **LifetimeSpend is 15% below average**. In the **Suggested segment details** panel, you will see the following: 
 
-    - Number of customers in the segment and its proportion as compared to the entire customer base 
+    - Comparison of average LifetimeSpend of customers in this segment compared to all the customers. 
 
-    - The attribute values i.e., the rules that the model learned based on the selected influencing attributes. 
+    - Number of customers in the segment and the proportion as compared to the entire customer base. 
+
+    - The attribute values, that is the rules that the model learned based on the selected influencing attributes. 
 
 In this case, customers in this segment have an average LifetimeSpend of 741.89 as compared to average LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
 
- In a similar fashion, you can see details of other segment suggestions that you are interested in. 
+In a similar fashion, you can see details of other segment suggestions that you might be interested in. 
 
-9.  You can then save the segment by clicking on **Save as segment** in the side panel.
+9.  To save the segment, select **Save as segment** in the **Suggested segment details** panel. 
   
-10. The saved segment can then be viewed under the All segments tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by clicking on Edit in the All segments tab. 
+10. The saved segment can then be viewed under the **All segments** tab and it can be used for downstream processes like any other dynamic segment. If you wish to look at the rules that the model learned after saving a segment, you can do so by selecting **Edit** in the **All segments** tab. 
 
 11. We have successfully found segment suggestions based on a measure of interest (LifetimeSpend). We also saved a segment which can then be utilized for downstream processes like any other dynamic segment. 
 
