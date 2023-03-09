@@ -17,75 +17,84 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 ### Task 1 - Adding Brand Affinity 
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
 
-3. Navigate to **Data > Enrichment.** 
+2.  Navigate to **Data > Enrichment**. 
 
-2. Click the **Enrich my data** button on the **Brands** tile. On the Overview page, click **Next.**
+3.  Select the **Enrich my data** button on the **Brands** tile. On the **Overview** screen, select **Next**. 
 
-3. Select **Choose an industry.** Review the list of categories that are presented in the Industry dropdown. Note that there doesn't appear to be anything specific to our industry, so we will not go this route. We could possibly use Retail Brands but that is simply not specific enough for our use case. 
+4.  Review the list of categories that are presented in the **Select an industry** drop-down. Note that there doesn't appear to be anything specific to our industry, so we will not go this route. We could possibly use **Retail Brands** but that is not specific enough for our use case. 
 
-5. In the "Enter brand names manually" box, enter these brands: 
-	- Peet's Coffee 
-	- Blue Bottle Coffee 
-	- Caribou Coffee 
-	- Dunkin Donuts 
-	- Starbucks 
-
-6. Click **Next.**
-
-7. On the Enrichment preferences screen, leave the brand affinity level at **Medium** and set the match precision to **Exact and aggregate.**
-
-8. Click **Next.**
-
-9. On the Add customer data screen, choose **Customer** from the Profiles section in the dropdown, then click **Next.**
-
-10. On the Data Mapping screen, we will choose the fields to map our data with the data from the graph. We can map both demographic as well as location information. At a minimum you must map a country/region. We will map more attributes to get a more refined result. 
-
-	The system will pre-fill the entries when it can find a likely match. You can overide the entry by clicking the dropdown and selecting a different field. Here are the settings we will use: 
+5.  In the **Enter brand names manually** box, enter and select these brands: 
 	
-	- Date of Birth: DateOfBirth 
+    - `Peet's Coffee` 
+    
+    - `Blue Bottle Coffee` 
+    
+    - `Caribou Coffee` 
+    
+    - `Dunkin Donuts` 
+    
+    - `Starbucks` 
 
-	- Gender: Gender 
+6.  Select **Next**. 
 
-	- Country/Region: Country 
+7.  On the **Enrichment preferences** screen, leave the brand affinity level at **Medium (recommended)** and set the match precision to **Exact and aggregate**.
+ 
+8.  Select **Next**. 
+
+9.  On the **Add customer Data** screen, choose **Customer** from the Profiles section in the dropdown, and select **Next**. 
+
+10. On the **Data mapping** screen, we will choose the fields to map our data with the data from Microsoft Graph. We can map both demographic as well as location information. As a minimum you must map the Country/Region. We will map more attributes to get a more refined result. 
+
+    The system will pre-fill the entries when it can find a likely match. You can overide the entry by selecting the dropdown and choosing a different field. Here are the settings we will use: 
 	
-	- Postal code: PostCode
+    - Date of Birth: DateOfBirth 
 
-	- City: City 
+    - Gender: Gender 
 
-	- State/Province: State 
+    - Country/Region: Country 
 
-11. Click **Next** and review your entries. 
+    - ZIP/Postal code: PostCode
 
-12. Name your enrichment **BrandEnrichment**. 
+    - City: City 
 
-13. Click **Save enrichment** and then **Close.**
+    - State/Province: State 
+
+11. Select **Next** and review the entries. 
+
+12. Name your enrichment `BrandEnrichment`. 
+
+13. Select **Save enrichment** and select **Close**. 
 
 
 ### Task 2 - Adding Interests Affinity 
 
-1. Navigate to **Data > Enrichment > Discover.**
+1.  Navigate to **Data > Enrichment** and select the **Discover** tab. 
 
-2. Click the **Enrich my data** button on the **Interests** tile. On the Overview page, click **Next.**
+2.  Select the **Enrich my data** button on the **Interests** tile. On the **Overview** page, select **Next**. 
 
-3. In the "Enter interests manually" box, enter these interests: 
+3.  In the **Enter interests manually** box, enter and select these interests: 
 
-	- Bottled Water & Water Delivery 
-	- Coffee 
-	- Tea 
-	- Sports Drinks 
-	- Alcoholic Beverages
+    - `Bottled Water & Water Delivery` 
 
-4. Click **Next.**
+    - `Coffee` 
 
-5. On the Enrichment preferences screen, leave the brand affinity level at **Medium** and set the match precision to **Exact and aggregate.** 
+    - `Tea` 
 
-6. Click **Next.**
+    - `Sports Drinks` 
 
-7. On the Add data set screen, choose Customer from the Profiles section in the dropdown, then click **Next.**
+    - `Alcoholic Beverages` 
 
-8. On the Data Mapping screen, fill out the following:
+4.  Select **Next**. 
+
+5.  On the **Enrichment preferences** screen, leave the brand affinity level at **Medium (recommended)** and set the match precision to **Exact and aggregate**.  
+
+6.  Select **Next**. 
+
+7.  On the **Add customer Data** screen, choose **Customer** from the Profiles section in the dropdown, then select **Next**. 
+
+8.  On the **Data mapping** screen, fill out the following: 
 
 	- Date of Birth: DateOfBirth 
 
@@ -93,34 +102,38 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 	- Country/Region: Country 
 
-	- Postal code: PostCode
+	- ZIP/Postal Code: PostCode
 
 	- City: City 
 
 	- State/Province: State 
 
-9. Click **Next** and review your entries. 
+9.  Select **Next** and review the entries. 
 
-10. Name your enrichment **InterestEnrichment**. 
+10. Name your enrichment `InterestEnrichment`. 
 
-11. Click **Save enrichment** and then **Close.** 
+11. Select **Save enrichment** and select **Close**. 
 
-12. Next, we need to run the enrichments we just created. If you are not the My enrichments tab on the Enrichments page, click on **Data > Enrichment** in the left hand menu, then click on the **My enrichments** tab. You should see the two enrichments we just configured. 
+12. Next, we need to run the enrichments we just created. If you are not the **My enrichments** tab on the **Enrichments** page, navigate to **Data > Enrichment** in the left navigation menu, and select the **My enrichments** tab. You should see the two enrichments we just configured. 
 
-13. Click on **Run all** in the top menu and let the enrichments run.
+13. Select **Run all** in the top menu and let the enrichments run.
+
 
 ### Task 3 - Review the Enriched Data 
 
-Once the enrichment has finished running (it may take a few minutes), you can then look at what was created. 
+Once the enrichment has finished running (it may take several minutes), you can then look at what was created. 
 
-1. The first thing you will see is the number of profiles that were enriched with data. 
+1.  Navigate to **Data > Enrichments** and select the **My enrichments** tab. 
 
-2. Now, we'll look at one of the two entities that were created to hold the enrichment data. 
+2.  Review the number of profiles enriched in the **Enriched customers** column. 
 
-Click on **Data > Entities**, and then under Enrichment, click on either the BrandAffinityFromMicrosoft or InterestAffinityFromMicrosoft entity. This is where we store the enrichment data. 
+3.  Now, we'll look at one of the two entities that were created to hold the enrichment data. 
 
-Here you will see the IndustryVertical a brand is listed in, the affinity score for a customer profile and affinity confidence as well as other information depending on which fields you mapped. 
+    Navigate to **Data > Entities**, and then under Enrichment, select either the **BrandAffinityFromMicrosoft** or **InterestAffinityFromMicrosoft** entity. This is where the enrichment data is stored. 
 
-From this view you can also download a CSV of the data to work with offline. 
+    Here you will see the Industry a brand is listed in, the affinity score for a customer profile and affinity confidence as well as other information depending on which fields were mapped. 
+
+    From this view you can also download a CSV of this data to work with offline or in third party business applications. 
  
-3. Now let's look at what we see for a specific customer. On the Customer page pick a customer (we'll use Joseph Chestnut). When you view the customer detail page you will see the enrichment that pertains to 'people like' that customer. This is based on the fields you chose to map when you configured the Enrichment, in our case: DateOfBirth, Gender, Geography. 
+4.  Now let's look at what we see for a specific customer. Navigate to **Customers** from the left navigation menu and pick a customer (we'll use Joseph Chestnut). When you open the Customer profile details page you will see the enrichment that pertains to 'customers like' that customer. This is based on the fields mapped when the Enrichment was configured, in our case: DateOfBirth, Gender, Geography. 
+
