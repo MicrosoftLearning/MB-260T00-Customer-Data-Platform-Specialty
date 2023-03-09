@@ -18,31 +18,32 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 # Exercise 1 - Transaction Churn Model
 
-## Task 1 - Run the OOB Transactional Churn Model
+## Task 1 - Run the OOB Transactional Churn Model 
 
-1. If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
+1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
 
-3. Go to **Intelligence** > **Predictions**. 
+2.  Navigate to **Intelligence** > **Predictions** from the left navigation menu. 
 
-2. Click **Create** and click **Use model** on the **Customer churn model** card. 
+3.  Select the **Create** tab and select **Use model** on the **Customer churn model** card. 
 
-3. Select the **Transaction** option and click **Get started**. 
+4.  Select the **Transaction** option and select **Get started**. 
 
-4. Name the model **OOB eCommerce Transaction Churn Prediction** and verify the Output entity name is set to **OOBeCommerceTransactionChurnPrediction** then click **Next**. 
+5.  Name the model `OOB eCommerce Transaction Churn Prediction` and verify the **Output entity name** is set to **OOBeCommerceTransactionChurnPrediction**, then select **Next**. 
 
-5. Define the two conditions for the churn model as both **60 days** then click **Next**. 
+6.  Define both conditions for the churn model as **60 days**, then select **Next**. 
 
-6. Under Customer transaction history, click **+ Add data**. Select **SalesOrder** as the activity type and then select the **Purchases : eCommerce** entity. Click **Next** and then click **Save**. 
+7.  Under Customer transaction history, select **+ Add data**. Select **SalesOrder** as the activity type and then select the **Purchases : eCommerce** entity. Select **Next** and then **Save**. 
 
-9. Click **Next** to move to the **Additional Data** screen and then click **Next** again. 
+8.  Select **Next** to move to the **Additional data (optional)** screen and then select **Next** again. 
 
-10. On the **Data update schedule** screen select the **Monthly** update setting and click **Next**. 
+9.  On the **Data update schedule** screen select the **Monthly** update setting and select **Next**. 
 
-11. On the review step click **Save and run** when it completes click **Done**. 
+10. On the **Review** screeen, select **Save and run** and select **Done**. 
 
-12. Monitor the run status, and once the run has succeeded, click on the created prediction to see the results. You can find the list of customers and their churn score under **Data** > **Entities** > **Intelligence** > **OOBeCommerceTransactionChurnPrediction**. 
+11. Monitor the run status, and once the run has succeeded, select the created prediction to see the results. You can find the list of customers and their churn score under **Data** > **Entities** > **Intelligence** > **OOBeCommerceTransactionChurnPrediction**. 
 
-13. Return to **Intelligence > Predictions**. Select the vertical ellipses from your churn model and click **View.** Explore the Training model performance, likelihood to churn chart, and most influential factors. 
+12. Return to **Intelligence > Predictions**. Select the vertical ellipses from your churn model and select **View**. Explore the Training model performance, likelihood to churn chart, and most influential factors. 
+
 
 ### Training Model Performance
 
@@ -62,25 +63,26 @@ Likelihood of churn shows Groups of customers based on their predicted risk of c
 
 There are many factors that are taken into account when creating your prediction. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to create segments that could help influence churn risk for customers. 
 
+
 ## Task 2 - Create a Segment of High Churn-Risk Customers
 
-1. Return to the homepage https://home.ci.ai.dynamics.com/. 
+1.  Return to the homepage `https://home.ci.ai.dynamics.com/`. 
 
-2. Go to **Segments**. Select **+ New** and choose **Create from Intelligence**. 
+2.  Go to **Segments**. Select **+ New** and choose **Create from Intelligence**. 
 
-3. Select the **OOBeCommerceTransactionChurnPrediction** entity: 
+3.  Select the **OOBeCommerceTransactionChurnPrediction** entity: 
 
-	- Field: **ChurnScore** 
+    - Field: **ChurnScore** 
 
-	- Operator: **greater than** 
+    - Operator: **greater than** 
 
-	- Value: **0.6** 
+    - Value: `0.6` 
 
-4. Click **Review**. 
+4.  Select **Review**. 
 
-5. Name your segment **High Risk Transaction Churn**, verify the Output entity name is set to **HighRiskTransactionChurn**, and then click **Save**. 
+5.  Name the segment `High Risk Transaction Churn`, verify the **Output entity name** is set to **HighRiskTransactionChurn**, and select **Save**. 
 
-6. Wait for the Segment to refresh. 
+6.  Wait for the Segment to refresh. 
 
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this transactional business. 
 
