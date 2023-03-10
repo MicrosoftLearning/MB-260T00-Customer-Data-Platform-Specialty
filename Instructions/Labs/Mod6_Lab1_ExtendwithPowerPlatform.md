@@ -93,11 +93,11 @@ In this task, you'll add some simple visualizations to the report.
 
 ### Average Store and Web Purchase Values 
 
-1. Add a **Card** control from the **Visualizations** pane. Resize the Card control to take up the left side of the Report canvas. 
+1.  Add a **Card** control from the **Visualizations** pane. Resize the Card control to take up the left side of the Report canvas. 
 
-2. With the card control selected, expand the **AverageWebPurchaseValue** table in the **Data** pane and drag the **Σ AverageWebPurchaseValue** sum to the **Fields** list. 
- 
-3. With the card control selected, select the **Format your visual** button from the **Visualizations** pane on the right. Edit the following properties: 
+2.  With the card control selected, expand the **AverageWebPurchaseValue** table in the **Data** pane and drag the **Σ AverageWebPurchaseValue** sum to the **Fields** list. 
+
+3.  With the card control selected, select the **Format your visual** button from the **Visualizations** pane on the right. Edit the following properties: 
 
     - Visual > Callout value > Color: **White** 
 
@@ -105,96 +105,127 @@ In this task, you'll add some simple visualizations to the report.
 
     - General > Title: **On** 
     
-    - General > Title > Text: `Average Online Purchases ($)`
+    - General > Title > Text: `Average Online Purchases ($)` 
 
     - General > Title > Text color: **White** 
     
     - General > Title > Text Size: **14 pt** 
  
-4. Select the Data Card displaying **Average Web Purchase ($)** that you've just created and copy and paste to add another data card onto the Canvas. Move it to the right of the canvas. 
+    - General > Effects > Background: **On** 
+
+    - General > Effects > Background: Color = **Black** 
+
+4.  Select the Data Card displaying **Average Web Purchase ($)** that you've just created and copy and paste to add another data card onto the Canvas. Move it to the right of the canvas. 
  
     - Update the **Title > Text** to `Average Store Purchases ($)` 
 
     - Change the **Fields** to **Σ AverageStorePurchaseValue**. 
- 
+
 
 ### Store + Web Purchases by Month 
 
 Contoso Coffee wants to look for seasonality within their sales figures for both online and in-store sales. 
 
-1.  Make sure you don't have either of the Cards you've added selected, then add a **Stacked Area Chart** from the **Visualizations** panel next to the 'Average Online Purchases ($)' card. 
- 
+1.  Make sure you don't have either of the Cards you've added selected, then add a **Stacked Area Chart** from the **Visualizations** pane next to the **Average Online Purchases ($)** card. 
 
 2.  With the new chart selected, add the following under Fields: 
-	- **X-Axis** add **PurchasedOn** from **eCommerce_Purchases** 
-	   -  **Note**: remove all but Month once you add it.
-	- **Values** add **TotalPrice** from **eCommerce_Purchases** 
+	
+    - **X-Axis**: Add **PurchasedOn** from **eCommerce_Purchases** 
 
-3.  With the graph selected, click the **Format** button and set the following properties: 
-	- X axis: **Color = White**
-    - Y axis: **Color = White** 
-	- Title: **Title Text = Online Purchases** 
-	- Title: **Font Color = White** 
-	- Title: **Text Size = 14 pt** 
+    -  **Note**: remove all but **Month** once you add it.
 
-4.  Select the Stacked Area Chart visualization, Copy & Paste another copy. Edit the Data and formatting as follows: 
-	- **Axis** add **PurchasedOn (Month)** from **PoS_posPurchases**
-	- **Values** add **TotalPrice** from **PoS_posPurchases** 
+    - **Y-Axis**: Add **Σ TotalPrice** from **eCommerce_Purchases** 
 
-5.  Update the title of your new chart to **Store Purchases**.
+3.  With the graph selected, select **Format your visual** and set the following properties: 
+
+    - X-axis > Values: **Color = White**
+
+    - Y axis > Values: **Color = White** 
+
+    - General > Title: **Text** = `Online Purchases` 
+
+    - General > Title: **Text color = White** 
+
+    - General > Title: **Text size = 14 pt** 
+
+    - General > Effects > Background: **On** 
+
+    - General > Effects > Background: Color = **Black** 
+
+4.  Select the **Stacked Area Chart** visualization, select copy & paste it below. Edit the Data and formatting as follows: 
+
+    - **X-axis**: Add **PurchasedOn (Month)** from **PoS_posPurchases**
+
+    - **Y-axis**: **TotalPrice** from **PoS_posPurchases** 
+
+5.  Update the **Title** of your new chart to `Store Purchases`.
 
 
 ### Activity Types by Volume 
 
-1.  Make sure you don't have either of the Cards or Charts you've added selected and add a **Pie Chart** from the **Visualizations** panel. 
+1.  Make sure you don't have either of the Cards or Charts you've added selected and add a **Pie chart** from the **Visualizations** pane. 
 
-2.  With the Pie Chart selected, drag the following values from the **UnifiedActivity** object. 
+2.  With the **Pie chart** selected, drag the following values from the **UnifiedActivity** object: 
 
     - Details: **Title**. 
 
-    - Values: **ActivityTypeDisplay** 
+    - Values: **ActivityTypeDisplay**, which will turn into **Count of ActivityTypeDisplay** when added. 
 
-        - which will turn into **Count of ActivityTypeDisplay** when added. 
+3.  With the pie chart selected, select the **Format your visual** button and set the following properties: 
 
-        - In filters pane, check **Select all** then uncheck the blank values line for **Title**. 
+    - Visual > Legend: **On** 
 
-3.  With the pie chart selected, click the **Format** button and set the following properties: 
+    - Visual > Legend > Text: **Color = White** 
 
-	- Legend: **On** 
-	- Legend: **Color = White** 
-	- Title: **Font Color = White** 
-	- Title: **Text Size = 14 pt** 
-	- Detail Labels: **Color = White** 
-	- Background: **On** 
-	- Background: **Black** 
-	- Background: **Transparency: 80%** 
+    - Visual > Detail labels > Values: **Color = White** 
+
+    - General > Title > Text: `Activity Types by Volume` 
+
+    - General > Title: **Text color = White** 
+
+    - General > Title: **Font size = 14 pt** 
+
+    - General > Effects > Background: **On** 
+
+    - General > Effects > Background: Color = **Black** 
 
 
 ### Activity Types by Month 
 
-1.  Add a **Line Chart** from the **Visualizations** panel on to the report. 
+1.  Add a **Line chart** from the **Visualizations** panel on to the report. 
 
-2.  With the Line Chart selected, drag the following values from the **UnifiedActivity** object to the **Fields**: 
+2.  With the **Line chart** selected, drag the following values from the **UnifiedActivity** object to the **Fields**: 
 
-	- Axis: **StartTime** 
-   	   -  **Note**: remove all but Month once you add it. 
-	- Legend: **ActivityTypeDisplay** 
-	- Values: **ActivityTypeDisplay**
-	    - which will turn into **Count of ActivityTypeDisplay** when added.
+    - X-axis: **StartTime** 
 
-3.  With the Line Chart selected, click the **Format** button and set the following properties: 
-	- Legend: **Color = White** 
-	- X axis: **Color = White** 
-	- Y axis: **Color = White** 
-	- Title: **Color = White** 
-	- Background: **On** 
-	- Background: **Black** 
-	- Background: **Transparency: 80%** 
+    > **Note:** Remove all but Month once you add StartTime.
+ 
+    - Legend: **ActivityTypeDisplay** 
+
+    - Y-axis: **ActivityTypeDisplay**, which will turn into **Count of ActivityTypeDisplay** when added. 
+
+3.  With the Line Chart selected, select the **Format your visual** button and set the following properties: 
+
+    - Visual > Legend > Text: Color = **White** 
+
+    - Visual > X-axis > Values: **Color = White** 
+
+    - Visual > Y-axis > Values: **Color = White** 
+
+    - General > Title > Text: `Activity Types by Month` 
+
+    - General > Title: **Font size = 14 pt** 
+
+    - General > Title > Text color: **White** 
+
+    - General > Effects > Background: **On** 
+
+    - General > Effects > Background: Color = **Black** 
 
 
 ## Task 3 - Review Dashboard 
 
-Review your Power BI dashboard. This is a simple example, but insights could become much more complex with a more detailed report.
+Review your Power BI dashboard. This is a simple example, but insights could become much more complex with a more detailed report. 
 
 This simple report highlights: 
 
@@ -204,16 +235,16 @@ This simple report highlights:
 
 - There may be some seasonal trends as sales drop around March and increase again from September. 
 
- 
+
 # Exercise 2 - Power Automate
 
 In this task you will create a Flow, which will be triggered in a later Module from a PowerApp by Contoso Retail staff who interact with Contoso Coffee Customers, in order to capture a record of that customer having visited. 
 
-1.  Navigate to [https://make.powerapps.com](https://make.powerapps.com) and sign in if prompted. Select your **Your Name** CI ILT Lab environment on top right from the drop down. 
+1.  Navigate to `https://make.powerapps.com` and sign in if prompted. Select the **Marketing Trial** environment from the drop-down menu at the top right of screen. 
 
-2.  From the left hand menu, select **Flows**. (If prompted, confirm the **Country** and select **Get started**.)
+2.  From the left navigation menu, select **Flows**. (If prompted, confirm the **Country** and select **Get started**.) 
 
-3.  Select **+ New flow** and then select **Instant cloud flow** from the dropdown.
+3.  Select **+ New flow** and then select **Instant cloud flow** from the drop-down.
 
 4.  Select **Skip**. 
 
@@ -225,9 +256,11 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
     > **Note**: Be sure to set the threshold to a number slightly larger than the current number of members in your segment so the trigger is hit later when we change the segment setting. 
 
-	- Segment : `HighRiskTransactionChurn` 
+    - Instance: **Your Name CI ILT Lab** 
 
-	- Threshold: `1200` 
+    - Segment: `HighRiskTransactionChurn` 
+
+    - Threshold: `1200` 
 
 8.  Select **+ New step**. In the **Search connectors and actions** search bar, search for `Send an email (V2)`, and select it. You may be signed into Outlook automatically, or you may need to sign in manually using your M365 credential. 
 
