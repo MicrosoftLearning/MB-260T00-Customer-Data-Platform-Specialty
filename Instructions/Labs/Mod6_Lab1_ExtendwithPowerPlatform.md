@@ -256,7 +256,7 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
     > **Note**: Be sure to set the threshold to a number slightly larger than the current number of members in your segment so the trigger is hit later when we change the segment setting. 
 
-    - Instance: **Your Name CI ILT Lab** 
+    - Instance: **YourName CI ILT Lab** 
 
     - Segment: `HighRiskTransactionChurn` 
 
@@ -266,15 +266,15 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 9.  Enter the following: 
 
-	- **To**: Email address (you can use a personal email address or your M365 credential email address) 
+    - **To**: Email address (you can use a personal email address or your M365 credential email address) 
 
-	- **Subject**: `Churn Customers Surge Alert!`
+    - **Subject**: `Churn Customers Surge Alert!`
 
-	- **Body**: `Customers in segment HighRiskForChurn has crossed the threshold. Review the customer list.` 
+    - **Body**: `Customers in segment HighRiskForChurn has crossed the threshold. Review the customer list.` 
 
 10. Select **Save**. 
 
-11. To test the Power Automate flow, go back to your Customer Insights environment and edit your **High Risk Transaction Churn** segment condition as ChurnScore greater than 0.5 instead of 0.6 which adds some more customers to your segment and should trigger this Power Automate flow. 
+11. To test the Power Automate flow, go back to your Customer Insights environment and edit your **High Risk Transaction Churn** segment condition as ChurnScore greater than `0.5` instead of 0.6 which adds some more customers to your segment and should trigger this Power Automate flow. 
 
     You should receive an email once the segment is refreshed. 
 
@@ -285,43 +285,41 @@ To create the Contoso Coffee 'Greeter App' from this lab, you will import a temp
 
 ## Task 1 - Import the Greeter App Template 
 
-1.  Sign in to `https://make.powerapps.com` and select your Customer Insights environment, if it is not already selected. 
+1.  Sign in to `https://make.powerapps.com` and select the **Marketing Trial** environment, if it is not already selected. 
 
 2.  Select **Apps** in the left navigation menu, and then select **Import canvas app** from the command bar. 
 
 3.  Select the **Upload** button and select the **CustomerInsightsGreeterApp.zip** included in the Lab Resources, then select **Upload**. 
 
-4.  On the next page, select **Import**. If **Import** is grayed out and **Import Setup** says Update, then click **Update** under **Import Setup** and change to **Create as new**. 
+4.  Select **Import**. 
 
-5.  Once the package has imported, select **Apps** in the left navigation menu. You should see your imported app listed. 
+    > **Note:** If **Import** is grayed out and **Import Setup** says Update, then select **Update** and change it to **Create as new**. 
 
-6.  Select the '...' icon next to its name and select **Edit** to load the app in Edit Mode. (If you are prompted with a Welcome pop-up, click **Get started** and/or **Skip**.)
+5.  Once the package has imported, select the **Open app** link. 
+
+    > **Note:** If you are prompted with the Welcome pop-up, select **Get started** and/or **Skip**. 
 
 
 ## Task 2 - Connect to Data Source(s) 
 
 In this task, we will use the Customer Insights Connector to connect the 'Greeter App' to your Customer Insights instance. 
 
-1.  In the top menu bar, select **View** and select **Data Sources**. 
+1.  From the command bar, select **Add data**. 
 
-2.  In the **Data** menu that opens on the right, select **+ Add data source**. 
+2.  Select the **Dynamics 365 Customer Insights** connector. 
 
-3.  Select **New Connection** and search for the **Dynamics 365 Customer Insights** connector.
- 
-4.  Select the connector and then click **Connect**. (You may get a pop-up here - click **Got it** to skip.) If prompted, sign in with your credentials.
+3.  Select the **Customer** and **UnifiedActivity** tables. Enter `Customer_Measure` into the **Enter custom table name** box and check the corresponding box. Then select **Connect**. 
 
-5.  Select **Customer** and **UnifiedActivity**. Type **Customer_Measure** into the Enter custom table name box and check the corresponding box. Then select **Connect**. 
+4.  You should see three new tables added as data sources. Close the **Data** pane.
 
-6.  You should see three new tables listed as data sources. 
-
-Congratulations! You have established a connection to Customer Insights in the Power App. 
+Congratulations! You have established a connection to Customer Insights from the Power App. 
 
 
 ## Task 3 - Configure the Customer Search Screen 
 
 In this task you are going to connect Customer Insights data to the Customer Search and Customer Profile screens within the greeter app. This will enable Contoso Coffee Retail staff to find and view customer information when they greet them in store. 
 
-1.  With the 'Greeter App' in Edit mode, open the **CustomerSearch_Screen screen** via the Tree View. 
+1.  With the 'Greeter App' open in Edit mode, open and expand the **CustomerSearch_Screen** screen in the **Tree View**. 
 
 2.  Select **gallery_Customers**. 
 
@@ -339,54 +337,56 @@ In this task you are going to connect Customer Insights data to the Customer Sea
 
     - lbl_email - `EMail`
 
-    You should now see that the Customer Gallery is populated with the names, email and loyalty scheme IDs of Contoso Coffee customers, using the Unified Customer Profiles from Customer Insights. 
+    You should now see that the Customer Gallery is populated with the full names, emails and loyalty scheme IDs of Contoso Coffee customers, using the Unified Customer Profiles from Customer Insights. 
 
 5.  Next, we will setup the **Customer Search** screen to show some key info from the customer's profile when the greeter selects them from the gallery. 
 
-6.  In the Tree View, select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label by clicking the **Text** box and then copy/pasting the following into the formula bar at the top of the app: 
+6.  In the Tree View, select **lbl_Email** (outside of the gallery) and set the **Text** Property of the label by selecting the **Text** box and then copy/pasting the following into the formula bar at the top of the app: 
  
     `gallery_Customers.Selected.EMail`
 
-7.  In the Tree View, select **lbl_FullName** and set the **Text** Property of the label by clicking the **Text** box and then entering the following formula into the formula bar at the top of the app: 
+7.  In the Tree View, select **lbl_FullName** and set the **Text** property of the label by selecting the **Text** box and then entering the following formula into the formula bar at the top of the app: 
 
     `gallery_Customers.Selected.FullName`
 
-8.  In the Tree View, select **lbl_CustomerAddress** and set the **Text** Property of the label by clicking the **Text** box and then entering the following formula into the formula bar at the top of the app:
+8.  In the Tree View, select **lbl_CustomerAddress** and set the **Text** Property of the label by selecting the **Text** box and then entering the following formula into the formula bar at the top of the app:
 
     `Concatenate(gallery_Customers.Selected.StreetAddress, " ", gallery_Customers.Selected.City," ", gallery_Customers.Selected.State, " ", gallery_Customers.Selected.PostCode, " ", gallery_Customers.Selected.Country)`
  
-9.  Finally, within the Tree View select the **img_CustomerProfile** image and set the **Image** Property of the label by clicking the **Image** box and then copy/pasting the following into the formula bar at the top of the app:
+9.  Finally, within the Tree View select the **img_CustomerProfile** image and set the **Image** Property of the label by select the **Image** box and then entering the following into the formula bar at the top of the app:
 
 	`gallery_Customers.Selected.Headshot`
  
-Congratulations, you have now configured the **Customer Search** screen within the Greeter App. In the next task, we will configure different aspects of the Customer Profile Screen. 
+Congratulations, you have now configured the **Customer Search** screen in the Greeter App. In the next task, we will configure different aspects of the Customer Profile Screen. 
 
 
 ## Task 4 - Configure the Customer Profile Screen 
 
 Here we will embed the same Customer Profile data as we did in the Customer Search screen, before moving on to embed a unified view of interactions as well as KPIs and recommendations. 
 
-1.  With the Power App open in Edit mode, select the **CustomerProfile_Screen** from the Tree View on the left navigation menu. 
+1.  With the Power App open in Edit mode, select and expand the **CustomerProfile_Screen** screen from the **Tree View** on the left navigation menu. 
 
-2.  First, you'll add customer information from the Unified Profile as per the Customer Search Screen. 
-
-    - Within the Tree View select **lbl_emailAddress**. Set the **Text** property (the same way we did in Task 3) to: 
+2.  First, you'll add customer information from the Unified Profile as per the CustomerSearch_Screen screen. From the **Tree View**, select **lbl_emailAddress**. Set the **Text** property to the following formula: 
 
     `gallery_Customers.Selected.EMail` 
 
-    - Select **lbl_CustomerFullname** and set the **Text** Property of the label to: 
+3.  Select **lbl_CustomerFullname** and set the **Text** property to: 
 
     `gallery_Customers.Selected.FullName` 
 
-    - Within the Tree View select **lbl_LoyaltyID** and set the **Text** property of the label to: 
+ 4.  In the **Tree View**, select **lbl_LoyaltyID** and set the **Text** property to: 
 
-    `gallery_Customers.Selected. Loyalty_Customers_LoyaltyId` 
+    `gallery_Customers.Selected.Loyalty_Customers_LoyaltyId` 
 
-    - Within the Tree View select **lbl_Cust_Address** and set the **Text** property of the label to: 
+ 5.  In the **Tree View**, select **lbl_Cust_Address** and set the **Text** property to: 
  
-    `Concatenate(gallery_Customers.Selected.StreetAddress, " ", gallery_Customers.Selected.City," ", gallery_Customers.Selected.State, " ", gallery_Customers.Selected.PostCode, " ", gallery_Customers.Selected.Country)` 
+    `Concatenate(gallery_Customers.Selected.StreetAddress, " 
+    ", gallery_Customers.Selected.City," 
+    ", gallery_Customers.Selected.State, " 
+    ", gallery_Customers.Selected.PostCode, " 
+    ", gallery_Customers.Selected.Country)` 
  
-3.  Finally, in the Tree View select the **img_CustomerProfileImage** and set the **Image** property to: 
+6.  Finally, in the **Tree View**, select the **img_CustomerProfileImage** and set the **Image** property to: 
 
     `gallery_Customers.Selected.Headshot` 
 
@@ -395,39 +395,41 @@ Here we will embed the same Customer Profile data as we did in the Customer Sear
 
 In this task we will embed a unified timeline of activities ingested into Customer Insights within the Customer Profile Screen. This will give Contoso Coffee retail staff visibility of any recent interactions. 
  
-1.  With the Greeter Power App open in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the **gallery_UnifiedTimeLine**. 
+1.  With the Greeter Power App open in Edit mode, open and expand the **CustomerProfile_Screen** screen from the **Tree View** and select the **gallery_UnifiedTimeLine**. 
 
-2.  With the gallery selected, select the **Advanced** tab in the right pane and select the **Items** property. Enter the following in the formula bar to filter all Unified Customer Activity records to only display the top 100 for the current Customer Profile. 
+2.  With the gallery selected, select the **Advanced** tab in the right pane and select the **Items** property. Enter the following in the formula bar to show the top 100 Unified Customer Activity records for the current Customer Profile. 
  
-    `FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)`
+    `FirstN(Filter(UnifiedActivity, CustomerId = gallery_Customers.Selected.CustomerId),100)` 
 
-3.  Set the properties shown by selecting them within the tree under the gallery_UnifiedTimeLine and setting the Text property.
+3.  Expand the **gallery_UnifiedTimeLine** gallery and select the **Title2** label. Set the **Text** property to:
 
-    - **Title2**: `ThisItem.Title`   
+    `ThisItem.Title`   
 	
-    - **Subtitle2**: `Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), DateTimeFormat.ShortDate)` 
+4.  From the **Tree view**, select the **Subtitle2** label and set the **Text** property to:
+
+    `Text(DateTimeValue(ThisItem.ActivityTime, "en-US"), DateTimeFormat.ShortDate)` 
 
 
 ## Task 6 - Embed KPIs to Profile Page 
 
-In this task you will embed key customer KPIs that we calculated as 'Customer Measures' in Lab 4A. Namely, Total Club Points (Loyalty Scheme Points) and **Customer Lifetime Spend**. 
+In this task you will embed key customer KPIs that we calculated as 'Customer Measures' in Lab 4A. Namely, **Total Club Points (Loyalty Scheme Points)** and **Customer Lifetime Spend**. 
 
-Contoso Club Loyalty Points 
+### Contoso Club Loyalty Points 
 
-1.  With the Greeter Power App open in Edit mode, open the **CustomerProfile_Screen screen** via the Tree View and select the gallery **gallery_ClubPoints**. 
+1.  With the 'Greeter App' open in Edit mode, open and expand the **CustomerProfile_Screen** screen from the **Tree view** and select the gallery **gallery_ClubPoints**. 
  
-2.  Set the **Items** property to: 
+2.  On the **Advanced** Tab, set the **Items** property to: 
 
-    `Filter(Customer_Measure, CustomerId = gallery_Customers.Selected.CustomerId)`
+    `Filter(Customer_Measure, CustomerId = gallery_Customers.Selected.CustomerId)` 
 
-3.  Expand the **gallery_ClubPoints** and select **lbl_Points** inside the gallery. Select the **Text** property from the drop-down. Set the formula as follows to display the contacts corresponding TotalClubPoints: 
+3.  Expand the **gallery_ClubPoints** gallery and select the **lbl_Points** label inside the gallery. Select the **Text** property from the drop-down. Set the formula as follows to display the contacts corresponding TotalClubPoints: 
  
     `ThisItem.TotalClubPoints` 
 
 
 ### Contoso Lifetime Value / Spend 
 
-1.  With the Greeter Power App opened in Edit mode, open the **CustomerProfile_Screen** screen via the Tree View and select the gallery **gallery_CLTV**. 
+1.  With the 'Greeter App' open in Edit mode, open and expand the **CustomerProfile_Screen** screen from the **Tree view** and select the gallery **gallery_CLTV**. 
 
 2.  Set the **Items** value using the property selector to: 
 
@@ -435,9 +437,9 @@ Contoso Club Loyalty Points
 
 3.  Expand the **gallery_CLTV gallery** and select **lbl_CLTV** inside the gallery. Select the **Text** property from the drop down and set the formula as follows to display the contacts corresponding LifetimeSpend: 
 
-    `ThisItem.LifetimeSpend`
+    `Concatenate("$",ThisItem.LifetimeSpend)`
 
-4.  From the File menu, click **Save** and **Publish**. 
+4.  From the command bar, select **Save** and **Publish**. Select **Publish this version**. 
 
 Congratulations! You have now configured a simple greeter app for Contoso Coffee Retail staff. 
 
@@ -446,19 +448,19 @@ Congratulations! You have now configured a simple greeter app for Contoso Coffee
 
 In this task, you will explore the Greeter App experience. 
 
-1.  In a new browser tab, navigate to `https://make.powerapps.com`. If required, sign in and make sure to select your environment. By default the environment would be pointing to Contoso. 
+1.  In a new browser tab, navigate to `https://make.powerapps.com`. If required, sign in and make sure to select the **Marketing Trial** environment. 
+
+    > **Note:** By default the environment selected is **Contoso (default)**. 
  
-2.  Select **Apps** in the left navigation menu, and then run your **Contoso Coffee Greeter App** by selecting it and selecting **Play** from the toolbar. 
+2.  Select **Apps** from the left navigation menu, and then run your **Contoso Coffee Greeter App** by selecting it and selecting **Play** from the toolbar. To give location permissions to the app, select **Allow**. 
 
 3.  Imagine you are a member of Contoso Coffee Retail staff and you greet customers in the store. 
 
-    - Look up Abbie Moss' record. (LOYID_1000) 
+    - Select **Customer Search** and search for `Abbie Moss` (LOYID_1000) 
 
-    - Open Abbie Moss' record: 
+    - Open Abbie Moss' record. 
 
-    - **Review Activity History** 
-   	
-    - **Review Abbie's Club Balance and Lifetime Value** 
-	
-    - Combining her purchase history with insights on her 'Current Points' and 'Lifetime Value', you are able to ascertain that Abbie is both a frequent and high-value customer. 
+    - Review the **Activity** gallery. 
+
+    - Combining their purchase history with insights on their **Current Points** and **Lifetime Value**, you are able to ascertain that Abbie is both a frequent and high-value customer. 
 

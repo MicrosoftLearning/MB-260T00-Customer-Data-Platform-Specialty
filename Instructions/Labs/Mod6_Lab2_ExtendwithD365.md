@@ -31,59 +31,62 @@ The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID 
 
 **Note:** This step is not one you would normally have to take if you were using Dynamics 365 as a data source to begin with. Since we did not start with contacts from Dynamics we will artifically have to ensure that we have similar contacts in Dynamics for the lab to work.
 
+
 ## Task 1 - Import Contacts into Dynamics 365
 
-First, we will setup some sample Contacts within Dynamics 365 for you to ingest and match against your existing profiles in Customer Insights. You will need these contacts for later modules.
+First, we will setup some sample Contacts within Dynamics 365 for you to ingest and match against your existing profiles in Customer Insights. 
 
-1. In a browser, login to your Dynamics 365 instance and open the **Marketing** app.
+1.  In a browser, login to your Dynamics 365 instance and open the **Marketing** app. 
 
-2. Click the **Settings cog (gear symbol)** in the top right-hand corner, then **Advanced Settings**.
+2.  Select **⚙️ Settings** in the top right-hand corner, then **Advanced Settings**. 
 
-3. On the page that loads, click the chevron next to **Settings** in the menu bar. Then select **Data Management** under the **System** heading.
+3.  On the page that loads, select the chevron next to **Settings** in the menu bar. Then select **Data Management** under the **System** heading.
 
-4. On the Data Management page, click **Imports**.
+4.  On the Data Management page, select **Imports**.
 
-5. In the menu bar, select **Import Data** to launch the data import wizard.
+5.  In the menu bar, select **Import Data** to launch the data import wizard.
 
-6. Under **Choose File** select the **ContosoCoffee_D365Contacts** Excel spreadsheet (as provided by your instructor), then click **Next** until you get to the **Map Record Types** screen.
+6.  Under **Choose File** select the **ContosoCoffee_D365Contacts** Excel spreadsheet (as provided by your instructor), then select **Next** until you get to the **Map Record Types** screen.
 
-7. Select **Contact** from the **Record Types** dropdown and click **Next**.
+7.  Select **Contact** from the **Record Types** dropdown and select **Next**.
 
-8. On the **Map Fields** page, select **Ignore** for **Full Name** then click **Next**, then **Next**, then **Submit** and **Finish**.
+8.  On the **Map Fields** page, select **Ignore** for **Full Name** then select **Next**, then **Next**, then **Submit** and **Finish**.
 
-9. You can monitor the progress of your import using the refresh button on the top right of the grid. Ensure that your import completes successfully.
+9.  You can monitor the progress of your import using the refresh button on the top right of the grid. Ensure that your import completes successfully.
 
 10. Reopen the **Marketing** app and navigate to **Outbound Marketing** area section, change area can be found in the bottom left-hand corner. From the left navigation pane select **Contacts** from the **Customers** section.
 
 11. You should now have a record for **Abbie Moss**.
 
+
 ## Task 2 - Ingest the contacts into Customer Insights
 
 Now we will ingest the Dynamics 365 contacts as an additional data source within Customer Insights. Switch back to your Customer Insights tab or re-open https://home.ci.ai.dynamics.com, keeping your Marketing app in another tab.
 
-1. Click **Data** > **Data Sources** in the left hand menu.
+1.  Select **Data** > **Data Sources** from the left navigation menu. 
 
-2. Click **+ Add data source** on the top left of the page.
+2.  Select **+ Add data source** on the top left of the page. 
 
-3. Choose **Microsoft Dataverse** and name the Data Source **D365**. Click **Next**.
+3.  Choose **Microsoft Dataverse** and name the Data Source **D365**. Select **Next**. 
 
-4. On the **Enter Microsoft Dataverse** screen, we will need to put in the URL to our Dynamics Dataverse instance. To get this, go back to your Dynamics Marketing site in a new tab (or if you have it open switch back to it). Copy the beginning of the URL. You will have something like this: https://ORGNAME.crm.dynamics.com. Enter that URL into the **Server address** box and click **Sign In**. Sign In with the credentials that you use to access Dynamics 365. 
+4.  On the **Enter Microsoft Dataverse** screen, we will need to put in the URL to our Dynamics Dataverse instance. To get this, go back to your Dynamics Marketing site in a new tab (or if you have it open switch back to it). Copy the beginning of the URL. You will have something like this: https://ORGNAME.crm.dynamics.com. Enter that URL into the **Server address** box and click **Sign In**. Sign In with the credentials that you use to access Dynamics 365. 
 
-5. Click **Next**.
+5.  Select **Next**. 
 
-6. In the list of entities, find and select **Contact**. Then click **Save**. It may take a few minutes for the data to complete the upload.
+6. In the list of entities, choose **Contact**. Then select **Save**. It may take a few minutes for the data to complete the upload. 
 
-Because this is not a Power Query connector, we do not get the option to transform the data. We also cannot choose the fields we want, and will get them all. We can control which fields are added to our unified profile during the Map/Match/Merge phase to ensure we don't bloat our unified profile.
+Because this is not a Power Query connector, we do not get the option to transform the data. We also cannot choose the fields we want, and will get them all. We can control which fields are added to our unified profile during the Map/Match/Merge phase to ensure we don't bloat our unified profile. 
+
 
 ## Task 3 - Go through Unification
 
 ### Map
 
-1. Click **Data > Unify** and then **Map**.
+1.  Select **Data > Unify** and then **Map**. 
 
-2. Under **Entities**, click **Edit fields**.
+2.  Under **Entities**, select **Edit fields**. 
 
-4. Expand the **Contact (D365)** entry. We only want specific fields pulled through, so let's only check the following fields (search is your friend here as the Dynamics entity has a LOT of fields):
+3.  Expand the **Contact (D365)** entry. We only want specific fields pulled through, so let's only check the following fields (search is your friend here as the Dynamics entity has a LOT of fields):
 
 	- address1_city
 
@@ -111,15 +114,16 @@ Because this is not a Power Query connector, we do not get the option to transfo
 
 	- lastname
 
-4. Click **Apply**. Click on the **D365 : contact** tile in the entities list. As when you ingested Loyalty and eCommerce data, you should see that Customer Insights has intelligently mapped the attributes to the Common Data Model types.
+4.  Select **Apply**. Select the **D365 : contact** tile in the entities list. As when you ingested Loyalty and eCommerce data, you should see that Customer Insights has intelligently mapped the attributes to the Common Data Model types. 
 
-5. Confirm that **contactid** was set as the Primary Key, or set it.
+5.  Confirm that **contactid** was set as the Primary Key, or set it.
 
-6. Click **Save** on the top left.
+6.  Select **Save**.
+
 
 ### Match
 
-1. Click the **Match** tab.
+1. Select the **Match** tab.
 
 3. Click **Add Entity** in the Matched records detail table. Select **Contact : D365**, check **Include all**, and then click **Done**.
 
