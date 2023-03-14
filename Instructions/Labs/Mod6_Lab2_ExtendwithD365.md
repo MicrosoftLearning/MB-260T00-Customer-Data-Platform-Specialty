@@ -246,9 +246,9 @@ We will now configure the Dynamics 365 Model-drive Contact Main form, used by Co
 
 14. Repeat steps **11** and **12** for the fields added into the **KPI** and **CUSTOMER DETAILS** section, adding the **Customer Insights Measures Control** to KPI section and the **Customer Insights Customer Details** to the Customer Details section.
 
-15. Move the **KPI** section to the top of **Related** section and **CUSTOMER DETAILS** under the **KPI** section. Now remove **Related** and pre existing **Timeline** sections.
+15. Move the **KPI** section to the middle column and the **CUSTOMER DETAILS** under the **KPI** section. Now remove the pre-existing **Timeline** section.
 
-16. Select **Save and Close**.
+16. Select **Save and Close**. 
 
 17. Back on the model-driven **App Designer**, select the **Contact with Customer Insights** form to add your new **Contact with Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up. 
 
@@ -263,13 +263,13 @@ We will now configure the Dynamics 365 Model-drive Contact Main form, used by Co
 
 3.  Open the Contact record for **Abbie Moss** and select your new **Contact with Customer Insights** form using the form selector. 
 
-4.  You should now see that the three Customer Insights you embedded in the form render. KPI and Customer Details controls can be configured. You may need to edit the cards to select the correct fields to show.
+4.  You should now see that the three Customer Insights you embedded in the form render. KPI and Customer Details controls can be configured. You may need to edit the cards to select the correct fields to show. 
 
-- **Timeline:** No configuration required. This should display a unified set of ingested activities from Customer Insights.
+- **Timeline:** No configuration required. This should display a unified set of ingested activities from Customer Insights. 
 
 - **Customer Detail:** The customer detail control should display some key information from the Unfiied Customer Profile. 
 
-- **KPIs:** Click **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility (**Total Club Points, Lifetime Spend,** and **Average Store Purchase** ).
+- **KPIs:** Select ✏️ **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility (**Total Club Points, Lifetime Spend,** and **Average Store Purchase** ). 
 
 Congratulations! You have successfully completed the objectives of this module, providing Contoso Coffee Customer Service Advisors with visibility of all customer touchpoints & KPIs.
 
@@ -286,11 +286,9 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 ## Task 1 - Configure an Export Destination
 
-1.  Navigate to `https://home.ci.ai.dynamics.com`. 
+1.  Navigate to `https://home.ci.ai.dynamics.com`, sign in with your administrator account if needed. 
 
-1.  Log in with your administrator account if needed. 
-
-1.  Select **Data > Exports** in the left-hand menu. Select **+ Add export** and select **Dynamics 365 Marketing**. 
+1.  Select **Data > Exports** from the left navigation menu. Select **+ Add export** and select **Dynamics 365 Marketing**. 
 
 1.  You will be presented with a dialog to configure your export destination to **Dynamics 365 Marketing**. Enter the display name and your Marketing instance address and sign in with your account. Check the **I agree** box and select **Save**. 
 
