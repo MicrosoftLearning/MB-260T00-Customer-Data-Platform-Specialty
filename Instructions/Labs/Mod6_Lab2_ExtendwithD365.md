@@ -305,11 +305,11 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 If you have already configured an export destination and then create new segments there is an easy way to add those new segments to your existing export. In this task we'll go in and add the **High Value Online Customers** segment to the export we just created.
 
-1. Click **Segments** in the left-hand menu.
+1.  Click **Segments** in the left-hand menu.
 
-2. Click the vertical ellipse next to the **High Value Online Customers** segment. Then click **Manage Exports**. Select your Dynamics 365 Marketing export and select **Add segment** (or click the plus sign). Hit **Run.**
+2.  Click the vertical ellipse next to the **High Value Online Customers** segment. Then click **Manage Exports**. Select your Dynamics 365 Marketing export and select **Add segment** (or click the plus sign). Hit **Run.**
 
-	This concludes the lab. You are now ready to consume the segments in Dynamics 365 Marketing which is incorporated as an additional section which you can do later.
+    This concludes the lab. You are now ready to consume the segments in Dynamics 365 Marketing which is incorporated as an additional section which you can do later.
 
 
 ## Task 3 - Using the Segment to Orchestrate a Customer Journey
@@ -327,6 +327,7 @@ We are now ready to consume the segments which Customer Insights has exported to
 4. Click on the **HighValueOnlineCustomers** segment to open it. 
 
 5. To use the Segment in a marketing journey you must first mark it as 'Live'. Click the **Go Live** button in the top menu bar to accomplish this. Once the status for the segment change to **Live** you can continue.
+
 
 ### Create the Newsletter Email
 
