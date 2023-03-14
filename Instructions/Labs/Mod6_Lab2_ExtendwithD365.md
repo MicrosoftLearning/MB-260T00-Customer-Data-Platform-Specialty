@@ -36,57 +36,67 @@ The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID 
 
 First, we will setup some sample Contacts within Dynamics 365 for you to ingest and match against your existing profiles in Customer Insights. 
 
-1.  In a browser, login to your Dynamics 365 instance and open the **Marketing** app. 
+1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Open the **Marketing Trial** environment. 
 
-2.  Select **⚙️ Settings** in the top right-hand corner, then **Advanced Settings**. 
+2.  Select the **⚙️ Settings** icon in the top right-hand corner, then select **Advanced Settings**. 
 
-3.  On the page that loads, select the chevron next to **Settings** in the menu bar. Then select **Data Management** under the **System** heading.
+3.  Select the chevron next to **Settings** in the menu bar. Then select **Data Management** under the **System** heading.
 
 4.  On the Data Management page, select **Imports**.
 
 5.  In the menu bar, select **Import Data** to launch the data import wizard.
 
-6.  Under **Choose File** select the **ContosoCoffee_D365Contacts** Excel spreadsheet (as provided by your instructor), then select **Next** until you get to the **Map Record Types** screen.
+6.  Select **Choose File** and choose the **ContosoCoffee_D365Contacts** Excel spreadsheet from the Lab Resources folder, then select **Next** until you get to the **Map Record Types** screen. 
 
-7.  Select **Contact** from the **Record Types** dropdown and select **Next**.
+7.  Select **Contact** from the **Record Types** drop-down and select **Next**.
 
-8.  On the **Map Fields** page, select **Ignore** for **Full Name** then select **Next**, then **Next**, then **Submit** and **Finish**.
+8.  On the **Map Fields** screen, select **Ignore** for **Full Name** then select **Next**, then **Next**, then **Submit** and **Finish**. 
 
-9.  You can monitor the progress of your import using the refresh button on the top right of the grid. Ensure that your import completes successfully.
+9.  Monitor the progress of your import using the **Refresh** button on the top right of the grid. 
 
-10. Reopen the **Marketing** app and navigate to **Outbound Marketing** area section, change area can be found in the bottom left-hand corner. From the left navigation pane select **Contacts** from the **Customers** section.
+10. Wait for the import to complete successfully. 
 
-11. You should now have a record for **Abbie Moss**.
+11. Re-open the **Marketing** app and navigate to the **Outbound Marketing** area.
+
+    > **Note:** To change area, use the drop-down menu found in the bottom left-hand corner. 
+
+12. From the left navigation menu, select **Contacts** from the **Customers** section. 
+
+13. You should now have a record for **Abbie Moss**. 
 
 
 ## Task 2 - Ingest the contacts into Customer Insights
 
-Now we will ingest the Dynamics 365 contacts as an additional data source within Customer Insights. Switch back to your Customer Insights tab or re-open https://home.ci.ai.dynamics.com, keeping your Marketing app in another tab.
+Now we will ingest the Dynamics 365 contacts as an additional data source within Customer Insights. 
 
-1.  Select **Data** > **Data Sources** from the left navigation menu. 
+1.  In a new tab, navigate to `https://home.ci.ai.dynamics.com`.
 
-2.  Select **+ Add data source** on the top left of the page. 
+2.  Select **Data** > **Data sources** from the left navigation menu. 
 
-3.  Choose **Microsoft Dataverse** and name the Data Source **D365**. Select **Next**. 
+3.  Select **+ Add data source** from the command bar. 
 
-4.  On the **Enter Microsoft Dataverse** screen, we will need to put in the URL to our Dynamics Dataverse instance. To get this, go back to your Dynamics Marketing site in a new tab (or if you have it open switch back to it). Copy the beginning of the URL. You will have something like this: https://ORGNAME.crm.dynamics.com. Enter that URL into the **Server address** box and click **Sign In**. Sign In with the credentials that you use to access Dynamics 365. 
+4.  Choose **Microsoft Dataverse** and name the Data Source `D365`. 
 
-5.  Select **Next**. 
+5.  For **Server address**, you will need the **Environment URL**. 
 
-6. In the list of entities, choose **Contact**. Then select **Save**. It may take a few minutes for the data to complete the upload. 
+    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment. RIght-click and copy the **Environment URL**.
+    
+6.  Select **Next**. 
 
-Because this is not a Power Query connector, we do not get the option to transform the data. We also cannot choose the fields we want, and will get them all. We can control which fields are added to our unified profile during the Map/Match/Merge phase to ensure we don't bloat our unified profile. 
+7.  In the list of entities, choose **Contact**. Then select **Save**. It may take a few minutes for the data to complete the upload. 
+
+    Because this is not a **Power Query** connector, there is no option to transform the data. Specific fields cannot be selected, everything will get ingested. Fields can be selected during the **Unify** phase to ensure the unified profile doesn't get bloated with too many additional columns. 
 
 
-## Task 3 - Go through Unification
+## Task 3 - Unification
 
-### Map
+### Select source fields
 
-1.  Select **Data > Unify** and then **Map**. 
+1.  Expand **Data** and select **Unify** from the left navigation menu and then select **Edit** on **Source fields**. 
 
-2.  Under **Entities**, select **Edit fields**. 
+2.  Select the **Select entities and fields** button. Collapse **Customers (Loyalty)** and **Contacts (eCommerce)**.
 
-3.  Expand the **Contact (D365)** entry. We only want specific fields pulled through, so let's only check the following fields (search is your friend here as the Dynamics entity has a LOT of fields):
+3.  Expand the **contact (D365)** entry. Search for and select the following fields: 
 
 	- address1_city
 
@@ -114,154 +124,155 @@ Because this is not a Power Query connector, we do not get the option to transfo
 
 	- lastname
 
-4.  Select **Apply**. Select the **D365 : contact** tile in the entities list. As when you ingested Loyalty and eCommerce data, you should see that Customer Insights has intelligently mapped the attributes to the Common Data Model types. 
+4.  Select **Apply**. Select **Add**. 
 
-5.  Confirm that **contactid** was set as the Primary Key, or set it.
+5.  Select **D365 contact** from the **Entities** list. Customer Insights has automatically mapped some of the attributes. 
 
-6.  Select **Save**.
+5.  Select **contactid** as the Primary Key. 
+
+6.  Select **Next**. 
 
 
-### Match
+### Create matching rule
 
-1. Select the **Match** tab.
+1.  Select **Next** to skip to the **Matching conditions** step. 
 
-3. Click **Add Entity** in the Matched records detail table. Select **Contact : D365**, check **Include all**, and then click **Done**.
+2.  You will see a warning that **contact : D365** requires a new rule to match records. Select **+ Add rule** and set it up as follows: 
 
-4. You will see that this new addition requires a new rule. Click **+ Add rule** and set it up as follows:
+    - Entity: **Contacts : eCommerce**, Field: **EMail**
 
-	- Entity: **Contacts : eCommerce**
+    - Entity: **contact : D365**, Field: **emailaddress1**
 
-	- Field: **Email**
+    - Leave **Normalize** blank.
 
-	- Entity: **Contact : D365**
+    - Set the **Match precision** to: **Medium**
 
-	- Field: **emailaddress1**
+    - Name: `Email Match` 
 
-	- Leave the Normalize blank
+3.  Select **Done**. 
 
-	- Set the Match precision to **Medium**
+4.  Click **Save and close**. 
 
-	- Rule Name: **Email Match**
+5.  Select **Unify** from the toolbar and select **Unify customer profiles**. 
 
-5. Click **Done**.
-
-6. Click **Save** and then **Run**.
-
-### Merge
-
-1. Click on the **Merge** tab.
-
-2. You should see that Contactid from Dynamics 365 has been added to the list of Keys (Keys tab) that will make up the Unified Profile.
-
-3. You can optionally add any attributes which have all been excluded and identify them as 'Merge' attributes where an attribute already exists (e.g. First Name, Last Name, Full Name, Gender and gerndercode_display).
-
-4. Click **Save** and then **Run** > **Run merge and downstream processses** (or just Run if you made no changes).
 
 # Exercise 2 - Embed Customer Insights into Dynamics 365
 
-We have already ingested data from Dynamics 365 into Customer Insights. The customer records in Customer Insights and the contacts in Dynamics 365 are linked with the help of contact id with in Dynamics 365.
+So far, we have ingested data from Dynamics 365 into Customer Insights. The customer records in Customer Insights and the contacts in Dynamics 365 are linked using the contact id as Primary Key. 
 
 ## Task 1 - Install the Customer Insights Customer Card Add-in
 
-The first step is to install the Customer Insights Customer Card Add-In. This add-in will enable you to embed Unified Profiles and Insights from Customer Insights directly within an existing Dynamics 365 experience for Contoso Coffee Customer Service Advisors.
+The first step is to install the Customer Insights Customer Card Add-In. This add-in will enable you to embed Unified Profiles and Insights from Customer Insights directly within an existing Dynamics 365 experience for Contoso Coffee Customer Service Advisors. 
 
-1. Navigate to https://make.powerapps.com and select your Dynamics 365 Marketing instance from the **Environment** drop down.
+1.  Navigate to `https://make.powerapps.com` and select your Dynamics 365 Marketing instance from the **Environment** drop-down. 
 
-2. Once selected, click **Solutions** on the left-hand menu.
+2.  Select **Solutions** from the left navigation menu. 
 
-3. Click **Open AppSource** from the top of the page. Remove the Power Platform filter from the search. 
+3.  Select **Open AppSource** from the command bar. Remove the Power Platform filter from the search. 
 
-4. On the AppSource window that opens, search **Customer Insights**. You should see **Customer Insights Customer Card Add-in** in the results, click on it. Then click **Get it now**. (You may be prompted to sign in using your M365 credential.)
+4.  Search for `Customer Insights` in AppSource. Select **Customer Insights Customer Card Add-in** from the results. Select **Get it now**. (You may be prompted to sign-in.)
 
-5. Complete your details on the **One more thing...** page. Provide your consent and then click **Get it now.**
+5.  Select **Get it now** again.
 
-7. You will be taken back to the Power Apps console where you will configure the add-in. First, select your environment from the dropdown. Then check the two boxes and click the **Install** button.
+6.  You will be re-directed to the Power Platform admin center to complete the package install. Select the **Marketing Trial** environment from the drop-down. Then check the two privacy related boxes and select **Install**. 
 
-7. This will begin the installation process. You can check the status of the install on the page that opens. (You may need to refresh it for updates.) If you see **Update available** in the status column click that text, then check the box and click the **Update** button.
+7.  This will begin the installation process. You can check the status of the install on the page that opens. Select **Refresh** to update the page. 
 
-8. Once installation is complete, you can close this browser tab and return to the **solutions** area on https://make.powerapps.com, where you should see the **Dynamics 365 Customer Insights Customer Card Add-In** installed.
+    > **Note:** If it shows as **Update available** in the **Status** column, select **Update available** then check the box and select the **Update** button. 
 
-9. Click **Switch to Classic** at the top of the page.
+8.  Once installation is complete, you can close this browser tab and navigate to the **Solutions** area on `https://make.powerapps.com`, where you should see the **Dynamics 365 Customer Insights Customer Card Add-In** installed. 
 
-10. Double click the **CustomerInsightsCustomerCard** solution. You should see the **Configuration** Page. If not, click **Configuration** from the left menu.
+9.  Select **Switch to Classic** from the command bar. 
 
-11. Click **Login with your org credentials** and sign-in with your account used for **Customer Insights**. (**Note:** If you don't see the login dialog, you may need to "allow pop-ups" in your browser.)
+10. Double-click the **CustomerInsightsCustomerCard** Solution. You should see the **Configuration** page. If not, select **Configuration** from the left menu. 
 
-12. Once connected, select your Customer Insights instance in the drop down.
+11. Select **Login with your org credentials** and sign-in with your account used for **Customer Insights**. 
 
-13. From the drop-down for **contact id**, select the attribute from your customer profile that represents the Dynamics 365 Contact Id: **System.Customer.D365.Contact.contactid**. (**Note**: There is now a field for **Dynamics 365 account id field** which we are not using. You may leave this as "please select". This will be used in the future for B2B scenarios.)
+    > **Note:** You may need to "allow pop-ups" in the browser.
 
-14. Click **Save Configuration**
+12. Once connected, select the **YourName CI ILT Lab** Customer Insights instance from the drop-down. 
+
+13. From the drop-down for **Dynamics contact id**, select the attribute from your customer profile that represents the Dynamics 365 Contact Id: **System.Customer.D365.contact.contactid**.
+
+    > **Note**: Step 4 refers to the **Dynamics 365 account id field** field which we are not using. Leave this as **Please select**. This will be used in the future for B2B scenarios.
+
+14. Select **Save Configuration**.
+
 
 ## Task 2 - Add Security Roles
 
-For users to configure the Customer Insights content embedded within the Dynamics 365 form, you will need to assign them the appropriate Security Role.
+For users to configure the Customer Insights content embedded in the Dynamics 365 model-driven forms, you will need to assign the appropriate Security Role. 
 
-1. Open the **Marketing app** in your Dynamics 365 instance. Click the cog in the top righthand corner then **Advanced Settings**. This should open Dynamics 365 classic Web App in a new tab.
+1.  Navigate to `https://aka.ms/ppac` and select **Environments** from the left navigation menu. 
 
-2. Click the arrow next to settings and choose **Security**.
+2.  Select the **Marketing Trial** environment and go to **Settings**. 
 
-3. Click **Users**.
+3.  Expand **Users + permissions** and select **Users**. 
 
-4. Select your user account (unless you've made changes, it will be **MOD Administrator**). Click **Manage Roles**.
+4.  Select your user account (unless you've made changes, it will be **MOD Administrator**), and select **Manage security roles**. 
 
-5. Add the **Customer Insights Card Customiser** role and click **OK**.
+5.  Select the **Customer Insights Card Customizer** role and select **Save**. 
+
 
 ## Task 3 - Add the Customer Insights Customer Card Controls to the Contact Form
 
-We will now configure a Dynamics 365 Contact form, used by Contoso Coffee CSA's to display the embedded Cards and from Customer Insights.
+We will now configure the Dynamics 365 Model-drive Contact Main form, used by Contoso Coffee Customer Service Advisors (CSAs) to display the embedded Cards and data from Customer Insights.
 
-1. Navigate to https://make.powerapps.com/ and select your Dynamics 365 Marketing instance from the Environment drop down.
+1.  Navigate to https://make.powerapps.com/ and select your Dynamics 365 Marketing instance from the Environment drop-down. 
 
-2. Click **Apps** on the left menu. You will be shown a list of apps installed into your Dynamics/CDS instance.
+2.  Select **Apps** on the left navigation menu. 
 
-3. Select the **Marketing** app and click **Edit.**
+3.  Select the **Marketing** row and select **Edit**. 
 
-4. You should now see the PowerApps App Designer has opened. Scroll down and expand the **Forms** menu for the **Contact** entity.
+4.  You should now see the PowerApps App Designer has opened. Scroll down and expand the **Forms** menu for the **Contact** entity.
 
-5. Ensure that the default Contact form (**Contact** or **Contact for Interactice Experience**) is selected on the right and click the edit button (pencil) to edit the form. The button will appear when you hover over the form in the components list.
+5.  Ensure that the default Contact form (**Contact** or **Contact for Interactice Experience**) is selected on the right and click the ✏️ **Edit** button to edit the form. The button will appear when you hover over the form in the components list.
 
-6. You should now be presented with the new PowerApps Form editor. On the top right select **Save As** from the dropdown.
+6.  You should now be presented with the new PowerApps Form editor. On the top right, select **Save As** from the drop-down. 
 
-7. Save a copy of this form, setting the name to **Contact with Customer Insights**. Then click **Save**.
+7.  Save a copy of this form, setting the **Name** and **Description** to `Contact with Customer Insights`. Select **Save**. 
 
-8. Add three new sections by clicking the **Components** menu option on the left, and dragging three **1-One Column Section** components on to the form. Name them - **CUSTOMER INSIGHTS TIMELINE**, **KPI** and **CUSTOMER DETAILS** in the right hand properties pane.
+8.  Add three new sections by selecting the **Components** from the left menu, and dragging three **1-column section** components on to the form. Name them - `CUSTOMER INSIGHTS TIMELINE`, `KPI` and `CUSTOMER DETAILS` in the **Properties** pane. 
 
-9. Add a field to each new section, any field will do, in this example we've added the **Address 1: City** field to all three sections. Uncheck the 'Show only unused fields' to see the used ones. Once you've added them be sure to check the **Hide Label** setting.
+9.  Add a table column to each new section, any table column will do, in this example we've added the **Address 1: City** table column to all three sections. Uncheck **Show only unused table columns** to see the used ones. Once you've added them be sure to check the **Hide Label** setting in the **Properties** pane. 
 
-10. Now let's save our form and finish it in the 'classic' experience. Click **Save** in the top right, then click **Switch to Classic**.
+10. Now let's save our form and finish it in the 'Classic' experience. Select **Save** in the top right, then select **Switch to classic** from the ... menu. 
 
-11. Double Click the field you added in the **CUSTOMER INSIGHTS TIMELINE** section and click on the **Controls** tab.
+11. Double-click the **Address 1: City** table column in the **CUSTOMER INSIGHTS TIMELINE** section and select the **Controls** tab. 
 
-12. Click **Add Control...** Scroll down the list and choose **Customer Insights Timeline Control** then click **Add**.
+12. Select **Add Control...** Scroll down the list and choose **Customer Insights Timeline Control** and select **Add**. 
 
-13. Set the control to appear on **Web**, **Phone** and **Tablet** and check the **Hide Default Control** checkbox.
+13. Set the control to appear on **Web**, **Phone** and **Tablet** and check **Hide Default Control**. Select **OK**. 
 
 14. Repeat steps **11** and **12** for the fields added into the **KPI** and **CUSTOMER DETAILS** section, adding the **Customer Insights Measures Control** to KPI section and the **Customer Insights Customer Details** to the Customer Details section.
 
-15. Move the **KPI** section to the top of **Related** section and **CUSTOMER DETAILS** under the **KPI** section. Now remove **Related** and pre existing **Timeline** sections.
+15. Move the **KPI** section to the middle column and the **CUSTOMER DETAILS** under the **KPI** section. Now remove the pre-existing **Timeline** section.
 
-16. Click **Save and Close**.
+16. Select **Save and Close**. 
 
-17. Back on the model-driven **App Designer**, select the **Contact with Customer Insights** form to add your new **Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up.
+17. Back on the model-driven **App Designer**, select the **Contact with Customer Insights** form to add your new **Contact with Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up. 
 
-18. Click **Save** in the top right hand corner and then **Publish**.
+18. Select **Save** in the top right hand corner and select **Publish**. 
 
-## Task 4 - Confirm the Changes in the Model Driven App 
 
-1. Now open your **Dynamics 365 Marketing** instance. 
+## Task 4 - Confirm the Changes in the Model-driven App 
 
-2. Navigate to the **Contacts** via the left hand menu. Open the Contact record for **Abbie Moss** and select your new **Contact with Customer Insights** form using the form selector.
+1.  Navigate to `https://make.powerapps.com`, select **Apps** from the left navigation menu and open the **Marketing** app. 
 
-3. You should now see that the three Customer Insights you embedded in the form render. KPI and Customer Details controls can be configured. You may need to edit the cards to select the correct fields to show.
+2.  Select **Contacts** from the left navigation menu, in the **Outbound Marketing** area. 
 
-- **Timeline:** No configuration required. This should display a unified set of ingested activities from Customer Insights.
+3.  Open the Contact record for **Abbie Moss** and select your new **Contact with Customer Insights** form using the form selector. 
+
+4.  You should now see that the three Customer Insights you embedded in the form render. KPI and Customer Details controls can be configured. You may need to edit the cards to select the correct fields to show. 
+
+- **Timeline:** No configuration required. This should display a unified set of ingested activities from Customer Insights. 
 
 - **Customer Detail:** The customer detail control should display some key information from the Unfiied Customer Profile. 
 
-- **KPIs:** Click **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility (**Total Club Points, Lifetime Spend,** and **Average Store Purchase** ).
+- **KPIs:** Select ✏️ **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility (**Total Club Points, Lifetime Spend,** and **Average Store Purchase** ). 
 
 Congratulations! You have successfully completed the objectives of this module, providing Contoso Coffee Customer Service Advisors with visibility of all customer touchpoints & KPIs.
+
 
 # Exercise 3 - Extending the Value of Customer Insights with Dynamics 365 Marketing
 
@@ -273,31 +284,31 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 - Create a Customer Journey in Marketing from the Segment(s)
 
-## Task 1- Configure an Export Destination
+## Task 1 - Configure an Export Destination
 
-1. Navigate to https://home.ci.ai.dynamics.com.
+1.  Navigate to `https://home.ci.ai.dynamics.com`, sign in with your administrator account if needed. 
 
-2. Log in with your administrator account if needed.
+1.  Select **Data > Exports** from the left navigation menu. Select **+ Add export** and select **Dynamics 365 Marketing**. 
 
-3. Click on **Data > Exports** in the left-hand menu. Click **+ Add export** and select **Dynamics 365 Marketing**.
+1.  You will be presented with a dialog to configure your export destination to **Dynamics 365 Marketing**. Enter the display name and your Marketing instance address and sign in with your account. Check the **I agree** box and select **Save**. 
 
-4. You will be presented with a dialog to configure your export destination to **Dynamics 365 Marketing**. Enter the display name and your Marketing instance address and sign in with your account. Check the **I agree** box and click **Save.**
+1.  Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the customer Insights customer and the Dynamics Contact. Select **Customer ID**. 
 
-	Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the customer Insights customer and the Dynamics Contact. Select **Customer ID.**
+1.  You can now choose which Segments you want to export. Select the **Summer Promo** segment and select **Save**. 
 
-6. You can now choose which Segments you want to export. We will add one Segment here and in the next Task we'll see how to add new segments to an existing export. Click the **Summer Promo** segment and click **Save**.
+1.  Finally, let's export the segment to Dynamics Marketing. Select the **Run** button by selecting the three dots beside the destination to individually export to your destinations or you can select **Run all** in the top menu to initiate export to all the destinations that are configured. 
 
-Finally, let's export the segment to Dynamics Marketing. Click the **Run** button by clicking the three dots beside the destination to individually export to your destinations or you can click on **Run all** in the top menu to initiate export to all the destinations that are configured.
 
 ## Task 2 - Adding a Segment to an Existing Export Destination
 
 If you have already configured an export destination and then create new segments there is an easy way to add those new segments to your existing export. In this task we'll go in and add the **High Value Online Customers** segment to the export we just created.
 
-1. Click **Segments** in the left-hand menu.
+1.  Click **Segments** in the left-hand menu.
 
-2. Click the vertical ellipse next to the **High Value Online Customers** segment. Then click **Manage Exports**. Select your Dynamics 365 Marketing export and select **Add segment** (or click the plus sign). Hit **Run.**
+2.  Click the vertical ellipse next to the **High Value Online Customers** segment. Then click **Manage Exports**. Select your Dynamics 365 Marketing export and select **Add segment** (or click the plus sign). Hit **Run.**
 
-	This concludes the lab. You are now ready to consume the segments in Dynamics 365 Marketing which is incorporated as an additional section which you can do later.
+    This concludes the lab. You are now ready to consume the segments in Dynamics 365 Marketing which is incorporated as an additional section which you can do later.
+
 
 ## Task 3 - Using the Segment to Orchestrate a Customer Journey
 
@@ -314,6 +325,7 @@ We are now ready to consume the segments which Customer Insights has exported to
 4. Click on the **HighValueOnlineCustomers** segment to open it. 
 
 5. To use the Segment in a marketing journey you must first mark it as 'Live'. Click the **Go Live** button in the top menu bar to accomplish this. Once the status for the segment change to **Live** you can continue.
+
 
 ### Create the Newsletter Email
 
