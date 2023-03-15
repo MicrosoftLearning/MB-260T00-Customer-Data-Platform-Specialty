@@ -27,9 +27,9 @@ To do this you will configure the Customer Insights Customer Card Add-In to embe
 
 # Exercise 1 - Ingest the Dynamics Contacts
 
-The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID from Dynamics to identify which profile data to display. In this task you will consume Customer data from Dynamics 365 into Dynamics 365 Customer Insights and Map, Match and Merge it with the existing data-set from Lab 1.
+The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID from Dynamics to identify which profile data to display. In this task you will consume Contact data from Dynamics 365 into Dynamics 365 Customer Insights and unify it with the existing dataset from earlier modules. 
 
-**Note:** This step is not one you would normally have to take if you were using Dynamics 365 as a data source to begin with. Since we did not start with contacts from Dynamics we will artifically have to ensure that we have similar contacts in Dynamics for the lab to work.
+**Note:** This step is not one you would normally have to take if you were using Dynamics 365 as a data source to begin with. Since we did not start with contacts from Dynamics we will artificially have to ensure that we have similar contacts in Dynamics for the lab to work. 
 
 
 ## Task 1 - Import Contacts into Dynamics 365
@@ -79,20 +79,20 @@ Now we will ingest the Dynamics 365 contacts as an additional data source within
 
 5.  For **Server address**, you will need the **Environment URL**. 
 
-    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment. RIght-click and copy the **Environment URL**.
+    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment. Right-click and copy the **Environment URL**. 
     
 6.  Select **Next**. 
 
-7.  In the list of entities, choose **Contact**. Then select **Save**. It may take a few minutes for the data to complete the upload. 
+7.  In the list of entities, choose **Contact**. Then select **Save**. It may take a few minutes to complete the upload. 
 
-    Because this is not a **Power Query** connector, there is no option to transform the data. Specific fields cannot be selected, everything will get ingested. Fields can be selected during the **Unify** phase to ensure the unified profile doesn't get bloated with too many additional columns. 
+    This is not a **Power Query** connector, so there is no option to transform the data. Specific fields cannot be selected, everything will be ingested. Fields can be selected during the **Unify** phase to ensure the unified profile doesn't get bloated with too many additional columns. 
 
 
 ## Task 3 - Unification
 
 ### Select source fields
 
-1.  Expand **Data** and select **Unify** from the left navigation menu and then select **Edit** on **Source fields**. 
+1.  Expand **Data** and select **Unify** from the left navigation menu and select **Edit** on the **Source fields** tile. 
 
 2.  Select the **Select entities and fields** button. Collapse **Customers (Loyalty)** and **Contacts (eCommerce)**.
 
@@ -153,7 +153,9 @@ Now we will ingest the Dynamics 365 contacts as an additional data source within
 
 4.  Click **Save and close**. 
 
-5.  Select **Unify** from the toolbar and select **Unify customer profiles**. 
+5.  Select **Unify** from the toolbar and select **Unify customer profiles and dependencies**. 
+
+6.  Wait for the **Unify** process to complete. 
 
 
 # Exercise 2 - Embed Customer Insights into Dynamics 365
@@ -218,17 +220,17 @@ For users to configure the Customer Insights content embedded in the Dynamics 36
 
 We will now configure the Dynamics 365 Model-drive Contact Main form, used by Contoso Coffee Customer Service Advisors (CSAs) to display the embedded Cards and data from Customer Insights.
 
-1.  Navigate to https://make.powerapps.com/ and select your Dynamics 365 Marketing instance from the Environment drop-down. 
+1.  Navigate to `https://make.powerapps.com` and select **Marketing Trial** from the Environment drop-down. 
 
 2.  Select **Apps** on the left navigation menu. 
 
-3.  Select the **Marketing** row and select **Edit**. 
+3.  Select the **... More Commands** menu on the **Marketing** app and select **Edit**. 
 
-4.  You should now see the PowerApps App Designer has opened. Scroll down and expand the **Forms** menu for the **Contact** entity.
+4.  Scroll down the **Pages** pane in the PowerApps App Designer and expand **Contact**, select **Contact forms**. 
 
-5.  Ensure that the default Contact form (**Contact** or **Contact for Interactice Experience**) is selected on the right and click the ✏️ **Edit** button to edit the form. The button will appear when you hover over the form in the components list.
+5.  In the **Contact forms** pane, select the ✏️ **Edit** button on the **Contact Main Form**. 
 
-6.  You should now be presented with the new PowerApps Form editor. On the top right, select **Save As** from the drop-down. 
+6.  In the PowerApps Form Editor, from the command bar; select **Save As** from the drop-down. 
 
 7.  Save a copy of this form, setting the **Name** and **Description** to `Contact with Customer Insights`. Select **Save**. 
 
@@ -236,139 +238,155 @@ We will now configure the Dynamics 365 Model-drive Contact Main form, used by Co
 
 9.  Add a table column to each new section, any table column will do, in this example we've added the **Address 1: City** table column to all three sections. Uncheck **Show only unused table columns** to see the used ones. Once you've added them be sure to check the **Hide Label** setting in the **Properties** pane. 
 
-10. Now let's save our form and finish it in the 'Classic' experience. Select **Save** in the top right, then select **Switch to classic** from the ... menu. 
+10. Move the **CUSTOMER INSIGHTS TIMELINE**, **KPI** and **CUSTOMER DETAILS** section to the middle column of the form. Remove the pre-existing **Timeline** section. 
 
-11. Double-click the **Address 1: City** table column in the **CUSTOMER INSIGHTS TIMELINE** section and select the **Controls** tab. 
+11. Select **Save** in the top right hand corner and select **Publish**. 
 
-12. Select **Add Control...** Scroll down the list and choose **Customer Insights Timeline Control** and select **Add**. 
+12. To finish the configuration of the form, the Classic experience is required. Select **Save** in the top right, then select **Switch to classic** from the ... menu. 
 
-13. Set the control to appear on **Web**, **Phone** and **Tablet** and check **Hide Default Control**. Select **OK**. 
+13. Double-click the **Address 1: City** table column in the **CUSTOMER INSIGHTS TIMELINE** section and select the **Controls** tab. 
 
-14. Repeat steps **11** and **12** for the fields added into the **KPI** and **CUSTOMER DETAILS** section, adding the **Customer Insights Measures Control** to KPI section and the **Customer Insights Customer Details** to the Customer Details section.
+14. Select **Add Control...** Scroll down the list and choose **Customer Insights Timeline Control** and select **Add**. 
 
-15. Move the **KPI** section to the middle column and the **CUSTOMER DETAILS** under the **KPI** section. Now remove the pre-existing **Timeline** section.
+15. Set the control to appear on **Web**, **Phone** and **Tablet** and check **Hide Default Control**. Select **OK**. 
 
-16. Select **Save and Close**. 
+16. Repeat these steps for the **KPI** and **CUSTOMER DETAILS** sections; adding the **Customer Insights Measures Control** to the KPI section and the **Customer Insights Customer Details Control** to the Customer Details section. 
 
-17. Back on the model-driven **App Designer**, select the **Contact with Customer Insights** form to add your new **Contact with Customer Insights** form to the **Marketing** app. Note that you may need to reload the page and select the contact forms before it shows up. 
+17. Select **Save** and select **Publish**. Close the tab. 
 
-18. Select **Save** in the top right hand corner and select **Publish**. 
+18. Back on the model-driven **App Designer**, select the **Contact with Customer Insights** form and select **Add**. 
+
+    > **Note:** You may need to refresh the page and select **Contact forms** again before it shows. 
+
+19. Remove the **Contact Main Form**. Select **Publish**. 
 
 
-## Task 4 - Confirm the Changes in the Model-driven App 
+## Task 4 - Test the changes in the Model-driven App 
 
-1.  Navigate to `https://make.powerapps.com`, select **Apps** from the left navigation menu and open the **Marketing** app. 
+1.  In a new tab, navigate to `https://make.powerapps.com` and select **Apps** from the left navigation menu. 
 
-2.  Select **Contacts** from the left navigation menu, in the **Outbound Marketing** area. 
+1.  Open the **Marketing** app. 
 
-3.  Open the Contact record for **Abbie Moss** and select your new **Contact with Customer Insights** form using the form selector. 
+1.  Select **Contacts** from the left navigation menu, in the **Outbound Marketing** area. 
 
-4.  You should now see that the three Customer Insights you embedded in the form render. KPI and Customer Details controls can be configured. You may need to edit the cards to select the correct fields to show. 
+1.  Open the Contact record for **Abbie Moss**. 
 
-- **Timeline:** No configuration required. This should display a unified set of ingested activities from Customer Insights. 
+1.  You should now see that the three **Customer Insights Cards** embedded in the form. **KPI** and **Customer Details** controls can be configured further. Edit the cards as follows: 
 
-- **Customer Detail:** The customer detail control should display some key information from the Unfiied Customer Profile. 
+    - **CUSTOMER INSIGHTS TIMELINE:** No configuration required. This should display a unified set of ingested activities from Customer Insights, you can filter the list by **Activity Type**. 
 
-- **KPIs:** Select ✏️ **Edit** on the KPI controls. Here you are able to select from any of the Customer Measures that you created earlier. Add your Customer Measures to give the Contoso Coffee CSA visibility (**Total Club Points, Lifetime Spend,** and **Average Store Purchase** ). 
+    - **KPI:** Select ✏️ **Edit** on the KPI controls. Search for and add **Total Club Points**, **Lifetime Spend**, and **Average Store Purchase**. Remove **Average activity duration**. Select **Save**. 
 
-Congratulations! You have successfully completed the objectives of this module, providing Contoso Coffee Customer Service Advisors with visibility of all customer touchpoints & KPIs.
+    - **CUSTOMER DETAILS:** The customer detail control should display some key information from the Unfiied Customer Profile. Optional: You can change the fields if you wish. 
+
+Congratulations! You have successfully completed the objectives of this module, providing Contoso Coffee Customer Service Advisors with visibility of all customer touchpoints & KPIs. 
 
 
 # Exercise 3 - Extending the Value of Customer Insights with Dynamics 365 Marketing
 
-One of the integrations Customer Insights has is with Dynamics 365 Marketing. With Dynamics 365 Marketing you can setup customer journeys based on lists of customers. There are three steps to the process.
+One of the integrations Customer Insights has is with Dynamics 365 Marketing. With Dynamics 365 Marketing you can setup customer journeys based on lists of customers. There are three steps to the process. 
 
-- Configure an Export Destination in Customer Insights
+- Configure an Export Destination in Customer Insights 
 
-- Export the segments to Dynamics 365 Marketing
+- Export the segments to Dynamics 365 Marketing 
 
-- Create a Customer Journey in Marketing from the Segment(s)
+- Create a Customer Journey in Marketing from the Segment(s) 
 
 ## Task 1 - Configure an Export Destination
 
 1.  Navigate to `https://home.ci.ai.dynamics.com`, sign in with your administrator account if needed. 
 
-1.  Select **Data > Exports** from the left navigation menu. Select **+ Add export** and select **Dynamics 365 Marketing**. 
+1.  Select **Data > Exports** from the left navigation menu. Select **+ Add export**
 
-1.  You will be presented with a dialog to configure your export destination to **Dynamics 365 Marketing**. Enter the display name and your Marketing instance address and sign in with your account. Check the **I agree** box and select **Save**. 
+1.  On the **Set up export** pane, select **+ Add a connection** and select **Dynamics 365 Marketing (Outbound)** from the list. 
 
-1.  Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the customer Insights customer and the Dynamics Contact. Select **Customer ID**. 
+1.  Enter `Dynamics 365 Marketing` for **Display name** and enter the Marketing Trial environment URL for **Server address** and select **Sign in**. 
 
-1.  You can now choose which Segments you want to export. Select the **Summer Promo** segment and select **Save**. 
+1.  Select the **I agree** box and select **Save**. 
 
-1.  Finally, let's export the segment to Dynamics Marketing. Select the **Run** button by selecting the three dots beside the destination to individually export to your destinations or you can select **Run all** in the top menu to initiate export to all the destinations that are configured. 
+1.  Enter `Dynamics 365 Marketing` for **Display name** 
+
+1.  Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the Customer Insights customer and the Dynamics Contact. Select **CustomerId**. 
+
+1.  Select the **SummerPromotion** segment.
+
+1.  On the **Save** drop-down, select **Save and run**.
+
+    > **Note:** The export should complete with warnings. Only customer profiles that are mapped to a contact record in Dynamics 365 Marketing will be part of the Segment in Dynamics. 
 
 
 ## Task 2 - Adding a Segment to an Existing Export Destination
 
 If you have already configured an export destination and then create new segments there is an easy way to add those new segments to your existing export. In this task we'll go in and add the **High Value Online Customers** segment to the export we just created.
 
-1.  Click **Segments** in the left-hand menu.
+1.  Select **Segments** from the left navigation menu. 
 
-2.  Click the vertical ellipse next to the **High Value Online Customers** segment. Then click **Manage Exports**. Select your Dynamics 365 Marketing export and select **Add segment** (or click the plus sign). Hit **Run.**
+1.  Select the **Show more** vertical ellipse next to the **High Value Online Customers** segment. Then select **Manage exports**. Select the **Dynamics 365 Marketing** export and select **+ Add segment** (or select the + icon). Select **Run**. 
 
-    This concludes the lab. You are now ready to consume the segments in Dynamics 365 Marketing which is incorporated as an additional section which you can do later.
+    The segments are now ready to be consumed in Dynamics 365 Marketing. 
 
 
 ## Task 3 - Using the Segment to Orchestrate a Customer Journey
 
-We are now ready to consume the segments which Customer Insights has exported to our Dynamics 365 Marketing instance. For this example, we are going to create a **New** journey based on our **High Value Online Customers** segment. This journey will be one that sends out our Monthly Newsletter to our High Value Customers.
+We are now ready to consume the segments which Customer Insights has exported to our Dynamics 365 Marketing instance. For this example, we are going to create a **New** journey based on the **High Value Online Customers** segment. The Customer Journey will send out a Monthly Newsletter to the High Value Online Customers. 
 
 ### Review the Segments
 
-1. Log into your Dynamics instance at https://ORGNAME.crm.dynamics.com
+1.  Navigate to `https://make.powerapps.com` and select **Apps** from the left navigation menu. 
 
-2. Open the **Marketing** application.
+1.  Open the **Marketing** app. Change the **area** to **Outbound Marketing**. 
 
-3. Click on **Segments** in the left-hand menu, in the **Customers** section.
+1.  Select **Segments** in the left navigation menu, under the **Customers** section. 
 
-4. Click on the **HighValueOnlineCustomers** segment to open it. 
+1.  Open the **HighValueOnlineCustomers** segment. 
 
-5. To use the Segment in a marketing journey you must first mark it as 'Live'. Click the **Go Live** button in the top menu bar to accomplish this. Once the status for the segment change to **Live** you can continue.
+1.  To use a segment in a Customer Journey you must first mark it as 'Live'. Select **Go live** from the command bar. 
+
+1.  Wait for the **Status reason** to change to **Live**. 
 
 
 ### Create the Newsletter Email
 
-1. Click on **Marketing emails** in the left-hand menu.
+1.  Select **Marketing emails** in the left navigation menu, under the **Marketing execution** section. 
 
-2. Click **New** in the top menu bar.
+1.  Select **+ New** from the command bar. 
 
-3. In the template selection pop-up select **1-column newsletter.**
+1.  From the **Marketing email templates** select the **1 column** template. 
 
-4. You are welcome to customize anything in the newsletter you'd like, but for this lab we really don't need to customize anything.
+1.  You are welcome to customize anything in the newsletter you'd like, but for this lab we really don't need to customize anything. 
 
-5. Let's give this email a subject: **Monthly Customer Newsletter**.
+1.  Select **Add a subject** and enter `Monthly Customer Newsletter`. 
 
-6. Our email needs a name. Click on the dropdown next to **Draft** in the top right and in the pop-up enter **High Value Monthly Newsletter** in the name field.
+1.  Double-click on the title text next to **Draft** and enter `High Value Monthly Newsletter`. 
 
-7. We are now done with our email. The final thing we need to do is **Save** it and then click the **Go Live** button.
+1.  Select **Save**. 
 
-8. Before moving on we will wait for the email to go live. Click on **Marketing emails** in the left-hand menu and wait for the email to switch from "Go live" to "Live". (You may need to click the **Refresh** button to see it update. It can take a few minutes.)
+1.  Select **Go live**. Wait for the **Status reason** to change to **Live**. 
+
 
 ### Create the Customer Journey
 
-1. Click on **Customer journeys** in the left-hand menu.
+1.  Select **Customer journeys** from the left navigation menu. 
 
-2. Click on **New** in the top menu.
+2.  Select **+ New** from the command bar. 
 
-3. Click on the **Monthly Newsletter** template. We'll use the defaults of sending every 30 days for 12 months so just click **Select**.
+3.  Select the **Monthly Newsletter** template. 
 
-4. First let's name our Journey by clicking on the dropdown in the top right and setting the Name field to **High Value Customers (Monthly Newsletter)**. Also change Is Recuring to **Yes**.
+4.  To rename the Journey, select the **More Header Editable Fields** drop-down menu in the Header. Enter `High Value Customers (Monthly Newsletter)` for **Name**. 
 
-5. Next, we will tell the system which segment we want to use. Click the **Set audience** link.
+5.  Select the **Set audience** link in the first tile on the Journey canvas. 
 
-6. In the Audience pop-out that opens type **High** in the segment lookup box and select the **HighValueOnlineCustomers** segment from the list.
+6.  In the **Audience** pane, enter `High` in the **Look for Segment** box and select the **HighValueOnlineCustomers** segment from the list. 
 
-7. Click **Save** in the top menu.
+7.  Select **Save** from the command bar. 
 
-8. Next, we need to configure the email. Click on the **+ sign** between the Start and End indicator and click the **Send an email** option.
+8.  Select **Choose an email** from the tile before **End**.
 
-10. In the **Send an email** pop-out, type in **High** and select the **High Value Monthly Newsletter** email we created previously.
+9.  In the **Send an email** pane, enter `High` and select the **High Value Monthly Newsletter** email. 
 
-10. The final step before we can publish our journey is to set the timeframe. Click on the **General** tab and set the **End date and time** to be just over 1 year from today.
+10. Select the **General** tab and set the **End date and time** a year from today. 
 
-11. We also need to set the recurrence count to 12 and interval to 30.
-
-12. Click **Save** and then go back to **Designer** tab and hit **Go live** in the top menu.
+11. Select **Save** and select **Go live** from the command bar. 
 
 You are done! You have just created a Customer Journey in Dynamics 365 Marketing based on a Segment of customers which you brought in from Dynamics 365 Customer Insights.
+
