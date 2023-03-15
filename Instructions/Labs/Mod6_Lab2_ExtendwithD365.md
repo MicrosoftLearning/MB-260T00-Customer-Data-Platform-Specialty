@@ -36,7 +36,7 @@ The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID 
 
 First, we will setup some sample Contacts within Dynamics 365 for you to ingest and match against your existing profiles in Customer Insights. 
 
-1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Open the **Marketing Trial** environment. 
+1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment and select **Open** from the command bar. 
 
 2.  Select the **⚙️ Settings** icon in the top right-hand corner, then select **Advanced Settings**. 
 
@@ -79,7 +79,7 @@ Now we will ingest the Dynamics 365 contacts as an additional data source within
 
 5.  For **Server address**, you will need the **Environment URL**. 
 
-    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment. Right-click and copy the **Environment URL**. 
+    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Open the **Marketing Trial** environment details. Right-click the **Environment URL** and select **Copy link**. 
     
 6.  Select **Next**. 
 
@@ -98,31 +98,31 @@ Now we will ingest the Dynamics 365 contacts as an additional data source within
 
 3.  Expand the **contact (D365)** entry. Search for and select the following fields: 
 
-	- address1_city
+    - address1_city
 
-	- address1_country
+    - address1_country
 
-	- address1_county
+    - address1_county
 
-	- address1_line1
+    - address1_line1
 
-	- address1_line2
+    - address1_line2
 
-	- address1_postalcode
+    - address1_postalcode
 
-	- address1_stateorprovince
+    - address1_stateorprovince
 
-	- contactid
+    - contactid
 
-	- emailaddress1
+    - emailaddress1
 
-	- firstname
+    - firstname
 
-	- fullname
+    - fullname
 
-	- gendercode
+    - gendercode
 
-	- lastname
+    - lastname
 
 4.  Select **Apply**. Select **Add**. 
 
