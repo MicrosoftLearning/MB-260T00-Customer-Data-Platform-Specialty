@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 5.3: Subscription Churn Model'
-    module: 'Module 5: Enrich data and predictions with Audience insights'
+    module: 'Module 5: Enrich data and predictions with Customer Insights'
 ---
 
 # Lab 5.3: Subscription Churn Model
-# Module 5: Enrich data and predictions with Audience insights
+# Module 5: Enrich data and predictions with Customer Insights
 
 ## Exercise 1 - Ingest and unify the subsription data 
 ## Task 1 - Ingest the Subscription Data
