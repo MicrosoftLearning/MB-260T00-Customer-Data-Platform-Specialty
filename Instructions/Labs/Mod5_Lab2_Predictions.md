@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 5.2: Predictions'
-    module: 'Module 5: Enrich data and predictions with Audience insights'
+    module: 'Module 5: Enrich data and predictions with Customer Insights'
 ---
 
 # Lab 5.2: Predictions
-# Module 5: Enrich data and predictions with Audience insights
+# Module 5: Enrich data and predictions with Customer Insights
 
 Customer Insights offers out of the box models to predict key insights of your business. Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window.
 
