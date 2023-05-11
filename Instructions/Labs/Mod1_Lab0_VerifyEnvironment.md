@@ -11,6 +11,12 @@ lab:
 
 This appendix contains step-by-step instructions to provision and configure a Customer Insights environment, including prerequisites. 
 
+### WWL Tenants - Terms of Use
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
+
+
 ## Step 1: Power Apps License 
 
 1.  Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to [https://powerapps.microsoft.com](https://powerapps.microsoft.com/)[.](https://powerapps.microsoft.com/) On this page you will see a **Try free for 30 day** link on the top right. Select that link and enter the email for the admin account you were provided. Select **Start your free trial**. 
