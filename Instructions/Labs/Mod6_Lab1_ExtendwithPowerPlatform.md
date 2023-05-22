@@ -248,7 +248,7 @@ In this task you will create a Flow, which will be triggered in a later Module f
 
 4.  Select **Skip**. 
 
-5.  Name your flow at the top by double-clicking on **Untitled** snd entering `ChurnCustomersSurgeAlert`. 
+5.  Name your flow at the top by double-clicking on **Untitled** and entering `ChurnCustomersSurgeAlert` 
 
 6.  Within the **Search connectors and triggers** search bar, search for `Dynamics 365 Customer Insights`. In the triggers box, find **Triggers a flow when a segment threshold is crossed (preview)** and select it.
 
