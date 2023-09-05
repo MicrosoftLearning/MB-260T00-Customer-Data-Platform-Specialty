@@ -28,7 +28,7 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Step 2: Power BI Trial  
 
-1.  You will also need a Power BI Trial to create dashboards showing the information from Customer Insights. To get started navigate to [https://aka.ms/trybi](https://aka.ms/trybi)[](https://aka.ms/trybi) in a new tab. 
+1.  You will also need a Power BI Trial to create dashboards showing the information from Customer Insights. To get started navigate to [https://aka.ms/trybi](https://aka.ms/trybi)[]([https://aka.ms/trybi](https://signup.microsoft.com/get-started/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3a%2f%2fapp.powerbi.com%2f%3fpbi_source%3dweb%26redirectedFromSignup%3d1%26noSignUpCheck%3d1&products=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1&signedinuser=anjenni%40microsoft.com)) in a new tab. 
 
 2.  You will be prompted to use your M365 admin credential. Select **Continue** to confirm and follow the same steps from the previous task to add the Power BI trial.
 
@@ -50,7 +50,7 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 
 Now that we have setup our Admin user, Power Apps license, Power BI and Dynamics 365 Marketing trial, we are ready to request our trial of Customer Insights. 
 
-1.  In a new browser tab, navigate to [https://aka.ms/tryci](https://aka.ms/tryci). 
+1.  In a new browser tab, navigate to [https://aka.ms/tryci](https://signup.microsoft.com/get-started/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https%3a%2f%2fhome.ci.ai.dynamics.com%2fstart%2ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9).
 
 2.  Select **Continue** to stay signed in using your M365 admin account. Fill out the necessary information and click **Continue**. 
 
