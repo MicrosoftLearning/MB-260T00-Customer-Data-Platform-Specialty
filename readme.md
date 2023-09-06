@@ -1,4 +1,4 @@
-# MB-260T00 Customer Data Platform Specialty
+# MB-260T00 Dynamics 365 Customer Insights - Data Specialty 
 
 - **[Download Latest Student Handbook and AllFiles Content](https://learningdownloadcenter.microsoft.com/)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
