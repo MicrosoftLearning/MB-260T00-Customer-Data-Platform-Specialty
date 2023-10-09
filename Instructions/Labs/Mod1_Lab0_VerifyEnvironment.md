@@ -35,40 +35,14 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 3.  Select **Get started**. It may take a few minutes for Power BI to set up. 
 
 
-## Step 3: Dynamics 365 Marketing Trial 
+## Step 3: Dynamics 365 Customer Insights trial
 
 Now that we have users with licenses in our Office 365 tenant, we can create our demo Dynamics environments. 
 
 1.  In a new browser tab, navigate to [https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/). 
 
-2.  Select the **Marketing** tab and select **Try for free**. Enter your provided admin email and select **Start your free trial**. You will then be prompted to enter your country and phone number. Select **Submit**. 
+2.  Navigate to **Customer Insights** and select **Try for free**. Enter your provided admin email and select **Start your free trial**. You will then be prompted to enter your country and phone number. Select **Submit**. 
 
-3.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Marketing application. 
+3.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
 
-
-## Step 4: Customer Insights Trial 
-
-Now that we have setup our Admin user, Power Apps license, Power BI and Dynamics 365 Marketing trial, we are ready to request our trial of Customer Insights. 
-
-1.  In a new browser tab, navigate to [https://aka.ms/tryci](https://signup.microsoft.com/get-started/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https%3a%2f%2fhome.ci.ai.dynamics.com%2fstart%2ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9).
-
-2.  Select **Continue** to stay signed in using your M365 admin account. Fill out the necessary information and click **Continue**. 
-
-3.  Select **Get started**. 
-
-4.  If prompted to enter your country again, select **United States** and select **Continue**. 
-
-5.  Select **Individual consumers (B-to-C)** on the **Choose your business** page. 
-
-6.  Your trial will launch and you'll arrive on the Welcome page. For the **Select an industry demo** drop-down, select **Retail**. This will load retail demo data into the  environment. 
-
-7.  Select the **Start trial** button in the header. 
-
-8.  Next you will create the environment. For **Name**, enter **Your Name** CI ILT Lab. Select **Next**. 
-
-9.  Select **Next** again and for Microsoft Dataverse environment, select **Marketing Trial**. 
-
-10. Select **Next**, review the selections and finally select **Create**. 
-
-11. Once it completes you will be at the landing retail demo page for Customer Insights. Using the environment selector, make sure you are in the environment you created. You are now ready to start on the labs. 
-
+4. Once it completes, navigate to the banner at the top of the screen and select **Launch Customer Insights - Data.** The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
