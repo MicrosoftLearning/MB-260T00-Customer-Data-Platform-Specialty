@@ -13,17 +13,17 @@ Having successfully ingested Contoso Coffee's data sources and created a Unified
 
 As Project Manager for Contoso Retail, you need to empower Contoso Coffee Customer Service/Marketing Advisors to deliver the best possible experience to customers, in order to achieve the best possible customer satisfaction (CSAT) scores.
 
-In this Module you will deliver insights to Contoso's existing Customer Service/Marketing application including: Unified Profile, KPIs and Active Segments from Customer Insights.
+In this Module you will deliver insights to Contoso's existing Customer Service/Customer Insights - Journeys application including: Unified Profile, KPIs and Active Segments from Customer Insights.
 
-To do this you will configure the Customer Insights Customer Card Add-In to embed unified and enriched customer data from Customer Insights on the Contact form within Dynamics 365 for Customer Service/Marketing.
+To do this you will configure the Customer Insights Customer Card Add-In to embed unified and enriched customer data from Customer Insights on the Contact form within Dynamics 365 for Customer Service/Customer Insights - Journeys 
 
 ## Objectives
 
 - Configure Customer Insights Customer Card Add-In
 
-- Configure Customer Insights card controls in Dynamics 365 Customer Service/Marketing
+- Configure Customer Insights card controls in Dynamics 365 Customer Service/Customer Insights - Journeys
 
-- Exporting segments and orchestrating customer journey with exported segments in Dynamics 365 Marketing
+- Exporting segments and orchestrating customer journey with exported segments in Dynamics 365 Customer Insights - Journeys
 
 # Exercise 1 - Ingest the Dynamics Contacts
 
@@ -36,7 +36,7 @@ The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID 
 
 First, we will setup some sample Contacts within Dynamics 365 for you to ingest and match against your existing profiles in Customer Insights. 
 
-1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment and select **Open** from the command bar. 
+1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Customer Insights - Journeys Trial** environment and select **Open** from the command bar. 
 
 2.  Select the **⚙️ Settings** icon in the top right-hand corner, then select **Advanced Settings**. 
 
@@ -56,7 +56,7 @@ First, we will setup some sample Contacts within Dynamics 365 for you to ingest 
 
 10. Wait for the import to complete successfully. 
 
-11. Re-open the **Marketing** app and navigate to the **Outbound Marketing** area.
+11. Re-open the **Customer Insights - Journeys** app and navigate to the **Outbound Marketing** area.
 
     > **Note:** To change area, use the drop-down menu found in the bottom left-hand corner. 
 
@@ -79,7 +79,7 @@ Now we will ingest the Dynamics 365 contacts as an additional data source within
 
 5.  For **Server address**, you will need the **Environment URL**. 
 
-    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Open the **Marketing Trial** environment details. Right-click the **Environment URL** and select **Copy link**. 
+    To get this, navigate to `https://aka.ms/ppac` and select **Environments**. Open the **Customer Insights - Journeys Trial** environment details. Right-click the **Environment URL** and select **Copy link**. 
     
 6.  Select **Next**. 
 
@@ -166,7 +166,7 @@ So far, we have ingested data from Dynamics 365 into Customer Insights. The cust
 
 The first step is to install the Customer Insights Customer Card Add-In. This add-in will enable you to embed Unified Profiles and Insights from Customer Insights directly within an existing Dynamics 365 experience for Contoso Coffee Customer Service Advisors. 
 
-1.  Navigate to `https://make.powerapps.com` and select your Dynamics 365 Marketing instance from the **Environment** drop-down. 
+1.  Navigate to `https://make.powerapps.com` and select your Dynamics 365 Customer Insights - Journeys instance from the **Environment** drop-down. 
 
 2.  Select **Solutions** from the left navigation menu. 
 
@@ -176,7 +176,7 @@ The first step is to install the Customer Insights Customer Card Add-In. This ad
 
 5.  Select **Get it now** again.
 
-6.  You will be re-directed to the Power Platform admin center to complete the package install. Select the **Marketing Trial** environment from the drop-down. Then check the two privacy related boxes and select **Install**. 
+6.  You will be re-directed to the Power Platform admin center to complete the package install. Select the **Customer Insights - Journeys Trial** environment from the drop-down. Then check the two privacy related boxes and select **Install**. 
 
 7.  This will begin the installation process. You can check the status of the install on the page that opens. Select **Refresh** to update the page. 
 
@@ -207,7 +207,7 @@ For users to configure the Customer Insights content embedded in the Dynamics 36
 
 1.  Navigate to `https://aka.ms/ppac` and select **Environments** from the left navigation menu. 
 
-2.  Select the **Marketing Trial** environment and go to **Settings**. 
+2.  Select the **Customer Insights - Journeys Trial** environment and go to **Settings**. 
 
 3.  Expand **Users + permissions** and select **Users**. 
 
@@ -220,11 +220,11 @@ For users to configure the Customer Insights content embedded in the Dynamics 36
 
 We will now configure the Dynamics 365 Model-drive Contact Main form, used by Contoso Coffee Customer Service Advisors (CSAs) to display the embedded Cards and data from Customer Insights.
 
-1.  Navigate to `https://make.powerapps.com` and select **Marketing Trial** from the Environment drop-down. 
+1.  Navigate to `https://make.powerapps.com` and select **Customer Insights - Journeys Trial** from the Environment drop-down. 
 
 2.  Select **Apps** on the left navigation menu. 
 
-3.  Select the **... More Commands** menu on the **Marketing** app and select **Edit**. 
+3.  Select the **... More Commands** menu on the **Customer Insights - Journeys** app and select **Edit**. 
 
 4.  Scroll down the **Pages** pane in the PowerApps App Designer and expand **Contact**, select **Contact forms**. 
 
@@ -265,7 +265,7 @@ We will now configure the Dynamics 365 Model-drive Contact Main form, used by Co
 
 1.  In a new tab, navigate to `https://make.powerapps.com` and select **Apps** from the left navigation menu. 
 
-1.  Open the **Marketing** app. 
+1.  Open the **Customer Insights - Journeys** app. 
 
 1.  Select **Contacts** from the left navigation menu, in the **Outbound Marketing** area. 
 
@@ -282,15 +282,15 @@ We will now configure the Dynamics 365 Model-drive Contact Main form, used by Co
 Congratulations! You have successfully completed the objectives of this module, providing Contoso Coffee Customer Service Advisors with visibility of all customer touchpoints & KPIs. 
 
 
-# Exercise 3 - Extending the Value of Customer Insights with Dynamics 365 Marketing
+# Exercise 3 - Extending the Value of Customer Insights with Dynamics 365 Customer Insights - Journeys
 
-One of the integrations Customer Insights has is with Dynamics 365 Marketing. With Dynamics 365 Marketing you can setup customer journeys based on lists of customers. There are three steps to the process. 
+One of the integrations Customer Insights has is with Dynamics 365 Customer Insights - Journeys. With Dynamics 365 Customer Insights - Journeys you can setup customer journeys based on lists of customers. There are three steps to the process. 
 
 - Configure an Export Destination in Customer Insights 
 
-- Export the segments to Dynamics 365 Marketing 
+- Export the segments to Dynamics 365 Customer Insights - Journeys 
 
-- Create a Customer Journey in Marketing from the Segment(s) 
+- Create a Customer Journey in Customer Insights - Journeys from the Segment(s) 
 
 ## Task 1 - Configure an Export Destination
 
@@ -300,11 +300,11 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 1.  On the **Set up export** pane, select **+ Add a connection** and select **Dynamics 365 Marketing (Outbound)** from the list. 
 
-1.  Enter `Dynamics 365 Marketing` for **Display name** and enter the Marketing Trial environment URL for **Server address** and select **Sign in**. 
+1.  Enter `Dynamics 365 Customer Insights - Journeys` for **Display name** and enter the Customer Insights - Journeys Trial environment URL for **Server address** and select **Sign in**. 
 
 1.  Select the **I agree** box and select **Save**. 
 
-1.  Enter `Dynamics 365 Marketing` for **Display name** 
+1.  Enter `Dynamics 365 Customer Insights - Journeys` for **Display name** 
 
 1.  Note the field to indicate which Customer Insights field matches your Dynamics Contact ID, this is important as it provides the link between the Customer Insights customer and the Dynamics Contact. Select **CustomerId**. 
 
@@ -312,7 +312,7 @@ One of the integrations Customer Insights has is with Dynamics 365 Marketing. Wi
 
 1.  On the **Save** drop-down, select **Save and run**.
 
-    > **Note:** The export should complete with warnings. Only customer profiles that are mapped to a contact record in Dynamics 365 Marketing will be part of the Segment in Dynamics. 
+    > **Note:** The export should complete with warnings. Only customer profiles that are mapped to a contact record in Dynamics 365 Customer Insights - Journeys will be part of the Segment in Dynamics. 
 
 
 ## Task 2 - Adding a Segment to an Existing Export Destination
@@ -321,20 +321,20 @@ If you have already configured an export destination and then create new segment
 
 1.  Select **Segments** from the left navigation menu. 
 
-1.  Select the **Show more** vertical ellipse next to the **High Value Online Customers** segment. Then select **Manage exports**. Select the **Dynamics 365 Marketing** export and select **+ Add segment** (or select the + icon). Select **Run**. 
+1.  Select the **Show more** vertical ellipse next to the **High Value Online Customers** segment. Then select **Manage exports**. Select the **Dynamics 365 Customer Insights - Journeys** export and select **+ Add segment** (or select the + icon). Select **Run**. 
 
-    The segments are now ready to be consumed in Dynamics 365 Marketing. 
+    The segments are now ready to be consumed in Dynamics 365 Customer Insights - Journeys. 
 
 
 ## Task 3 - Using the Segment to Orchestrate a Customer Journey
 
-We are now ready to consume the segments which Customer Insights has exported to our Dynamics 365 Marketing instance. For this example, we are going to create a **New** journey based on the **High Value Online Customers** segment. The Customer Journey will send out a Monthly Newsletter to the High Value Online Customers. 
+We are now ready to consume the segments which Customer Insights has exported to our Dynamics 365 Customer Insights - Journeys instance. For this example, we are going to create a **New** journey based on the **High Value Online Customers** segment. The Customer Journey will send out a Monthly Newsletter to the High Value Online Customers. 
 
 ### Review the Segments
 
 1.  Navigate to `https://make.powerapps.com` and select **Apps** from the left navigation menu. 
 
-1.  Open the **Marketing** app. Change the **area** to **Outbound Marketing**. 
+1.  Open the **Customer Insights - Journeys** app. Change the **area** to **Outbound Marketing**. 
 
 1.  Select **Segments** in the left navigation menu, under the **Customers** section. 
 
@@ -347,11 +347,11 @@ We are now ready to consume the segments which Customer Insights has exported to
 
 ### Create the Newsletter Email
 
-1.  Select **Marketing emails** in the left navigation menu, under the **Marketing execution** section. 
+1.  Select **Customer Insights - Journeys emails** in the left navigation menu, under the **Customer Insights - Journeys execution** section. 
 
 1.  Select **+ New** from the command bar. 
 
-1.  From the **Marketing email templates** select the **1 column** template. 
+1.  From the **Customer Insights - Journeys email templates** select the **1 column** template. 
 
 1.  You are welcome to customize anything in the newsletter you'd like, but for this lab we really don't need to customize anything. 
 
@@ -388,5 +388,5 @@ We are now ready to consume the segments which Customer Insights has exported to
 
 11. Select **Save** and select **Go live** from the command bar. 
 
-You are done! You have just created a Customer Journey in Dynamics 365 Marketing based on a Segment of customers which you brought in from Dynamics 365 Customer Insights.
+You are done! You have just created a Customer Journey in Dynamics 365 Customer Insights - Journeys based on a Segment of customers which you brought in from Dynamics 365 Customer Insights.
 
