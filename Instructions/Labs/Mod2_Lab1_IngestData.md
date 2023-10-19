@@ -120,7 +120,7 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 
 1.  Sign in to Customer Insights - Data at https://home.ci.ai.dynamics.com if you are not already signed in. 
 
-2.  In the Environment selector in the top right-hand corner, select the **Retail Demo** environment.
+2.  In the Environment selector in the top right-hand corner, select the **Marketing Trial** environment.
 
 3.  On the Home Page, note how the key Insights are highlighted: 
 
