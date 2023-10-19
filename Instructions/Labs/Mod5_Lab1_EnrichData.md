@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 5.1: Enrich data'
-    module: 'Module 5: Enrich data and predictions with Customer Insights'
+    module: 'Module 5: Enrich data and predictions with Customer Insights - Data'
 ---
 
 # Lab 5.1: Enrich data
-# Module 5: Enrich data and predictions with Customer Insights
+# Module 5: Enrich data and predictions with Customer Insights - Data
 
 When it comes to enriching your data, you will need to decide on the Brands and Categories that apply to your business. You will be able to find many of the relevant brands and categories in the list from the Microsoft Graph to choose from. In our case we will look for specific coffee companies for our brands, and beverage related categories to enrich our data with. 
 
@@ -17,7 +17,7 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 ### Task 1 - Adding Brand Affinity 
 
-1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/.
 
 2.  Navigate to **Data > Enrichment**. 
 
