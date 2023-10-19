@@ -1,16 +1,16 @@
 ---
 lab:
     title: 'Lab 5.3: Subscription Churn Model'
-    module: 'Module 5: Enrich data and predictions with Customer Insights'
+    module: 'Module 5: Enrich data and predictions with Customer Insights - Data'
 ---
 
 # Lab 5.3: Subscription Churn Model
-# Module 5: Enrich data and predictions with Customer Insights
+# Module 5: Enrich data and predictions with Customer Insights - Data
 
 ## Exercise 1 - Ingest and unify the subsription data 
 ## Task 1 - Ingest the Subscription Data
 
-1. If you haven't already, sign into Customer Insights at **https://home.ci.ai.dynamics.com/**. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**. 
+1. If you haven't already, sign into Customer Insights - Data at **https://home.ci.ai.dynamics.com/**. First, we need to import the subscription data as a new data source. Navigate to **Data** in the left column, click **Data sources**, and select **+ Add Data Source**. 
 
 2. Choose **Microsoft Power Query** and name the source **SubscriptionData**, then click **Next**.
 
