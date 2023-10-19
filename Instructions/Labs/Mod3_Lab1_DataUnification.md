@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 3.1: Unify the data'
-    module: 'Module 3: Create a unified customer profile in Dynamics 365 Customer Insights'
+    module: 'Module 3: Create a unified customer profile in Dynamics 365 Customer Insights - Data'
 ---
 
 # Lab 3.1: Unify the data
-# Module 3: Create a unified customer profile in Dynamics 365 Customer Insights
+# Module 3: Create a unified customer profile in Dynamics 365 Customer Insights - Data
 
 Having ingested the raw data from your data sources into entities you will now begin the Map, Match, Merge process to create a single Unified Customer Profile by merging data from each customer profile source. 
 
@@ -20,7 +20,7 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 ## Task 1 - Map contacts to common data types 
 
-1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/.
 
 2.  On the left menu, expand **Data**, select **Unify**. Select **Get started**. Under **Source fields** on the right-hand side, select **+ Select entities and fields**. 
 
