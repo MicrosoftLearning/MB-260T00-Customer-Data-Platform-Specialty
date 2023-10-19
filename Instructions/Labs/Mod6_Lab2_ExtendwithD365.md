@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 6.2: Extend with the Dynamics 365 apps'
-    module: 'Module 6: Manage external connections with Dynamics 365 Customer Insights'
+    module: 'Module 6: Manage external connections with Dynamics 365 Customer Insights - Data'
 ---
 
 # Lab 6.2: Extend with the Dynamics 365 apps
-# Module 6: Manage external connections with Dynamics 365 Customer Insights
+# Module 6: Manage external connections with Dynamics 365 Customer Insights - Data
 
 Having successfully ingested Contoso Coffee's data sources and created a Unified Customer Profile and calculated key measures, you are now able to leverage the insight you have generated to empower different personas within Contoso Cofee.
 
