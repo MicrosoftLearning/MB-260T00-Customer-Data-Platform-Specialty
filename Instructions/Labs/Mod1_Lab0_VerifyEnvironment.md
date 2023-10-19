@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 1.1: Verify environment'
-    module: 'Module 1: Get started with Dynamics 365 Customer Insights'
+    module: 'Module 1: Get started with Dynamics 365 Customer Insights - Data'
 ---
 
 # Lab 1.1: Verify environment
-# Module 1: Get started with Dynamics 365 Customer Insights
+# Module 1: Get started with Dynamics 365 Customer Insights - Data
 
 ## Approximate Time to Complete - 30 mins 
 
