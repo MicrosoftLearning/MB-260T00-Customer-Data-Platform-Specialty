@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 2.1: Ingest data'
-    module: 'Module 2: Ingest data into Dynamics 365 Customer Insights'
+    module: 'Module 2: Ingest data into Dynamics 365 Customer Insights - Data'
 ---
 
 # Lab 2.1: Ingest data
-# Module 2: Ingest data into Dynamics 365 Customer Insights
+# Module 2: Ingest data into Dynamics 365 Customer Insights - Data
 
 ## About the Hands-on Lab
 
@@ -114,11 +114,11 @@ In this lab, we will **ingest data**. In the next lab, we will **unify the data*
 
 # Approximate Time to Complete - 45 minutes
 
-# Familiarize yourself with Customer Insights
+# Familiarize yourself with Customer Insights - Data
 
-In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights Hub. 
+In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights - Data. 
 
-1.  Sign in to Customer Insights at https://home.ci.ai.dynamics.com if you are not already signed in. 
+1.  Sign in to Customer Insights - Data at https://home.ci.ai.dynamics.com if you are not already signed in. 
 
 2.  In the Environment selector in the top right-hand corner, select the **Retail Demo** environment.
 
