@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 4.2: Define measures'
-    module: 'Module 4: Work with Dynamics 365 Customer Insights'
+    module: 'Module 4: Work with Dynamics 365 Customer Insights - Data'
 ---
 
 # Lab 4.2: Define measures
-# Module 4: Work with Dynamics 365 Customer Insights
+# Module 4: Work with Dynamics 365 Customer Insights - Data
 
 Measures enable you to define all the key performance indicators (KPIs) that best reflect your specific business performance and health. Measures can either be customer-related measures, such as Lifetime Value, or business-health measures, such as Monthly Active Users. 
 
