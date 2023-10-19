@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 4.1: Work with activities'
-    module: 'Module 4: Work with Dynamics 365 Customer Insights'
+    module: 'Module 4: Work with Dynamics 365 Customer Insights - Data'
 ---
 
 # Lab 4.1: Work with activities
-# Module 4: Work with Dynamics 365 Customer Insights
+# Module 4: Work with Dynamics 365 Customer Insights - Data
 
 
 ## Exercise 1 - Create activities 
@@ -15,7 +15,7 @@ Interactions are any customer touch points - these could include purchases, cust
 
 ### Task 1 - Add an activity for eCommerce Purchases  
 
-1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/.
 
 2.  In Customer Insights, expand **Data > Activities** on the left navigation menu and select **+ Add activity**. 
 
