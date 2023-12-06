@@ -19,30 +19,32 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Step 1: Power Apps License 
 
-1.  Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to [https://powerapps.microsoft.com](https://powerapps.microsoft.com/)[.](https://powerapps.microsoft.com/) On this page you will see a **Try free for 30 day** link on the top right. Select that link and enter the email for the admin account you were provided. Select **Start your free trial**. 
+1.  Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to `https://powerapps.microsoft.com`
 
-2.  Enter the password provided. If prompted, enter a phone number. (It is recommended to keep the location set to United States, and enter `0123456789` for phone number.) 
+2.  On this page, select the **Try for free** button. Enter the email for the admin account you were provided. Select **Start your free trial**. 
 
-3.  Select **Get started**. You will be taken to the Power Apps homepage. Select **Skip** if prompted with the tutorial. 
+3.  Enter the password provided. If prompted, enter a phone number. (It is recommended to keep the location set to United States, and enter `0123456789` for phone number.) 
+
+4.  Select **Get Started**. You will be taken to the Power Apps homepage. Select **Skip** if prompted with the tutorial. 
 
 
 ## Step 2: Power BI Trial  
 
-1.  You will also need a Power BI Trial to create dashboards showing the information from Customer Insights. To get started navigate to [https://aka.ms/trybi](https://aka.ms/trybi)[]([https://aka.ms/trybi](https://signup.microsoft.com/get-started/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3a%2f%2fapp.powerbi.com%2f%3fpbi_source%3dweb%26redirectedFromSignup%3d1%26noSignUpCheck%3d1&products=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1&signedinuser=anjenni%40microsoft.com)) in a new tab. 
+1.  You will also need a Power BI Trial to create dashboards showing the information from Customer Insights. To get started, open a new tab and navigate to `https://aka.ms/trybi` 
 
 2.  You will be prompted to use your M365 admin credential. Select **Continue** to confirm and follow the same steps from the previous task to add the Power BI trial.
 
-3.  Select **Get started**. It may take a few minutes for Power BI to set up. 
+3.  Select **Get Started**. It may take a few minutes for Power BI to set up. 
 
 
 ## Step 3: Dynamics 365 Customer Insights trial
 
 Now that we have users with licenses in our Office 365 tenant, we can create our demo Dynamics environments. 
 
-1.  In a new browser tab, navigate to [https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/). 
+1.  In a new browser tab, navigate to `https://dynamics.microsoft.com/en-us/dynamics-365-free-trial` 
 
 2.  Navigate to **Customer Insights** and select **Try for free**. Enter your provided admin email and select **Start your free trial**. You will then be prompted to enter your country and phone number. Select **Submit**. 
 
 3.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
 
-4. Once it completes, navigate to the banner at the top of the screen and select **Launch Customer Insights - Data.** The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
+4.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
