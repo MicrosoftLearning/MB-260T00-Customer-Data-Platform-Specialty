@@ -48,3 +48,13 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 3.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
 
 4.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
+    - **If the Start Customer Insights - Data button is not available,** open a new tab and enter the following url: https://home.ci.ai.dynamics.com/. Select **Start trial** and select **B2C.**
+
+5. Select **Start trial** from the banner.
+
+6. Next, we need to create an environment for your trial.
+   - On the Basic information screen, name your trial **B2CTrial** and select your region. Select **Next.**
+   - On the Data storage screen, leave the selection as is. This cannot be changed in a trial. Select **Next**.
+   - On the Microsoft dataverse screen, select **Marketing Trial** for your Dataverse environment. Select **Next.**
+   - Review your selections and select **Create.**
+   - It may take a few minutes to get your environment set up. When set up is complete, select **Not now**.
