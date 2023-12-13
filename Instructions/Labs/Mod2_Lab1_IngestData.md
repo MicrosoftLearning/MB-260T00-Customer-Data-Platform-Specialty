@@ -197,13 +197,13 @@ In this task, we will ingest Online Purchase data, representing purchases made v
 
     > **Note:** If your data is still refreshing, you will need to wait for it to finish before editing. 
 
-3.  You should be presented with the **Power Query** view of the eCommerce Contacts data that you ingested in Task 1. On the **Home** tab, select **Get data**. 
+3.  Select **Next.** You should be presented with the **Power Query** view of the eCommerce Contacts data that you ingested in Task 1. On the **Home** tab, select **Get data**. 
 
 4.  You will be presented with a view of data source connectors that Customer Insights is able to ingest. Select the **Text/CSV** Connector. 
 
 5.  Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases. Select **Next** and then **Create**. 
  
-6.  As you did in Task 1, click on **Transform**, then **Use first row as headers** or you can click on Transform tab and click **Use first row as headers.**
+6.  As you did in Task 1, click on **Transform**, then **Use first row as headers**.
 
 7.  Update the **datatypes** for the following columns: 
 
