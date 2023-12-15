@@ -43,16 +43,18 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 
 1.  In a new browser tab, navigate to `https://dynamics.microsoft.com/en-us/dynamics-365-free-trial` 
 
-2.  Navigate to **Customer Insights** and select **Try for free**. Enter your provided admin email and select **Start your free trial**. You will then be prompted to enter your country and phone number. Select **Submit**. 
+2.  Navigate to **Customer Insights** and select **Try for free**. Enter your provided admin email and select **Start your free trial**. When prompted, enter your password.
 
-3.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
+3.  You will then be prompted to enter your country and phone number. Enter '0123456789' for Phone Number. Select **Submit**. 
 
-4.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
+4.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
+
+5.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. If prompted, select your region and select **Continue.** You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
     - **If the Start Customer Insights - Data button is not available,** open a new tab and enter the following url: https://home.ci.ai.dynamics.com/. Select **Start trial** and select **B2C.**
 
-5. Select **Start trial** from the banner.
+7. Select **Start trial** from the banner. In the **Getting started** pop-up, select **Not now.**
 
-6. Next, we need to create an environment for your trial.
+8. Next, we need to create an environment for your trial.
    - On the Basic information screen, name your trial **B2CTrial** and select your region. Select **Next.**
    - On the Data storage screen, leave the selection as is. This cannot be changed in a trial. Select **Next**.
    - On the Microsoft dataverse screen, select **Marketing Trial** for your Dataverse environment. Select **Next.**
