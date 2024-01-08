@@ -120,7 +120,7 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 
 1.  Sign in to Customer Insights - Data at https://home.ci.ai.dynamics.com if you are not already signed in. 
 
-2.  In the Environment selector in the top right-hand corner, select the environment you created in the previous lab (if it is not already selected).
+2.  In the Environment selector in the top right-hand corner, confirm **Marketing Trial** is selected.
 
 3.  On the Home Page, note how the key Insights are highlighted: 
 
@@ -219,7 +219,7 @@ In this task, we will ingest Online Purchase data, representing purchases made v
 
 1.  In Customer Insights, expand **Data** on the left menu and select **Data sources**. 
 
-2.  Select **Add a Data Source** and choose **Microsoft Power Query** as the import method. Name the source `Loyalty`, then select **Next**. 
+2.  Select **+Add a Data Source** and choose **Microsoft Power Query** as the import method. Name the source `Loyalty`, then select **Next**. 
 
 3.  Select the **Text/CSV** connector. 
 
