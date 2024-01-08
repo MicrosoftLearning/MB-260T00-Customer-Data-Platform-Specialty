@@ -23,14 +23,14 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 2.  On this page, select the **Start using apps** button. Enter the email provided by the lab host. Check the box to agree to the terms and select **Start your free trial.**
 
-3.  If prompted, enter a phone number. (It is recommended to keep the location set to United States, and enter `0123456789` for phone number.) 
+3.  Enter the password provided by the lab host and select **Sign in.** If prompted, enter a phone number and select **Submit**. (It is recommended to keep the location set to United States, and enter `0123456789` for phone number.) 
 
 4.  Select **Get Started**. You will be taken to the Power Apps homepage. Select **Skip** if prompted with the tutorial. 
 
 
 ## Step 2: Power BI Trial  
 
-1.  You will also need a Power BI Trial to create dashboards showing the information from Customer Insights. To get started, open a new tab and navigate to `https://aka.ms/trybi` 
+1.  You will also need a Microsoft Fabric and Power BI trial to create dashboards showing the information from Customer Insights. To get started, open a new tab and navigate to `https://aka.ms/trybi` 
 
 2.  You will be prompted to use your M365 admin credential. Select **Continue** to confirm and follow the same steps from the previous task to add the Power BI trial.
 
@@ -47,16 +47,8 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 
 3.  You will then be prompted to enter your country and phone number. Enter '0123456789' for Phone Number. Select **Submit**. 
 
-4.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
+4.  It may take a moment for the trial to build. When the **Where do you want to start?** window appears, select **Start Customer Insights - Data.** (We will work in the Journeys part of the application later in the course.)
 
-5.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. If prompted, select your region and select **Continue.** You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
-    - **If the Start Customer Insights - Data button is not available,** open a new tab and enter the following url: https://home.ci.ai.dynamics.com/. Select **Start trial** and select **B2C.**
+5.  unitIf prompted, select your region and select **Continue.** You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
 
 7. Select **Start trial** from the banner. In the **Getting started** pop-up, select **Not now.**
-
-8. Next, we need to create an environment for your trial.
-   - On the Basic information screen, name your trial **B2CTrial** and select your region. Select **Next.**
-   - On the Data storage screen, leave the selection as is. This cannot be changed in a trial. Select **Next**.
-   - On the Microsoft dataverse screen, select **Marketing Trial** for your Dataverse environment. Select **Next.**
-   - Review your selections and select **Create.**
-   - It may take a few minutes to get your environment set up. When set up is complete, select **Not now**.
