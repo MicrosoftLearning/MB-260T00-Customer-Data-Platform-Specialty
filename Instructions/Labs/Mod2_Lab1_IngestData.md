@@ -133,10 +133,10 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 4.  Explore the left-hand menu options to familiarise yourself with the navigation. 
 
 - **Home**: Home Page 
-- **Customers**: View cards for unified Customer Profiles 
-- **Data**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
-- **Data > Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data from the Microsoft Graph. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers.
-- **Insights:** View segments, configure measures, and use out-of-the-box prediction models (or build your own).
+- **Customers**: View cards for unified Customer Profiles (you won't be able to view this yet - we need to ingest and unify our data first)
+- **Data > Data sources**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
+- **Data > Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers.
+- **Insights > Discovery, Segments, and Measures:** View segments, configure measures, and use out-of-the-box prediction models (or build your own). (You won't be able to view this section yet.)
 - **Settings**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
 
 # Exercise 1 - Data Ingestion
