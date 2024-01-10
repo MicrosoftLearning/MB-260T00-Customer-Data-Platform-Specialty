@@ -32,7 +32,7 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 6.  The eCommerce Contacts data contains a column named **Email Subscriber** which will be mapped to an incorrect type, **Identity.Service.Email**, because of the name. Open the dropdown for this field and select the empty option (nothing/blank). If we do not do this then the default system behaviour is to merge this field with the EMail field which we do not want. 
 
-7.  Select **Loyalty Customers** under Entities and set **LoyaltyId** as the primary key. 
+7.  Select **Loyalty Customers** under Tables and set **LoyaltyId** as the primary key. 
 
 8.  Select **Save source fields** in the top left-hand corner. 
 
@@ -54,7 +54,7 @@ In this task, you will create a simple rule used to match records together. Rule
 
 For further details on Match Rules, please see [Customer Insights documentation](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/match-entities#define-rules-for-match-pairs). 
 
-1.  There is a warning indicator on the Customers : Loyalty line. Select **+ Add rule** or select the + icon oo the right. 
+1.  There is a warning indicator on the Customers : Loyalty line. Select **+ Add rule** or select the + icon on the right. 
 
 2.  Add the first condition using FullName: 
 
@@ -104,7 +104,7 @@ In Task 3, we used High Precision in the match-rule against Full Name. In this t
 
 1.  In Customer Insights, expand **Data** in the left hand navigation menu. Select **Unify**. 
 
-2.  Under **Matching conditions**, select **Edit**.
+2.  Under **Matching rules**, select **Edit**.
 
 3.  Expand the **Customers : Loyalty** rule and select the ✏️ **Edit** button to open the **FullName, Email** conditions pane. 
 
@@ -133,7 +133,7 @@ Customer Insights will attempt to identify the attributes to be merged to the st
 
 1.  In Customer Insights, expand **Data** in the left hand navigation menu. Select **Unify**. 
 
-2.  Under **Unified customer fields**, select **Edit**. 
+2.  Under **Unified data view**, select **Edit**. 
 
 3.  Under **Customer fields**, note how attributes from different data sources that are of the same type (e.g. FirstName) have been merged. 
 
