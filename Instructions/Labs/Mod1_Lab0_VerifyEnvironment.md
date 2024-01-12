@@ -19,18 +19,18 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Step 1: Power Apps License 
 
-1.  Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to `https://powerapps.microsoft.com`
+1.  Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to `https://powerapps.microsoft.com/free/`.
 
-2.  On this page, select the **Try for free** button. Select **Start using apps** and enter the email for the admin account you were provided. Select **Start your free trial**. 
+2.  On this page, select the **Start using apps** button. Enter the email provided by the lab host. Check the box to agree to the terms and select **Start your free trial.**
 
-3.  Enter the password provided. If prompted, enter a phone number. (It is recommended to keep the location set to United States, and enter `0123456789` for phone number.) 
+3.  Enter the password provided by the lab host and select **Sign in.** If prompted, enter a phone number and select **Submit**. (It is recommended to keep the location set to United States, and enter `0123456789` for phone number.) 
 
 4.  Select **Get Started**. You will be taken to the Power Apps homepage. Select **Skip** if prompted with the tutorial. 
 
 
 ## Step 2: Power BI Trial  
 
-1.  You will also need a Power BI Trial to create dashboards showing the information from Customer Insights. To get started, open a new tab and navigate to `https://aka.ms/trybi` 
+1.  You will also need a Microsoft Fabric and Power BI trial to create dashboards showing the information from Customer Insights. To get started, open a new tab and navigate to `https://aka.ms/trybi` 
 
 2.  You will be prompted to use your M365 admin credential. Select **Continue** to confirm and follow the same steps from the previous task to add the Power BI trial.
 
@@ -45,8 +45,9 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 
 2.  Navigate to **Dynamics 365 Customer Insights** in the **Customer data platform** section and select **Try for free**. Enter your provided admin email and select **Start your free trial**. You will then be prompted to enter your country and phone number. Select **Submit**. 
 
-3.  It may take a moment for the trial to build. When the **Launch Trial** button appears, select it to enter the Dynamics 365 Customer Insights - Journeys application.
+3.  You will then be prompted to enter your country and phone number. Enter '0123456789' for Phone Number. Select **Submit**. 
 
 4.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
 
 5.  Select **Start trial** from the notification banner  
+

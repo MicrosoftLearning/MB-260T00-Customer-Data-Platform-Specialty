@@ -120,7 +120,7 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 
 1.  Sign in to Customer Insights - Data at https://home.ci.ai.dynamics.com if you are not already signed in. 
 
-2.  In the Environment selector in the top right-hand corner, select the **Marketing Trial** environment.
+2.  In the Environment selector in the top right-hand corner, confirm **Marketing Trial** is selected.
 
 3.  On the Home Page, note how the key Insights are highlighted: 
 
@@ -133,13 +133,11 @@ In this task, you will explore the pre-configured Demo environment to familiariz
 4.  Explore the left-hand menu options to familiarise yourself with the navigation. 
 
 - **Home**: Home Page 
-- **Customers**: View cards for unified Customer Profiles 
-- **Segments**: Define Segments: Cohorts of Customers based on similar demographic, transactional or behavioural attributes. Use these for targeted marketing, utilising previously siloed data. 
-- **Measures**: Define key Business and Customer KPIs, such as Customer Lifetime Value, Average Purchase Value and Frequency, CSAT and identify high-value customers. 
-- **Intelligence**: Here you can leverage the existing Out of the Box (OOB) models or add custom Azure machine learning models to make predictions with your unified customer data.
-- **Data**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
-- **Data > Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data from the Microsoft Graph. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers. 
-- **Admin**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
+- **Customers**: View cards for unified Customer Profiles (you won't be able to view this yet - we need to ingest and unify our data first)
+- **Data > Data sources**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
+- **Data > Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers.
+- **Insights > Discovery, Segments, and Measures:** View segments, configure measures, and use out-of-the-box prediction models (or build your own). (You won't be able to view this section yet.)
+- **Settings**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
 
 # Exercise 1 - Data Ingestion
 
@@ -158,13 +156,11 @@ Note: Some of this data will be ingested in later labs.
 
 2.  Within Customer Insights, expand **Data** on the left menu and select **Data sources**.
 
-3.  Select **Add a Data Source**, then choose from the available methods of ingesting data. Currently, CI provides import data via various data connectors, connect to your own data lake, connect to Common Data Service. For this lab, choose **Microsoft PowerQuery** and name the source `eCommerce`, then select **Next**. 
+3.  Select **+Add a data source**. View the available methods of ingesting data. For this lab, choose **Microsoft PowerQuery** and name the source `eCommerce`, then select **Next**. 
 
 4.  You will be presented with a view of Power Query data sources that Customer Insights is able to ingest. Take note of the connector types available. Select the **Text/CSV** connector. 
 
-5.  Enter the URL for the eCommerce Contacts data set, https://aka.ms/CI-ILT/Contacts, and select **Next**.
-
-    > Note: It may take a few moments for the data to upload.
+5.  Enter the URL for the eCommerce Contacts data set, https://aka.ms/CI-ILT/Contacts, and select **Next**. It may take a few moments for the data to upload.
 
 6.  You should now see the data from the source tabulated. Select **Transform data** to configure the datatypes and formats for the data you ingest. 
 
@@ -172,7 +168,7 @@ Note: Some of this data will be ingested in later labs.
 
 8.  Because we have ingested data from a Text/CSV source, all columns have been defaulted to a 'Text' Data Type. To successfully ingest and model the data, we can set the datatype for non-text columns. 
 
-To change the datatype, select the **ABC** icon within the column heading. Update the datatype for these columns: 
+To change the datatype, select the **ABC** icon within each column heading. Update the datatype for these columns: 
 
 | Column Heading | New Data Type |
 | -------------- | ------------- |
@@ -201,13 +197,13 @@ In this task, we will ingest Online Purchase data, representing purchases made v
 
     > **Note:** If your data is still refreshing, you will need to wait for it to finish before editing. 
 
-3.  You should be presented with the **Power Query** view of the eCommerce Contacts data that you ingested in Task 1. On the **Home** tab, select **Get data**. 
+3.  Select **Next.** You should be presented with the **Power Query** view of the eCommerce Contacts data that you ingested in Task 1. On the **Home** tab, select **Get data**. 
 
 4.  You will be presented with a view of data source connectors that Customer Insights is able to ingest. Select the **Text/CSV** Connector. 
 
 5.  Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases. Select **Next** and then **Create**. 
  
-6.  As you did in Task 1, click on **Transform**, then **Use first row as headers** or you can click on Transform tab and click **Use first row as headers.**
+6.  As you did in Task 1, click on **Transform**, then **Use first row as headers**.
 
 7.  Update the **datatypes** for the following columns: 
 
@@ -223,7 +219,7 @@ In this task, we will ingest Online Purchase data, representing purchases made v
 
 1.  In Customer Insights, expand **Data** on the left menu and select **Data sources**. 
 
-2.  Select **Add a Data Source** and choose **Microsoft Power Query** as the import method. Name the source `Loyalty`, then select **Next**. 
+2.  Select **+Add a Data Source** and choose **Microsoft Power Query** as the import method. Name the source `Loyalty`, then select **Next**. 
 
 3.  Select the **Text/CSV** connector. 
 
