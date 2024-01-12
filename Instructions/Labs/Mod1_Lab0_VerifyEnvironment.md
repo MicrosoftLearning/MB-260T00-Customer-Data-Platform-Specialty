@@ -43,12 +43,11 @@ Now that we have users with licenses in our Office 365 tenant, we can create our
 
 1.  In a new browser tab, navigate to `https://dynamics.microsoft.com/en-us/dynamics-365-free-trial` 
 
-2.  Navigate to **Customer Insights** and select **Try for free**. Enter your provided admin email and select **Start your free trial**. When prompted, enter your password.
+2.  Navigate to **Dynamics 365 Customer Insights** in the **Customer data platform** section and select **Try for free**. Enter your provided admin email and select **Start your free trial**. You will then be prompted to enter your country and phone number. Select **Submit**. 
 
 3.  You will then be prompted to enter your country and phone number. Enter '0123456789' for Phone Number. Select **Submit**. 
 
-4.  It may take a moment for the trial to build. When the **Where do you want to start?** window appears, select **Start Customer Insights - Data.** (We will work in the Journeys part of the application later in the course.)
+4.  On the welcome screen, select **Start Customer Insights - Data**. The Customer Insights - Data application will launch in a new screen. You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
 
-5.  unitIf prompted, select your region and select **Continue.** You now have both a Customer Insights - Journeys and a Customer Insights - Data trial environment.
+5.  Select **Start trial** from the notification banner  
 
-7. Select **Start trial** from the banner. In the **Getting started** pop-up, select **Not now.**
