@@ -118,33 +118,25 @@ In this lab, we will **ingest data**. In the next lab, we will **unify the data*
 
 In this task, you will explore the pre-configured Demo environment to familiarize yourself with Customer Insights - Data. 
 
-1.  Sign in to Customer Insights - Data at https://home.ci.ai.dynamics.com if you are not already signed in. 
+1.  Sign in to Customer Insights - Data at `https://home.ci.ai.dynamics.com` if you are not already signed in. 
 
-2.  In the Environment selector in the top right-hand corner, confirm **Marketing Trial** is selected.
-
-3.  On the Home Page, note how the key Insights are highlighted: 
-
-- KPIs (Business Measures), including Average Online Spend Per Customer and Average Churn Score
-
-- Audience Enrichment pulled in from Microsoft proprietary data (including Microsoft Bing). Enrich Customer Profiles and Audience segments to unlock affinities for brands and interest categories that may be like your customers, by matching demographic data. 
-
-- Segments - customers grouped into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can target promotional campaigns, sales activities, and customer support actions to achieve your business goals. 
+2.  In the **Environment selector** in the top right-hand corner, confirm **Marketing Trial** is selected.
 
 4.  Explore the left-hand menu options to familiarise yourself with the navigation. 
 
-- **Home**: Home Page 
-- **Customers**: View cards for unified Customer Profiles (you won't be able to view this yet - we need to ingest and unify our data first)
-- **Data > Data sources**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
-- **Data > Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers.
-- **Insights > Discovery, Segments, and Measures:** View segments, configure measures, and use out-of-the-box prediction models (or build your own). (You won't be able to view this section yet.)
-- **Settings**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
+    - **Home**: Home Page 
+    - **Customers**: View cards for unified Customer Profiles (you won't be able to view this yet - we need to ingest and unify our data first)
+    - **Data > Data sources**: Ingest siloed demographic, transactional of behavioural data. Map, match and merge into a Unified Customer Profile. View your entities and define activity types and their relationships to your customers. 
+    - **Data > Enrichment**: Go beyond your unified profile and enrich customer profiles with Microsoft Proprietary Data. Unlock data on affinities for hundreds of brands and dozens of interest-categories. These affinities are extracted for profiles that might be like your customers.
+    - **Insights > Segments, Measures & Predictions:** View segments, configure measures, and use out-of-the-box prediction models (or build your own). (You won't be able to view this section yet.)
+    - **Settings**: Administer Roles, Permissions, APIs and Export Destinations for Customer Segments. 
 
 # Exercise 1 - Data Ingestion
 
 In this lab you will become familiar with ingesting data from multiple sources. As Project Manager for Contoso Retail, you have already identified that key sources of data include eCommerce Customers, Online Purchases, in-store Point of Sales Purchases, data from Contoso Retail Loyalty Card scheme, Subscription data, Contoso Hotel data and Contacts from your Dynamics 365 CRM. 
 
 Although Customer Insights has connectors to 35+ data sources and applications (including Dynamics 365 & the Microsoft Dataverse), for this lab you will be using the 'Text/CSV' connector. 
-  
+
 
 ## Data Source Model 
 
@@ -152,33 +144,33 @@ Note: Some of this data will be ingested in later labs.
 
 ## Task 1 -  Ingest Customer Data from eCommerce Platform 
 
-1.  Sign in to Customer Insights (http://home.ci.ai.dynamics.com) and select your Environment from the drop-down menu in the top right-hand corner. 
+1.  Sign in to Customer Insights `http://home.ci.ai.dynamics.com` and verify **Marketing Trial** is selected in the drop-down menu in the top right-hand corner. 
 
-2.  Within Customer Insights, expand **Data** on the left menu and select **Data sources**.
+2.  In Customer Insights, expand **Data** on the left navigation menu and select **Data sources**. 
 
-3.  Select **+Add a data source**. View the available methods of ingesting data. For this lab, choose **Microsoft PowerQuery** and name the source `eCommerce`, then select **Next**. 
+3.  Select **+Add a data source**. View the available methods of ingesting data. For this lab, choose **Microsoft Power Query** and name the source `eCommerce`, then select **Next**. 
 
 4.  You will be presented with a view of Power Query data sources that Customer Insights is able to ingest. Take note of the connector types available. Select the **Text/CSV** connector. 
 
-5.  Enter the URL for the eCommerce Contacts data set, https://aka.ms/CI-ILT/Contacts, and select **Next**. It may take a few moments for the data to upload.
+5.  Enter `https://aka.ms/CI-ILT/Contacts` for **File path or URL** and select **Next**. It may take a few moments for the data to upload.
 
 6.  You should now see the data from the source tabulated. Select **Transform data** to configure the datatypes and formats for the data you ingest. 
 
-7.  You will notice that the column heading has appeared in the first row of the data. To correct this, select **Transform** and **Use first row as headers**.
+7.  You will notice that the column heading has appeared in the first row of the data. To correct this, either select **Transform** > **Use first row as headers** from the **Home** tab or select the **Transform** tab and then **Use first row as headers**.
 
-8.  Because we have ingested data from a Text/CSV source, all columns have been defaulted to a 'Text' Data Type. To successfully ingest and model the data, we can set the datatype for non-text columns. 
+8.  Because we have ingested data from a Text/CSV source, all columns are defaulted to a 'Text' Data Type. To successfully ingest and model the data, we can set the data type for non-text columns. 
 
-To change the datatype, select the **ABC** icon within each column heading. Update the datatype for these columns: 
+    To change the data type, select the **ABC** icon on each column heading. Update the data type for these columns: 
 
-| Column Heading | New Data Type |
-| -------------- | ------------- |
-| DateOfBirth    | Date          |
-| CreatedOn      | Date          |
-| Income         | Currency      |
+    | Column Heading | New Data Type |
+    | -------------- | ------------- |
+    | DateOfBirth    | Date          |
+    | CreatedOn      | Date          |
+    | Income         | Currency      |
 
-9.  In the **Name** field on the **Query settings** pane, name your data source `Contacts` if it is not already. Select Next. Select Save. 
+9.  Verify the **Name** field on the **Query settings** pane is set to `Contacts`. Select **Next**. Select **Save**. 
 
-    > Note:
+    > **Note:**
     >
     > Column names can only contain letters, numbers, and underscores. They cannot contain a space and must begin with a letter. If you have data where column name(s) have a space or do not begin with a letter you will want to fix that either within Power Query or before the data is brought into Customer Insights. 
 
@@ -201,18 +193,18 @@ In this task, we will ingest Online Purchase data, representing purchases made v
 
 4.  You will be presented with a view of data source connectors that Customer Insights is able to ingest. Select the **Text/CSV** Connector. 
 
-5.  Enter the URL for the Online Purchases data, https://aka.ms/CI-ILT/OnlinePurchases. Select **Next** and then **Create**. 
+5.  Enter `https://aka.ms/CI-ILT/OnlinePurchases` for **File path or URL** and select **Next**. Select **Create**. 
  
-6.  As you did in Task 1, click on **Transform**, then **Use first row as headers**.
+6.  As before, select **Transform**, then **Use first row as headers**.
 
-7.  Update the **datatypes** for the following columns: 
+7.  Update the **data types** for the following columns: 
 
 	| Column Heading | New Data Type |
 	| -------------- | ------------- |
 	| PurchasedOn    | Date          |
 	| TotalPrice     | Currency      |
  
-8.  Name the query `Purchases` and select **Save**. 
+8.  Name this query `Purchases` and select **Save**. 
 
 
 ## Task 3 - Ingest Customer Data from Loyalty Scheme 
@@ -223,66 +215,64 @@ In this task, we will ingest Online Purchase data, representing purchases made v
 
 3.  Select the **Text/CSV** connector. 
 
-4.  Enter the URL for the Loyalty Customer data, https://aka.ms/CI-ILT/LoyaltySchemeCustomers. Select **Next** and then select **Transform data**. 
+4.  Enter `https://aka.ms/CI-ILT/LoyaltySchemeCustomers` for **File path or URL**, select **Next** and then select **Transform data**. 
 
-5.  You should now see the data from the source tabulated. Here you can configure the datatypes and formats for the data you ingest. 
+6.  As before, select **Transform**, then **Use first row as headers**.
 
-6.  You will notice that the column heading has appeared in the first row of the data. To correct this, select **Transform** and then **Use First Row as Headers** or select it directly from the **Home** tab. 
-
-7.  Update the datatype for these columns: 
+7.  Update the data type for these columns: 
 
 	| Column Heading | New Data Type |
 	| -------------- | ------------- |
 	| DateOfBirth    | Date          |
-	| RewardPoints   | Whole Number  |
+	| RewardPoints   | Whole number  |
 	| CreatedOn      | Date          |
 
-8.  For the **Name** field on the right-hand pane, rename your data source to `Customers` and select **Next**. 
+8.  Rename this query to `Customers` in the **Query settings** pane and select **Next**. 
 
 9.  Select **Save**. 
 
 
 # Task 4 - Ingest Customer Data from Point of Sale Purchases  
 
-1.  In Customer Insights, expand **Data** on the left menu and select **Data sources**. 
+1.  In Customer Insights, expand **Data** on the left navigation menu and select **Data sources**. 
 
-2.  Select **Add a Data Source**, choose **Microsoft Power Query** and name the source `PoS`, then select **Next**. 
+2.  Select **+ Add a data source**, choose **Microsoft Power Query** and name the source `PoS`, then select **Next**. 
 
 2.  Select the **Text/CSV** connector. 
 
-3.  Enter the URL for the Point of Sale Purchases, https://aka.ms/CI-ILT/POSPurchases. Select **Next** and then select **Transform data**. 
+3.  Enter `https://aka.ms/CI-ILT/POSPurchases` for **File path or URL**. Select **Next** and then select **Transform data**. 
 
-4.  Change the first row to the header row by selecting **Use First Row as Headers** from the **Home** tab or select the **Transform** tab and then **Use First Row as Headers**. 
+4.  As before, select **Transform**, then **Use first row as headers**.
 
-5.  Update the **datatype** for these columns: 
+5.  Update the **data type** for these columns: 
 
 	| Column Heading    | New Data Type |
 	| ----------------- | ------------- |
 	| PurchasedOn       | Date          |
 	| TotalPrice        | Currency      |
-	| RewardPointsAdded | WholeNumber   |
+	| RewardPointsAdded | Whole number  |
 
-6. In the **Name** field on the **Query settings** pane, rename the data source to `Purchases`. Select **Next** and select **Save**. 
+6.  In the **Name** field on the **Query settings** pane, rename the query to `Purchases`. Select **Next** and select **Save**. 
 
 
 # Task 5 - Ingest Customer Data from Website Reviews 
 
-1.  In Customer Insights, expand **Data** on the left menu and select **Data sources**. 
+1.  In Customer Insights, expand **Data** on the left navigation menu and select **Data sources**. 
 
-2.  Select **Add a Data Source**. Choose **Microsoft Power Query** and name the source `Website`, then select **Next**. 
+2.  Select **+ Add a data source**. Choose **Microsoft Power Query** and name the source `Website`, then select **Next**. 
 
 3.  Select the **Text/CSV** connector. 
 
-4.  Enter the URL for the Website Reviews, https://aka.ms/CI-ILT/WebReviews. Select **Next** and then select **Transform data**. 
+4.  Enter `https://aka.ms/CI-ILT/WebReviews` for **File path or URL**. Select **Next** and then select **Transform data**. 
 
-5.  As before, select **Use First Row as Headers** from the **Home** tab or select the **Transform** tab and then **Use First Row as Headers**.
+5.  As before, select **Transform**, then **Use first row as headers**.
 
-6.  Update the datatype for these columns: 
+6.  Update the data type for these columns: 
 
     | Column Heading | New Data Type |
     | -------------- | ------------- |
-    | ReviewRating   | Whole Number  |
+    | ReviewRating   | Whole number  |
     | ReviewDate     | Date          |
 
-7.  In the **Name** field on the **Query settings** pane, rename the data source to `Reviews`. Select **Next** and select **Save**. 
+7.  In the **Name** field on the **Query settings** pane, rename the query to `Reviews`. Select **Next** and select **Save**. 
 
