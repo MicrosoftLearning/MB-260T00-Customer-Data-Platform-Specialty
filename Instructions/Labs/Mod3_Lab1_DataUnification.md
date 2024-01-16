@@ -20,32 +20,36 @@ Your objective is to find out how many unique customer profiles Contoso Retail h
 
 ## Task 1 - Map contacts to common data types 
 
-1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/.
+1.  Sign into **Customer Insights - Data** at `https://home.ci.ai.dynamics.com`
 
-2.  On the left menu, expand **Data**, select **Unify**. Select **Get started**. Under **Source fields** on the right-hand side, select **+ Select entities and fields**. 
+2.  On the left navigation menu, expand **Data**, select **Unify**. Select **Get started**.
 
-3.  Select the entities that represent the customer profile - **Contacts (eCommerce)** and **Customers (Loyalty)**. Then select **Apply**.
+3.  Select **+ Select tables and columns**. 
 
-4.  You will now be presented with the mappings of your source entity against standard model types. You can review the types in the table. 
+4.  Select the tables that represent the customer profile - **Contacts (eCommerce)** and **Customers (Loyalty)**. Select **Apply**.
 
-5.  You must choose a 'Primary Key' for each entity you have ingested. The primary key must be a unique reference. For eCommerce Contacts, select **ContactId** as the primary key. 
+5.  You will now be presented with the mappings of your source table against standard model types. You can review the types in the table. 
 
-6.  The eCommerce Contacts data contains a column named **Email Subscriber** which will be mapped to an incorrect type, **Identity.Service.Email**, because of the name. Open the dropdown for this field and select the empty option (nothing/blank). If we do not do this then the default system behaviour is to merge this field with the EMail field which we do not want. 
+6.  You must choose a 'Primary Key' for each entity you have ingested. The primary key must be a unique reference. For eCommerce Contacts, select **ContactId** as the primary key. 
 
-7.  Select **Loyalty Customers** under Tables and set **LoyaltyId** as the primary key. 
+7.  The eCommerce Contacts data contains a column named **Email Subscriber** which will be mapped to an incorrect type, **Identity.Service.Email**, because of the name. Open the drop-down for this column and select the empty option (nothing/blank). If we do not do this then the default system behaviour is to merge this field with the EMail field which we do not want. 
 
-8.  Select **Save source fields** in the top left-hand corner. 
+8.  Select **Loyalty Customers** under Tables and set **LoyaltyId** as the primary key. 
 
-9.  Select **Next** and **Next** again, to skip the duplicate checking and move on to the **Matching conditions** step. 
+9.  Select **Save source columns** in the top left-hand corner. 
+
+10.  Select **Next** and **Next** again, to skip the duplicate checking and move on to the **Matching rules** step. 
 
 
 ## Task 2 - Specify Match Order 
 
 For the next stage, we must select the order in which to merge the profiles. You will be able to merge attributes to ensure that the unified profiles are complete as well as the priority of which sources to use for those attributes. 
 
-1.  You should select the most complete or accurate profile source as the Primary (first) source. Use the arrow buttons to move **Contacts : eCommerce** as the primary (first) Source (if it isn't already). Select the check mark to **Include all** records. 
+1.  You should select the most complete or accurate profile source as the Primary (first) source. Verify **Contacts : eCommerce** is the primary (first) source (Move it if it isn't already).
 
-2.  Confirm that **Customers : Loyalty** is now the second source in the list. Choose to **Include all** records. 
+2.  Select the check mark to **Include all records**. 
+
+3.  Verify that **Customers : Loyalty** is the second source in the list. Choose to **Include all records**. 
 
 
 ## Task 3 - Create a Match Rule 
@@ -54,13 +58,13 @@ In this task, you will create a simple rule used to match records together. Rule
 
 For further details on Match Rules, please see [Customer Insights documentation](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/match-entities#define-rules-for-match-pairs). 
 
-1.  There is a warning indicator on the Customers : Loyalty line. Select **+ Add rule** or select the + icon on the right. 
+1.  There is a warning indicator on the **Customers : Loyalty** line. Select **+ Add rule** or select the + icon on the right. 
 
-2.  Add the first condition using FullName: 
+2.  Add the first condition using **FullName**: 
 
-	- For the **Contacts : eCommerce** entity, select the **FullName** field. 
+	- For the **Contacts : eCommerce** table, select the **FullName** field. 
 	
-	- For the **Customers : Loyalty** entity, select the **FullName** field. 
+	- For the **Customers : Loyalty** table, select the **FullName** field. 
 	
 	- Leave the **Normalize** drop-down blank. 
 	
@@ -72,9 +76,9 @@ For further details on Match Rules, please see [Customer Insights documentation]
 
 4.  Add a second condition for email address by selecting **+ Add** and selecting **Add condition**. 
 
-	- For the **Contacts : eCommerce** entity, select the **EMail** field. 
+	- For the **Contacts : eCommerce** table, select the **EMail** field. 
 	
-	- For the **Customers : Loyalty** entity, select the **EMail** field. 
+	- For the **Customers : Loyalty** table, select the **EMail** field. 
 	
 	- Leave the **Normalize** drop-down blank. 
 	
@@ -110,15 +114,17 @@ In Task 3, we used High Precision in the match-rule against Full Name. In this t
 
 4.  Under **Condition 1**, select **Preview** and note the values. Move the **Precision slider** for **Condition 1** from High to **Low**. Select **Done**. 
 
-5.  Select **Next**, select **Next** and select **Create customer profiles**. Wait for the matching process to complete. 
+5.  Select **Next**, select **Next** and select **Create customer profiles**.
 
-6.  Once the match process has completed, select the vertical dots menu next to the rule and select **Preview** to see the match results and the **Score**. This shows how Customer Insights matched the data tables based on the rules you have defined. Some profiles have been created with a lower confidence of matching. 
+6.  **Wait** for the matching process to complete. 
 
-7.  Close the preview and select **Edit**. Select the **Preview** button below **Condition 1**. Here you can preview the number of **Unmatched** and **Matched** records for the FullName condition. 
+7.  Once the match process has completed, select the vertical dots menu next to the rule and select **Preview** to see the match results and the **Score**. This shows how Customer Insights matched the data tables based on the rules you have defined. Some profiles have been created with a lower confidence of matching. 
 
-8.  Select **Preview data** under Unmatched or Matched to preview the matches. Notice how the high scores have exact spelling but can match even if the name format (First Name, Last Name / Last Name, First Name) is different. With the low scores, notice how matches are made even when names are not spelled identically. 
+8.  Close the preview and select **Edit**. Select the **Preview** button below **Condition 1**. Here you can preview the number of **Unmatched** and **Matched** records for the FullName condition. 
 
-9.  Close the **Criteria preview** pane and select **Cancel**. 
+9.  Select **Preview data** under Unmatched or Matched to preview the matches. Notice how the high scores have exact spelling but can match even if the name format (First Name, Last Name / Last Name, First Name) is different. With the low scores, notice how matches are made even when names are not spelled identically. 
+
+10. Close the **Criteria preview** pane and select **Cancel**. 
 
 **Confer with the class:** How many Unique Customer Profiles do you have now? 
 
@@ -135,19 +141,21 @@ Customer Insights will attempt to identify the attributes to be merged to the st
 
 2.  Under **Unified data view**, select **Edit**. 
 
-3.  Under **Customer fields**, note how attributes from different data sources that are of the same type (e.g. FirstName) have been merged. 
+3.  Under **Customer columns**, note how attributes from different data sources that are of the same type (e.g. FirstName) have been merged. 
 
 4.  Expand the **FirstName** merged attribute. You should see that the FirstName attribute in eCommerce : Contacts is ranked number 1. This denotes that where you have a matching customer profile in LoyaltyScheme and eCommerce, the FirstName taken from eCommerce : Contacts will be the primary. 
 
-5.  On the **FirstName (2)** row, select the **Rename** button. The Name defined here is the name that will be used in the Unified Customer Profile. 
+5.  On the **FirstName (2)** row, select the **Rename** button. The **Name** defined here is the name that will be used in the Unified Customer Profile. 
 
 6.  Select **Cancel**. 
 
-7.  Note on the **Keys** tab, that the Keys from the original sources cannot be merged. For example, we have a ContactId as the primary key from eCommerce : Contacts and we also have ContactId within Loyalty : Customers. In fact, we are merging these records not on ContactId, but on FullName & Email. 
+7.  Note on the **Keys** tab, that the Keys from the original sources cannot be merged. For example, we have a ContactId as the primary key from eCommerce : Contacts and we also have ContactId within Loyalty : Customers. In fact, we are merging these records not on ContactId, but on FullName & EMail. 
 
 8.  For the **ContactId** row, against the Loyalty : Customers entity, select the **Rename** button and enter `ContactIdLoyalty` for **Name** to differentiate this item from the other IDs ingested and help avoid any confusion later. Select **Done**. 
 
-9.  Select **Next** and select **Create customer profiles**. Waiting for the process to finish.
+9.  Select **Next** and select **Create customer profiles**.
+
+10. **Wait** for the process to finish.
 
 Congratulations! You have successfully ingested, mapped, matched and unified data from multiple sources within Customer Insights to create a Unified Customer Profile that can be used to gain insights into your whole customer base. 
 
