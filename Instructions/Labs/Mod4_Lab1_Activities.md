@@ -15,51 +15,29 @@ Interactions are any customer touch points - these could include purchases, cust
 
 ### Task 1 - Add an activity for eCommerce Purchases  
 
-1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights - Data at `https://home.ci.ai.dynamics.com`
 
-2.  In Customer Insights, expand **Data > Activities** on the left navigation menu and select **+ Add activity**. 
+2.  In Customer Insights, expand **Data > Activities** on the left navigation menu and select **+ Configure activities**.
 
-3.  Set up your activity data using the following values: 
+3.  Select the **Purchases : eCommerce** table and select **Add**.
 
-	- Activity name: `OnlinePurchase` 
+4.  Set the **Activity type** to **SalesOrder**.
 
-	- Entity: **Purchases : eCommerce** 
+5.  Set the **Primary key** to **PurchaseId** and select **Next**.
 
-	- Primary Key: **PurchaseId** 
+6.  Enter `OnlinePurchase` for **Activity name**.
 
-4.  Select **Next**. On the Relationships screen, select **+ Add relationship**. 
+7.  Select the following fields:
 
-5.  In the **Add relationship path** pane, set the following values: 
-
-	- Foreign key: ContactId 
-
-	- To entity name: Contacts : eCommerce 
-	
-	- Relationship name: `eCommPurchasesToContacts` 
-
-6.  Select **Apply**. 
-
-7.  Select **Next**. 
-
-8.  Unify your customer activity data by setting the following values: 
-
+    - Timestamp: **PurchasedOn**
+      
 	- Event activity: **ActivityTypeDisplay**
-	
-	- Timestamp: **PurchasedOn**
-	
+
 	- Additional detail: **Subject**
-	
-	- Icon: Select the **shopping bag**.
-	
-	- Show this information in the timeline view on your customer profiles?: Select **Yes**.
 
-9.  Select **Next**. 
+    - Show this activity in the timeline on your customer profile? **Yes**.
 
-10. Set the **Activity type** to **SalesOrder**. 
-
-11. Set "Provide semantic mapping for your activity's attributes?" to **Yes**. 
-
-12. Map the activity type's related fields as follows: 
+    - Icon: Select the **shopping bag**.
 
 	- Sales order ID: **PurchaseID** 
 	
@@ -67,9 +45,23 @@ Interactions are any customer touch points - these could include purchases, cust
 	
 	- Sales amount: **TotalPrice** 
 
-13. Select **Next**, review your entries, then select **Save activity**. 
+8.  Select **Next**. On the **Configure activity relationships** screen, select **+ Add relationship**. 
 
-14. Select **Done**. 
+9.  In the **Add relationship path** pane, set the following values: 
+
+	- Foreign key: **ContactId** 
+
+	- To table name: **Contacts : eCommerce** 
+	
+	- Relationship name: `eCommPurchasesToContacts` 
+
+10. Select **Apply**. 
+
+11. Select **Next**, review the entries, then select **Create activities**. 
+
+12. Select **Done**. 
+
+13. **Wait** while the Activities refresh and unify. This may take 5-10 minutes.
 
 
 ### Task 2 - Add an activity for PoSPurchases 
