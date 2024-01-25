@@ -59,26 +59,44 @@ Interactions are any customer touch points - these could include purchases, cust
 
 11. Select **Next**, review the entries, then select **Create activities**. 
 
-12. Select **Done**. 
-
-13. **Wait** while the Activities refresh and unify. This may take 5-10 minutes.
+12. **Wait** while the Activities refresh and unify. This may take 5-10 minutes.
 
 
 ### Task 2 - Add an activity for PoSPurchases 
 
-1.  Select **+ Add Activity**.
+1.  Select **Configure activities**.
 
-2.  Set up the activity data with the following values: 
+2.  Select the **Purchases : PoS** table and select **Add**.
 
-	- Activity name: `PoSPurchase`
+3.  For **Activity type**, select **Create new** from the bottom of the drop-down.
 
-	- Entity: **Purchases : PoS** 
+4.  Enter `PoSPurchase` for the **Activity type** then select **Add**.
 
-	- Primary Key: **PurchaseId** 
+5.  Set the **Primary key** to **PurchaseId** and select **Next**.
 
-3.  Seelct **Next**. On the Relationships screen, select **+ Add relationship**.
+6.  Select the **PoS Purchases** row, enter `PoSPurchase` for **Activity name**.
 
-4.  In the **Add relationship path** pane, set the following values: 
+7.  Select for the following fields:
+
+    - Timestamp: **PurchasedOn**
+      
+	- Event activity: **ActivityTypeDisplay**
+
+	- Additional detail: **Subject**
+
+    - Show this activity in the timeline on your customer profile? **Yes**.
+
+    - Icon: Select the **shopping bag**.
+
+	- Sales order ID: **PurchaseID** 
+	
+	- Order date: **PurchasedOn** 
+	
+	- Sales amount: **TotalPrice** 
+
+8.  Select **Next**.
+
+9.  Select **+ Add relationship** and in the **Add relationship path** pane, set the following values: 
 
 	- Foreign key: **LoyaltyId** 
 
@@ -86,36 +104,18 @@ Interactions are any customer touch points - these could include purchases, cust
 
 	- Relationshiop name: `PoSPurchasesToLoyalty` 
 
-5.  Select **Apply**. 
+10. Select **Apply**.
 
-6.  Select **Next**. 
+11. Select **Next**, review your entries, and select **Create activities**. 
 
-7.  Unify the customer activity data by setting the following values: 
-
-	- Event activity: **ActivityTypeDisplay**
-	
-	- Timestamp: **PurchasedOn**
-	
-	- Additional detail: **Subject**
-	
-	- Icon: Select the **shopping bag** icon. 
-	
-	- Show this information in the timeline view on your customer profiles?: Select **Yes**.
-
-8.  Select **Next**. 
-
-9.  Set **Activity type** to **Create new** and enter `PoSPurchase` for the **Activity type name**. 
-
-10. Select **Next**, review your entries, and select **Save activity**. 
-
-11. Select **Done**. 
+12. **Wait** while the Activities refresh and unify. This may take 5-10 minutes.
 
 
 ### Task 3 - Add an activity for Website Reviews 
 
-1.  Select **+ Add Activity**. 
+1.  Select **Configure activities**.
 
-2.  Set up the activity data with the following values: 
+3.  Set up the activity data with the following values: 
 
 	- Activity name: `WebsiteReview` 
 
@@ -123,9 +123,9 @@ Interactions are any customer touch points - these could include purchases, cust
 
 	- Primary Key: **ReviewId** 
 
-3.  Select **Next**. On the Relationships screen, select **+ Add relationship**. 
+4.  Select **Next**. On the Relationships screen, select **+ Add relationship**. 
 
-4.  In the **Add relationship path** pane, set the following values: 
+5.  In the **Add relationship path** pane, set the following values: 
 
 	- Foreign key: **UserId** 
 
@@ -133,11 +133,11 @@ Interactions are any customer touch points - these could include purchases, cust
 
 	- Relationship name: `WebReviewsToContacts` 
 
-5.  Select **Apply**. 
+6.  Select **Apply**. 
 
-6.  Click **Next**. 
+7.  Click **Next**. 
 
-7.  Unify the customer activity data by setting the following values: 
+8.  Unify the customer activity data by setting the following values: 
 
 	- Event activity: **ActivityTypeDisplay** 
 	
@@ -149,13 +149,13 @@ Interactions are any customer touch points - these could include purchases, cust
 	
 	- Show this information in the timeline view on your customer profiles?: Select **Yes**. 
 	
-8.  Select **Next**. 
+9.  Select **Next**. 
 
-9.  Set **Activity type** to **Create new** and enter `WebsiteReview` for the **Activity type name**. 
+10.  Set **Activity type** to **Create new** and enter `WebsiteReview` for the **Activity type name**. 
 
-10. Select **Next**, review your entries, and select **Save activity**. 
+11. Select **Next**, review your entries, and select **Save activity**. 
 
-11. Select **Done**. 
+12. Select **Done**. 
 
 
 ### Task 4 - Confirm the Activities 
