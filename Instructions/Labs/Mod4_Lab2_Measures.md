@@ -47,17 +47,17 @@ Business Measures helps you track your business performance and health. The busi
 
 In this first task, we will create a measure to define the **average value of all in store purchases** made at Contoso Coffee. 
 
-1.  If you haven't already, sign into Customer Insights  - Data at https://home.ci.ai.dynamics.com/. 
+1.  If you haven't already, sign into **Customer Insights - Data** at `https://home.ci.ai.dynamics.com`
 
-2.  Select **Measures** from the left navigation menu. 
+2.  Expand **Insights** and select **Measures** from the left navigation menu. 
 
 3.  Select **+ New** from the toolbar, then select **Build your own**. 
 
-4.  Next to the "Untitled measure" text, select **Edit details**. 
+4.  Next to the **Untitled measure** header text, select **Edit details**. 
  
 5.  Set the **Name** to `Average Store Purchase Value ($)` and select **Done**. 
 
-6.  Toggle **Measure type** to **Business level**. 
+6.  Toggle **Measure type** from **Customer** to **Business** level. 
 
 8.  Next to **Calculation 1**, select **Edit name**. 
 
@@ -80,15 +80,15 @@ In this first task, we will create a measure to define the **average value of al
 
 In this next task, we will create a measure to define the **Average value of all web purchases** made at Contoso Coffee.
 
-1. Select **Measures** from the left navigation menu. 
+1. Select **Insights** > **Measures** from the left navigation menu. 
 
 2. Select **+ New > Build your own** from the toolbar. 
 
-3. Next to the **Untitled measure** text, select **Edit name**. 
+3. Next to the **Untitled measure** header text, select **Edit name**. 
 
-4. Set the name to `Average Web Purchase Value ($)` and select **Done**. 
+4. Set the **Name** to `Average Web Purchase Value ($)` and select **Done**. 
 
-5. Toggle **Measure type** to **Business level**. 
+5. Toggle **Measure type** from **Customer** to **Business** level. 
 
 8. Next to **Calculation 1**, select **Edit name**. 
 
@@ -115,13 +115,13 @@ We will need two customer measures that can be used to calculate a customer attr
 
 In this task, we will create a measure to define **Total of all purchases made in-store.** 
 
-1.  Sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
+1.  Sign into Customer Insights - Data at `https://home.ci.ai.dynamics.com/` 
 
-2.  Select **Measures** from the left navigation menu. 
+2.  Select **Insights** > **Measures** from the left navigation menu. 
 
 3.  Select **+ New > Build your own** from the toolbar. 
 
-4.  Next to the title **Untitled measure** text, select **Edit details**. 
+4.  Next to the **Untitled measure** header text, select **Edit details**. 
 
 5.  Set the **Name** to `Total In-Store Spend` and select **Done**. 
 
@@ -133,7 +133,7 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 9.  Select **Edit Dimensions**. 
 
-10. Expand **Purchases: PoS**, select **LoyaltyId**, and select **Done**. 
+10. Expand **Purchases : PoS**, select **LoyaltyId**, and select **Done**. 
 
 11. Select **Apply**. 
 
@@ -146,13 +146,13 @@ In this task, we will create a measure to define **Total of all purchases made i
 
 Next, we will create a measure to define **Total of all purchases made online.**
 
-1.  Select **Measures** on the left navigation menu. 
+1.  Select **Insights** > **Measures** from the left navigation menu. 
 
 2.  Select **+ New > Build your own** from the toolbar. 
 
-3.  Next to the title **Untitled measure** text, select **Edit details**. 
+3.  Next to the **Untitled measure** header text, select **Edit details**. 
 
-4.  Set the name to `Total Online Spend`, select **Done**. 
+4.  Set the **Name** to `Total Online Spend`, select **Done**. 
 
 5.  Under the **Total Online Spend** calculation, choose **Sum** from the **Select function** drop-down. 
 
@@ -168,7 +168,7 @@ Next, we will create a measure to define **Total of all purchases made online.**
 
 11. Select the **Run** button to complete your measure. 
 
-12. If you encounter an error and need to choose your relationship path, select **eCommerce_Purchases > Customer**. 
+12. If you encounter an error and need to choose the **Relationship path**, select **eCommerce_Purchases > Customer**. 
 
 
 ## Task 3 - Define Customer Attributes 
@@ -181,46 +181,46 @@ In this task you will create measures to calculate the Lifetime Spend ($), Total
 
 First, we will define **Total Loyalty Points earned by each customer**. 
 
-1. If necessary, select **Measures** from the left navigation menu. 
+1.  If necessary, elect **Insights** > **Measures** from the left navigation menu. 
 
-2. Select **+ New > Build your own** from the toolbar.  
+2.  Select **+ New > Build your own** from the toolbar.  
 
-3. Next to the title **Untitled measure** text, select **Edit details**.
+3.  Next to the **Untitled measure** header text, select **Edit details**.
 
-4. Set the name to `Total Club Points` and select **Done**. 
+4.  Set the **Name** to `Total Club Points` and select **Done**. 
 
-5. Under the **Total Club Points** calculation, choose **Sum** from the **Select function** drop-down. 
+5.  Under the **Total Club Points** calculation, choose **Sum** from the **Select function** drop-down. 
 
-6. Select **+ Add attribute**, expand **Purchases : POS**, select **RewardPointsAdded** and select **Add**. 
+6.  Select **+ Add attribute**, expand **Purchases : POS**, select **RewardPointsAdded** and select **Add**. 
 
-7. Select the **Run** button to complete your measure. 
+7.  Select the **Run** button to complete your measure. 
 
-8. If you encounter an error and need to choose your relationship path, select **PoS_Purchases > Customer**. 
+8.  If you encounter an error and need to choose the **Relationship path**, select **PoS_Purchases > Customer**. 
 
 
 ## Lifetime Spend (Customer Attribute)  
 
 Next, we will define **Total value of all purchases made for each customer.** 
 
-1.  If necessary, select **Measures** from the left navigation menu. 
+1.  Select **Insights** > **Measures** from the left navigation menu. 
 
-2.  Select **+ New > Build your own** from the toolbar.  
+2.  Select **+ New > Build your own** from the toolbar. 
 
-3.  Next to the title **Untitled measure** text, select **Edit details**.
+3.  Next to the **Untitled measure** header text, select **Edit details**. 
 
-4.  Set the name to `Lifetime Spend ($)` and select **Done**. 
+4.  Set the **Name** to `Lifetime Spend ($)` and select **Done**. 
 
 5.  Under the **Lifetime Spend ($)** calculation, choose **Sum** from the **Select function** drop-down. 
 
-6.  Select **+ Add attribute**.  
+6.  Select **+ Add attribute**. 
 
 7.  Select the **Measures** tab, expand **TotalInStoreSpend : CustomerInsights**, select **Calculation 1**, and select **Add.** 
 
 8.  Select the **+** (Plus sign) to add a plus sign after the attribute you just added. The plus sign should appear in the calculation formula. 
 
-9.  Select **Add attribute**. 
+9.  Select **+ Add attribute**. 
 
-10. Select the **Measures** tab, expand **TotalOnlineSpend : CustomerInsights**, select **Calculation 1**, and select **Add**.  
+10. Select the **Measures** tab, expand **TotalOnlineSpend : CustomerInsights**, select **Calculation 1**, and select **Add**. 
 
 11. Select the **Run** button to complete your measure. 
 
@@ -229,11 +229,11 @@ Next, we will define **Total value of all purchases made for each customer.**
 
 Next, we will define the **average value of all store purchases made for each customer.** 
 
-1.  If necessary, select **Measures** from the left navigation menu. 
+1.  Select **Insights** > **Measures** from the left navigation menu. 
 
-2.  Select **+ New > Build your own** from the toolbar.  
+2.  Select **+ New > Build your own** from the toolbar. 
 
-3.  Next to the title **Untitled measure** text, select **Edit details**. 
+3.  Next to the **Untitled measure** header text, select **Edit details**. 
 
 4.  Set the name to `Average Store Purchase ($)` and select **Done**. 
 
@@ -254,7 +254,7 @@ Next, we will define **Average value of all web purchases made for each customer
 
 2.  Select **+ New > Build your own** from the toolbar.  
 
-3.  Next to the title **Untitled measure** text, select **Edit details**. 
+3.  Next to the **Untitled measure** header text, select **Edit details**. 
 
 4.  Set the name to `Average Web Purchase ($)` and select **Done**. 
 
@@ -269,11 +269,11 @@ Next, we will define **Average value of all web purchases made for each customer
 
 # Task 4 - Review the Measures 
 
-1. Make sure all your measures have successfully refreshed, then navigate to the Customer Insights home page. You should notice that the new **Business Measures** are shown under **Recent business measures**.  
+1. Wait for all the measures to successfully refresh, then navigate to the **Customer Insights - Data** home page. You should notice that the new **Business Measures** are shown under **Recent business measures**. 
 
-2. Navigate to **Data > Entities** and open the **Customer_Measure** entity. You should be presented with a preview of the Customer Measures you have calculated against the Unified Profile Customer ID. Select the **Data** tab to see the results. 
+2. Navigate to **Data > Tables** and open the **Customer_Measure** table. You should be presented with a preview of the **Customer Measures** you have calculated against the Unified Profile Customer ID. Select the **Data** tab to see the results. 
 
 3. One interesting view to explore is the **Summary view** for each measure. From the screen above select the **Attributes** tab, then select the **Overview** chart icon for Total Club Points shown in the **Summary** column. You should get an **Overview** pop-up showing some useful statistics about the measure. 
 
-You are now able to consume these measures to drive action such as **Marketing Segments**. 
+You are now able to consume these measures to drive actions such as **Marketing Segments**. 
  
