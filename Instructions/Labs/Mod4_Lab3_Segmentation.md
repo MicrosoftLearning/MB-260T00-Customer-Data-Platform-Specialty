@@ -122,19 +122,19 @@ Let's try to find out common customers that belong to both Customers from Califo
 
 9.  Select each **measure** and **attribute** to see deeper insights. 
 
-We have successfully created a Segment insight using **Differentiators**. Now let's create an insight using **Overlap**. 
+    We have successfully created a Segment insight using **Differentiators**. Now let's create an insight using **Overlap**. 
 
-9.  Make sure you're still in the **Segments > Insights (preview)** tab and select **+ New** from the command bar. Choose **Overlap**. 
+10. Make sure you're still in the **Segments > Insights (preview)** tab and select **+ New** from the command bar. Choose **Overlap**. 
 
-10. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
+11. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
 
-11. Select **Next**. 
+12. Select **Next**. 
 
-12. Optional: Choose some attributes to compare the segments, just as we did with the Differentiators. Or, select **Next** without choosing anything. 
+13. *Optional:* Choose some attributes to compare the segments, just as we did with the Differentiators. Or, select **Next** without choosing anything. 
 
-13. Name the Segment Overlap "High Value Online Overlapped with California Customers" and verify the **Output entity name** is set to **HighValueOnlineOverlappedwithCaliforniaCustomers**. Select **Save**. 
+14. Name the Segment Overlap `High Value Online Overlapped with California Customers` and verify the **Output table name** is set to **HighValueOnlineOverlappedwithCaliforniaCustomers**. Select **Save**. 
 
-14. After the insight finishes refreshing, open the created insight to see the venn diagram showing the total and percentage of shared customers between these two segments. 
+15. After the insight finishes refreshing, open the created insight to see the venn diagram showing the total and percentage of shared customers between these two segments. 
 
 
 ### Task 6 - Segment Expansion 
@@ -143,23 +143,25 @@ Segment Expansion can be used to find similar customers to your segment customer
 
 Earlier we created a segment called **Summer Promotion**, which contains millennial customers with higher than average in-store purchase. Now, let's expand that segment and find customers that are similar to them for us to market our newly launched Cold Brew Coffee. 
 
-1.  Select **Segments** from the left navigation menu and choose the **Summer Promotion** segment. This will become our source segment. 
+1.  Select **Insights** > **Segments** from the left navigation menu and select the **All segments** tab.
 
-2.  Select **Find similar customers** from the command bar. 
+2.  Choose the **Summer Promotion** segment. This will become our source segment. 
 
-3.  Name your segment `SummerPromoExpansion` 
+3.  Select **Find similar customers** from the command bar. 
 
-4.  Select **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Select **Apply**. 
+4.  Name your segment `SummerPromoExpansion` 
 
-5.  Next you must choose who to consider. Either **All customers except source segment**, or **Customers from a different segment**. If a different segment is selected, then you must choose which segment it is. For now, select **All customers except source segment**. 
+5.  Select **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Select **Apply**. 
 
-6.  Now the maximum number of customers to include must be selected. By default, 20% of all customers is selected which could be altered if required. Let's stick with 20%. 
+6.  Next you must choose who to consider. Either **All customers except source segment**, or **Customers from a different segment**. If a different segment is selected, then you must choose which segment it is. For now, select **All customers except source segment**. 
 
-7.  If you would like to include members from the source segment as well then check the last option. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
+7.  Now the maximum number of customers to include must be selected. By default, 20% of all customers is selected which could be altered if required. Let's stick with 20%. 
 
-8.  Select **Run**. 
+8.  If you would like to include members from the source segment as well then check the last option. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
 
-9.  After the segment finishes refreshing, open the segment to find the **Similarity Scores** and explore the **Segment members preview**. 
+9.  Select **Run**. 
+
+10.  After the segment finishes refreshing, open the segment to find the **Similarity Scores** and explore the **Segment members preview**. 
 
 
 ## Exercise 2 - Get suggested Segments 
@@ -168,9 +170,9 @@ Use Suggested Segments to discover interesting segments based on a customer attr
 
 ### Task 1 - Discover segments based on a numeric customer attribute or measure of interest  
 
-1.  Select **Segments** from the left navigation menu, and select the **Suggestions (preview)** tab. 
+1.  Select **Insights** > **Segments** from the left navigation menu, and select the **Suggestions (preview)** tab. 
 
-2.  Select **+ New > Suggested segments** to begin the configuration experience. 
+2.  Select **Get suggestions** to begin the configuration experience. 
 
 3.  Choose **Improve a measure/metric** and select **Start**. 
 
@@ -198,9 +200,9 @@ Use Suggested Segments to discover interesting segments based on a customer attr
 
     - The attribute values, that is the rules that the model learned based on the selected influencing attributes. 
 
-In this case, customers in this segment have an average LifetimeSpend of 741.89 as compared to average LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
+    In this case, customers in this segment have an average LifetimeSpend of 741.89 as compared to average LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
 
-In a similar fashion, you can see details of other segment suggestions that you might be interested in. 
+    In a similar fashion, you can see details of other segment suggestions that you might be interested in. 
 
 9.  To save the segment, select **Save as segment** in the **Suggested segment details** panel. Select **Save**. 
   
