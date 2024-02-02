@@ -28,9 +28,9 @@ In this lab you will segment your unified customer profiles, to uncover cohorts 
 
 Let's create a segment called Customers from California quickly using the profiles. 
 
-1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
+1.  If you haven't already, sign into Customer Insights at `https://home.ci.ai.dynamics.com`
 
-3.  Select **Segments** from the left navigation menu. 
+3.  Expand **Insights** and select **Segments** from the left navigation menu. 
 
 3.  Select **+ New > Create from Profiles**. 
 
@@ -47,7 +47,7 @@ Let's create a segment called Customers from California quickly using the profil
 
 Contoso Coffee Marketing wants to run a new promotion to convert customers to subscription model. Marketing have identified that they wish to target brew-at-home customers with a higher than average online purchase value to do so. We will create this segment using the Quick Create. 
 
-1.  Select **Segments** from the left navigation menu. 
+1.  Select **Insights** > **Segments** from the left navigation menu. 
 
 2.  Select **+ New > Create from Measures**. 
 
