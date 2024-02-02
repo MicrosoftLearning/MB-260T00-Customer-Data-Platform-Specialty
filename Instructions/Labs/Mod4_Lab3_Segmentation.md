@@ -70,23 +70,25 @@ Contoso Coffee Marketing want to run a new Summer Promo targeting millennials wi
 
 1.  Select **Segments** in the left navigation menu. Select **+ New > Build your own**. 
 
-2.  Next to the **Untitled segment** text, select **Edit details** and change the name to `Summer Promotion`. Verify the **Output entity name** has been automatically populated with **SummerPromotion**, and select **Done**. 
+2.  Next to the **Untitled segment** header text, select **Edit details** and change the name to `Summer Promotion`
 
-3.  Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing `Average Store`. Select the **Average Store Purchase ($)** attribute. 
+3.  Verify the **Output entity name** has been automatically populated with **SummerPromotion**, and select **Done**. 
 
-4.  Select **is** and **greater than or equal to**. And enter `113` (Note: 113 is the average in-store purchase we calculated earlier.) 
+4.  Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing `Average Store`. Select the **Average Store Purchase ($)** attribute. 
 
-5.  Select **+ Add condition**. An *and* condition will be added. 
+5.  Select **is** and **greater than or equal to**. And enter `113` (Note: 113 is the average in-store purchase we calculated earlier.) 
 
-6.  In the "Attribute name" box, start typing `dateOf` and select the **dateOfBirth** attribute. 
+6.  Select **+ Add condition**. An *and* condition will be added. 
 
-7.  Select **is** and, **on or after** and enter the date as `1/1/1981`. 
+7.  In the **Attribute name** box, start entering `dateOf` and select the **dateOfBirth** attribute. 
 
-8.  Add another condition with an **and** qualifier. 
+8.  Select **is** and, **on or after** and enter the date as `1/1/1981` 
 
-9.  Set this condition as **DateOfBirth is on or before** `12/31/1996`. 
+9.  Add another condition with an **and** qualifier. 
 
-10. Select **Run**. 
+10.  Set this condition as **DateOfBirth is on or before** `12/31/1996` 
+
+11. Select **Run**. 
 
 
 ### Task 4 - Review Segments 
@@ -144,7 +146,7 @@ Earlier we created a segment called **Summer Promotion**, which contains millenn
 
 2.  Select **Find similar customers** from the command bar. 
 
-3.  Name your segment `SummerPromoExpansion`. 
+3.  Name your segment `SummerPromoExpansion` 
 
 4.  Select **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Select **Apply**. 
 
