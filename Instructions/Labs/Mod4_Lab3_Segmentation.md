@@ -13,7 +13,7 @@ These segments will allow Contoso Coffee Marketing to deliver personalised, targ
  
 ## Exercise 1 - Create segments
 
-Segments enable you to group your customers into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can achieve more targeted actions such as promotional campaigns, sales activities, or customer support actions to achieve desired business goals. You can define complex filters around the Customer Profile entity and its graph of related entities. Each segment, after processing, outputs a set of customer entity records that you can export and take actions against. 
+Segments enable you to group your customers into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can achieve more targeted actions such as promotional campaigns, sales activities, or customer support actions to achieve desired business goals. You can define complex filters around the Customer Profile table and its graph of related entities. Each segment, after processing, outputs a set of customer table records that you can export and take actions against. 
 
 Segments can be static (defined at the point you activate them) or Dynamic. If you create a Dynamic segment, customers will drop in and out of the segment as they meet or no longer meet the criteria. 
 
@@ -38,7 +38,7 @@ Let's create a segment called Customers from California quickly using the profil
 
 5.  Select **Review**. 
 
-6.  Name the segment `Customers from California` and verify the **Output entity name** has been automatically populated with **CustomersFromCalifornia**. 
+6.  Name the segment `Customers from California` and verify the **Output table name** has been automatically populated with **CustomersFromCalifornia**. 
 
 7.  Select **Save**. 
 
@@ -59,7 +59,7 @@ Contoso Coffee Marketing wants to run a new promotion to convert customers to su
 
 6.  Select **Review**. 
 
-7.  Name the segment `High Value Online Customers` and verify the **Output entity name** has been automatically populated with **HighValueOnlineCustomers**. 
+7.  Name the segment `High Value Online Customers` and verify the **Output table name** has been automatically populated with **HighValueOnlineCustomers**. 
 
 8.  Select **Save**. 
 
