@@ -68,13 +68,13 @@ Contoso Coffee Marketing wants to run a new promotion to convert customers to su
 
 Contoso Coffee Marketing want to run a new Summer Promo targeting millennials with a higher than average in-store purchase with their newly launched Cold Brew Coffee. We will create this segment manually. 
 
-1.  Select **Segments** in the left navigation menu. Select **+ New > Build your own**. 
+1.  Select **Insights** > **Segments** from the left navigation menu. Select **+ New > Build your own**. 
 
-2.  Next to the **Untitled segment** header text, select **Edit details** and change the name to `Summer Promotion`
+2.  Next to the **Untitled segment** header text, select **Edit details** and change the **Name** to `Summer Promotion`
 
 3.  Verify the **Output entity name** has been automatically populated with **SummerPromotion**, and select **Done**. 
 
-4.  Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing `Average Store`. Select the **Average Store Purchase ($)** attribute. 
+4.  Under **Rule 1**, in the text box that reads "Enter an attribute name...", start entering `Average Store`. Select the **Average Store Purchase ($)** attribute. 
 
 5.  Select **is** and **greater than or equal to**. And enter `113` (Note: 113 is the average in-store purchase we calculated earlier.) 
 
@@ -93,9 +93,9 @@ Contoso Coffee Marketing want to run a new Summer Promo targeting millennials wi
 
 ### Task 4 - Review Segments 
 
-1.  Wait for all your segments to successfully run, then navigate to the Customer Insights home page. You should see your segments displayed, under **Recent segments**. 
+1.  Wait for all your segments to successfully refresh, then navigate to the **Customer Insights - Data** home page. You should see your segments displayed, under **Recent segments**. 
 
-2.  Select one of your segments. Under **Segments members preview** you will see customers included in the segment, as well a chart highlighting the **Segment size** over time. This will show increases and decreases in the number of segment members as data changes over time and the segment is re-run. 
+2.  Select one of your segments. Under **Segments members preview** you will see customers included in the segment, as well a chart highlighting the **Segment size** over time. This will show increases and decreases in the number of segment members as data changes over time and the segment is refreshed. 
 
 3.  Now that you have created segments, you are ready to start acting on the data. You can open a segment and select **Download** from the Command Bar to obtain a .CSV export of the segment for use in third party business applications. Be careful with the downloaded file as it will contain Customer PII (Personal Identifiable Information) and should be treated in accordance with applicable Data Security policies. Segments created in Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications via API to avoid the need to download files. 
 
@@ -104,7 +104,7 @@ Contoso Coffee Marketing want to run a new Summer Promo targeting millennials wi
 
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
 
-1.  Select **Segments** from the left menu. Select the **Insights (preview)** tab and select **+ New** from the command bar, or select the **+ New insight** button. 
+1.  Select **Insights** > **Segments** from the left navigation menu. Select the **Insights (preview)** tab and select **+ New** from the command bar, or select the **+ New insight** button. 
 
 2.  You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Select **Differentiators**. 
 
@@ -112,14 +112,15 @@ Let's try to find out common customers that belong to both Customers from Califo
 
 5.  Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. **Clear** all other customer and measure fields. 
 
-6.  Select **Next** and name the insight `High Value Online vs Customers from California`, verify the **Output entity name** gets set to **HighValueOnlinevsCustomersfromCalifornia**. Select **Save**. 
+6.  Select **Next** and name the insight `High Value Online vs Customers from California`
 
-7.  After the insight finishes refreshing, open the created insight. Select the **Attributes** or **Measures** tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score, the more different they are.
+7.  Verify the **Output entity name** gets set to **HighValueOnlinevsCustomersfromCalifornia**. Select **Save**. 
+
+8.  After the insight finishes refreshing, open the created insight. Select the **Attributes** or **Measures** tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score, the more different they are.
 
     > **Note:** You may need to refresh the browser window to see the results. 
 
-8.  Select each **measure** and **attribute** to see deeper insights. 
-
+9.  Select each **measure** and **attribute** to see deeper insights. 
 
 We have successfully created a Segment insight using **Differentiators**. Now let's create an insight using **Overlap**. 
 
