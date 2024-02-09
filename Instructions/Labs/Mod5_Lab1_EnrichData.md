@@ -129,7 +129,7 @@ Once the enrichment has finished running (it may take several minutes), you can 
 
 3.  Now, we'll look at one of the two entities that were created to hold the enrichment data. 
 
-    Navigate to **Data > Entities**, and then under Enrichment, select either the **BrandAffinityFromMicrosoft** or **InterestAffinityFromMicrosoft** entity. This is where the enrichment data is stored. 
+    Navigate to **Data > Tables**, and then under Enrichment, select either the **BrandAffinityFromMicrosoft** or **InterestAffinityFromMicrosoft** entity. This is where the enrichment data is stored. 
 
     Here you will see the Industry a brand is listed in, the affinity score for a customer profile and affinity confidence as well as other information depending on which fields were mapped. 
 
