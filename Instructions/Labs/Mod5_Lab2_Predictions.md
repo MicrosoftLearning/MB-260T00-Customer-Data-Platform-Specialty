@@ -20,11 +20,11 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 ## Task 1 - Run the OOB Transactional Churn Model 
 
-1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/. 
+1.  If you haven't already, sign into Customer Insights - Data at `https://home.ci.ai.dynamics.com`
 
-2.  Navigate to **Intelligence** > **Predictions** from the left navigation menu. 
+2.  Navigate to **Insights** > **Predictions** from the left navigation menu. 
 
-3.  Select the **Create** tab and select **Use model** on the **Customer churn model** card. 
+3.  Select the **Create** tab and select **Use this model** on the **Customer churn model** card. 
 
 4.  Select the **Transaction** option and select **Get started**. 
 
@@ -32,7 +32,7 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 6.  Define both conditions for the churn model as **60 days**, then select **Next**. 
 
-7.  Under Customer transaction history, select **+ Add data**. Select **SalesOrder** as the activity type and then select the **Purchases : eCommerce** entity. Select **Next** and then **Save**. 
+7.  Under **Customer transaction history**, select **+ Add data**. Select **SalesOrder** as the activity type and then select the **Purchases : eCommerce** entity. Select **Next** and then **Save**. 
 
 8.  Select **Next** to move to the **Additional data (optional)** screen and then select **Next** again. 
 
@@ -42,7 +42,7 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 11. Monitor the run status, and once the run has succeeded, select the created prediction to see the results. You can find the list of customers and their churn score under **Data** > **Entities** > **Intelligence** > **OOBeCommerceTransactionChurnPrediction**. 
 
-12. Return to **Intelligence > Predictions**. Select the vertical ellipses from your churn model and select **View**. Explore the Training model performance, likelihood to churn chart, and most influential factors. 
+12. Return to **Intelligence > Predictions**. Select the vertical ellipsis (...) menu from your churn model and select **View**. Explore the Training model performance, likelihood to churn chart, and most influential factors. 
 
 
 ### Training Model Performance
@@ -66,7 +66,7 @@ There are many factors that are taken into account when creating your prediction
 
 ## Task 2 - Create a Segment of High Churn-Risk Customers
 
-1.  Return to the homepage `https://home.ci.ai.dynamics.com/`. 
+1.  Return to the homepage, `https://home.ci.ai.dynamics.com/`
 
 2.  Go to **Segments**. Select **+ New** and choose **Create from Intelligence**. 
 
@@ -82,7 +82,7 @@ There are many factors that are taken into account when creating your prediction
 
 5.  Name the segment `High Risk Transaction Churn`, verify the **Output entity name** is set to **HighRiskTransactionChurn**, and select **Save**. 
 
-6.  Wait for the Segment to refresh. 
+6.  **Wait** for the Segment to refresh. 
 
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this transactional business. 
 
