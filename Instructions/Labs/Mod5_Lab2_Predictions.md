@@ -44,7 +44,7 @@ Customer Insights offers out of the box models to predict key insights of your b
 
 11. Monitor the run status, and once the run has succeeded, select the created prediction to see the results. You can find the list of customers and their churn score under **Data** > **Entities** > **Intelligence** > **OOBeCommerceTransactionChurnPrediction**. 
 
-12. Return to **Intelligence > Predictions**. Select the vertical ellipsis (...) menu from your churn model and select **View**. Explore the Training model performance, likelihood to churn chart, and most influential factors. 
+12. Return to **Insights > Predictions**. Select the vertical ellipsis (...) menu from your churn model and select **View**. Explore the Training model performance, likelihood to churn chart, and most influential factors. 
 
 
 ### Training Model Performance
