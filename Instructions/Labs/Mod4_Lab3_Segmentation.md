@@ -13,7 +13,7 @@ These segments will allow Contoso Coffee Marketing to deliver personalised, targ
  
 ## Exercise 1 - Create segments
 
-Segments enable you to group your customers into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can achieve more targeted actions such as promotional campaigns, sales activities, or customer support actions to achieve desired business goals. You can define complex filters around the Customer Profile entity and its graph of related entities. Each segment, after processing, outputs a set of customer entity records that you can export and take actions against. 
+Segments enable you to group your customers into cohorts based on demographic, transactional, or behavioural customer attributes. Using segmentation, you can achieve more targeted actions such as promotional campaigns, sales activities, or customer support actions to achieve desired business goals. You can define complex filters around the Customer Profile table and its graph of related entities. Each segment, after processing, outputs a set of customer table records that you can export and take actions against. 
 
 Segments can be static (defined at the point you activate them) or Dynamic. If you create a Dynamic segment, customers will drop in and out of the segment as they meet or no longer meet the criteria. 
 
@@ -28,9 +28,9 @@ In this lab you will segment your unified customer profiles, to uncover cohorts 
 
 Let's create a segment called Customers from California quickly using the profiles. 
 
-1.  If you haven't already, sign into Customer Insights at https://home.ci.ai.dynamics.com/. 
+1.  If you haven't already, sign into Customer Insights at `https://home.ci.ai.dynamics.com`
 
-3.  Select **Segments** from the left navigation menu. 
+3.  Expand **Insights** and select **Segments** from the left navigation menu. 
 
 3.  Select **+ New > Create from Profiles**. 
 
@@ -38,7 +38,7 @@ Let's create a segment called Customers from California quickly using the profil
 
 5.  Select **Review**. 
 
-6.  Name the segment `Customers from California` and verify the **Output entity name** has been automatically populated with **CustomersFromCalifornia**. 
+6.  Name the segment `Customers from California` and verify the **Output table name** has been automatically populated with **CustomersFromCalifornia**. 
 
 7.  Select **Save**. 
 
@@ -47,7 +47,7 @@ Let's create a segment called Customers from California quickly using the profil
 
 Contoso Coffee Marketing wants to run a new promotion to convert customers to subscription model. Marketing have identified that they wish to target brew-at-home customers with a higher than average online purchase value to do so. We will create this segment using the Quick Create. 
 
-1.  Select **Segments** from the left navigation menu. 
+1.  Select **Insights** > **Segments** from the left navigation menu. 
 
 2.  Select **+ New > Create from Measures**. 
 
@@ -59,7 +59,7 @@ Contoso Coffee Marketing wants to run a new promotion to convert customers to su
 
 6.  Select **Review**. 
 
-7.  Name the segment `High Value Online Customers` and verify the **Output entity name** has been automatically populated with **HighValueOnlineCustomers**. 
+7.  Name the segment `High Value Online Customers` and verify the **Output table name** has been automatically populated with **HighValueOnlineCustomers**. 
 
 8.  Select **Save**. 
 
@@ -68,32 +68,34 @@ Contoso Coffee Marketing wants to run a new promotion to convert customers to su
 
 Contoso Coffee Marketing want to run a new Summer Promo targeting millennials with a higher than average in-store purchase with their newly launched Cold Brew Coffee. We will create this segment manually. 
 
-1.  Select **Segments** in the left navigation menu. Select **+ New > Build your own**. 
+1.  Select **Insights** > **Segments** from the left navigation menu. Select **+ New > Build your own**. 
 
-2.  Next to the **Untitled segment** text, select **Edit details** and change the name to `Summer Promotion`. Verify the **Output entity name** has been automatically populated with **SummerPromotion**, and select **Done**. 
+2.  Next to the **Untitled segment** header text, select **Edit details** and change the **Name** to `Summer Promotion`
 
-3.  Under **Rule 1**, in the text box that reads "Enter an attribute name...", start typing `Average Store`. Select the **Average Store Purchase ($)** attribute. 
+3.  Verify the **Output entity name** has been automatically populated with **SummerPromotion**, and select **Done**. 
 
-4.  Select **is** and **greater than or equal to**. And enter `113` (Note: 113 is the average in-store purchase we calculated earlier.) 
+4.  Under **Rule 1**, in the text box that reads "Enter an attribute name...", start entering `Average Store`. Select the **Average Store Purchase ($)** attribute. 
 
-5.  Select **+ Add condition**. An *and* condition will be added. 
+5.  Select **is** and **greater than or equal to**. And enter `113` (Note: 113 is the average in-store purchase we calculated earlier.) 
 
-6.  In the "Attribute name" box, start typing `dateOf` and select the **dateOfBirth** attribute. 
+6.  Select **+ Add condition**. An *and* condition will be added. 
 
-7.  Select **is** and, **on or after** and enter the date as `1/1/1981`. 
+7.  In the **Attribute name** box, start entering `dateOf` and select the **dateOfBirth** attribute. 
 
-8.  Add another condition with an **and** qualifier. 
+8.  Select **is** and, **on or after** and enter the date as `1/1/1981` 
 
-9.  Set this condition as **DateOfBirth is on or before** `12/31/1996`. 
+9.  Add another condition with an **and** qualifier. 
 
-10. Select **Run**. 
+10.  Set this condition as **DateOfBirth is on or before** `12/31/1996` 
+
+11. Select **Run**. 
 
 
 ### Task 4 - Review Segments 
 
-1.  Wait for all your segments to successfully run, then navigate to the Customer Insights home page. You should see your segments displayed, under **Recent segments**. 
+1.  Wait for all your segments to successfully refresh, then navigate to the **Customer Insights - Data** home page. You should see your segments displayed, under **Recent segments**. 
 
-2.  Select one of your segments. Under **Segments members preview** you will see customers included in the segment, as well a chart highlighting the **Segment size** over time. This will show increases and decreases in the number of segment members as data changes over time and the segment is re-run. 
+2.  Select one of your segments. Under **Segments members preview** you will see customers included in the segment, as well a chart highlighting the **Segment size** over time. This will show increases and decreases in the number of segment members as data changes over time and the segment is refreshed. 
 
 3.  Now that you have created segments, you are ready to start acting on the data. You can open a segment and select **Download** from the Command Bar to obtain a .CSV export of the segment for use in third party business applications. Be careful with the downloaded file as it will contain Customer PII (Personal Identifiable Information) and should be treated in accordance with applicable Data Security policies. Segments created in Customer Insights can be made available to other parts of the Power Platform, Dynamics 365 Marketing or external applications via API to avoid the need to download files. 
 
@@ -102,7 +104,7 @@ Contoso Coffee Marketing want to run a new Summer Promo targeting millennials wi
 
 Let's try to find out common customers that belong to both Customers from California and High Value Online Customers segments and also what differentiates both of these segments in terms of Reward points and LifetimeSpend. 
 
-1.  Select **Segments** from the left menu. Select the **Insights (preview)** tab and select **+ New** from the command bar, or select the **+ New insight** button. 
+1.  Select **Insights** > **Segments** from the left navigation menu. Select the **Insights (preview)** tab and select **+ New** from the command bar, or select the **+ New insight** button. 
 
 2.  You will now see two options. Let's create using **Differentiators** first to see what distinguishes both of these segments. Select **Differentiators**. 
 
@@ -110,28 +112,29 @@ Let's try to find out common customers that belong to both Customers from Califo
 
 5.  Now choose **Reward points** under Customer fields and **LifetimeSpend** under Measure fields to see how the above segments differ from each other with respect to Reward points and LifetimeSpend. **Clear** all other customer and measure fields. 
 
-6.  Select **Next** and name the insight `High Value Online vs Customers from California`, verify the **Output entity name** gets set to **HighValueOnlinevsCustomersfromCalifornia**. Select **Save**. 
+6.  Select **Next** and name the insight `High Value Online vs Customers from California`
 
-7.  After the insight finishes refreshing, open the created insight. Select the **Attributes** or **Measures** tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score, the more different they are.
+7.  Verify the **Output entity name** gets set to **HighValueOnlinevsCustomersfromCalifornia**. Select **Save**. 
+
+8.  After the insight finishes refreshing, open the created insight. Select the **Attributes** or **Measures** tabs to see how the segments differ from each other with respect to the fields you selected. Observe the **Difference score**, which signifies the degree of difference. The higher the score, the more different they are.
 
     > **Note:** You may need to refresh the browser window to see the results. 
 
-8.  Select each **measure** and **attribute** to see deeper insights. 
+9.  Select each **measure** and **attribute** to see deeper insights. 
 
+    We have successfully created a Segment insight using **Differentiators**. Now let's create an insight using **Overlap**. 
 
-We have successfully created a Segment insight using **Differentiators**. Now let's create an insight using **Overlap**. 
+10. Make sure you're still in the **Segments > Insights (preview)** tab and select **+ New** from the command bar. Choose **Overlap**. 
 
-9.  Make sure you're still in the **Segments > Insights (preview)** tab and select **+ New** from the command bar. Choose **Overlap**. 
+11. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
 
-10. Select both **High Value Online Customers** and **Customers from California** segments to find out their shared customers. 
+12. Select **Next**. 
 
-11. Select **Next**. 
+13. *Optional:* Choose some attributes to compare the segments, just as we did with the Differentiators. Or, select **Next** without choosing anything. 
 
-12. Optional: Choose some attributes to compare the segments, just as we did with the Differentiators. Or, select **Next** without choosing anything. 
+14. Name the Segment Overlap `High Value Online Overlapped with California Customers` and verify the **Output table name** is set to **HighValueOnlineOverlappedwithCaliforniaCustomers**. Select **Save**. 
 
-13. Name the Segment Overlap "High Value Online Overlapped with California Customers" and verify the **Output entity name** is set to **HighValueOnlineOverlappedwithCaliforniaCustomers**. Select **Save**. 
-
-14. After the insight finishes refreshing, open the created insight to see the venn diagram showing the total and percentage of shared customers between these two segments. 
+15. After the insight finishes refreshing, open the created insight to see the venn diagram showing the total and percentage of shared customers between these two segments. 
 
 
 ### Task 6 - Segment Expansion 
@@ -140,23 +143,25 @@ Segment Expansion can be used to find similar customers to your segment customer
 
 Earlier we created a segment called **Summer Promotion**, which contains millennial customers with higher than average in-store purchase. Now, let's expand that segment and find customers that are similar to them for us to market our newly launched Cold Brew Coffee. 
 
-1.  Select **Segments** from the left navigation menu and choose the **Summer Promotion** segment. This will become our source segment. 
+1.  Select **Insights** > **Segments** from the left navigation menu and select the **All segments** tab.
 
-2.  Select **Find similar customers** from the command bar. 
+2.  Choose the **Summer Promotion** segment. This will become our source segment. 
 
-3.  Name your segment `SummerPromoExpansion`. 
+3.  Select **Find similar customers** from the command bar. 
 
-4.  Select **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Select **Apply**. 
+4.  Name your segment `SummerPromoExpansion` 
 
-5.  Next you must choose who to consider. Either **All customers except source segment**, or **Customers from a different segment**. If a different segment is selected, then you must choose which segment it is. For now, select **All customers except source segment**. 
+5.  Select **Add fields** in the next step to select attributes and measures that are used to find similar customers. We'll target customers with similar average in-store purchase and location, so choose **PostCode** and **AverageStorePurchase**. Select **Apply**. 
 
-6.  Now the maximum number of customers to include must be selected. By default, 20% of all customers is selected which could be altered if required. Let's stick with 20%. 
+6.  Next you must choose who to consider. Either **All customers except source segment**, or **Customers from a different segment**. If a different segment is selected, then you must choose which segment it is. For now, select **All customers except source segment**. 
 
-7.  If you would like to include members from the source segment as well then check the last option. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
+7.  Now the maximum number of customers to include must be selected. By default, 20% of all customers is selected which could be altered if required. Let's stick with 20%. 
 
-8.  Select **Run**. 
+8.  If you would like to include members from the source segment as well then check the last option. Otherwise, leave it unchecked. For our purposes, we can leave it unchecked.
 
-9.  After the segment finishes refreshing, open the segment to find the **Similarity Scores** and explore the **Segment members preview**. 
+9.  Select **Run**. 
+
+10.  After the segment finishes refreshing, open the segment to find the **Similarity Scores** and explore the **Segment members preview**. 
 
 
 ## Exercise 2 - Get suggested Segments 
@@ -165,9 +170,9 @@ Use Suggested Segments to discover interesting segments based on a customer attr
 
 ### Task 1 - Discover segments based on a numeric customer attribute or measure of interest  
 
-1.  Select **Segments** from the left navigation menu, and select the **Suggestions (preview)** tab. 
+1.  Select **Insights** > **Segments** from the left navigation menu, and select the **Suggestions (preview)** tab. 
 
-2.  Select **+ New > Suggested segments** to begin the configuration experience. 
+2.  Select **Get suggestions** to begin the configuration experience. 
 
 3.  Choose **Improve a measure/metric** and select **Start**. 
 
@@ -195,9 +200,9 @@ Use Suggested Segments to discover interesting segments based on a customer attr
 
     - The attribute values, that is the rules that the model learned based on the selected influencing attributes. 
 
-In this case, customers in this segment have an average LifetimeSpend of 741.89 as compared to average LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
+    In this case, customers in this segment have an average LifetimeSpend of 741.89 as compared to average LifetimeSpend of 869.74 across all customers. There are 599 members in this segment which is 12% of the entire customer base. These customers are not Email Subscribers, have an income less than 44k, do not belong to the high loyalty tier and are teachers. This information can then be used to target customers in this segment with personalized messaging to drive more revenue and corresponding business goals. 
 
-In a similar fashion, you can see details of other segment suggestions that you might be interested in. 
+    In a similar fashion, you can see details of other segment suggestions that you might be interested in. 
 
 9.  To save the segment, select **Save as segment** in the **Suggested segment details** panel. Select **Save**. 
   

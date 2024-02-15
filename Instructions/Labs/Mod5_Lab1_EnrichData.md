@@ -17,7 +17,7 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 ### Task 1 - Adding Brand Affinity 
 
-1.  If you haven't already, sign into Customer Insights - Data at https://home.ci.ai.dynamics.com/.
+1.  If you haven't already, sign into Customer Insights - Data at `https://home.ci.ai.dynamics.com`
 
 2.  Navigate to **Data > Enrichment**. 
 
@@ -43,13 +43,13 @@ For this lab, we will configure enrichment using Microsoft Graph.
  
 8.  Select **Next**. 
 
-9.  On the **Add customer Data** screen, choose **Customer** from the Profiles section in the dropdown, and select **Next**. 
+9.  On the **Add customer Data** screen, choose **Profiles** > **Customer** for the **Customer data set**, and select **Next**. 
 
 10. On the **Data mapping** screen, we will choose the fields to map our data with the data from Microsoft Graph. We can map both demographic as well as location information. As a minimum you must map the Country/Region. We will map more attributes to get a more refined result. 
 
     The system will pre-fill the entries when it can find a likely match. You can overide the entry by selecting the dropdown and choosing a different field. Here are the settings we will use: 
 	
-    - Date of Birth: DateOfBirth 
+    - Date of Birth: **DateOfBirth** 
 
     - Gender: Gender 
 
@@ -96,7 +96,7 @@ For this lab, we will configure enrichment using Microsoft Graph.
 
 8.  On the **Data mapping** screen, fill out the following: 
 
-	- Date of Birth: DateOfBirth 
+	- Date of Birth: **DateOfBirth** 
 
 	- Gender: Gender 
 
@@ -129,7 +129,7 @@ Once the enrichment has finished running (it may take several minutes), you can 
 
 3.  Now, we'll look at one of the two entities that were created to hold the enrichment data. 
 
-    Navigate to **Data > Entities**, and then under Enrichment, select either the **BrandAffinityFromMicrosoft** or **InterestAffinityFromMicrosoft** entity. This is where the enrichment data is stored. 
+    Navigate to **Data > Tables**, and then under Enrichment, select either the **BrandAffinityFromMicrosoft** or **InterestAffinityFromMicrosoft** entity. This is where the enrichment data is stored. 
 
     Here you will see the Industry a brand is listed in, the affinity score for a customer profile and affinity confidence as well as other information depending on which fields were mapped. 
 

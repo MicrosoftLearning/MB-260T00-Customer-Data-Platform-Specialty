@@ -19,13 +19,19 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Step 1: Power Apps License 
 
-1.  Now that you have a working Office 365 tenant, we will add a Power Platform trial license to the tenant. Open a new tab and navigate to `https://powerapps.microsoft.com/free/`
+1.  Verify that you have your **Microsoft 365 credentials** from the Authorized Lab Host available. 
 
-2.  On this page, select **Start using apps**. Enter the email provided by the lab host. Check the box to agree to the terms and select **Start your free trial.**
+2.  In a new browser tab, navigate to `https://make.powerapps.com`
 
-3.  Enter the password provided by the lab host and select **Sign in**. If prompted, leave region set to **United States** and enter `0123456789` for **Phone number**. Select **Submit**. 
+3.  Enter the `email address` provided by the Authorized Lab Host. 
 
-4.  Select **Get Started**. You will be taken to the Power Apps maker portal. Select **Skip** if prompted with the tutorial. 
+4.  Select **Sign in**. 
+
+5.  Enter the `password` provided by the Authorized Lab Host. 
+
+6.  Optionally, select **Yes** to stay signed in.
+
+7.  If prompted, enter `0123456789` for **Phone number** and select **Submit**.
 
 
 ## Step 2: Power BI Trial  

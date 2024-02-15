@@ -48,7 +48,7 @@ As Project Manager for Contoso Coffee, you will create the 'Greeter App' using P
 
 ## Task 1: Configure Power BI Desktop 
 
-1.  If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app. 
+1.  If you do not have Power BI Desktop installed, navigate to `https://aka.ms/pbidesktopstore` to download and install the Power BI app. 
 
     If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller). 
 
@@ -71,7 +71,6 @@ As Project Manager for Contoso Coffee, you will create the 'Greeter App' using P
 10. Expand and select the following tables:  
 
     **Entities**: 
-
     - Customer 
     - eCommerce_Purchases 
     - PoS_posPurchases 
@@ -448,7 +447,7 @@ Congratulations! You have now configured a simple greeter app for Contoso Coffee
 
 In this task, you will explore the Greeter App experience. 
 
-1.  In a new browser tab, navigate to `https://make.powerapps.com`. If required, sign in and make sure to select the **Marketing Trial** environment. 
+1.  Sign in to `https://make.powerapps.com` and select the **Marketing Trial** environment, if it is not already selected. 
 
     > **Note:** By default the environment selected is **Contoso (default)**. 
  

@@ -36,7 +36,7 @@ The Customer Insights Cards embedded within Dynamics 365 utilize the Contact ID 
 
 First, we will setup some sample Contacts within Dynamics 365 for you to ingest and match against your existing profiles in Customer Insights. 
 
-1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Customer Insights - Journeys Trial** environment and select **Open** from the command bar. 
+1.  In a browser, navigate to `https://aka.ms/ppac` and select **Environments**. Select the **Marketing Trial** environment and select **Open** from the command bar. 
 
 2.  Select the **⚙️ Settings** icon in the top right-hand corner, then select **Advanced Settings**. 
 
@@ -46,7 +46,7 @@ First, we will setup some sample Contacts within Dynamics 365 for you to ingest 
 
 5.  In the menu bar, select **Import Data** to launch the data import wizard.
 
-6.  Select **Choose File** and choose the **ContosoCoffee_D365Contacts** Excel spreadsheet from the Lab Resources folder, then select **Next** until you get to the **Map Record Types** screen. 
+6.  Select **Choose File** and choose the **ContosoCoffee_D365Contacts.csv** file from the Lab Resources folder, then select **Next** until you get to the **Map Record Types** screen. 
 
 7.  Select **Contact** from the **Record Types** drop-down and select **Next**.
 
@@ -211,7 +211,7 @@ For users to configure the Customer Insights content embedded in the Dynamics 36
 
 3.  Expand **Users + permissions** and select **Users**. 
 
-4.  Select your user account (unless you've made changes, it will be **MOD Administrator**), and select **Manage security roles**. 
+4.  Select your user account (unless you've made changes, it will be **MOD Administrator**), and select **Manage roles**. 
 
 5.  Select the **Customer Insights Card Customizer** role and select **Save**. 
 
@@ -355,9 +355,9 @@ We are now ready to consume the segments which Customer Insights has exported to
 
 1.  You are welcome to customize anything in the newsletter you'd like, but for this lab we really don't need to customize anything. 
 
-1.  Select **Add a subject** and enter `Monthly Customer Newsletter`. 
+1.  Select **Add a subject** and enter `Monthly Customer Newsletter`
 
-1.  Double-click on the title text next to **Draft** and enter `High Value Monthly Newsletter`. 
+1.  Double-click on the title text next to **Draft** and enter `High Value Monthly Newsletter`
 
 1.  Select **Save**. 
 
