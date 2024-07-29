@@ -1,3 +1,5 @@
+**This course will be retiring on  **2024/11/29**.  Once course is retired, all GitHub repos will be removed. Thank you.**
+
 # MB-260T00 Dynamics 365 Customer Insights - Data Specialty 
 
 - **[Download Latest Student Handbook and AllFiles Content](https://learningdownloadcenter.microsoft.com/)**
